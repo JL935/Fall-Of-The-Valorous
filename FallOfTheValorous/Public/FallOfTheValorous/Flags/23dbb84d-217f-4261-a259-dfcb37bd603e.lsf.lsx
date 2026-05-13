@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Learned the 4 A1 holy words" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_TaarogusArrives" />
+			<attribute id="UUID" type="guid" value="23dbb84d-217f-4261-a259-dfcb37bd603e" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

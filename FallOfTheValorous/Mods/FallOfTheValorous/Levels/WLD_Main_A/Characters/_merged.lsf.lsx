@@ -1,0 +1,1169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+		<!-- RAVENERS -->
+			<!-- Apothecary Young Ravener -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h4a2a3d6cg78f2g4c53ga648gf77975428fee" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="6e0bfd73-330a-4d7d-b6e7-fd7dba65b0a4" />
+					<attribute id="Name" type="LSString" value="S_CHARACTER_JL_FOTV_Apothecary_YoungRavener" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_Apothecary_YoungRavener" />
+					<attribute id="TemplateName" type="FixedString" value="ed616d9f-0640-4b3a-aba1-a9d478bfc0eb" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b5ccefe6-4177-b85e-7e1d-06fab1f765b4" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-650.418 2.969 -326.375" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.5735764 0 0.819152" />
+							<attribute id="Scale" type="float" value="0.25" />
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="b169a4a0-4867-4e90-a0f8-5e2b8bade0b8" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="05c0f89c-b3d5-4065-8415-d7a55554e586" />
+								</node>
+							</children>
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_ApothecaryRavener_TT" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_NECROTICVFX" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Underdark Young Ravener 1-->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h4a2a3d6cg78f2g4c53ga648gf77975428fee" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="39d670bc-01e7-4863-b124-3b2f43d8f1be" />
+					<attribute id="Name" type="LSString" value="S_CHARACTER_JL_FOTV_Underdark_YoungRavener_01" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_Underdark_YoungRavener" />
+					<attribute id="TemplateName" type="FixedString" value="02695c90-860c-4f04-ba31-9c264a69d335" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bfd2a9ad-d8b6-e2a7-5f7b-2f959a4e19ef" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="dd74391a-edd3-27f2-7ef4-73cfd13a61dd" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-28.814 25.339 -274.066" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.3826834 0 0.9238795" />
+							<attribute id="Scale" type="float" value="0.25" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="b169a4a0-4867-4e90-a0f8-5e2b8bade0b8" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_COLD_UNDERDARKVFX" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Underdark Young Ravener 2-->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h4a2a3d6cg78f2g4c53ga648gf77975428fee" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="000940ec-dff0-41f2-8de8-6907ace2cda7" />
+					<attribute id="Name" type="LSString" value="S_CHARACTER_JL_FOTV_Underdark_YoungRavener_02" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_Underdark_YoungRavener" />
+					<attribute id="TemplateName" type="FixedString" value="02695c90-860c-4f04-ba31-9c264a69d335" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bfd2a9ad-d8b6-e2a7-5f7b-2f959a4e19ef" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="dd74391a-edd3-27f2-7ef4-73cfd13a61dd" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-36.648 25.402 -273.967" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.25" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="b169a4a0-4867-4e90-a0f8-5e2b8bade0b8" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_COLD_UNDERDARKVFX" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Underdark Adult Ravener -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h0a0f9eb2g0793g4650g896cg4ea298be9df8" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="296f4f1a-a8e9-48fb-bdc0-e9c5c997e809" />
+					<attribute id="Name" type="LSString" value="S_CHARACTER_JL_FOTV_Underdark_AdultRavener" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_Underdark_AdultRavener" />
+					<attribute id="TemplateName" type="FixedString" value="aa14d1fa-e8dd-4092-825b-33d6f8a1289e" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="8936874f-2b58-955b-5ad7-366fbb1f8f7e" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="19f63984-577e-8aa6-bcf5-4125e35be379" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="9.345 0.56 -207.824" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.35" />
+						</node>
+						<node id="ItemList">
+							<children>
+								<node id="Item">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="Amount" type="int32" value="1" />
+									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsTradable" type="uint8" value="2" />
+									<attribute id="ItemName" type="LSString" value="S_LORE_JL_FOTV_NeedIconoclast" />
+									<attribute id="LevelName" type="LSString" value="WLD_Main_A" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="TemplateID" type="FixedString" value="76a9cde8-b994-4162-b846-398565ebb5d4" />
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="UUID" type="FixedString" value="ecb9a47c-7774-4c84-a37d-d84594d33a02" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_UNDERDARKVFX" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Sunlit Wetlands Adult Ravener -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="2ceaef76-dcd0-4f53-af0c-a8d2b25944d3" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h0a0f9eb2g0793g4650g896cg4ea298be9df8" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="b2242e11-7388-45a5-8b6c-92476cd6c427" />
+					<attribute id="Name" type="LSString" value="S_CHARACTER_JL_FOTV_SunlitWetlands_AdultRavener" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_SunlitWetlands_AdultRavener" />
+					<attribute id="TemplateName" type="FixedString" value="a934d56f-6c27-49dc-8822-49fe2dbbfd65" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="eae0a27d-0418-aff3-18b5-065bcb2d01d0" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="89.551 0.611 279.681" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.35" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_POISON_SWAMPVFX" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Veizoadeoth -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="37d09e1d-d3ae-453f-a8ce-1984efe561ee" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h0a85bba6gef6dg4afcga125g0bd856bd2497" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="IsBoss" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="2f2ab132-d7bb-48a7-956c-aac0654e3b4c" />
+					<attribute id="Name" type="LSString" value="S_CHARACTER_JL_FOTV_Veizoadeoth" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_Veizoadeoth" />
+					<attribute id="TemplateName" type="FixedString" value="1e732a86-5426-4a98-a43b-2c70276d3e37" />
+					<attribute id="Title" type="TranslatedString" handle="hd113f4a0gf394g4c10g8db9gd6f308d9d061" version="1" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bac39da5-c70e-e89a-3c95-9dd955ad660c" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c2ce74b1-6777-9f82-1093-ff4dccd33dc4" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="98.387 32.625 597.794" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.5" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="45f0b59c-d732-410e-a4e9-8a3912adcc24" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_VEIZOADEOTH_VFX" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Veizoadeoth Adult Ravener Minion -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="37d09e1d-d3ae-453f-a8ce-1984efe561ee" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h0a0f9eb2g0793g4650g896cg4ea298be9df8" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="54532d4a-9ea2-4381-b122-c7324bbf34c5" />
+					<attribute id="Name" type="LSString" value="S_CHARACTER_JL_FOTV_RisenRoad_AdultRedRavener" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_AdultRavener" />
+					<attribute id="TemplateName" type="FixedString" value="fd357a1b-ecb4-4948-9994-e24c2076dee1" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bac39da5-c70e-e89a-3c95-9dd955ad660c" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c2ce74b1-6777-9f82-1093-ff4dccd33dc4" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="91.76 32.816 597.794" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.35" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_NECROTICVFX" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+		<!-- INQUISITORS -->
+			<!-- Khionzu -->
+				<node id="GameObjects">
+					<attribute id="DefaultState" type="uint8" value="11" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hfd6e18begb062g4998gae75gb3bb1dca345a" version="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="b730b18d-fb32-4436-a073-86a10c934f92" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_ApothecaryInquisitor_Dead" />
+					<attribute id="SoftBodyCollisionTemplate" type="FixedString" value="e96eed75-850b-4497-b077-a8f62f731bf3" />
+					<attribute id="TemplateName" type="FixedString" value="5bc02c03-9e7d-435f-82c7-fedef3922e3d" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="ItemList">
+							<children>
+								<node id="Item">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="Amount" type="int32" value="1" />
+									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsTradable" type="uint8" value="2" />
+									<attribute id="ItemName" type="LSString" value="S_LORE_JL_FOTV_FollyOfOurForebears" />
+									<attribute id="LevelName" type="LSString" value="WLD_Main_A" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="TemplateID" type="FixedString" value="76d897e1-9e92-43de-984a-7fc333556236" />
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="UUID" type="FixedString" value="3d3ec557-abf1-4a2e-8ca0-8aabfbf4c16c" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b5ccefe6-4177-b85e-7e1d-06fab1f765b4" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-678.438 0.156 -370.474" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_CONSUMPTION" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_CONSUMPTION_BLOCK_VAELYTHRA" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Saelethil -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="395ff5f7-6b90-49d9-b717-6fb68c6344f7" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h59fae68cgafdfg4752gbf55g17a44a947a6a" version="1" />
+					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="452f2783-7ac4-421c-a83d-9484f9e6dbe1" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_RisenRoad_Valorous_Elf_Melee" />
+					<attribute id="SoftBodyCollisionTemplate" type="FixedString" value="e96eed75-850b-4497-b077-a8f62f731bf3" />
+					<attribute id="TemplateName" type="FixedString" value="4e8c6995-2066-46c5-a55d-327008c2142f" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c814d794-90d3-0614-84ce-be809f232673" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="fff4cead-0a92-9631-b269-4432e29bb75f" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-145.54 34.252 472.76" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9659258 0 0.258819" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RisenRoad_ValorousMelee_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Daregrir -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="395ff5f7-6b90-49d9-b717-6fb68c6344f7" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h33b3f896gf0dag444ag9a1dge4848b253a35" version="1" />
+					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="f89da59f-8c2e-475e-97a9-0da7809fee57" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_RisenRoad_Valorous_Dwarf_Ranged" />
+					<attribute id="SoftBodyCollisionTemplate" type="FixedString" value="e96eed75-850b-4497-b077-a8f62f731bf3" />
+					<attribute id="TemplateName" type="FixedString" value="680adec7-1019-4a18-9c19-a79e335813c4" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="ItemList">
+							<children>
+								<node id="Item">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="Amount" type="int32" value="1" />
+									<attribute id="CanBePickpocketed" type="bool" value="True" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="IsDroppedOnDeath" type="bool" value="True" />
+									<attribute id="IsTradable" type="uint8" value="2" />
+									<attribute id="ItemName" type="LSString" value="S_LORE_JL_FOTV_SaelethilAilment" />
+									<attribute id="LevelName" type="LSString" value="WLD_Main_A" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="TemplateID" type="FixedString" value="065b4c8d-e628-4857-acbe-6e6fd8b83930" />
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="UUID" type="FixedString" value="83d24be7-3fb0-4c1a-a2dc-d0a80e2df0f5" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c814d794-90d3-0614-84ce-be809f232673" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="fff4cead-0a92-9631-b269-4432e29bb75f" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-149.606 34.262 478.332" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.7071068 0 0.7071068" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+			<!-- Adrasteia -->
+				<node id="GameObjects">
+					<attribute id="DefaultState" type="uint8" value="11" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h5af00d3bg6fd0g4329g91e8gd30635778c26" version="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="fb59427e-b9a0-4112-8dcc-dad1b581c882" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_UnderdarkInquisitor_Dead" />
+					<attribute id="SoftBodyCollisionTemplate" type="FixedString" value="e96eed75-850b-4497-b077-a8f62f731bf3" />
+					<attribute id="TemplateName" type="FixedString" value="cdc396a6-dfd8-4c75-b9b2-4e69c3416134" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c2abfa09-685c-4191-ca7a-0c4ca8905b2d" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="36.247 7.908 -216.398" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_CONSUMPTION" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_CONSUMPTION_BLOCK_VAELYTHRA" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_DESECRATION_2" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Garrin -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="2ceaef76-dcd0-4f53-af0c-a8d2b25944d3" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h4e0a5d97g5f84g41cbg9b2dg3594fdb0618d" version="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="a2c07f6d-9d08-4874-969d-9c2b202e5733" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_SunlitWetlands_Valorous_Human_Melee" />
+					<attribute id="SoftBodyCollisionTemplate" type="FixedString" value="e96eed75-850b-4497-b077-a8f62f731bf3" />
+					<attribute id="TemplateName" type="FixedString" value="fbff49fb-b912-45b3-92b7-1077adaf699c" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="eae0a27d-0418-aff3-18b5-065bcb2d01d0" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="86.186 1.102 277.092" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_SunlitWetlands_Valorous_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Taarogus Dantill -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h7f721343g6de1g432dg82fdg0361f131adb2" version="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="f9c25b00-4ae7-4681-b783-3a72ba413211" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_TaarogusDantill" />
+					<attribute id="TemplateName" type="FixedString" value="d470683c-99eb-45e3-a1f1-eeaa62789b6e" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0d1b3e0e-930a-23a0-2ad9-f0f3deba210b" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="784e0a2b-908e-edcc-02dd-e6aa5c34dc6c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-293.767 15.47 -248.035" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Qynoth -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
+					<attribute id="DisplayName" type="TranslatedString" handle="he7a70df4g3521g4f7ag8a1ega6a52ab70665" version="1" />
+					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="1053a85c-93b0-401d-a7a6-1e40979bc48e" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_DankCrypt_Valorous_Githyanki" />
+					<attribute id="TemplateName" type="FixedString" value="00d2585c-da03-42bb-bb89-038b4167aae8" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0d1b3e0e-930a-23a0-2ad9-f0f3deba210b" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="784e0a2b-908e-edcc-02dd-e6aa5c34dc6c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-291.75 15.47 -246.582" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vogrevol -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="37d09e1d-d3ae-453f-a8ce-1984efe561ee" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h0cb51625gea43g4ac5g9cadg18aa992da5f3" version="1" />
+					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="019a9841-994f-410b-9b2e-a25e7c174c54" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_RisenRoad_Tactics_HalfOrc" />
+					<attribute id="TemplateName" type="FixedString" value="7db3674d-a22e-4464-aa27-75a1c503e193" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bac39da5-c70e-e89a-3c95-9dd955ad660c" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c2ce74b1-6777-9f82-1093-ff4dccd33dc4" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="95.694 33.328 591.506" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Ronros -->
+				<node id="GameObjects">
+					<attribute id="DefaultState" type="uint8" value="11" />
+					<attribute id="DisplayName" type="TranslatedString" handle="ha8656579g83b6g4d65g8a45g30d00fc166d3" version="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="a1a3cacf-6f5d-417e-8b58-341df4ea86ec" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_WhisperingDepthsInquisitor_Dead" />
+					<attribute id="SoftBodyCollisionTemplate" type="FixedString" value="e96eed75-850b-4497-b077-a8f62f731bf3" />
+					<attribute id="TemplateName" type="FixedString" value="ce9eb8fa-798d-43e2-9ee9-1379eb49b042" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="ee2e93e4-c274-dfc3-e4e6-5370146163fc" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="6594abcb-a82c-a984-fd4e-e9e2acecf030" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-567.035 -10.116 -352.316" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+		<!-- OTHER -->
+			<!-- Risen Road Death Shepherd -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="395ff5f7-6b90-49d9-b717-6fb68c6344f7" />
+					<attribute id="DisplayName" type="TranslatedString" handle="he95e7a86g72aeg41c3g9168g8c6ed952834f" version="3" />
+					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="c343f083-1fd4-4c3e-b0c0-61ab77b66b21" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_RisenRoad_DeathShepherd" />
+					<attribute id="TemplateName" type="FixedString" value="f05367f6-78f2-4631-996e-7e21912bbb78" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c814d794-90d3-0614-84ce-be809f232673" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="fff4cead-0a92-9631-b269-4432e29bb75f" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-147.009 34.132 475.708" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.9848078 0 -0.1736482" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Dank Crypt Mummy -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
+					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="18457071-fd04-4efc-85a9-2e0aa335eaa4" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_DankCrypt_Mummy" />
+					<attribute id="TemplateName" type="FixedString" value="ca08113f-5ed5-42b3-9a50-adf2c1fe6bac" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0d1b3e0e-930a-23a0-2ad9-f0f3deba210b" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="784e0a2b-908e-edcc-02dd-e6aa5c34dc6c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_GRANT_WARLEADERINTERRUPT" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-296.551 15.738 -246.582" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Dank Crypt Ghast -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
+					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="46577897-db51-4171-b069-3862d2fadd68" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_DankCrypt_Ghast" />
+					<attribute id="TemplateName" type="FixedString" value="4863708b-59b7-4ae3-b82f-614bd71caa7b" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0d1b3e0e-930a-23a0-2ad9-f0f3deba210b" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="784e0a2b-908e-edcc-02dd-e6aa5c34dc6c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_GRANT_WARLEADERINTERRUPT" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-298.61 15.442 -249.789" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Dank Crypt Wraith -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
+					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="ad6ec7f0-9ef4-4511-b817-e1e7db511068" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_DankCrypt_Wraith" />
+					<attribute id="TemplateName" type="FixedString" value="066133a8-5dce-4636-8ba1-13efb1140c54" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0d1b3e0e-930a-23a0-2ad9-f0f3deba210b" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="784e0a2b-908e-edcc-02dd-e6aa5c34dc6c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_GRANT_WARLEADERINTERRUPT" />
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-289.746 15.442 -249.789" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

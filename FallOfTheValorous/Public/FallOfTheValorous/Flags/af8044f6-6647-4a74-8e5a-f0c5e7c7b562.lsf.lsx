@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Taarogus' journal has been read" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_TaarogusJournalRead" />
+			<attribute id="UUID" type="guid" value="af8044f6-6647-4a74-8e5a-f0c5e7c7b562" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

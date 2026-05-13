@@ -1,0 +1,284 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//DB to track which Holy Words are currently known - you'll start with knowing Vaelythra
+DB_GLO_FOTV_KnownHolyWords("JL_FOTV_Vaelythra");
+
+//DB to tie events to the holy word they unlock
+DB_GLO_FOTV_HolyWordFlags((FLAG)JL_FOTV_ApothecaryInquisitorFreed_a80348bb-7402-4460-a725-1d0bf923c153, "JL_FOTV_Lulix");
+DB_GLO_FOTV_HolyWordFlags((FLAG)JL_FOTV_RisenRoadFreed_414c42de-2602-4703-b89d-fa32c1aa0fbd, "JL_FOTV_Arzimyr");
+DB_GLO_FOTV_HolyWordFlags((FLAG)JL_FOTV_UnderdarkInquisitorFreed_5b18c4c1-8839-4593-8457-f5ddf38544bb, "JL_FOTV_Xulvorith");
+
+//DB to tie holy words to their unique cooldown status
+DB_GLO_FOTV_HolyWordCooldown("JL_FOTV_Arzimyr", "JL_FOTV_ARZIMYR_COOLDOWN");
+DB_GLO_FOTV_HolyWordCooldown("JL_FOTV_Vaelythra", "JL_FOTV_VAELYTHRA_COOLDOWN");
+DB_GLO_FOTV_HolyWordCooldown("JL_FOTV_Xulvorith", "JL_FOTV_XULVORITH_COOLDOWN");
+
+//DB for divine classes that can learn holy words
+DB_GLO_FOTV_DivineClassTag((TAG)CLERIC_1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5);
+DB_GLO_FOTV_DivineClassTag((TAG)PALADIN_6d85ab2d-5c23-498c-a61e-98f05a00177a);
+DB_GLO_FOTV_DivineClassTag((TAG)INQUISITOR_15b6506b-8cfc-4ac5-b3d0-8988d3d9c259);
+
+//DB for which AC penalty to apply for known holy words
+DB_GLO_FOTV_CountVsPenaltyAC(1, 3, "JL_FOTV_HOLYWORD_PENALTIES_AC_1");
+DB_GLO_FOTV_CountVsPenaltyAC(3, 5, "JL_FOTV_HOLYWORD_PENALTIES_AC_2");
+DB_GLO_FOTV_CountVsPenaltyAC(5, 7, "JL_FOTV_HOLYWORD_PENALTIES_AC_3");
+DB_GLO_FOTV_CountVsPenaltyAC(7, 9, "JL_FOTV_HOLYWORD_PENALTIES_AC_4");
+DB_GLO_FOTV_CountVsPenaltyAC(9, 11, "JL_FOTV_HOLYWORD_PENALTIES_AC_5");
+
+//DB for which save penalty to apply for known holy words
+DB_GLO_FOTV_CountVsPenaltySaves(2, 4, "JL_FOTV_HOLYWORD_PENALTIES_SAVES_1");
+DB_GLO_FOTV_CountVsPenaltySaves(4, 6, "JL_FOTV_HOLYWORD_PENALTIES_SAVES_2");
+DB_GLO_FOTV_CountVsPenaltySaves(6, 8, "JL_FOTV_HOLYWORD_PENALTIES_SAVES_3");
+DB_GLO_FOTV_CountVsPenaltySaves(8, 10, "JL_FOTV_HOLYWORD_PENALTIES_SAVES_4");
+DB_GLO_FOTV_CountVsPenaltySaves(10, 12, "JL_FOTV_HOLYWORD_PENALTIES_SAVES_5");
+
+KBSECTION
+//REGION Adding/removing Holy Words from players
+IF
+RespecCompleted(_Player)
+THEN
+RealtimeObjectTimerCancel(_Player, "JL_FOTV_CheckInquisitor");
+RealtimeObjectTimerLaunch(_Player, "JL_FOTV_CheckInquisitor", 500);
+
+//Respeccing into a divine class and you've already read Taarogus' journal - gain known Holy Words
+IF
+ObjectTimerFinished((CHARACTER)_Player, "JL_FOTV_CheckInquisitor")
+AND
+DB_GLO_FOTV_DivineClassTag(_DivineTag)
+AND
+IsTagged(_Player, _DivineTag, 1)
+AND
+GetFlag(JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562, NULL_00000000-0000-0000-0000-000000000000, 1)
+THEN
+PROC_FOTV_UpdateHolyWords();
+
+//Respeccing out of a divine class and you knew some Holy Words - remove them
+IF
+ObjectTimerFinished((CHARACTER)_Player, "JL_FOTV_CheckInquisitor")
+AND
+NOT QRY_CanLearnHolyWords(_Player)
+AND
+DB_GLO_FOTV_KnownHolyWords(_HolyWord)
+AND
+HasSpell(_Player, _HolyWord, 1)
+THEN
+RemoveSpell(_Player, "JL_FOTV_DivineOrationContainer", 1);
+RemoveSpell(_Player, _HolyWord, 1);
+RemovePassive(_Player, "JL_FOTV_HolyWord_Toggler");
+
+//Divine classed character joins the party
+IF
+CharacterJoinedParty((CHARACTER)_Player)
+AND
+QRY_CanLearnHolyWords(_Player)
+AND
+GetFlag(JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562, NULL_00000000-0000-0000-0000-000000000000, 1)
+THEN
+PROC_FOTV_UpdateHolyWords();
+
+//Divine classed character leaves the party
+IF
+CharacterLeftParty((CHARACTER)_Player)
+AND
+NOT DB_Players(_Player)
+AND
+DB_GLO_FOTV_KnownHolyWords(_HolyWord)
+THEN
+RemoveSpell(_Player, "JL_FOTV_DivineOrationContainer", 1);
+RemoveSpell(_Player, _HolyWord, 1);
+RemovePassive(_Player, "JL_FOTV_HolyWord_Toggler");
+
+//After reading 'The Fall of the Valorous' for the first time, all divine classes and Avatars gain Vaelythra and the Holy Words container spell
+IF
+UseFinished(_, S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, 1)
+AND
+GetFlag(JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562, NULL_00000000-0000-0000-0000-000000000000, 0)
+THEN
+SetFlag((FLAG)JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562);
+PROC_FOTV_UpdateHolyWords();
+//END_REGION
+
+//REGION Unlocking the other Holy Words
+//Lulix
+IF
+StatusRemoved(S_JL_FOTV_ApothecaryInquisitor_Dead_b730b18d-fb32-4436-a073-86a10c934f92, "JL_FOTV_RAVENER_CONSUMPTION", _, _)
+THEN
+SetFlag(JL_FOTV_ApothecaryInquisitorFreed_a80348bb-7402-4460-a725-1d0bf923c153);
+
+//Arzimyr
+//Killed, was already cleansed
+IF
+Died(S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1)
+AND
+HasActiveStatus(S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1, "JL_FOTV_RAVENER_CONSUMPTION", 0)
+THEN
+SetFlag(JL_FOTV_RisenRoadFreed_414c42de-2602-4703-b89d-fa32c1aa0fbd);
+
+//Cleansed, was already dead
+IF
+StatusRemoved(S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1, "JL_FOTV_RAVENER_CONSUMPTION", _, _)
+AND
+IsDead(S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1, 1)
+THEN
+SetFlag(JL_FOTV_RisenRoadFreed_414c42de-2602-4703-b89d-fa32c1aa0fbd);
+
+//Xulvorith
+//Desecration, then Consumption
+IF
+StatusRemoved(S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, "JL_FOTV_RAVENER_CONSUMPTION", _, _)
+AND
+HasActiveStatus(S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, "JL_FOTV_RAVENER_DESECRATION_2", 0)
+THEN
+SetFlag(JL_FOTV_UnderdarkInquisitorFreed_5b18c4c1-8839-4593-8457-f5ddf38544bb);
+
+//Consumption, then Desecration
+IF
+StatusRemoved(S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, "JL_FOTV_RAVENER_DESECRATION_2", _, _)
+AND
+HasActiveStatus(S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, "JL_FOTV_RAVENER_CONSUMPTION", 0)
+THEN
+SetFlag(JL_FOTV_UnderdarkInquisitorFreed_5b18c4c1-8839-4593-8457-f5ddf38544bb);
+//END_REGION
+
+
+//REGION Updating known holy words
+//When the flag is set that unlocks a specific holy word, add it to the DB of known holy words and run the PROC to add it to the right characters
+IF
+FlagSet(_HolyFlag, _, _)
+AND
+DB_GLO_FOTV_HolyWordFlags(_HolyFlag,  _HolyWord)
+THEN
+DB_GLO_FOTV_KnownHolyWords(_HolyWord);
+PROC_FOTV_UpdateHolyWords();
+
+//If you are an Avatar or divine class, add all known holy words
+PROC
+PROC_FOTV_UpdateHolyWords()
+AND
+DB_Players(_Player)
+AND
+QRY_CanLearnHolyWords(_Player)
+AND
+DB_GLO_FOTV_KnownHolyWords(_HolyWord)
+AND
+SysCount("DB_GLO_FOTV_KnownHolyWords", 1, _Count)
+THEN
+AddSpell(_Player, "JL_FOTV_DivineOrationContainer", 0, 1);
+AddSpell(_Player, _HolyWord, 0, 1);
+AddPassive(_Player, "JL_FOTV_HolyWord_Toggler");
+//END_REGION
+
+//REGION Holy Word cooldowns
+//When you cast a holy word, add the relevant cooldown status to everyone (cooldowns shared by the party)
+IF
+CastSpell(_, _HolyWord, _, _, _)
+AND
+DB_GLO_FOTV_HolyWordCooldown(_HolyWord, _HolyCooldown)
+AND
+DB_Players(_Player)
+AND
+QRY_CanLearnHolyWords(_Player)
+THEN
+ApplyStatus(_Player, _HolyCooldown, -1.0, 0, _Player);
+
+//Vaelythra is the only short rest cooldown
+IF
+ShortRested(_Player)
+AND
+HasActiveStatus((CHARACTER)_Player, "JL_FOTV_VAELYTHRA_COOLDOWN", 1)
+THEN
+RemoveStatus((CHARACTER)_Player, "JL_FOTV_VAELYTHRA_COOLDOWN");
+
+//Long resting clears all cooldown statuses
+IF
+LongRestFinished()
+AND
+DB_Players(_Player)
+AND
+DB_GLO_FOTV_HolyWordCooldown(_, _HolyCooldown)
+AND
+HasActiveStatus((CHARACTER)_Player, _HolyCooldown, 1)
+THEN
+RemoveStatus((CHARACTER)_Player, _HolyCooldown);
+//END_REGION
+
+//REGION Penalties for known Holy Words
+//Apply penalties upon toggling on Apostle of the Holy Word
+IF
+StatusApplied(_Player, "JL_FOTV_HOLYWORD_ENABLER", _, _)
+AND
+SysCount("DB_GLO_FOTV_KnownHolyWords", 1, _Count)
+THEN
+PROC_FOTV_PenaltyApplier_AC(_Count, _Player);
+PROC_FOTV_PenaltyApplier_Saves(_Count, _Player);
+
+//Remove penalties when Apostle of the Holy Word is lost/toggled off
+IF
+StatusRemoved(_Player, "JL_FOTV_HOLYWORD_ENABLER", _, _)
+THEN
+PROC_FOTV_PenaltyRemover_AC(_Player);
+PROC_FOTV_PenaltyRemover_Saves(_Player);
+
+PROC
+PROC_FOTV_PenaltyApplier_AC((INTEGER)_Count, (GUIDSTRING)_Player)
+AND
+DB_GLO_FOTV_CountVsPenaltyAC(_Lower, _Upper, _PenaltyStatus)
+AND
+_Count >= _Lower
+AND
+_Count < _Upper
+THEN
+ApplyStatus(_Player, _PenaltyStatus, -1.0, 0, _Player);
+
+PROC
+PROC_FOTV_PenaltyApplier_Saves((INTEGER)_Count, (GUIDSTRING)_Player)
+AND
+DB_GLO_FOTV_CountVsPenaltySaves(_Lower, _Upper, _PenaltyStatus)
+AND
+_Count >= _Lower
+AND
+_Count < _Upper
+THEN
+ApplyStatus(_Player, _PenaltyStatus, -1.0, 0, _Player);
+
+PROC
+PROC_FOTV_PenaltyRemover_AC((GUIDSTRING)_Player)
+AND
+DB_GLO_FOTV_CountVsPenaltyAC(_, _, _PenaltyStatus)
+AND
+HasActiveStatus(_Player, _PenaltyStatus, 1)
+THEN
+RemoveStatus(_Player, _PenaltyStatus);
+
+PROC
+PROC_FOTV_PenaltyRemover_Saves((GUIDSTRING)_Player)
+AND
+DB_GLO_FOTV_CountVsPenaltySaves(_, _, _PenaltyStatus)
+AND
+HasActiveStatus(_Player, _PenaltyStatus, 1)
+THEN
+RemoveStatus(_Player, _PenaltyStatus);
+//END_REGION
+
+//REGION Queries go near the bottom I think
+QRY
+QRY_CanLearnHolyWords((CHARACTER)_Player)
+AND
+DB_Avatars(_Player)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_CanLearnHolyWords((CHARACTER)_Player)
+AND
+DB_GLO_FOTV_DivineClassTag(_DivineTag)
+AND
+IsTagged(_Player, _DivineTag, 1)
+THEN
+DB_NOOP(1);
+//END_REGION
+
+EXITSECTION
+
+ENDEXITSECTION

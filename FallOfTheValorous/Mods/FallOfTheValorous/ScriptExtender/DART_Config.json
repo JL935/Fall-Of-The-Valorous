@@ -1,0 +1,51 @@
+{
+    "SchemaVersion":1, 
+    "Disabled":false,
+    "Tags":[
+        {
+            "6d85ab2d-5c23-498c-a61e-98f05a00177a":{
+                "Source":"d79399e1-1c15-4a83-b4cc-c2e44e91df97",
+                "GrantTag":true,
+                "DisplayName":"hb8457e10g1685g4522g8465gc5b8bc5eb24e",
+                "Description":"h3d98eec6g61c1g4dc8g8c22g6a9df2e3a099",
+                "Blacklist":["aabec611-33d2-cbca-82ac-0b3298e65dd5", "24124369-4e10-034f-351c-aff4c861ba26", "81789531-eaf1-9f60-3031-6742d7987787", "f80c6201-9307-8b53-0ed3-b58ea9c43ce1", "267b08d1-1b0e-6f03-47c3-bc7491501a7e", "920c8a7c-2add-5b14-3c2e-48541fb781af", "e9a8de99-da55-6f7b-e212-00c27b4efef5", "1d54942c-e707-2b27-c461-bc033d258d04", "4fd17065-2c50-f39b-8768-3403f291e43e", "94726285-a32b-9d8e-579f-5aa051e986b7", "3e6d783e-0bff-0cf1-2919-93e9d8551406", "365c6e88-0a69-eddf-e270-e8f37772b874"]
+            }
+        },
+        {
+            "7c89622b-4194-41df-b2ff-145a5056ee49":{
+                "Source":"d79399e1-1c15-4a83-b4cc-c2e44e91df97",
+                "GrantTag":true,
+                "DisplayName":"hb8457e10g1685g4522g8465gc5b8bc5eb24e",
+                "Description":"h3d98eec6g61c1g4dc8g8c22g6a9df2e3a099",
+                "Whitelist":["5e4e3a92-3f90-9950-5c7e-a3f8fe0b95c7", "26a47196-87d0-f7fd-ff50-b6d04e075501", "6bfbe501-bd79-080a-7cb0-1ada96aab23f"]
+            }
+        },
+        {
+            "7efcadc0-9e88-4d0a-87b9-64a589e2df91":{
+                "Source":"d79399e1-1c15-4a83-b4cc-c2e44e91df97",
+                "GrantTag":true,
+                "DisplayName":"hb8457e10g1685g4522g8465gc5b8bc5eb24e",
+                "Description":"h3d98eec6g61c1g4dc8g8c22g6a9df2e3a099",
+                "Whitelist":["988ba3fc-8895-6f50-004b-f063aca72267", "c9645362-c2d9-4642-459f-b28f474f8241", "e4a28cdc-8467-0182-f6f7-2a0534b0370c", "816ae6ee-44b2-1b39-2291-35687b9015b3", "4dd8c77c-d075-b1b3-1690-7a46dc8b8fb8", "c0af7175-e75f-06d3-0e38-dbe52b668dc1", "e7d06055-c350-1740-92a0-7deb7b9744c0"]
+            }
+        },
+        {
+            "2de0a4fc-5831-4439-94d3-a7ff9b7aacf6":{
+                "Source":"d79399e1-1c15-4a83-b4cc-c2e44e91df97",
+                "GrantTag":true,
+                "DisplayName":"hb8457e10g1685g4522g8465gc5b8bc5eb24e",
+                "Description":"h3d98eec6g61c1g4dc8g8c22g6a9df2e3a099",
+                "Whitelist":["35c2454f-2b3d-c7fd-771f-6bd9f309f395", "6584fb1a-7ca9-950f-40a6-be0cfdd296f7", "b8c4620d-f1a4-a9a7-27ae-fc5df8100d88", "f8d20378-d64f-2863-d81e-394cd4a9fa41", "cfeca23b-71c4-7f62-fddc-74fb8cca8a8a", "4ceaf702-dab8-97e2-7d9c-3e92e2815892", "c9f41e9b-ee03-a40d-ec89-c332e0b175d4", "3e44820e-07bf-b2a1-e26a-2bc83a33f45d", "25f33ec7-32d6-6965-4cdd-ccd20416be5b","89809919-1b52-9e26-de44-81055e686ce9", "cae235e1-7419-3a7f-8056-94fffefaa846", "e7a21b36-5594-2163-2bff-1b451a365984", "c893693e-90fc-d52e-6dd2-1f5d247fefcb", "87fe8891-1ee8-1394-5b02-55817668b9b9"]
+            }
+        },
+        {
+            "a1aa47b2-4d0a-4c97-931b-2c53353d5b23":{
+                "Source":"d79399e1-1c15-4a83-b4cc-c2e44e91df97",
+                "GrantTag":true,
+                "DisplayName":"hb8457e10g1685g4522g8465gc5b8bc5eb24e",
+                "Description":"h3d98eec6g61c1g4dc8g8c22g6a9df2e3a099",
+                "Whitelist":["4a608e34-aaa3-a6b8-0f43-214d81cc8d82", "358adb97-0666-eee0-84c9-74da8da12af1", "95910d81-00c2-d78e-6926-b0ae958fbb13", "8adffca0-956b-e9ff-89f7-2c89bcaa2b9d", "21c03dec-2722-a9a6-a95e-75236b3d2e15"]
+            }
+        }
+    ]
+}

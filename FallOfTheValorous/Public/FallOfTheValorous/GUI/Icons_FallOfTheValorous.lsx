@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="6" build="5" />
+    <region id="TextureAtlasInfo">
+        <node id="root">
+            <children>
+                <node id="TextureAtlasIconSize">
+                    <attribute id="Height" type="int32" value="144" />
+                    <attribute id="Width" type="int32" value="144" />
+                </node>
+                <node id="TextureAtlasPath">
+                    <attribute id="Path" type="LSString" value="Assets/Textures/Icons/FallOfTheValorous_Icons.dds" />
+                    <attribute id="UUID" type="FixedString" value="caeed5fd-a0a7-4479-b2a2-9582bdd45ed1" />
+                </node>
+                <node id="TextureAtlasTextureSize">
+                    <attribute id="Height" type="int32" value="2048" />
+                    <attribute id="Width" type="int32" value="2048" />
+                </node>
+            </children>
+        </node>
+    </region>
+	<region id="IconUVList">
+        <node id="root">
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_RavenerDesecration"/> R1 1
+                    <attribute id="U1" type="float" value="0.0"/> Left
+                    <attribute id="U2" type="float" value="0.0703125"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Vaelythra"/> 2
+                    <attribute id="U1" type="float" value="0.0703125"/> Left
+                    <attribute id="U2" type="float" value="0.140625"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_UndeadDragonTraits"/> 3
+                    <attribute id="U1" type="float" value="0.140625"/> Left
+                    <attribute id="U2" type="float" value="0.2109375"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_DegeneratingStrikes"/> 4
+                    <attribute id="U1" type="float" value="0.2109375"/> Left
+                    <attribute id="U2" type="float" value="0.28125"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_RavenerMultiattack"/> 5
+                    <attribute id="U1" type="float" value="0.28125"/> Left
+                    <attribute id="U2" type="float" value="0.3515625"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_BreathOfMalevolence"/> 6
+                    <attribute id="U1" type="float" value="0.3515625"/> Left
+                    <attribute id="U2" type="float" value="0.421875"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_FrightfulPresence"/> 7
+                    <attribute id="U1" type="float" value="0.421875"/> Left
+                    <attribute id="U2" type="float" value="0.4921875"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>				
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_RavenerDread"/> 8
+                    <attribute id="U1" type="float" value="0.4921875"/> Left
+                    <attribute id="U2" type="float" value="0.5625"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_SoulConsumption"/> 9
+                    <attribute id="U1" type="float" value="0.5625"/> Left
+                    <attribute id="U2" type="float" value="0.6328125"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_SoulWard"/> 10
+                    <attribute id="U1" type="float" value="0.6328125"/> Left
+                    <attribute id="U2" type="float" value="0.703125"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_RavenerConsumption"/> 11
+                    <attribute id="U1" type="float" value="0.703125"/> Left
+                    <attribute id="U2" type="float" value="0.7734375"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Lulix"/> 12
+                    <attribute id="U1" type="float" value="0.7734375"/> Left
+                    <attribute id="U2" type="float" value="0.84375"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_DivineDefiance"/> 13
+                    <attribute id="U1" type="float" value="0.84375"/> Left
+                    <attribute id="U2" type="float" value="0.9140625"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_ValorousTenacity"/> 14
+                    <attribute id="U1" type="float" value="0.9140625"/> Left
+                    <attribute id="U2" type="float" value="0.984375"/> Right
+                    <attribute id="V1" type="float" value="0.0"/> Top
+                    <attribute id="V2" type="float" value="0.0703125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_IndomitablePresence"/> R2 1
+                    <attribute id="U1" type="float" value="0.0"/> Left
+                    <attribute id="U2" type="float" value="0.0703125"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_DemoralizingPresence"/> 2
+                    <attribute id="U1" type="float" value="0.0703125"/> Left
+                    <attribute id="U2" type="float" value="0.140625"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_InspiringPresence"/> 3
+                    <attribute id="U1" type="float" value="0.140625"/> Left
+                    <attribute id="U2" type="float" value="0.2109375"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Demoralized"/> 4
+                    <attribute id="U1" type="float" value="0.2109375"/> Left
+                    <attribute id="U2" type="float" value="0.28125"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Inspired"/> 5
+                    <attribute id="U1" type="float" value="0.28125"/> Left
+                    <attribute id="U2" type="float" value="0.3515625"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Target_LitanyOfPrecision"/> 6
+                    <attribute id="U1" type="float" value="0.3515625"/> Left
+                    <attribute id="U2" type="float" value="0.421875"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Status_LitanyOfPrecision"/> 7
+                    <attribute id="U1" type="float" value="0.421875"/> Left
+                    <attribute id="U2" type="float" value="0.4921875"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_LitanyOfWeakness_Container"/> 8
+                    <attribute id="U1" type="float" value="0.4921875"/> Left
+                    <attribute id="U2" type="float" value="0.5625"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Target_LitanyOfWeakness"/> 9
+                    <attribute id="U1" type="float" value="0.5625"/> Left
+                    <attribute id="U2" type="float" value="0.6328125"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Projectile_LitanyOfWeakness"/> 10
+                    <attribute id="U1" type="float" value="0.6328125"/> Left
+                    <attribute id="U2" type="float" value="0.703125"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Enervated"/> 11
+                    <attribute id="U1" type="float" value="0.703125"/> Left
+                    <attribute id="U2" type="float" value="0.7734375"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Arzimyr"/> 12
+                    <attribute id="U1" type="float" value="0.7734375"/> Left
+                    <attribute id="U2" type="float" value="0.84375"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Arzimyr_Status"/> 13
+                    <attribute id="U1" type="float" value="0.84375"/> Left
+                    <attribute id="U2" type="float" value="0.9140625"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_BreathOfMalevolence_Acid"/> 14
+                    <attribute id="U1" type="float" value="0.9140625"/> Left
+                    <attribute id="U2" type="float" value="0.984375"/> Right
+                    <attribute id="V1" type="float" value="0.0703125"/> Top
+                    <attribute id="V2" type="float" value="0.140625"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_MaleficVassals"/> R3 1
+                    <attribute id="U1" type="float" value="0.0"/> Left
+                    <attribute id="U2" type="float" value="0.0703125"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Xulvorith"/> 2
+                    <attribute id="U1" type="float" value="0.0703125"/> Left
+                    <attribute id="U2" type="float" value="0.140625"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Xulvorith_Status"/> 3
+                    <attribute id="U1" type="float" value="0.140625"/> Left
+                    <attribute id="U2" type="float" value="0.2109375"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_BreathOfMalevolence_Cold"/> 4
+                    <attribute id="U1" type="float" value="0.2109375"/> Left
+                    <attribute id="U2" type="float" value="0.28125"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_BreathOfMalevolence_Lightning"/> 5
+                    <attribute id="U1" type="float" value="0.28125"/> Left
+                    <attribute id="U2" type="float" value="0.3515625"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_BreathOfMalevolence_Poison"/> 6
+                    <attribute id="U1" type="float" value="0.3515625"/> Left
+                    <attribute id="U2" type="float" value="0.421875"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_DivineOrationContainer"/> 7
+                    <attribute id="U1" type="float" value="0.421875"/> Left
+                    <attribute id="U2" type="float" value="0.4921875"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_ApostleOfTheHolyWord"/> 8
+                    <attribute id="U1" type="float" value="0.4921875"/> Left
+                    <attribute id="U2" type="float" value="0.5625"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_RavenerBite"/> 9
+                    <attribute id="U1" type="float" value="0.5625"/> Left
+                    <attribute id="U2" type="float" value="0.6328125"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Target_HallowedGround"/> 10
+                    <attribute id="U1" type="float" value="0.6328125"/> Left
+                    <attribute id="U2" type="float" value="0.703125"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Target_HallowedGround_Status"/> 11
+                    <attribute id="U1" type="float" value="0.703125"/> Left
+                    <attribute id="U2" type="float" value="0.7734375"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_EmpyrealMantle"/> 12
+                    <attribute id="U1" type="float" value="0.7734375"/> Left
+                    <attribute id="U2" type="float" value="0.84375"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Target_SupernalStrike"/> 13
+                    <attribute id="U1" type="float" value="0.84375"/> Left
+                    <attribute id="U2" type="float" value="0.9140625"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_SupernalMalediction"/> 14
+                    <attribute id="U1" type="float" value="0.9140625"/> Left
+                    <attribute id="U2" type="float" value="0.984375"/> Right
+                    <attribute id="V1" type="float" value="0.140625"/> Top
+                    <attribute id="V2" type="float" value="0.2109375"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Vindicators_Dictum"/> R4 1
+                    <attribute id="U1" type="float" value="0.0"/> Left
+                    <attribute id="U2" type="float" value="0.0703125"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Warleader"/> 2
+                    <attribute id="U1" type="float" value="0.0703125"/> Left
+                    <attribute id="U2" type="float" value="0.140625"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Warleader_Status"/> 3
+                    <attribute id="U1" type="float" value="0.140625"/> Left
+                    <attribute id="U2" type="float" value="0.2109375"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>		
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_WarleaderQuarry"/> 4
+                    <attribute id="U1" type="float" value="0.2109375"/> Left
+                    <attribute id="U2" type="float" value="0.28125"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_RavenerKingDomination"/> 5
+                    <attribute id="U1" type="float" value="0.28125"/> Left
+                    <attribute id="U2" type="float" value="0.3515625"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_PeriaptCurse"/> 6
+                    <attribute id="U1" type="float" value="0.3515625"/> Left
+                    <attribute id="U2" type="float" value="0.421875"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_FeatOfRenown"/> 7
+                    <attribute id="U1" type="float" value="0.421875"/> Left
+                    <attribute id="U2" type="float" value="0.4921875"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Shout_LitanyOfDuskAndDawn"/> 8
+                    <attribute id="U1" type="float" value="0.4921875"/> Left
+                    <attribute id="U2" type="float" value="0.5625"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Shout_LitanyOfDuskAndDawn_Inspired"/> 9
+                    <attribute id="U1" type="float" value="0.5625"/> Left
+                    <attribute id="U2" type="float" value="0.6328125"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Shout_LitanyOfDuskAndDawn_Demoralized"/> 10
+                    <attribute id="U1" type="float" value="0.6328125"/> Left
+                    <attribute id="U2" type="float" value="0.703125"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_CommanderPresence"/> 11
+                    <attribute id="U1" type="float" value="0.703125"/> Left
+                    <attribute id="U2" type="float" value="0.7734375"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom
+                </node>					
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Teleportation_LitanyOfBalance"/> 12
+                    <attribute id="U1" type="float" value="0.7734375"/> Left
+                    <attribute id="U2" type="float" value="0.84375"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom		
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence"/> 13
+                    <attribute id="U1" type="float" value="0.84375"/> Left
+                    <attribute id="U2" type="float" value="0.9140625"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom		
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence_Status"/> 14
+                    <attribute id="U1" type="float" value="0.9140625"/> Left
+                    <attribute id="U2" type="float" value="0.984375"/> Right
+                    <attribute id="V1" type="float" value="0.2109375"/> Top
+                    <attribute id="V2" type="float" value="0.28125"/> Bottom		
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence_ST_Buff"/> R5 1
+                    <attribute id="U1" type="float" value="0.0"/> Left
+                    <attribute id="U2" type="float" value="0.0703125"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom		
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence_ST_Penalty"/> 2
+                    <attribute id="U1" type="float" value="0.0703125"/> Left
+                    <attribute id="U2" type="float" value="0.140625"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence_ATK_Buff"/> 3
+                    <attribute id="U1" type="float" value="0.140625"/> Left
+                    <attribute id="U2" type="float" value="0.2109375"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence_ATK_Penalty"/> 4
+                    <attribute id="U1" type="float" value="0.2109375"/> Left
+                    <attribute id="U2" type="float" value="0.28125"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value=""/> 5
+                    <attribute id="U1" type="float" value="0.28125"/> Left
+                    <attribute id="U2" type="float" value="0.3515625"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value=""/> 6
+                    <attribute id="U1" type="float" value="0.3515625"/> Left
+                    <attribute id="U2" type="float" value="0.421875"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value=""/> 7
+                    <attribute id="U1" type="float" value="0.421875"/> Left
+                    <attribute id="U2" type="float" value="0.4921875"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value=""/> 8
+                    <attribute id="U1" type="float" value="0.4921875"/> Left
+                    <attribute id="U2" type="float" value="0.5625"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value=""/> 9
+                    <attribute id="U1" type="float" value="0.5625"/> Left
+                    <attribute id="U2" type="float" value="0.6328125"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value=""/> 10
+                    <attribute id="U1" type="float" value="0.6328125"/> Left
+                    <attribute id="U2" type="float" value="0.703125"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value=""/> 11
+                    <attribute id="U1" type="float" value="0.703125"/> Left
+                    <attribute id="U2" type="float" value="0.7734375"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value=""/> 12
+                    <attribute id="U1" type="float" value="0.7734375"/> Left
+                    <attribute id="U2" type="float" value="0.84375"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value=""/> 13
+                    <attribute id="U1" type="float" value="0.84375"/> Left
+                    <attribute id="U2" type="float" value="0.9140625"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom			
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value=""/> 14
+                    <attribute id="U1" type="float" value="0.9140625"/> Left
+                    <attribute id="U2" type="float" value="0.984375"/> Right
+                    <attribute id="V1" type="float" value="0.28125"/> Top
+                    <attribute id="V2" type="float" value="0.3515625"/> Bottom		
+                </node>
+            </children>
+        </node>
+    </region>    
+</save>

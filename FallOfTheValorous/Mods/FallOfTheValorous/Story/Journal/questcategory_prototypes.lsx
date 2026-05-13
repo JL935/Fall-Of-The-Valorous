@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="QuestCategories">
+        <node id="root">
+            <children>
+                <node id="QuestCategory">
+                    <attribute id="CategoryID" type="FixedString" value="CAT_JL_FallOfTheValorous"/>
+                    <attribute id="Description" type="TranslatedString" handle="h9a426c69ga4dfg4d9egbd28g98cac3717c17" version="1"/>
+                    <attribute id="QuestCategoryGuid" type="guid" value="f4bb1067-0c51-45e3-9a42-a6e25d21c8ca"/>
+                    <attribute id="SortingPriority" type="int32" value="8"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

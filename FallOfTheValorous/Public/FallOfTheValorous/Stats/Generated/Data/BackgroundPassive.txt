@@ -1,0 +1,5 @@
+new entry "JL_FOTV_Background_KnightErrant"
+type "PassiveData"
+data "DisplayName" "hb8457e10g1685g4522g8465gc5b8bc5eb24e;1"
+data "Description" "hc5167fd8g793cg4d26g9facgbca0d5f67e6c;1"
+data "Boosts" "ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Survival)"

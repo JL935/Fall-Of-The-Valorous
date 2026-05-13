@@ -1,0 +1,383 @@
+Version 1
+SubGoalCombiner SGC_AND
+//And also Feats of Renown since they're valor-adjacent
+INITSECTION
+PROC_DeclareCounter("JL_FOTV_FoR_TotalCompletions");
+PROC_DeclareCounter("JL_FOTV_FoR_DtD");
+PROC_DeclareCounter("JL_FOTV_FoR_SoS");
+PROC_DeclareCounter("JL_FOTV_FoR_HyH");
+
+//Lore to read to unlock Valor
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_InquisitionsOfFaerun_82edbb9d-6c4a-45ca-8f22-5e5cc37d7e97, (FLAG)JL_FOTV_KnowsInquisitionsOfFaerun_b9315548-7173-4fdc-877c-b108d64aa5dc);
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_WhatMustBeDone_2f243df4-4140-4f38-9aa7-a591ddbeb2ff, (FLAG)JL_FOTV_KnowsHistoryOfArdor_0f6aca59-e578-4a3f-ba27-d508ec466e69);
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_ViandriothCulling_5a737bfd-82f0-4911-8ecd-419b015bad72, (FLAG)JL_FOTV_KnowsViandriothCulling_9aa8a798-c044-4f1f-af2c-92a83b875a17);
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_ValorousVirtues_a556aa87-01f4-4734-b07a-306041fb6109, (FLAG)JL_FOTV_KnowsValorousVirtues_f90fa4f9-381b-438d-882c-ad1b86615b24);
+
+KBSECTION
+//For NPC inquisitor stuff
+QRY
+QRY_FirstInquisitionOrNPC((GUIDSTRING)_Inquisitor)
+AND
+IsTagged(_Inquisitor, (TAG)JL_FOTV_INQUISITOR_NPC_1f894f13-eac2-41e9-b0d8-c51e251d07e6, 1)
+THEN
+DB_NOOP(1);
+
+//REGION Feat of Renown - Defend the Defenseless
+//Protector of the Small
+IF
+DialogEnded(DEN_HarpyMeal_AfterHarpyEncounter_4632f7e4-5423-2308-858d-b62b3f525ca5, _DialogInstance)
+AND
+DB_DialogPlayers(_DialogInstance, _Player, _)
+AND
+QuestUpdateIsUnlocked((CHARACTER)_Player, "DEN_HarpyMeal", "DefeatedHarpies", 1)
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_DtD");
+
+//Family Comes First
+IF
+FlagSet(DEN_Thieflings_Knows_MeliTalkedAboutHisMother_12fca62d-399a-7517-89ed-6bc51dc2c5b2, _, _)
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_DtD");
+
+//Stalwart Heart
+IF
+FlagSet(DEN_Prodigy_State_Staying_479db0b1-cc1b-78bf-3e7b-9840747fbd4f, _, _)
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_DtD");
+
+//Paying It Forward
+IF
+FlagSet(DEN_Hideout_Event_GaveMoneyForGuild_f7cb8a47-18ad-6131-60b4-dbd4b4f6b24a, _, _)
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_DtD");
+
+//A Bard's Muse
+IF
+FlagSet(DEN_TieflingBard_State_FinishedSong_e8ab958f-015b-f97d-5da4-c599b67e5ba0, _, _)
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_DtD");
+
+//Feat of Renown is complete
+IF
+DB_GlobalCounter("JL_FOTV_FoR_DtD",_Count)
+AND
+_Count == 5
+AND
+DB_Players(_Character)
+AND
+DB_Avatars(_Avatar)
+THEN
+ApplyStatus(_Avatar, "JL_FOTV_FOR_DTD_TECHNICAL", 6.0);
+ApplyStatus(_Character, "JL_FOTV_FOR_DTD", -1.0);
+PROC_IncreaseCounter("JL_FOTV_FoR_TotalCompletions");
+//END_REGION
+
+//REGION Feat of Renown - Savior of the Subjugated
+//Rescued from the Flames (Florrick)
+IF
+DialogEnded(PLA_Desire_8fbcdeb4-056d-168f-8c91-cc3af7acc4a4, _InstanceID)
+AND
+DB_GlobalFlag((FLAG)PLA_Desire_State_Freed2_46dbc8ef-61fa-42c4-bc89-4a8f53d53e5b)
+AND
+DB_DialogPlayers(_DialogInstance, _, _)
+AND
+//SysCount("DB_FOTV_FoR_FlameRescueComplete", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_FlameRescueComplete")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_SoS");
+//DB_FOTV_FoR_FlameRescueComplete("FoRSoSRFF");
+
+//Rescued from the Flames (Benryn)
+IF
+QuestUpdateUnlocked(_, "PLA_StuckHalfElf", "Safe")
+AND
+//SysCount("DB_FOTV_FoR_FlameRescueComplete", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_FlameRescueComplete")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_SoS");
+//DB_FOTV_FoR_FlameRescueComplete("FoRSoSRFB");
+
+//Saving the Heretic
+IF
+DialogEnded(GOB_GoblinHeretic_Saved_442ebfc2-c948-dce6-2bcb-233b520dd70f, _DialogInstance)
+AND
+GetFlag((FLAG)GOB_GoblinHeretic_FreeToGo_8c660bd3-3443-47c5-8d2a-aa1f2b3c7237, S_GOB_GoblinHeretic_3af8a55b-903a-43cd-84d3-9cb7ca8f69de,1)
+AND
+DB_GlobalFlag((FLAG)GOB_GoblinHeretic_Event_LearnedMaglubiyet_df45eb83-4109-6319-66ae-e78e96f6f860)
+AND
+DB_DialogPlayers(_DialogInstance, _, _)
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_SoS");
+
+//Mayrina compassion
+IF
+FlagSet(HAG_Hagspawn_SurrogateMother_Event_StartSpotting_ef9cdeb4-bf12-4893-a360-a3c4b3482b91, _, _)
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_SoS");
+
+//A Man of Many Talents (1)
+IF
+FlagSet(GLO_Volo_Knows_CampSite_b78e34fb-7d1b-d1cc-b0b8-34d7a51b967a, _, _)
+AND
+//SysCount("DB_FOTV_FoR_VoloCamp", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_VoloCamp")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_SoS");
+//DB_FOTV_FoR_VoloCamp("FoRSoSAMMT1");
+
+//A Man of Many Talents (2)
+IF
+FlagSet(CAMP_GoblinHuntCelebration_HasMet_Volo_aff9e553-6b94-5adf-ec34-5fd3324fc9b4, _, _)
+AND
+//SysCount("DB_FOTV_FoR_VoloCamp", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_VoloCamp")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_SoS");
+//DB_FOTV_FoR_VoloCamp("FoRSoSAMMT2");
+
+//A Man of Many Talents (3)
+IF
+QuestUpdateUnlocked(_, "DEN_VoloAdventure", "VoloCamp")
+AND
+//SysCount("DB_FOTV_FoR_VoloCamp", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_VoloCamp")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_SoS");
+//DB_FOTV_FoR_VoloCamp("FoRSoSAMMT3");
+
+//Her Gift of Silver
+IF
+StatusRemoved(S_FOR_SeluneStash_Chest_3121a64d-b19f-43eb-aade-b641429366c4, "FOR_SELUNESTASH_CHESTSEAL", _, _)
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_SoS");
+
+//Feat of Renown is complete
+IF
+DB_GlobalCounter("JL_FOTV_FoR_SoS",_Count)
+AND
+_Count == 5
+AND
+DB_Players(_Character)
+AND
+DB_Avatars(_Avatar)
+THEN
+ApplyStatus(_Avatar, "JL_FOTV_FOR_SOS_TECHNICAL", 6.0);
+ApplyStatus(_Character, "JL_FOTV_FOR_SOS", -1.0);
+PROC_IncreaseCounter("JL_FOTV_FoR_TotalCompletions");
+//END_REGION
+
+//REGION Feat of Renown - Hypogeal Hero
+//A Lethal Endeavour (1)
+IF
+QuestUpdateUnlocked(_, "UND_MushroomHunter", "TalkedToBaelen")
+AND
+//SysCount("DB_FOTV_FoR_MushroomHunter", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_MushroomHunter")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_HyH");
+//DB_FOTV_FoR_MushroomHunter("FoRHyHALE1");
+
+//A Lethal Endeavour (2)
+IF
+QuestUpdateUnlocked(_, "UND_MushroomHunter", "TalkedToDwarf")
+AND
+//SysCount("DB_FOTV_FoR_MushroomHunter", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_MushroomHunter")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_HyH");
+//DB_FOTV_FoR_MushroomHunter("FoRHyHALE2");
+
+//Varrl honor 1
+IF
+FlagSet(CRE_YouthTraining_State_BoyNonFatal_bf54e5b4-91bd-4f0e-9323-f4d32cdd76ef, _, _)
+AND
+//SysCount("DB_FOTV_FoR_YouthTraining", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_YouthTraining")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_HyH");
+//DB_FOTV_FoR_YouthTraining("FoRHyHHonor1");
+
+//Varrl honor 2
+IF
+FlagSet(CRE_YouthTraining_State_BoySpared_4396d45f-8ef0-4be1-87b4-798ef58f2cbb, _, _)
+AND
+//SysCount("DB_FOTV_FoR_YouthTraining", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_YouthTraining")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_HyH");
+//DB_FOTV_FoR_YouthTraining("FoRHyHHonor2");
+
+//Varrl honor 3
+IF
+FlagSet(CRE_YouthTraining_State_PlayerHealedBoy_3da2c5a5-5837-41eb-a83b-4404978d544a, _, _)
+AND
+//SysCount("DB_FOTV_FoR_YouthTraining", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_YouthTraining")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_HyH");
+//DB_FOTV_FoR_YouthTraining("FoRHyHHonor3");
+
+//Philomeen compassion
+IF
+FlagSet(UND_EscapedGnome_State_GnomeSaved_c5fe7588-a178-3d13-7303-332689b4941a, _, _)
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_HyH");
+
+//Thulla generosity
+IF
+FlagSet(UND_InjuredGnome_State_Healed_6dd9c64e-a6b0-47d5-87f6-b1a1c49d3ab4, _, _)
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_HyH");
+
+//Creche wisdom
+//1. disabled trap with dawnmaster crest
+IF
+QuestUpdateUnlocked(_, "CRE_BloodOfLathander", "AvoidedLathanderTrap")
+AND
+//SysCount("DB_FOTV_FoR_CrecheWisdom", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_CrecheWisdom")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_HyH");
+//DB_FOTV_FoR_CrecheWisdom("FoRHyHWisdom1");
+
+//2. disabled trap by other means
+IF
+QuestUpdateUnlocked(_, "CRE_BloodOfLathander", "DisarmedLathanderTrap")
+AND
+//SysCount("DB_FOTV_FoR_CrecheWisdom", 1, _Count)
+//AND
+//_Count == 0
+QRY_OnlyOnce("FOTV_FoR_CrecheWisdom")
+THEN
+PROC_IncreaseCounter("JL_FOTV_FoR_HyH");
+//DB_FOTV_FoR_CrecheWisdom("FoRHyHWisdom2");
+
+//Feat of Renown is complete
+IF
+DB_GlobalCounter("JL_FOTV_FoR_HyH",_Count)
+AND
+_Count == 5
+AND
+DB_Players(_Character)
+AND
+DB_Avatars(_Avatar)
+THEN
+ApplyStatus(_Avatar, "JL_FOTV_FOR_HYH_TECHNICAL", 6.0);
+ApplyStatus(_Character, "JL_FOTV_FOR_HYH", -1.0);
+PROC_IncreaseCounter("JL_FOTV_FoR_TotalCompletions");
+//END_REGION
+
+//REGION Unlocking Valor
+//3 prereqs - defeat Taarogus, read some books, complete at least 1 Feat of Renown
+
+//1. Taarogus defeated is the last step you complete
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_ApostleCompleted")
+AND
+QRY_FOTV_HasReadEnoughLore()
+AND
+DB_GlobalCounter("JL_FOTV_FoR_TotalCompletions",_Count)
+AND
+_Count >= 1
+THEN
+SetFlag((FLAG)JL_FOTV_ValorSubclassUnlocked_30d714d5-35e8-458c-9a74-31dc9ccc512e);
+
+//2. Reading lore is the last step you complete
+IF
+FlagSet(_, _, _)
+AND
+QRY_FOTV_HasReadEnoughLore()
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Act1","STEP_JL_FOTV_ApostleCompleted")
+AND
+DB_GlobalCounter("JL_FOTV_FoR_TotalCompletions",_Count)
+AND
+_Count >= 1
+AND
+QRY_OnlyOnce("JL_FOTV_UnlockValorByLore")
+THEN
+SetFlag((FLAG)JL_FOTV_ValorSubclassUnlocked_30d714d5-35e8-458c-9a74-31dc9ccc512e);
+
+//3. Completing a Feat of Renown is the last step you complete
+IF
+DB_GlobalCounter("JL_FOTV_FoR_TotalCompletions",_Count)
+AND
+_Count >= 1
+AND
+QRY_FOTV_HasReadEnoughLore()
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Act1","STEP_JL_FOTV_ApostleCompleted")
+AND
+QRY_OnlyOnce("JL_FOTV_UnlockValorByRenown")
+THEN
+SetFlag((FLAG)JL_FOTV_ValorSubclassUnlocked_30d714d5-35e8-458c-9a74-31dc9ccc512e);
+
+IF
+FlagSet(JL_FOTV_ValorSubclassUnlocked_30d714d5-35e8-458c-9a74-31dc9ccc512e, _, _)
+AND
+DB_Avatars(_Avatar)
+THEN
+OpenMessageBox(_Avatar, "The secrets of the Valor Inquisition have been revealed to you! Reach level 3 in the Inquisitor class to take levels in this subclass.");
+
+QRY
+QRY_FOTV_HasReadEnoughLore()
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_KnowsInquisitionsOfFaerun_b9315548-7173-4fdc-877c-b108d64aa5dc)
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_KnowsHistoryOfArdor_0f6aca59-e578-4a3f-ba27-d508ec466e69)
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_KnowsViandriothCulling_9aa8a798-c044-4f1f-af2c-92a83b875a17)
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_KnowsValorousVirtues_f90fa4f9-381b-438d-882c-ad1b86615b24)
+THEN
+DB_NOOP(1);
+//END_REGION
+
+
+
+
+
+
+
+
+
+
+
+
+
+IF
+CastSpell(_, "givsubclasspls", _, _, _)
+THEN
+SetFlag((FLAG)JL_FOTV_ValorSubclassUnlocked_30d714d5-35e8-458c-9a74-31dc9ccc512e);
+
+IF
+CastSpell(_, "hidesubclasspls", _, _, _)
+THEN
+ClearFlag((FLAG)JL_FOTV_TestFlag_a05a5465-2ae9-4bd2-911c-77adba312d5d);
+
+
+EXITSECTION
+
+ENDEXITSECTION

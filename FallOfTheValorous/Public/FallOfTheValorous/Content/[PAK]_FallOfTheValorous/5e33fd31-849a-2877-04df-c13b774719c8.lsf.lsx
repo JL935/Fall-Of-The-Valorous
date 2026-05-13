@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="5e33fd31-849a-2877-04df-c13b774719c8" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_FOTV_HallowedGround_AoE_VFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/FallOfTheValorous/Assets/Effects/Effects_Banks/VFX_Spells_FOTV_HallowedGround_AoE_VFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Spells_FOTV_HallowedGround_AoE_VFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-5 -4 -5" />
+					<attribute id="BoundsMax" type="fvec3" value="5 6 5" />
+					<attribute id="CullingDistance" type="float" value="30" />
+					<attribute id="Duration" type="float" value="1.51" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="0" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b6728f4b-d26c-c391-5dd3-ab07f03b66f5" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5e1b3b30-8ca9-ea66-5346-d2a89dbf79fc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5c7d2d15-21b6-d474-6f28-4b81be12c701" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5a2b3e39-68ab-bd30-5792-9ebe10bcba1c" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5ef2e915-187a-2db7-9695-0e3b2dc04c3d" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="11b7b087-60cf-2e14-367d-f1c60d9b91b3" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="70148014-3c4e-8afa-af1e-9bc00dda86bf" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="54087b8b-1633-f41d-ebcd-861f97ccff3c" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="fdf74102-57b4-2924-d5f5-d364a481c291" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="13416b34-9867-0546-a9d7-2c248e7ce290" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

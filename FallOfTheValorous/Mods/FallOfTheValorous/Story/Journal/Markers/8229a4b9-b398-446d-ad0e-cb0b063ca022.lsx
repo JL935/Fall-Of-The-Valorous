@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="302"/>
+    <region id="Markers">
+        <node id="root">
+            <children>
+                <node id="Marker">
+                    <attribute id="DisplayText" type="TranslatedString" handle="h0a85bba6gef6dg4afcga125g0bd856bd2497" version="1"/>
+                    <attribute id="Guid" type="guid" value="8229a4b9-b398-446d-ad0e-cb0b063ca022"/>
+                    <attribute id="MarkerID" type="FixedString" value="MARKER_JL_FOTV_Veizoadeoth"/>
+                    <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
+                    <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
+                    <attribute id="MarkerTargetObjectType" type="FixedString" value="Character"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="2f2ab132-d7bb-48a7-956c-aac0654e3b4c"/>
+                    <attribute id="Radius" type="int32" value="0"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

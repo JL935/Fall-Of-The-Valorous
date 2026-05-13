@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="323"/>
+    <region id="LevelMapValues">
+        <node id="root">
+            <children>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1d8"/>
+                    <attribute id="Level11" type="LSString" value="2d8"/>
+                    <attribute id="Level16" type="LSString" value="4d6"/>
+                    <attribute id="Level6" type="LSString" value="2d6"/>
+                    <attribute id="Name" type="FixedString" value="JL_FOTV_RavenerClawsDamage"/>
+                    <attribute id="UUID" type="guid" value="0dac7876-421f-4ca1-b0fc-820a1911b07d"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2d6"/>
+                    <attribute id="Level11" type="LSString" value="4d6"/>
+                    <attribute id="Level16" type="LSString" value="4d8"/>
+                    <attribute id="Level6" type="LSString" value="2d8"/>
+                    <attribute id="Name" type="FixedString" value="JL_FOTV_RavenerBiteDamage"/>
+                    <attribute id="UUID" type="guid" value="5932f30b-f6cc-4384-9d6d-198b7045867d"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1d10"/>
+                    <attribute id="Level11" type="LSString" value="3d10"/>
+                    <attribute id="Level16" type="LSString" value="4d10"/>
+                    <attribute id="Level6" type="LSString" value="2d10"/>
+                    <attribute id="Name" type="FixedString" value="JL_FOTV_RavenerBreathAttack"/>
+                    <attribute id="UUID" type="guid" value="fbc62a8f-e7b5-414e-b56d-b86f05b39d5b"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2d4"/>
+                    <attribute id="Level11" type="LSString" value="2d8"/>
+                    <attribute id="Level16" type="LSString" value="2d10"/>
+                    <attribute id="Level6" type="LSString" value="2d6"/>
+                    <attribute id="Name" type="FixedString" value="JL_FOTV_RavenerFrightfulPresence"/>
+                    <attribute id="UUID" type="guid" value="e7fc725a-6238-4cf5-bd67-3512b705f302"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1d6"/>
+                    <attribute id="Level11" type="LSString" value="3d6"/>
+                    <attribute id="Level17" type="LSString" value="4d6"/>
+                    <attribute id="Level5" type="LSString" value="2d6"/>
+                    <attribute id="Name" type="FixedString" value="JL_FOTV_LulixD6"/>
+                    <attribute id="UUID" type="guid" value="11e1e0e9-60d6-45ed-b573-0f35aa595cee"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2d4"/>
+                    <attribute id="Level11" type="LSString" value="8d4"/>
+                    <attribute id="Level16" type="LSString" value="10d4"/>
+                    <attribute id="Level6" type="LSString" value="4d4"/>
+                    <attribute id="Name" type="FixedString" value="JL_FOTV_ShadowformBaseHeal"/>
+                    <attribute id="UUID" type="guid" value="2547a007-664b-40c7-b3a7-c81284a69fcf"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2"/>
+                    <attribute id="Level11" type="LSString" value="8"/>
+                    <attribute id="Level16" type="LSString" value="20"/>
+                    <attribute id="Level6" type="LSString" value="4"/>
+                    <attribute id="Name" type="FixedString" value="JL_FOTV_ShadowformExtraHeal"/>
+                    <attribute id="UUID" type="guid" value="eb801ecc-44b2-4681-b2a0-8e7bc175582c"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level11" type="LSString" value="4d4"/>
+                    <attribute id="Level15" type="LSString" value="5d4"/>
+                    <attribute id="Level19" type="LSString" value="6d4"/>
+                    <attribute id="Level1" type="LSString" value="1d4"/>
+                    <attribute id="Level3" type="LSString" value="2d4"/>
+                    <attribute id="Level7" type="LSString" value="3d4"/>
+                    <attribute id="Name" type="FixedString" value="JL_FOTV_WarleaderQuarry"/>
+                    <attribute id="UUID" type="guid" value="6e01950d-2a3a-4add-9180-85577c192ee0"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

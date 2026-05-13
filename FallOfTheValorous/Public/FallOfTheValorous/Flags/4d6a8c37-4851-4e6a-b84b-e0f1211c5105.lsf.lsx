@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Veizoadeoth spawns" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_VeizoadeothArrives" />
+			<attribute id="UUID" type="guid" value="4d6a8c37-4851-4e6a-b84b-e0f1211c5105" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

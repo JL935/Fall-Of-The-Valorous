@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="405" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="Feat of Renown" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h7b79083eg61cdg429eg8c4dg1ecbb3b48d09" version="1"/>
+			<attribute id="DisplayName" type="TranslatedString" handle="hd733cab0g800cg4895gbb08gf4d65f423317" version="1"/>
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_FEATOFRENOWN" />
+			<attribute id="UUID" type="guid" value="36d884ad-bcd3-41c6-a3a2-fc2e4f5cf77a"/>
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code"/>
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog"/>
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Background"/>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

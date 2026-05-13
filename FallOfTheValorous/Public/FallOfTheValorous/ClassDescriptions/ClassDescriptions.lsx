@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="ClassDescriptions">
+    <node id="root">
+      <children>
+        <node id="ClassDescription"> Valor Inquisition
+          <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+          <attribute id="Description" type="TranslatedString" handle="h16b33589g83f0g42abg95abgb8d2a17683d4" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="hd8800abcgfbc8g423bga2dbg36417d4cc19b" version="1" />
+          <attribute id="LearningStrategy" type="uint8" value="1" />
+          <attribute id="Name" type="FixedString" value="ValorInquisitor" />
+          <attribute id="ParentGuid" type="guid" value="96cff02d-92a3-4083-9fc4-16703ca5dc8d" />
+          <attribute id="PrimaryAbility" type="uint8" value="5" />
+          <attribute id="ProgressionTableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+          <attribute id="SoundClassType" type="FixedString" value="Paladin" />
+          <attribute id="SpellCastingAbility" type="uint8" value="5" />
+          <attribute id="UUID" type="guid" value="040e41b0-e197-4856-a7c3-f7093ae85f0b" />
+			    <children>       
+              <node id="Tags">
+                <attribute id="Object" type="guid" value="d58a7497-c2c0-4a6b-84d6-f77b9f55a844" /> Valor Inquisition
+              </node>
+          </children>
+        </node>
+      </children>
+    </node>
+  </region>
+</save>

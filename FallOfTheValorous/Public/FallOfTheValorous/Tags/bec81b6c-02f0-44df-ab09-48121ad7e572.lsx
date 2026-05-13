@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="405" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="Adult Ravener" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="" version="1"/>
+			<attribute id="DisplayName" type="TranslatedString" handle="" version="1"/>
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_ADULT_RAVENER" />
+			<attribute id="UUID" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572"/>
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code"/>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

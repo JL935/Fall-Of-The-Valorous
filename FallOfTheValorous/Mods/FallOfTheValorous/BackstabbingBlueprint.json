@@ -1,0 +1,34 @@
+{
+  "Enabling" : 
+	{
+		"Spells" : [
+		],
+		"Passives" : [
+		]
+	},
+  "Custom" : 
+	{
+		"Spells" : [
+		],
+		"Passives" : [
+		]
+	},
+  "Modifiers" : 
+	{
+		"Spells" : [
+		],
+		"Passives" : [
+		]
+	},
+	"Flanking" :
+	{
+		"Spells" : [
+			"JL_FOTV_Target_LitanyOfWeakness",
+			"JL_FOTV_Projectile_LitanyOfWeakness"
+		],
+		"Passives" : [
+			"JL_FOTV_EnableFlanking",
+			"JL_FOTV_VindicatorResplendence_VindicationDamage"
+		]
+	}
+}

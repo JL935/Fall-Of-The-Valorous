@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="config">
+		<node id="config">
+			<children>
+				<node id="entries">
+					<children>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/CC/icons_backgrounds/6a5f8086-9440-429a-b8e3-0158828f821c.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="196" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="196" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/CC/icons_backgrounds/f33e303d-99c4-4de8-9b7e-354f81ab3b91.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="196" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="196" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Portraits/7ddb9dcb-1465-fbdf-48d3-72e9c1371df3-JL_FOTV_Khionzu_PortraitGenerator_(JL_FOTV_Khionzu_Icon).png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="152" />
+									<attribute id="mipcount" type="int8" value="8" />
+									<attribute id="w" type="int16" value="152" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Portraits/f24e9c29-f3fc-7f2f-e797-faf7939c8621-JL_FOTV_Saelethil_PortraitGenerator_(JL_FOTV_Saelethil_Icon).png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="152" />
+									<attribute id="mipcount" type="int8" value="8" />
+									<attribute id="w" type="int16" value="152" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Portraits/422f7294-85b9-a994-3449-05b4e7b2e44c-JL_FOTV_Daregrir_PortraitGenerator_(JL_FOTV_Daregrir_Icon).png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="152" />
+									<attribute id="mipcount" type="int8" value="8" />
+									<attribute id="w" type="int16" value="152" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Portraits/6a080ebb-57c7-c7ba-c3d9-d14c4bcafd19-JL_FOTV_Adrasteia_PortraitGenerator_(JL_FOTV_Adrasteia_Icon).png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="152" />
+									<attribute id="mipcount" type="int8" value="8" />
+									<attribute id="w" type="int16" value="152" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Portraits/2f989fb3-4029-c5e0-89d3-8aa730b8264e-JL_FOTV_Garrin_PortraitGenerator_(JL_FOTV_Garrin_Icon).png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="152" />
+									<attribute id="mipcount" type="int8" value="8" />
+									<attribute id="w" type="int16" value="152" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Portraits/870c81f4-e9dc-d414-8ba5-ed01c9b89390-JL_FOTV_Taarogus_PortraitGenerator_(JL_FOTV_Taarogus_Icon).png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="152" />
+									<attribute id="mipcount" type="int8" value="8" />
+									<attribute id="w" type="int16" value="152" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Portraits/badb849b-6ef7-8fee-72f4-918e1e06ed76-JL_FOTV_Qynoth_PortraitGenerator_(JL_FOTV_Qynoth_Icon).png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="152" />
+									<attribute id="mipcount" type="int8" value="8" />
+									<attribute id="w" type="int16" value="152" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Portraits/6c679880-2e26-eff4-4dbc-be43709ec0e6-JL_FOTV_Vogrevol_PortraitGenerator_(JL_FOTV_Vogrevol_Icon).png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="152" />
+									<attribute id="mipcount" type="int8" value="8" />
+									<attribute id="w" type="int16" value="152" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Portraits/ce9eb8fa-798d-43e2-9ee9-1379eb49b042-JL_FOTV_Ronros_PortraitGenerator_(JL_FOTV_Ronros_Icon).png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="152" />
+									<attribute id="mipcount" type="int8" value="8" />
+									<attribute id="w" type="int16" value="152" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

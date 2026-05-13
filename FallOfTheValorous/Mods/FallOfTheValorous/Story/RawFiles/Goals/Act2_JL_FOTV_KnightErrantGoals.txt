@@ -1,0 +1,29 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_Criminal_MoonriseJailbreak", 391876db-e7c1-445e-adeb-2e72c2ccef7d);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_FolkHero_LastLightAlfiraReunion", 6dbd2695-6825-4354-8446-1dbd1fcd494a);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_Entertainer_ArtHalsinThaumielQuestCompleted", c6a8e034-5124-48d0-ba96-0294778d26cb);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_HauntedOne_BalthazarKilled", 2987eaa5-020e-483c-820c-9a87804f729f);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_Acolyte_NightsongFateFreedom", 75838697-4303-4106-86bf-9352fb69d79b);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_Soldier_MoonriseDestroyed", 8fd6eab5-9e82-405d-bfa6-98160f9f1291);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_Urchin_MoonriseGnollsFreed", 155dcb6a-2a4d-4205-9158-bab99d4f7ea1);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_FolkHero_CursedTownSavedArabella", 84240894-c9e8-416e-a0bc-35992c483701);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_Outlander_ProtectedHalsinPortal", 7c93b2ab-b402-412c-b8d5-2dc48c97b670);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_Acolyte_SharTempleTrials", db15611e-66d9-4da0-b690-e4a568e58f81);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_Noble_KethericStoryLearned", f53d08c4-b6e6-4a20-a6ad-cb526deee003);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_KnightErrant_HeWhoWasQuestDenied", 85c0123c-935b-41fc-becd-c60f3bc70066);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_FolkHero_AllTownBossKilledNoAdvantage", b2af311f-a3f3-415a-812a-aa992f8019c6);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act2_Urchin_MintharaRescued", 1a9f6bbb-ab03-41a7-bc4b-9a8014805298);
+
+
+//Altering the "Let Sleeping Dogs Lie" inspiration to only work if Madeline is forgiven (and not by abandoning the quest or killing him)
+DB_GLO_Backgrounds_ChainAfterGlobalFlagInDialog((FLAG)SCL_ServantOfTheRaven_Event_ForgaveMadeline_1aa550bf-d606-3fca-484f-818ed1f8c59b, "Act2_KnightErrant_HeWhoWasQuestDenied");
+
+
+KBSECTION
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act2"

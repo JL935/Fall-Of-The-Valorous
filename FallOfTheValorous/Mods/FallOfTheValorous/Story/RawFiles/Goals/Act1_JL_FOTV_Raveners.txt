@@ -1,0 +1,17 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//The Act 1 raveners start injured due to fighting with the inquisitors
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_Apothecary_YoungRavener_6e0bfd73-330a-4d7d-b6e7-fd7dba65b0a4, 36.4);
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_Underdark_YoungRavener_01_39d670bc-01e7-4863-b124-3b2f43d8f1be, 36.4);
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_Underdark_YoungRavener_02_000940ec-dff0-41f2-8de8-6907ace2cda7, 36.4);
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_SunlitWetlands_AdultRavener_b2242e11-7388-45a5-8b6c-92476cd6c427, 33.3);
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_Underdark_AdultRavener_296f4f1a-a8e9-48fb-bdc0-e9c5c997e809, 32.9);
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_MountainPass_AdultRavener_f1b3519f-abae-4962-bdfa-6955ec267b2b, 39.8);
+
+KBSECTION
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act1"

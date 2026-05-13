@@ -1,0 +1,35 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_Entertainer_Alfira", 47dfe1a4-6abf-428b-8214-2c9f442dc901);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_KnightErrant_TellStory", 1cdc6594-8969-4527-9a13-cb68afe2637b);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_FolkHero_SavedGnomes", 0c2e729b-621e-4a4f-bce0-a6066a120429);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_Outlander_TameCub", 9227d77a-dfc1-4d33-beb8-6f75adbacd9a);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_Outlander_Hyenas", 5b283065-3256-4f6c-a698-5795c4f5008c);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_KnightErrant_Title", 5e9f0903-a37b-439f-8055-02f7a44b9faf);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_FolkHero_SavedTieflings", 108d0d44-bb88-46fa-b82a-0e0f01de6ea0);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_Urchin_ArabellaSaved", d771a5ed-45af-4676-822a-456f3c75be24);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_FolkHero_SaveTavern", d1757e4d-6afb-4006-bd3e-8844663503f1);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_FolkHero_Volo", 1e36d809-6525-405e-96a0-19d98d64f924);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_FolkHero_UnfortunateGnome", 4fba3dca-229b-4115-823b-9349b9920a1a);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_Entertainer_Painter", 80a91066-1e46-4d3f-aed4-c5e952f5eb24);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_FolkHero_HagThralls", 28105c10-6a56-4c36-aee1-bf74e81278d8);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act1_Soldier_HelpedKarlach", 556f3437-2315-435c-bdd5-505145848b4a);
+
+//Altering the "Entitled" inspiration to not work if you sided with Glut
+DB_GLO_Backgrounds_ChainAfterGlobalFlagInDialog(DEN_ShadowDruid_Event_SetFaithwarden_d8451137-e2a7-247a-1bc2-758ad990255f, "Act1_KnightErrant_Title");
+DB_GLO_Backgrounds_ChainAfterGlobalFlagInDialog(UND_MyconidCircle_MyconidSovereignReward_bba639f4-7dde-fccb-2572-f88fdaf67af5, "Act1_KnightErrant_Title");
+
+//Altering the "A Story for the Ages" inspiration to only work when persuading Kagha (and not also Omeluum)
+DB_GLO_Backgrounds_ChainAfterGlobalFlagInDialog((FLAG)DEN_ShadowDruid_Event_PersuadedFrescos_1616db07-c145-476f-39ac-3b3906e7068f, "Act1_KnightErrant_TellStory");
+
+
+//DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_FEATOFRENOWN_36d884ad-bcd3-41c6-a3a2-fc2e4f5cf77a, "Act1_FoR_DtD", 0a30d65a-c707-4844-a468-0409fb9338ae);
+
+KBSECTION
+
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act1"

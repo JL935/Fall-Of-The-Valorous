@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Freed the Underdark inquisitor" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_UnderdarkInquisitorFreed" />
+			<attribute id="UUID" type="guid" value="5b18c4c1-8839-4593-8457-f5ddf38544bb" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

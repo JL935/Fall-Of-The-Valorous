@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="405" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="Knight-Errant" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h3d98eec6g61c1g4dc8g8c22g6a9df2e3a099" version="1"/>
+			<attribute id="DisplayName" type="TranslatedString" handle="hb8457e10g1685g4522g8465gc5b8bc5eb24e" version="1"/>
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_KNIGHT_ERRANT" />
+			<attribute id="UUID" type="guid" value="d79399e1-1c15-4a83-b4cc-c2e44e91df97"/>
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code"/>
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog"/>
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Background"/>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

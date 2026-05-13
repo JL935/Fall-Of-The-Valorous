@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="0"/>
+    <region id="MetaConditions">
+        <node id="root">
+            <children>
+                <node id="MetaCondition">
+                    <attribute id="AdditionalConditions" type="LSString" value="not SoulConsumedDivineInterventionCheck()"/>
+                    <attribute id="ConditionType" type="FixedString" value="OriginTarget"/>
+                    <attribute id="Filter" type="LSString" value="(HasFunctor(StatsFunctorType.Resurrect) or SpellHasStatus('RESURRECTING')) and not SpellId('Shout_DivineIntervention_Healing')"/>
+                    <attribute id="Name" type="LSString" value="SoulConsumptionDivineInterventionOrigin"/>
+                    <attribute id="OverrideOriginalCondition" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="48a642b0-be25-4d18-b514-3ef70b6ce42d"/>
+                </node>
+                <node id="MetaCondition">
+                    <attribute id="AdditionalConditions" type="LSString" value="not SoulConsumedDivineInterventionCheck()"/>
+                    <attribute id="ConditionType" type="FixedString" value="Target"/>
+                    <attribute id="Filter" type="LSString" value="(HasFunctor(StatsFunctorType.Resurrect) or SpellHasStatus('RESURRECTING')) and not SpellId('Shout_DivineIntervention_Healing')"/>
+                    <attribute id="Name" type="LSString" value="SoulConsumptionDivineInterventionTarget"/>
+                    <attribute id="OverrideOriginalCondition" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="32e38e10-b72e-420e-9db1-0e1e043e0af1"/>
+                </node>
+                <node id="MetaCondition">
+                    <attribute id="AdditionalConditions" type="LSString" value="LitanyOfWeaknessRequirementCondition()"/>
+                    <attribute id="ConditionType" type="FixedString" value="Requirements"/>
+                    <attribute id="Filter" type="LSString" value="SpellCategoryIs(SpellCategory.Dash) or SpellTypeIs(SpellType.Rush)"/>
+                    <attribute id="Name" type="LSString" value="LitanyOfWeaknessMetaCondition"/>
+                    <attribute id="OverrideOriginalCondition" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="a9a77221-7a58-4930-b006-7edf7fd08655"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+		<!-- RAVENERS -->
+			<!-- Mountain Pass Adult Ravener -->
+				<node id="GameObjects">
+					<attribute id="CombatGroupID" type="FixedString" value="d874601f-7d85-4bdd-8e70-3b89d6a5d05b" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h0a0f9eb2g0793g4650g896cg4ea298be9df8" version="1" />
+					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CRE_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="f1b3519f-abae-4962-bdfa-6955ec267b2b" />
+					<attribute id="Name" type="LSString" value="S_CHARACTER_JL_FOTV_MountainPass_AdultRavener" />
+					<attribute id="TemplateName" type="FixedString" value="631e51fd-8689-4421-ab42-d364e009676b" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CRE_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0cdf52f2-9453-df63-13c3-cfad8fbdbd2a" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="20d3c549-daa8-9458-c745-3903c69c6a77" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c382ac08-fda5-da35-960f-188e29b9b1c3" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-96.392 67.416 -112.854" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.35" />
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_LIGHTNING_CRECHEVFX" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

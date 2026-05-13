@@ -1,0 +1,19 @@
+new treasuretable "JL_FOTV_ApothecaryInquisitor_TT"
+CanMerge 1
+new subtable "1,1"
+object category "I_LORE_JL_FOTV_FollyOfOurForebears",1,0,0,0,0,0,0,0
+
+new treasuretable "JL_FOTV_ApothecaryRavener_TT"
+CanMerge 1
+new subtable "1,1"
+object category "I_OBJECT_JL_FOTV_RavenerAppendages",1,0,0,0,0,0,0,0
+
+new treasuretable "JL_FOTV_RisenRoad_ValorousMelee_TT"
+CanMerge 1
+new subtable "1,1"
+object category "I_LORE_JL_FOTV_SaelethilFarewell",1,0,0,0,0,0,0,0
+
+new treasuretable "JL_FOTV_SunlitWetlands_Valorous_TT"
+CanMerge 1
+new subtable "1,1"
+object category "I_LORE_JL_FOTV_Lamentations",1,0,0,0,0,0,0,0

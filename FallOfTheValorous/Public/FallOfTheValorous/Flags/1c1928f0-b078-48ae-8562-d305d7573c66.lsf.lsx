@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Read notes on the Frightful Presence" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_FrightfulPresenceRead" />
+			<attribute id="UUID" type="guid" value="1c1928f0-b078-48ae-8562-d305d7573c66" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

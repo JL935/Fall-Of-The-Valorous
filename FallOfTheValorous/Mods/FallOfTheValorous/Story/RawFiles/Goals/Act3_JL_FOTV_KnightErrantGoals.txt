@@ -1,0 +1,33 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_Sage_TookUpValeriaInvestigation", 6fe1d41d-c966-4662-980f-b7bff62d2562);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_Acolyte_VanraRescued", 3fda0687-26da-4bc6-af76-df13e697f10f);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_FolkHero_CouncilorFlorrickSaved", b1b6d069-fa11-4510-9383-b134b70ad2f2);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_FolkHero_SavedValeria", cf859c51-c215-4887-991b-c96dda590473);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_Entertainer_ElfsongAlfiraMeetup", a0239dcc-c24f-490f-b45c-da52a5762177);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_Acolyte_LongRestDonation", b3fc4116-eeb6-4b75-8eab-e409bcf53d76);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_FolkHero_FreedHope", 8f42c3ff-430d-4f71-ba9d-346a7f0ab300);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_Criminal_SideWithGuild", c6c0176b-9502-418f-a54b-8d4a7d89d974);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_FolkHero_WorkshopRescuedAllGondians", 41619f53-da35-4604-b212-a42bf223f4d7);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_Sage_ZenthinoLoveEvaluationComplete", 6f472133-001a-4038-bce7-d2de09b74932);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_Acolyte_SquattersStayed", 2633b380-5262-4d80-ae2f-a259c2b1ebea);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_FolkHero_LorroakanDefeated", 7092fd08-b69a-4c51-aa59-d01de7acb6f9);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_Soldier_OrinExecuted", 6abdcfef-1f44-4ef9-8bc5-3aabff44fd4d);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_Outlander_CircusAnimalsReleased", 53c473a9-b2ba-4ba0-8b37-32535ea0ca97);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_HauntedOne_GortashKilled", 6fae40d8-a368-4c4e-a0c6-510bfb02ec47);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_KnightErrant_KerriLeavesInPeace", 5b0cff39-5575-4312-970d-7438c14a3a52);
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "Act3_KnightErrant_MakePeace", e2b75dba-2a7f-4095-9a51-84d664f7318c);
+
+//A custom inspiration granted if you convince Kerri to leave in peace
+DB_GLO_Backgrounds_ChainAfterGlobalFlagInDialog((FLAG)LOW_OskarsBeloved_Event_ConvincedKerriToLeave_eb5b448c-1d84-4b98-bd79-4f1e8627ae71, "Act3_KnightErrant_KerriLeavesInPeace");
+
+//Altering the "What Remains of the Dead" inspiration to only work if Nina finds acceptance (and not just resolving the interaction at all)
+DB_GLO_Backgrounds_ChainAfterGlobalFlagInDialog((FLAG)LOW_KurwinCoffin_HasMet_KidNecromancer_Calmed_b96fbcfb-ab4c-06b9-2082-9535bb71bb40, "Act3_KnightErrant_MakePeace");
+
+KBSECTION
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act3_GEN"

@@ -1,0 +1,352 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//Enemies that start off stage, only spawn later on when the prereqs are met
+SetOnStage(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0);
+SetOnStage(S_JL_FOTV_DankCrypt_Valorous_Githyanki_1053a85c-93b0-401d-a7a6-1e40979bc48e, 0);
+SetOnStage(S_JL_FOTV_DankCrypt_Mummy_18457071-fd04-4efc-85a9-2e0aa335eaa4, 0);
+SetOnStage(S_JL_FOTV_DankCrypt_Ghast_46577897-db51-4171-b069-3862d2fadd68, 0);
+SetOnStage(S_JL_FOTV_DankCrypt_Wraith_ad6ec7f0-9ef4-4511-b817-e1e7db511068, 0);
+SetOnStage(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c, 0);
+SetOnStage(S_CHARACTER_JL_FOTV_RisenRoad_AdultRedRavener_54532d4a-9ea2-4381-b122-c7324bbf34c5, 0);
+SetOnStage(S_JL_FOTV_RisenRoad_Tactics_HalfOrc_019a9841-994f-410b-9b2e-a25e7c174c54, 0);
+//and some items
+SetOnStage(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, 0);
+SetOnStage(S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, 0);
+
+//Enemies to set on stage when prereq flag is set
+DB_FOTV_SetOnStageLater(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
+DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Valorous_Githyanki_1053a85c-93b0-401d-a7a6-1e40979bc48e, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
+DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Mummy_18457071-fd04-4efc-85a9-2e0aa335eaa4, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
+DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Ghast_46577897-db51-4171-b069-3862d2fadd68, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
+DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Wraith_ad6ec7f0-9ef4-4511-b817-e1e7db511068, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
+DB_FOTV_SetOnStageLater(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c, (FLAG)JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
+DB_FOTV_SetOnStageLater(S_CHARACTER_JL_FOTV_RisenRoad_AdultRedRavener_54532d4a-9ea2-4381-b122-c7324bbf34c5, (FLAG)JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
+DB_FOTV_SetOnStageLater(S_JL_FOTV_RisenRoad_Tactics_HalfOrc_019a9841-994f-410b-9b2e-a25e7c174c54, (FLAG)JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
+//and some items
+DB_FOTV_SetOnStageLater(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, (FLAG)JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64);
+DB_FOTV_SetOnStageLater(S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, (FLAG)JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64);
+
+//book flags
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_NeedIconoclast_ecb9a47c-7774-4c84-a37d-d84594d33a02, (FLAG)JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64);
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, (FLAG)JL_FOTV_KnowsCurseHints_1b6e901c-7097-4bb6-bdcb-956d3998cede);
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_SaelethilAilment_83d24be7-3fb0-4c1a-a2dc-d0a80e2df0f5, (FLAG)JL_FOTV_KnowsMindControlBreakHint_846e807c-134c-4700-8f99-02712bf1be5b);
+
+//Questy things
+DB_QuestDef_BookReadState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedGroveCrecheResearch", S_LORE_JL_FOTV_FollyOfOurForebears_3d3ec557-abf1-4a2e-8ca0-8aabfbf4c16c);
+DB_QuestDef_BookReadState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedFrightfulPresence", S_SCROLL_JL_FOTV_FrightfulPresenceDruidNotes_6ba2518a-99fc-4bfd-aa15-5ac548bdc979);
+DB_QuestDef_BookReadState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedMalevolence", S_BOOK_JL_FOTV_MalevolenceCaseStudy_a474e74a-4567-4827-bac5-c69579514963);
+DB_QuestDef_BookReadState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedUndeath", S_BOOK_JL_FOTV_UnholyCommunion_20e6a289-1c9a-4ee9-a7d0-8b1db7bbad51);
+DB_QuestDef_BookReadState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedArcaneResearch", S_LORE_JL_FOTV_MissiveToQynoth_6b69d881-f7f5-4631-8427-c222c78d4c7a);
+
+DB_QuestDef_State(JL_FOTV_TaarogusDead_f054f9e7-c259-47f2-b8ff-21975d7e6743, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusDead");
+DB_QuestDef_State(JL_FOTV_TaarogusSpared_c24fb08a-78fc-4b0f-8287-c57200dfbec2, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusSpared");
+DB_QuestDef_State(JL_FOTV_TaarogusFreed_6f837c93-11be-4530-97e8-c7526431e1ec, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusFreed");
+
+DB_QuestDef_State(JL_FOTV_VeizoadeothDefeated_6beb5d1c-0df1-483f-be01-aac924896540, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_SentinelDead");
+
+//why did i do this one different than the BookReadState :sigh:
+DB_QuestDef_State(JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedSoulWard");
+
+DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusDead", "STEP_JL_FOTV_ApostleCompleted");
+DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusSpared", "STEP_JL_FOTV_ApostleCompleted");
+DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusFreed", "STEP_JL_FOTV_ApostleCompleted");
+
+DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SentinelDead", "STEP_JL_FOTV_SeekerCompleted");
+
+//If you read the note about where Veizoadeoth will spawn, and already have all the lore, get the quest step to go find V
+DB_QuestDef_ConditionalState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedArcaneResearch", "STEP_JL_FOTV_ConfrontSentinel", "STEP_JL_FOTV_LearnedAllActOne", 1);
+//If you didn't already have all the lore, then read the Veizoadeoth note, then get all the lore, get the quest step to go find V
+DB_QuestDef_ConditionalState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedAllActOne", "STEP_JL_FOTV_ConfrontSentinel", "STEP_JL_FOTV_LearnedArcaneResearch", 1);
+
+KBSECTION
+//When the prereqs are met, set the proper enemies on stage
+IF
+FlagSet(_SoSFlag, _, _)
+AND
+DB_FOTV_SetOnStageLater(_SoSEnemy, _SoSFlag)
+THEN
+SetOnStage(_SoSEnemy, 1);
+
+//REGION Early Act 1 Quest Stuff
+//First time getting close to the FotV journal
+IF
+StatusApplied(_, "JL_FOTV_JOURNAL_QUESTUPDATER", _, _)
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Act1","STEP_JL_FOTV_CleanseJournal")
+THEN
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CleanseJournal");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_CursedJournal");
+
+//Cleansing FotV journal
+IF
+StatusRemoved(S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, "JL_FOTV_RAVENER_DESECRATION", _, _)
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Act1","STEP_JL_FOTV_CleanseJournal")
+THEN
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_ReadJournal");
+
+//Handling everything when FotV journal is read
+IF
+GameBookInterfaceClosed(S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, _Valorous)
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Act1","STEP_JL_FOTV_ReadJournal")
+AND
+QRY_OnlyOnce("JL_FOTV_AnswerTheCall")
+THEN
+TemplateAddTo(MAP_JL_FOTV_A1_ValorOutposts_e4e2d676-ad1b-45a6-9581-9ed20d45cc4d, _Valorous, 1, 1);
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction");
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedVaelythra");
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_GoFindRavenerLore");
+PROC_HidePartyMarker("MARKER_JL_FOTV_CursedJournal");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_Lulix");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_Arzimyr");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_Xulvorith");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_ThayanOutpostResearch");
+//END_REGION
+
+//REGION Apostle of the Holy Word subquest
+//Khionzu + Lulix
+IF
+Saw(_, S_JL_FOTV_ApothecaryInquisitor_Dead_b730b18d-fb32-4436-a073-86a10c934f92, _)
+THEN
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_FoundKhionzu");
+
+IF
+FlagSet(JL_FOTV_ApothecaryInquisitorFreed_a80348bb-7402-4460-a725-1d0bf923c153, _, _)
+THEN
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SavedKhionzu");
+PROC_HidePartyMarker("MARKER_JL_FOTV_Lulix");
+
+//Saelethil + Arzimyr
+IF
+Saw(_, S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1, _)
+THEN
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_FoundSaelethil");
+
+IF
+FlagSet(JL_FOTV_RisenRoadFreed_414c42de-2602-4703-b89d-fa32c1aa0fbd, _, _)
+THEN
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SavedSaelethil");
+PROC_HidePartyMarker("MARKER_JL_FOTV_Arzimyr");
+
+//Adrasteia + Xulvorith
+IF
+Saw(_, S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, _)
+THEN
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_FoundAdrasteia");
+
+IF
+FlagSet(JL_FOTV_UnderdarkInquisitorFreed_5b18c4c1-8839-4593-8457-f5ddf38544bb, _, _)
+THEN
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SavedAdrasteia");
+PROC_HidePartyMarker("MARKER_JL_FOTV_Xulvorith");
+
+//Taarogus Arrives
+IF
+DB_GlobalFlag((FLAG)JL_FOTV_ApothecaryInquisitorFreed_a80348bb-7402-4460-a725-1d0bf923c153)
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_RisenRoadFreed_414c42de-2602-4703-b89d-fa32c1aa0fbd)
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_UnderdarkInquisitorFreed_5b18c4c1-8839-4593-8457-f5ddf38544bb)
+AND
+DB_GlobalFlag(JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562)
+THEN
+SetFlag(JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_ReturnToTheHolyLand");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_EvilTaarogus");
+
+//Taarogus is killed/dies
+IF
+Died(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211)
+THEN
+SetFlag(JL_FOTV_TaarogusDead_f054f9e7-c259-47f2-b8ff-21975d7e6743);
+PROC_HidePartyMarker("MARKER_JL_FOTV_EvilTaarogus");
+
+//Taarogus is knocked out but not freed of mind control
+IF
+StatusApplied(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, "KNOCKED_OUT_TEMPORARILY", _Causee, _)
+THEN
+SetFlag(JL_FOTV_TaarogusSpared_c24fb08a-78fc-4b0f-8287-c57200dfbec2);
+PROC_HidePartyMarker("MARKER_JL_FOTV_EvilTaarogus");
+
+//Taarogus is freed from mind control
+IF
+StatusRemoved(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, "JL_FOTV_TAAROGUS_MINDCONTROL_1", _, _)
+THEN
+SetFlag(JL_FOTV_TaarogusFreed_6f837c93-11be-4530-97e8-c7526431e1ec);
+PROC_HidePartyMarker("MARKER_JL_FOTV_EvilTaarogus");
+
+//After combat stuff if he's freed since he won't be lootable and shit
+IF
+CombatStarted((GUIDSTRING)_CombatGuid)
+AND
+IsInCombat(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 1)
+AND
+DB_Players(_Player)
+THEN
+DB_FOTV_TaarogusCrpytCombatGuid(_CombatGuid);
+RemoveStatus(_Player, "JL_FOTV_ARZIMYR_COOLDOWN");
+
+IF
+CombatEnded(_CombatGuid)
+AND
+DB_FOTV_TaarogusCrpytCombatGuid(_CombatGuid)
+AND
+GetFlag(JL_FOTV_TaarogusFreed_6f837c93-11be-4530-97e8-c7526431e1ec, NULL_00000000-0000-0000-0000-000000000000, 1)
+THEN
+TimerLaunch("JL_FOTV_WaitAfterTaarogusCombat", 6000);
+
+IF
+TimerFinished("JL_FOTV_WaitAfterTaarogusCombat")
+AND
+DB_Avatars(_Player)
+THEN
+LookAtEntity(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, _Player, 6.0);
+PlayAnimation(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, (ANIMATION)DFLT_CINE_Bows_Kneel_01_6ccbfad0-8e0c-456e-8cd3-f47e20a2a834, "JL_FOTV_TaarogusKneels");
+TimerLaunch("JL_FOTV_TaarogusLeaves", 15000);
+
+IF
+TimerFinished("JL_FOTV_TaarogusLeaves")
+AND
+CreateAtObject(JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693, S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0, 0, "", 1, _Resplendence)
+THEN
+SetOnStage(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0);
+//END_REGION
+
+//REGION Seeker of Lost Lore subquest
+//Hide Thayan outpost quest marker
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedSoulWard")
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_ThayanOutpostResearch");
+
+//Show Grove and Creche quest markers
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedGroveCrecheResearch")
+THEN
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_GroveOutpostResearch");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_CrecheOutpostResearch");
+
+//Hide Grove quest marker
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedFrightfulPresence")
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_GroveOutpostResearch");
+
+//Hide Creche quest marker
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedMalevolence")
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_CrecheOutpostResearch");
+
+//Show Arcane Tower quest marker
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedArcaneResearch")
+THEN
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_ArcaneOutpostResearch");
+
+//Hide Arcane Tower quest marker
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedUndeath")
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_ArcaneOutpostResearch");
+
+//Veizoadeoth arrives eventually
+IF
+DB_GlobalFlag((FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66)
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a)
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba)
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af7b-42e0-8f45-ac3826a4afe1)
+THEN
+QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedAllActOne");
+
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_ConfrontSentinel")
+THEN
+SetFlag(JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_Veizoadeoth");
+
+//shitty fallback to make Veizoadeoth spawn properly
+IF
+LevelGameplayStarted("WLD_Main_A", _)
+AND
+GetFlag(JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105, NULL_00000000-0000-0000-0000-000000000000, 1)
+AND
+IsOnStage(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c, 0)
+THEN
+ClearFlag(JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105, NULL_00000000-0000-0000-0000-000000000000);
+SetFlag(JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_Veizoadeoth");
+
+//Veizoadeoth dead
+IF
+Died(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c)
+THEN
+SetFlag(JL_FOTV_VeizoadeothDefeated_6beb5d1c-0df1-483f-be01-aac924896540);
+PROC_HidePartyMarker("MARKER_JL_FOTV_Veizoadeoth");
+//END_REGION
+
+//REGION Echoes of the Righteous
+//Start the quest by reading In Need of an Iconoclast
+IF
+FlagSet(JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64, _, _)
+THEN
+QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_FoundAmuletNote");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_CursedPeriapt");
+
+//Picked up amulet and haven't identified the curse
+IF
+AddedTo((GUIDSTRING)S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, _, _)
+AND
+HasActiveStatus((GUIDSTRING)S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, "JL_FOTV_PERIAPT_CURSE_TECHNICAL", 1)
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Cursebreaker","STEP_JL_FOTV_PickedAmuletNoIDCurse")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Cursebreaker","STEP_JL_FOTV_PickedAmuletYesIDCurse")
+THEN
+QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_PickedAmuletNoIDCurse");
+PROC_HidePartyMarker("MARKER_JL_FOTV_CursedPeriapt");
+
+//Picked up amulet and yes identified curse
+IF
+AddedTo((GUIDSTRING)S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, _, _)
+AND
+HasActiveStatus((GUIDSTRING)S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, "JL_FOTV_PERIAPT_CURSE_TECHNICAL", 0)
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Cursebreaker","STEP_JL_FOTV_PickedAmuletNoIDCurse")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Cursebreaker","STEP_JL_FOTV_PickedAmuletYesIDCurse")
+THEN
+QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_PickedAmuletYesIDCurse");
+PROC_HidePartyMarker("MARKER_JL_FOTV_CursedPeriapt");
+
+//Didn't identify the curse at first but did later
+IF
+StatusRemoved(_, "JL_FOTV_PERIAPT_CURSE_TECHNICAL", _, _)
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Cursebreaker","STEP_JL_FOTV_PickedAmuletNoIDCurse")
+THEN
+QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_PickedAmuletYesIDCurse");
+
+//Read the iconoclast speculations
+IF
+FlagSet(JL_FOTV_KnowsCurseHints_1b6e901c-7097-4bb6-bdcb-956d3998cede, _, _)
+THEN
+QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerTips");
+
+//Broke the curse
+IF
+FlagSet(JL_FOTV_BrokeAmuletCurse_1fcc92f4-6f1c-459e-abca-5586f5956cd1, _, _)
+THEN
+QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCurseLifted");
+QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_AmuletCurseBrokenFindGrandInquisitor");
+
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act1"

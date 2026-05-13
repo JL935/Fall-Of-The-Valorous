@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Read notes on undead traits" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_UnholyCommunionRead" />
+			<attribute id="UUID" type="guid" value="97109720-da6a-4d93-9148-a00e2b44d4ba" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

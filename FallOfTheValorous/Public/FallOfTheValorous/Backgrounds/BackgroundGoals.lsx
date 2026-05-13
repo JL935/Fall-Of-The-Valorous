@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="326"/>
+    <region id="BackgroundGoals">
+        <node id="root">
+            <children>
+        <!-- GLOBAL GOALS -->
+            <!-- My Word Is My Bond (Penchant For Diplomacy) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hf75d8ad8g677cg4516g87e7g5f41123e8087" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="3"/>
+                    <attribute id="Title" type="TranslatedString" handle="he651ae9eg403dg4238g9a4dg558f01998110" version="1"/>
+                    <attribute id="UUID" type="guid" value="054c1be7-1284-49f6-ad31-de2768dffed7"/>
+                </node>
+            <!-- Death, Become My Blade Once More (Strategist) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h779a27eagf6d9g496bga7f2ge5d7cc46c804" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="3"/>
+                    <attribute id="Title" type="TranslatedString" handle="hb7af4eb2g2683g4f17g8f20g58fb93a29a5c" version="1"/>
+                    <attribute id="UUID" type="guid" value="f73f942a-716c-4e45-af3a-bd8ba052c56e"/>
+                </node>
+        <!-- ACT ONE GOALS -->
+            <!-- Voice of the Minstrel's Heart (A Bard's Muse) -->
+                    <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h336fa5c8gf28fg4d96ga2b9g11e8d74e320f" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="2"/>
+                    <attribute id="Title" type="TranslatedString" handle="hef7bdad0g54c9g43f6gb7b9g06c85f74187c" version="1"/>
+                    <attribute id="UUID" type="guid" value="47dfe1a4-6abf-428b-8214-2c9f442dc901"/>
+                </node>
+            <!-- Lest Ye Tread the Shadowed Path (A Story For The Ages) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h28060c42g7c95g4347g9ffag4ac2784212a0" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="4"/>
+                    <attribute id="Title" type="TranslatedString" handle="hdd9c5475g2a62g4a5fg884cg78c0fe451283" version="1"/>
+                    <attribute id="UUID" type="guid" value="1cdc6594-8969-4527-9a13-cb68afe2637b"/>
+                </node>
+            <!-- Deliverance (Breaker Of Chains) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hfd9f79degc853g45a0gb420gf0236515e802" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="4"/>
+                    <attribute id="Title" type="TranslatedString" handle="he1aeb001gbb24g454fg9ab9gedfa7ad87ac1" version="1"/>
+                    <attribute id="UUID" type="guid" value="0c2e729b-621e-4a4f-bce0-a6066a120429"/>
+                </node>
+            <!-- Humble Beginnings (Cub Tamer) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h70f4fcc0g4f97g4ec2g8f2dg13cb8fc5f0ff" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="3"/>
+                    <attribute id="Title" type="TranslatedString" handle="he76914d7g355cg40a2g83cfg219c1a3e8dbe" version="1"/>
+                    <attribute id="UUID" type="guid" value="9227d77a-dfc1-4d33-beb8-6f75adbacd9a"/>
+                </node>
+            <!-- Scourge of Yeenoghu (Cursebreaker) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h5ed29c42g6510g4fc8ga717g1592f5da304f" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="4"/>
+                    <attribute id="Title" type="TranslatedString" handle="h22e47467ge3d8g47ddga4a2g066d4519ad00" version="1"/>
+                    <attribute id="UUID" type="guid" value="5b283065-3256-4f6c-a698-5795c4f5008c"/>
+                </node>
+            <!-- A Knight of Renown (Entitled) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hc04acd7ag1c81g4145g87c1gf23fcc967636" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="3"/>
+                    <attribute id="Title" type="TranslatedString" handle="h8c023414g2b7bg4174g970ag37b2bea9ecab" version="1"/>
+                    <attribute id="UUID" type="guid" value="5e9f0903-a37b-439f-8055-02f7a44b9faf"/>
+                </node>
+            <!-- Not While I Yet Draw Breath (Guardian Of The Forgotten) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hb66c9857ga9acg42e4g96fdg3be2d1b79565" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="2"/>
+                    <attribute id="Title" type="TranslatedString" handle="h52e5f0f9g290bg4c0bg9a8agc4d4c2bcaaba" version="1"/>
+                    <attribute id="UUID" type="guid" value="108d0d44-bb88-46fa-b82a-0e0f01de6ea0"/>
+                </node>
+            <!-- Stay Thy Hand (Not On My Watch) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="habb02ccdgf3d9g4b9bg9af7g4197d386be46" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="2"/>
+                    <attribute id="Title" type="TranslatedString" handle="hd79ab8ddgc81ag4ba5gbe89gf917730a696c" version="1"/>
+                    <attribute id="UUID" type="guid" value="d771a5ed-45af-4676-822a-456f3c75be24"/>
+                </node>
+            <!-- The Fire Inside Me (Rescued From The Flames) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h3a6baa62g7bebg4838gb83bgc12afd848f63" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="4"/>
+                    <attribute id="Title" type="TranslatedString" handle="hfbc8133eg355fg46c1gbb4dg4f791dde13c0" version="1"/>
+                    <attribute id="UUID" type="guid" value="d1757e4d-6afb-4006-bd3e-8844663503f1"/>
+                </node>
+            <!-- Room For One More (The Bard With Nine Lives) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h38597050g12feg46f6g97f3g8e3a6d763e30" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="3"/>
+                    <attribute id="Title" type="TranslatedString" handle="h5fdabec2g27b0g4401ga02cgb17e3d2cd286" version="1"/>
+                    <attribute id="UUID" type="guid" value="1e36d809-6525-405e-96a0-19d98d64f924"/>
+                </node>
+            <!-- Fairer Days Shall Dawn (The Most Unfortunate Gnome) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hddb5e88cg0557g4e73gb54fg39337ca30443" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="3"/>
+                    <attribute id="Title" type="TranslatedString" handle="h2c8f64c7ge8aeg4240g9927g4ff573ca2e6a" version="1"/>
+                    <attribute id="UUID" type="guid" value="4fba3dca-229b-4115-823b-9349b9920a1a"/>
+                </node>
+            <!-- Freedom's Call (The Price Of Ink) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h736bd5c1gd222g4a63ga99fg8d43f90a44bd" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="4"/>
+                    <attribute id="Title" type="TranslatedString" handle="ha5778f30g98a4g46bfg9f5dgb4e003571721" version="1"/>
+                    <attribute id="UUID" type="guid" value="80a91066-1e46-4d3f-aed4-c5e952f5eb24"/>
+                </node>
+            <!-- Unseen Shackles Unbound (Unmasking The Truth) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h89e520ecg58eag4feeg87f2g90476b7ffb15" version="3"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="4"/>
+                    <attribute id="Title" type="TranslatedString" handle="hf21a81e0g0682g419cga6b4gf7910a074bec" version="1"/>
+                    <attribute id="UUID" type="guid" value="28105c10-6a56-4c36-aee1-bf74e81278d8"/>
+                </node>
+            <!-- By Fire Be Purged (Warrior Of The Hells) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h7ad2d4b2g45a6g4ed1gaed8g0fb96069ffdd" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="4"/>
+                    <attribute id="Title" type="TranslatedString" handle="hfeb1e2c3gfa25g4f4dg8691g3f586948cf8e" version="1"/>
+                    <attribute id="UUID" type="guid" value="556f3437-2315-435c-bdd5-505145848b4a"/>
+                </node>
+        <!-- ACT TWO GOALS -->
+            <!-- No Rest for the Weary (Always A Way Out) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h4ad591c5gc158g445agb455gfabbc2296091" version="3"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="6"/>
+                    <attribute id="Title" type="TranslatedString" handle="hd1140639gdbf6g4b62g92a3g0924ed5b50bb" version="1"/>
+                    <attribute id="UUID" type="guid" value="391876db-e7c1-445e-adeb-2e72c2ccef7d"/>
+                </node>
+            <!-- A Smile Better Suits... -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="he6934c35g7443g473bgb44fga83661bcb90d" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="5"/>
+                    <attribute id="Title" type="TranslatedString" handle="h10243cd2g84dag4d59g9c2fge898dd78b4a7" version="2"/>
+                    <attribute id="UUID" type="guid" value="6dbd2695-6825-4354-8446-1dbd1fcd494a"/>
+                </node>
+            <!-- Long May the Sun Shine (A Tale Of Two Souls) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h6ee382d6g5d5eg4766ga32agbbf9c8ab4b1e" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="7"/>
+                    <attribute id="Title" type="TranslatedString" handle="h50ae8305g6cf6g48f8gb14eg676b3ff76416" version="1"/>
+                    <attribute id="UUID" type="guid" value="c6a8e034-5124-48d0-ba96-0294778d26cb"/>
+                </node>
+            <!-- Have It Writ Upon Thy Meagre Grave (Bleeding The Corpse Dry) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h4d8cc6aagb677g4cbbg81f8g9f7171ab9ce0" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="7"/>
+                    <attribute id="Title" type="TranslatedString" handle="he6638f3bg344ag4c7fgbf26g5f7c57b7d981" version="1"/>
+                    <attribute id="UUID" type="guid" value="2987eaa5-020e-483c-820c-9a87804f729f"/>
+                </node>
+            <!-- Rise, If You Would... (Cerimonia Alārum) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hf694def4g9b4cg4f28g9dfbgc2d3e22ac1b1" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="7"/>
+                    <attribute id="Title" type="TranslatedString" handle="h572f9ff0g7583g4af6gaeaeg79d9c7369a74" version="1"/>
+                    <attribute id="UUID" type="guid" value="75838697-4303-4106-86bf-9352fb69d79b"/>
+                </node>
+            <!-- Vereor Lux (Devastation Of The Absolute) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h675f4d74g6b48g4fc5gb1f8g48072950ec8b" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="7"/>
+                    <attribute id="Title" type="TranslatedString" handle="h3396cccagead4g4580gbcafg0fdb816776ca" version="1"/>
+                    <attribute id="UUID" type="guid" value="8fd6eab5-9e82-405d-bfa6-98160f9f1291"/>
+                </node>
+            <!-- You Bow To No One (Gone Feral) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h3b6bd2a0gec89g4c6egb53bgd736a6a46e67" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="5"/>
+                    <attribute id="Title" type="TranslatedString" handle="h75486afcg75a9g4c97g9644g730665984fd5" version="1"/>
+                    <attribute id="UUID" type="guid" value="155dcb6a-2a4d-4205-9158-bab99d4f7ea1"/>
+                </node>
+            <!-- The Makings of a Champion (Greatness Thrust Upon Them) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="ha438528dgf0e2g46fbg8da2g409c5353c0bb" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="6"/>
+                    <attribute id="Title" type="TranslatedString" handle="h1efdb4f9gbe03g4a50g868egbe2655bca2ec" version="1"/>
+                    <attribute id="UUID" type="guid" value="84240894-c9e8-416e-a0bc-35992c483701"/>
+                </node>
+            <!-- Put Your Faith in the Light (Grove Keeper's Keeper) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h95a40a54g5493g4953g8eefg444056d48292" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="6"/>
+                    <attribute id="Title" type="TranslatedString" handle="h3008e8bag1f51g4c17g962bg596bdbda49ae" version="1"/>
+                    <attribute id="UUID" type="guid" value="7c93b2ab-b402-412c-b8d5-2dc48c97b670"/>
+                </node>
+            <!-- Walked the Path (In Her Footsteps) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h2941055fg020fg49edg856agf9326d40a095" version="3"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="7"/>
+                    <attribute id="Title" type="TranslatedString" handle="h94bf0917g2b86g4cb5g8598g469f66699e57" version="1"/>
+                    <attribute id="UUID" type="guid" value="db15611e-66d9-4da0-b690-e4a568e58f81"/>
+                </node>
+            <!-- Vereor Nox (Ketheric's Loss) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="he93dc6d7g5135g4d83ga6cdgd7fe2fef48b3" version="3"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="7"/>
+                    <attribute id="Title" type="TranslatedString" handle="hee02c689gee8fg44e4g90f3gd448ba15a1d2" version="1"/>
+                    <attribute id="UUID" type="guid" value="f53d08c4-b6e6-4a20-a6ad-cb526deee003"/>
+                </node>
+            <!-- Mayst Thou Thy Peace Discov'r (Let Sleeping Dogs Lie) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h56b01d3cg3bd2g4cbfga159g4b51a0ecee51" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="5"/>
+                    <attribute id="Title" type="TranslatedString" handle="h69700a4fg9876g49ffgbabbg68db434faf76" version="1"/>
+                    <attribute id="UUID" type="guid" value="85c0123c-935b-41fc-becd-c60f3bc70066"/>
+                </node>
+            <!-- Wroth Undoes the Wicked (Power Corrupts...Absolutely) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h14212965g45e9g47fega337g462c0542d82d" version="4"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="7"/>
+                    <attribute id="Title" type="TranslatedString" handle="h9c2a5eefg99ccg49d6gaad6g6e428c8f548b" version="1"/>
+                    <attribute id="UUID" type="guid" value="b2af311f-a3f3-415a-812a-aa992f8019c6"/>
+                </node>
+            <!-- Darkest Before Dawn (Twice Scorned, Twice Abandoned) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="he5d4434ag83efg4fc6ga50ag9a10eb4b9fcf" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="6"/>
+                    <attribute id="Title" type="TranslatedString" handle="h2e51a1dfg2eceg49f1gabeeg7e6631294439" version="1"/>
+                    <attribute id="UUID" type="guid" value="1a9f6bbb-ab03-41a7-bc4b-9a8014805298"/>
+                </node>
+        <!-- ACT THREE GOALS -->
+            <!-- Every Secret Must Be Unearthed (Assistant To The Extra-Planar Agent) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h4432e8a8g8793g4cabg9220gf7e36d577a8a" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="9"/>
+                    <attribute id="Title" type="TranslatedString" handle="h4adfef97gffe6g40b1gb9d1gb3343ef2bff3" version="1"/>
+                    <attribute id="UUID" type="guid" value="6fe1d41d-c966-4662-980f-b7bff62d2562"/>
+                </node>
+            <!-- Heart Knows Only Virtue (Child Protection Agents) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h53542391g0f86g44dcg9346g53af21c50406" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="10"/>
+                    <attribute id="Title" type="TranslatedString" handle="h6c586438g3226g4f51ga897g230a7cfec710" version="1"/>
+                    <attribute id="UUID" type="guid" value="3fda0687-26da-4bc6-af76-df13e697f10f"/>
+                </node>
+            <!-- Judgment Undone (Diplomatic Rescue) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h17e08f02gba12g4f27gb618gdb49bfc1d104" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="10"/>
+                    <attribute id="Title" type="TranslatedString" handle="hea950f1ag7d34g4441gb369gaa69e2d56181" version="1"/>
+                    <attribute id="UUID" type="guid" value="b1b6d069-fa11-4510-9383-b134b70ad2f2"/>
+                </node>
+            <!-- Last Rites (End Of The Tribunal) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h62acc0a5g2406g48b1gb540g6bbe867821cf" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="11"/>
+                    <attribute id="Title" type="TranslatedString" handle="h66955bcbg6825g4835ga77cg284e0efa4f30" version="1"/>
+                    <attribute id="UUID" type="guid" value="cf859c51-c215-4887-991b-c96dda590473"/>
+                </node>
+            <!-- The Fallen Leaves Tell a Story (Finding Her Stage) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h58afe6c8gb720g4d0ag9cbcg9fcf399031c8" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="10"/>
+                    <attribute id="Title" type="TranslatedString" handle="h0772870fg26edg424fgab1cg141e1d1e9ad8" version="1"/>
+                    <attribute id="UUID" type="guid" value="a0239dcc-c24f-490f-b45c-da52a5762177"/>
+                </node>
+            <!-- Heart of Gold (Food For The Soul) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hed61e58dg7aedg4a2dg9d99g3eb4a1cf3568" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="9"/>
+                    <attribute id="Title" type="TranslatedString" handle="h79e294b1g6cf5g4ac4g9760g5d1d86d66bd2" version="1"/>
+                    <attribute id="UUID" type="guid" value="b3fc4116-eeb6-4b75-8eab-e409bcf53d76"/>
+                </node>
+            <!-- Don't You Dare Go Hollow (Freeing The Preyed) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hc0f78d5bga941g474agbf70gd98482d9ce15" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="11"/>
+                    <attribute id="Title" type="TranslatedString" handle="h122d77dagd1bag4576g86f9geb358a07b549" version="1"/>
+                    <attribute id="UUID" type="guid" value="8f42c3ff-430d-4f71-ba9d-346a7f0ab300"/>
+                </node>
+            <!-- Lesser, Greater, Middling (Honour Among Thieves) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h5ff13a97g58d8g45d5g9337gb8d27570e446" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="11"/>
+                    <attribute id="Title" type="TranslatedString" handle="h6c5555cdg8bc3g4ab8g911dgaa6667d36c86" version="1"/>
+                    <attribute id="UUID" type="guid" value="c6c0176b-9502-418f-a54b-8d4a7d89d974"/>
+                </node>
+            <!-- Sworn To Valor (In Need Of A Hero) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="he4697f8bg2349g40eegaab8g726def79beab" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="11"/>
+                    <attribute id="Title" type="TranslatedString" handle="hbb08d204g305bg43b7gb4bbg07ec25ac8b69" version="1"/>
+                    <attribute id="UUID" type="guid" value="41619f53-da35-4604-b212-a42bf223f4d7"/>
+                </node>
+            <!-- Kindred Spirits (Knowledge Of The Heart) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h4a43f927g63cdg4783g9194g6344fb379b9f" version="3"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="9"/>
+                    <attribute id="Title" type="TranslatedString" handle="h252105ffg8572g4114g80a9g1590e8bd9d3b" version="1"/>
+                    <attribute id="UUID" type="guid" value="6f472133-001a-4038-bce7-d2de09b74932"/>
+                </node>
+            <!-- Let Them Linger (Needs Of The Many) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h843d2f98gb1cdg48e5ga1d1gd44c22ea2eb7" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="9"/>
+                    <attribute id="Title" type="TranslatedString" handle="hd577d75ag10d7g40d7g99eag7835ac13e5f2" version="1"/>
+                    <attribute id="UUID" type="guid" value="2633b380-5262-4d80-ae2f-a259c2b1ebea"/>
+                </node>
+            <!-- Resurgam (Never To Be Chained Again) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="he0ed7686g4455g4c4fg8622gae615b684f4a" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="11"/>
+                    <attribute id="Title" type="TranslatedString" handle="h4f63c001g7af3g4054ga40cg42d6c15940b7" version="1"/>
+                    <attribute id="UUID" type="guid" value="7092fd08-b69a-4c51-aa59-d01de7acb6f9"/>
+                </node>
+            <!-- Destined Death (Putting The Past To Rest) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h3792b633gc659g439ega7c0gccba4e47ae54" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="11"/>
+                    <attribute id="Title" type="TranslatedString" handle="hf530aa64g8c18g4cd2g8132gac8bce0fb886" version="1"/>
+                    <attribute id="UUID" type="guid" value="6abdcfef-1f44-4ef9-8bc5-3aabff44fd4d"/>
+                </node>
+            <!-- Cast Off Thy Shackles (Running Wild) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hd13b4c8agd885g457dga276g37f99a0f116d" version="2"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="10"/>
+                    <attribute id="Title" type="TranslatedString" handle="h2d3d6f14g3b8fg4882g9225g48f36f99af21" version="1"/>
+                    <attribute id="UUID" type="guid" value="53c473a9-b2ba-4ba0-8b37-32535ea0ca97"/>
+                </node>
+            <!-- As Flame Rises, So Does It Fade (Shattering The Black Hand) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h63472abbg15a3g4e94gb74cg4ebcfc540b2d" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="11"/>
+                    <attribute id="Title" type="TranslatedString" handle="h5aec65dbgf812g4847gb8e8g5777af01c8fd" version="1"/>
+                    <attribute id="UUID" type="guid" value="6fae40d8-a368-4c4e-a0c6-510bfb02ec47"/>
+                </node>
+            <!-- Honeyed Rays of Gold, Deliver My Spirit -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hb8897279gee9eg4e30g91b6g8cbbd81deab8" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="11"/>
+                    <attribute id="Title" type="TranslatedString" handle="h11c04fafgcac0g4543g9078gf83fb3bc5d57" version="1"/>
+                    <attribute id="UUID" type="guid" value="5b0cff39-5575-4312-970d-7438c14a3a52"/>
+                </node>
+            <!-- Not All Tears Are An Evil (What Remains Of The Dead) -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
+                    <attribute id="Description" type="TranslatedString" handle="hff513661g5ab4g4b8dg8790gdbd10d47c9c8" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="10"/>
+                    <attribute id="Title" type="TranslatedString" handle="h9c705227ge6a5g4918g92e6gbea4e705f090" version="1"/>
+                    <attribute id="UUID" type="guid" value="e2b75dba-2a7f-4095-9a51-84d664f7318c"/>
+                </node>
+
+        <!-- FEATS OF RENOWN -->
+            <!-- Defend the Defenseless -->    
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="f33e303d-99c4-4de8-9b7e-354f81ab3b91"/>
+                    <attribute id="Description" type="TranslatedString" handle="h973b7f38g82e5g476fg9728gbc72b88b0b9a" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="85d04f48-87c7-45e0-83c5-fdd5b11465df"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="3"/>
+                    <attribute id="Title" type="TranslatedString" handle="hfc0bb9aega944g4fd0ga237g25dadc5cbf30" version="1"/>
+                    <attribute id="UUID" type="guid" value="0a30d65a-c707-4844-a468-0409fb9338ae"/>
+                </node>
+            <!-- Savior of the Subjugated -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="f33e303d-99c4-4de8-9b7e-354f81ab3b91"/>
+                    <attribute id="Description" type="TranslatedString" handle="h3598c3bfg07b5g44c2g91dbgea4bda05a610" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="85d04f48-87c7-45e0-83c5-fdd5b11465df"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="4"/>
+                    <attribute id="Title" type="TranslatedString" handle="h15d31730g2900g4583g9f6eg1750dcb29463" version="1"/>
+                    <attribute id="UUID" type="guid" value="245d0964-87c2-4725-be7c-cdc0752fb111"/>
+                </node>
+            <!-- Hypogeal Hero -->
+                <node id="BackgroundGoal">
+                    <attribute id="BackgroundUUID" type="guid" value="f33e303d-99c4-4de8-9b7e-354f81ab3b91"/>
+                    <attribute id="Description" type="TranslatedString" handle="he6f472ffgecdfg48ffgae5fgdda66f445a8a" version="1"/>
+                    <attribute id="ExperienceReward" type="guid" value="85d04f48-87c7-45e0-83c5-fdd5b11465df"/>
+                    <attribute id="InspirationPoints" type="uint32" value="1"/>
+                    <attribute id="RewardLevel" type="uint32" value="5"/>
+                    <attribute id="Title" type="TranslatedString" handle="hda8d30d0gbea0g4d66ga33cgb64489617c9c" version="1"/>
+                    <attribute id="UUID" type="guid" value="1febdc4d-65d1-4546-9327-526bacf8ccd1"/>
+                </node>
+
+            </children>
+        </node>
+    </region>
+</save>

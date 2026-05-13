@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="302"/>
+    <region id="Markers">
+        <node id="root">
+            <children>
+                <node id="Marker">
+                    <attribute id="DisplayText" type="TranslatedString" handle="hbf164e9dg0233g47d3g9037g02b2838401b6" version="1"/>
+                    <attribute id="Guid" type="guid" value="c1b83d5f-c3a2-4d94-b730-aca1cb0cdaf4"/>
+                    <attribute id="MarkerID" type="FixedString" value="MARKER_JL_FOTV_ThayanOutpostResearch"/>
+                    <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
+                    <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
+                    <attribute id="MarkerTargetObjectType" type="FixedString" value="Item"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="d28b1bc9-0d77-49da-aa08-d0d243f699f3"/>
+                    <attribute id="Radius" type="int32" value="15"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

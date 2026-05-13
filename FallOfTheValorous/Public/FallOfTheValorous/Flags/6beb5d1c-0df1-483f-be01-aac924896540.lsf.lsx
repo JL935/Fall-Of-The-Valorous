@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Veizoadeoth defeated" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_VeizoadeothDefeated" />
+			<attribute id="UUID" type="guid" value="6beb5d1c-0df1-483f-be01-aac924896540" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

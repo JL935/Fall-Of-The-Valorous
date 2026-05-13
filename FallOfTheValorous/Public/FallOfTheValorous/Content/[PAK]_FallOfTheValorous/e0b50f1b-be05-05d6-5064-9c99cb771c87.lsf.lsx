@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="e0b50f1b-be05-05d6-5064-9c99cb771c87" />
+					<attribute id="Name" type="LSString" value="VFX_Target_SupernalStrike_Aura_Root" />
+					<attribute id="SourceFile" type="LSString" value="Public/FallOfTheValorous/Assets/Effects/Effects_Banks/VFX_Target_SupernalStrike_Aura_Root.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Target_SupernalStrike_Aura_Root" />
+					<attribute id="BoundsMin" type="fvec3" value="-1 -1 -1" />
+					<attribute id="BoundsMax" type="fvec3" value="1 1 1" />
+					<attribute id="CullingDistance" type="float" value="30" />
+					<attribute id="Duration" type="float" value="2" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="0" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b6728f4b-d26c-c391-5dd3-ab07f03b66f5" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

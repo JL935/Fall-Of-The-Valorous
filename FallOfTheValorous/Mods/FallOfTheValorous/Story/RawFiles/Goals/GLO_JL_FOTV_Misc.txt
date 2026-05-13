@@ -1,0 +1,22 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+//QRY to prevent Luminaries from being able to break oaths unless they have paladin levels
+QRY
+QRY_GLO_PaladinOathbreaker_IsOrWillBecomeOathbreaker((CHARACTER)_Char)
+AND
+HasPassive(_Char, "Oath_Ancients_Tenents", 0)
+AND
+HasPassive(_Char, "Oath_Devotion_Tenents", 0)
+AND
+HasPassive(_Char, "Oath_Vengeance_Tenents", 0)
+AND
+HasPassive(_Char, "Oath_Crown_Tenents", 0)
+THEN
+DB_NOOP(1);
+
+EXITSECTION
+
+ENDEXITSECTION

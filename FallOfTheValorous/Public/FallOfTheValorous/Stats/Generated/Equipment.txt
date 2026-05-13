@@ -1,0 +1,13 @@
+new equipment "EQP_JL_FOTV_Taarogus"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "JL_FOTV_WPN_Vindicator_Longsword_T3"
+add equipmentgroup
+add equipment entry "WPN_Longbow_2"
+
+new equipment "EQP_JL_FOTV_Vogrevol"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Morningstar_2"
+add equipmentgroup
+add equipment entry "ARM_Shield_1"

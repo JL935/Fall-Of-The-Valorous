@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="302"/>
+    <region id="Markers">
+        <node id="root">
+            <children>
+                <node id="Marker">
+                    <attribute id="DisplayText" type="TranslatedString" handle="hbf164e9dg0233g47d3g9037g02b2838401b6" version="1"/>
+                    <attribute id="Guid" type="guid" value="7a859813-e290-484e-8bb0-11a15985b52f"/>
+                    <attribute id="MarkerID" type="FixedString" value="MARKER_JL_FOTV_GroveOutpostResearch"/>
+                    <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
+                    <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
+                    <attribute id="MarkerTargetObjectType" type="FixedString" value="Item"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="6ba2518a-99fc-4bfd-aa15-5ac548bdc979"/>
+                    <attribute id="Radius" type="int32" value="10"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

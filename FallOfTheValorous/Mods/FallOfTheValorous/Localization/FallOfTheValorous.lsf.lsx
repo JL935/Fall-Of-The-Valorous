@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="322" lslib_meta="v1,bswap_guids" />
+	<region id="TranslatedStringKeys">
+		<node id="TranslatedStringKeys">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hf3558336gafbbg4312gb46age24d61b3ce97" version="1" />
+					<attribute id="UUID" type="FixedString" value="BOOK_JL_FOTV_FallOfTheValorous_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hd0700d54gbc44g46dcg9780g83dd40948890" version="1" />
+					<attribute id="UUID" type="FixedString" value="MAP_JL_FOTV_A1_ValorOutposts_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hf572789fg5826g405bgb144ge0f6072078a3" version="1" />
+					<attribute id="UUID" type="FixedString" value="SCROLL_JL_FOTV_FrightfulPresenceDruidNotes_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hd22fefcbg6572g4224g8126gadec076826af" version="1" />
+					<attribute id="UUID" type="FixedString" value="NOTE_JL_FOTV_NatureOfSoulWards_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h6f78cf1bge304g4e92g98f4g8e0049fa14fd" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_FollyOfOurForebears_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h9d85a1b3g7cb3g4aa2gb8c5g287c2ff8896b" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_AtropusIsNigh_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h00c2696cgbf91g48aag9eadgfbd14e0a186d" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_SaelethilFarewell_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h9a760d5ag5a63g4809gbe68g07108360fa13" version="1" />
+					<attribute id="UUID" type="FixedString" value="BOOK_JL_FOTV_UnholyCommunion_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h354afcf9g2a9ag4a52gae0dg59ef5e5d2358" version="1" />
+					<attribute id="UUID" type="FixedString" value="BOOK_JL_FOTV_MalevolenceCaseStudy_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="he6d695a7g0ba7g4a08ga94fg2b54a4edec85" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_WhatMustBeDone_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="ha85fed41ga4fcg4c4fgbbbagcb63dd3f5a1f" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_WordcastingIntro_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h694ca065gea21g40bcgbde9g238cece1f094" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_InquisitionsOfFaerun_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h583f21b4g80a4g4703gaaa6gcdd0395f854b" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_ValorousVirtues_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hba17c8c6ge8e7g43c7g9cbag854cc44086fe" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_ViandriothCulling_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h6a2ba9a4ge11fg4d6ega57bge204e75fc5d8" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_Lamentations_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h39b624f0gc6e9g488dga870g871bbedd8cfb" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_MissiveToQynoth_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hd4b37815g6164g414bg8555g61a73edbcd17" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_NeedIconoclast_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h712a7974g5405g444cgb806g1af0f8be6b82" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_IconoclastSpeculation_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h8749f499gb26bg4784g9261gb3743efad4de" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_SaelethilAilment_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hf6c000c8gcc19g461fgb54fgd4a333d4b053" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_Preservation_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hd1ad00cfg1174g44edg9b40ga743a655d7ba" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_Ruination_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h32017387g92d0g462cgb74eg8f233ebe4639" version="1" />
+					<attribute id="UUID" type="FixedString" value="LTK_JL_FOTV_CursedAmuletName" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h838cb854g58dbg4f0agaf00g3832b1945695" version="1" />
+					<attribute id="UUID" type="FixedString" value="LTK_JL_FOTV_NotCursedAmuletName" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+
+			</children>
+		</node>
+	</region>
+</save>

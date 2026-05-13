@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="d50dac93-4a73-391c-1870-11da79e98514" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_Cast_BreathOfMalevolence_CastFX_Textkey_Cold_01" />
+					<attribute id="SourceFile" type="LSString" value="Public/FallOfTheValorous/Assets/Effects/Effects_Banks/VFX_Spells_Cast_BreathOfMalevolence_CastFX_Textkey_Cold_01.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Spells_Cast_BreathOfMalevolence_CastFX_Textkey_Cold_01" />
+					<attribute id="BoundsMin" type="fvec3" value="-6 -6 -8" />
+					<attribute id="BoundsMax" type="fvec3" value="6 6 4" />
+					<attribute id="CullingDistance" type="float" value="30" />
+					<attribute id="Duration" type="float" value="3" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="0" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="91bcdda5-afef-22b0-894c-1c2ead59f2d5" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ee6b9849-3ba3-43d3-32d5-3e6161e601af" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ad218661-33e1-44a3-ab60-6e1e6a7dd7c0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="aee9eae0-36b5-ffb7-e186-cd52a24cfc50" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="3bf77f06-41e7-d235-fa82-ecf66493d074" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="fedba5a4-9457-58ef-62f7-ff1e1f07deba" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="19e6aa50-6994-7710-3a65-6fc13b97a7e4" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="405" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="Valor Inquisitor" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="" version="1"/>
+			<attribute id="DisplayName" type="TranslatedString" handle="hd8800abcgfbc8g423bga2dbg36417d4cc19b" version="1"/>
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_VALOR_INQUISITOR" />
+			<attribute id="UUID" type="guid" value="d58a7497-c2c0-4a6b-84d6-f77b9f55a844"/>
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code"/>
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog"/>
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Class"/>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

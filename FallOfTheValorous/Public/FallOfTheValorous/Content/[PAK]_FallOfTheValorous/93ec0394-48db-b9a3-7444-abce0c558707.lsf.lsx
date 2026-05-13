@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="93ec0394-48db-b9a3-7444-abce0c558707" />
+					<attribute id="Name" type="LSString" value="VFX_Status_Valor_DemoralizingAura_Root" />
+					<attribute id="SourceFile" type="LSString" value="Public/FallOfTheValorous/Assets/Effects/Effects_Banks/VFX_Status_Valor_DemoralizingAura_Root.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Status_Valor_DemoralizingAura_Root" />
+					<attribute id="BoundsMin" type="fvec3" value="-2 -1 -2" />
+					<attribute id="BoundsMax" type="fvec3" value="2 3 2" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1.263997" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2a4fe9f6-733d-e302-ce7e-d6bf44feec8b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="4e9a959d-3d4b-6b06-2b2a-b110b01054a6" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="44390797-4f59-ed68-f7a1-53a1c8fd17a3" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8da58aa9-f985-f994-f2eb-b10766de73f7" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

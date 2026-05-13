@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="SpellLists">
+    <node id="root">
+      <children>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Valor Level 3" />
+          <attribute id="Spells" type="LSString" value="Target_ConsecrateDesecrate;JL_FOTV_Target_LitanyOfPrecision" />
+          <attribute id="UUID" type="guid" value="daa86672-66e0-42ea-9c0d-ab1a77c4b523" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Valor Level 5" />
+          <attribute id="Spells" type="LSString" value="Shout_GuardingKnowledge;JL_FOTV_LitanyOfWeakness_Container" />
+          <attribute id="UUID" type="guid" value="f071d84f-5c15-420d-8722-dc37ced72ef5" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Valor Level 9" />
+          <attribute id="Spells" type="LSString" value="Shout_JudgmentLight;JL_FOTV_Shout_LitanyOfDuskAndDawn" />
+          <attribute id="UUID" type="guid" value="47068504-51c4-470e-995d-2c9271fb75a3" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Valor Level 13" />
+          <attribute id="Spells" type="LSString" value="Shout_SacredNimbus;JL_FOTV_Teleportation_LitanyOfBalance" />
+          <attribute id="UUID" type="guid" value="889fc1a8-be03-454b-a348-175e54741473" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Valor Level 17" />
+          <attribute id="Spells" type="LSString" value="Target_BestowGrace;JL_FOTV_Shout_LitanyOfResurgence" />
+          <attribute id="UUID" type="guid" value="6ed3c495-b59f-4c6b-8c4d-8dd6433b7be5" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Warleader" />
+          <attribute id="Spells" type="LSString" value="JL_FOTV_Shout_Warleader" />
+          <attribute id="UUID" type="guid" value="07f975fd-aaf5-4461-97b7-7cbcd4bc7538" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="NPC Valor Inquisitor Level 2" />
+          <attribute id="Spells" type="LSString" value="JL_FOTV_NPC_Target_MonsterLore" />
+          <attribute id="UUID" type="guid" value="98d7f068-f4eb-4e97-8497-735faddc16c6" />
+        </node>
+        <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="for testing" />
+          <attribute id="Spells" type="LSString" value="givsubclasspls" />
+          <attribute id="UUID" type="guid" value="e6991aba-10a6-49da-9887-4ca803268615" />
+        </node>
+      </children>
+    </node>
+  </region>
+</save>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="302"/>
+    <region id="Markers">
+        <node id="root">
+            <children>
+                <node id="Marker">
+                    <attribute id="DisplayText" type="TranslatedString" handle="h7f721343g6de1g432dg82fdg0361f131adb2" version="1"/>
+                    <attribute id="Guid" type="guid" value="08a789ad-56fc-4edd-9497-4157e7b573b0"/>
+                    <attribute id="MarkerID" type="FixedString" value="MARKER_JL_FOTV_EvilTaarogus"/>
+                    <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
+                    <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
+                    <attribute id="MarkerTargetObjectType" type="FixedString" value="Character"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="f9c25b00-4ae7-4681-b783-3a72ba413211"/>
+                    <attribute id="Radius" type="int32" value="0"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

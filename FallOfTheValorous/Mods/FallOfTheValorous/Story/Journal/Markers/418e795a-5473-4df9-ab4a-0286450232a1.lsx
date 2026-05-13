@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="302"/>
+    <region id="Markers">
+        <node id="root">
+            <children>
+                <node id="Marker">
+                    <attribute id="DisplayText" type="TranslatedString" handle="h15ab953dg26fdg400dg8053g499e0928f22d" version="1"/>
+                    <attribute id="Guid" type="guid" value="418e795a-5473-4df9-ab4a-0286450232a1"/>
+                    <attribute id="MarkerID" type="FixedString" value="MARKER_JL_FOTV_Lulix"/>
+                    <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
+                    <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
+                    <attribute id="MarkerTargetObjectType" type="FixedString" value="Character"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="b730b18d-fb32-4436-a073-86a10c934f92"/>
+                    <attribute id="Radius" type="int32" value="0"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+			<!-- Ravener Malevolence: Human Case Study #4 -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h8597e9dcgd2f5g4997g8c1aga63349ac4301" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CRE_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="a474e74a-4567-4827-bac5-c69579514963" />
+					<attribute id="Name" type="LSString" value="S_BOOK_JL_FOTV_MalevolenceCaseStudy" />
+					<attribute id="TemplateName" type="FixedString" value="5130db5c-af5e-451d-8fff-cf982d3a475e" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CRE_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="e98c019e-02ac-a69c-9503-5c6506de1e65" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="1284.384 -1.387 -800.59" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="0.9" />
+						</node>
+					</children>
+				</node>
+			<!-- Missive to Qynoth -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="hdfe45ad6g24ecg4b8cgb432gf13736c6d9cf" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="CRE_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="6b69d881-f7f5-4631-8427-c222c78d4c7a" />
+					<attribute id="Name" type="LSString" value="S_LORE_JL_FOTV_MissiveToQynoth" />
+					<attribute id="TemplateName" type="FixedString" value="be147e4e-b9c4-45bf-acd4-2ea0d2376ac0" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="CRE_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0cdf52f2-9453-df63-13c3-cfad8fbdbd2a" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="384cefc7-c793-0ef6-7f8a-7d47946d212e" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="5c45353e-ab0b-f308-bb3d-1614e973bd0a" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="1291.566 -1.274 -816.856" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

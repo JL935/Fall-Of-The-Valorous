@@ -1,0 +1,3601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+		<!-- RAVENERS -->
+			<!-- Young Red Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="ed616d9f-0640-4b3a-aba1-a9d478bfc0eb" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_YoungRedRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="9b3f30ca-45db-4335-883b-591a94a24e72" />
+					<attribute id="Faction" type="guid" value="64321d50-d516-b1b2-cfac-2eb773de1ff6" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h3198134eg293fg4474g99d4ga5d67e5cd363" version="1" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_YoungRavener" />
+					<attribute id="SpellSet" type="FixedString" value="JL_FOTV_RavenerCommonActions" />
+					<attribute id="DeathEffect" type="guid" value="eb0aa43b-fcdc-4ef2-8c54-f60e75074e83" />
+					<attribute id="LevelOverride" type="int32" value="" />
+					<attribute id="IsLootable" type="bool" value="True" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="783a6a1c-c203-488e-865a-3fc450d57ebf" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Fire" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Adult Red Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="fd357a1b-ecb4-4948-9994-e24c2076dee1" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_AdultRedRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ed616d9f-0640-4b3a-aba1-a9d478bfc0eb" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_AdultRavener" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Fire" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_ScorchingRay" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_Fireball" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Young Black Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="2f485eab-c108-40c3-8919-dffbefb03e3c" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_YoungBlackRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ed616d9f-0640-4b3a-aba1-a9d478bfc0eb" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="23c7e900-78b7-486b-9abf-3dcaba13ec1f" />
+					<attribute id="Icon" type="FixedString" value="1d1c33c5-5d1f-4de9-8cce-210083f5da35-_(Icon_Dragon_Black)" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Acid" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Adult Black Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="aa14d1fa-e8dd-4092-825b-33d6f8a1289e" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_AdultBlackRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="2f485eab-c108-40c3-8919-dffbefb03e3c" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_AdultRavener" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Acid" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="10" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_AcidArrow" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Target_HungerOfHadar" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="3" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_UNDERDARKVFX" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Young White Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="02695c90-860c-4f04-ba31-9c264a69d335" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_YoungWhiteRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ed616d9f-0640-4b3a-aba1-a9d478bfc0eb" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="ca4bda80-0897-4a4d-b030-66e005a3bdb5" />
+					<attribute id="Icon" type="FixedString" value="66c08f42-c703-422b-add4-9f1e23c66790-_(Icon_Dragon_White)" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Cold" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Adult White Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="926b8d0a-c533-4f9d-baac-019b588bfb22" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_AdultWhiteRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="02695c90-860c-4f04-ba31-9c264a69d335" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_AdultRavener" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Cold" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_IceKnife" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Target_SleetStorm" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Ancient White Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="1e732a86-5426-4a98-a43b-2c70276d3e37" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_AncientWhiteRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="02695c90-860c-4f04-ba31-9c264a69d335" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_AncientRavener" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Cold" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_IceKnife" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Target_SleetStorm" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Target_IceStorm" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Young Blue Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="2f51daa7-859a-45f5-803b-bf544a0b7b9c" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_YoungBlueRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ed616d9f-0640-4b3a-aba1-a9d478bfc0eb" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="9275f91c-9f8c-4d4d-991d-6472a9fb7f2e" />
+					<attribute id="Icon" type="FixedString" value="f061d3e1-573e-47fd-95d1-6c11253400f6-_(Icon_Dragon_Blue)" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Lightning" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Adult Blue Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="631e51fd-8689-4421-ab42-d364e009676b" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_AdultBlueRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="2f51daa7-859a-45f5-803b-bf544a0b7b9c" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_AdultRavener" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Lightning" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="10" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Target_Shatter" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Zone_LightningBolt" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="3" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Young Green Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="f6ea912c-e11e-4e18-8618-63d4280cdd70" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_YoungGreenRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ed616d9f-0640-4b3a-aba1-a9d478bfc0eb" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="3e3b81bf-7451-4f1f-b9ec-b1701fd622fd" />
+					<attribute id="Icon" type="FixedString" value="5f92380b-5ebc-4d97-9e9e-ec31000acad6-_(Icon_Dragon_Green)" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Poison" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Adult Green Ravener -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="a934d56f-6c27-49dc-8822-49fe2dbbfd65" />
+					<attribute id="Name" type="LSString" value="CHARACTER_JL_FOTV_AdultGreenRavener" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f6ea912c-e11e-4e18-8618-63d4280cdd70" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_AdultRavener" />
+					<children>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerClaw" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Poison" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="10" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_RayOfSickness" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Shout_SpiritGuardians_Necrotic" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="3" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+		<!-- INQUISITORS -->
+			<!-- Khionzu -->
+				<node id="GameObjects">
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="7ddb9dcb-1465-fbdf-48d3-72e9c1371df3" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hfd6e18begb062g4998gae75gb3bb1dca345a" version="1" />
+					<attribute id="Equipment" type="FixedString" value="" />
+					<attribute id="ExplodedResourceID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="Faction" type="guid" value="cfb709b3-220f-9682-bcfb-6f0d8837462e" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Icon" type="FixedString" value="7ddb9dcb-1465-fbdf-48d3-72e9c1371df3-JL_FOTV_Khionzu_PortraitGenerator_(JL_FOTV_Khionzu_Icon)" />
+					<attribute id="IsLootable" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="" />
+					<attribute id="LightID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="MapKey" type="FixedString" value="5bc02c03-9e7d-435f-82c7-fedef3922e3d" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_ApothecaryInquisitor_Dead" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f68b2f2b-4118-4c16-bcd3-118f4ee2d043" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="7ddb9dcb-1465-fbdf-48d3-72e9c1371df3" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_ApothecaryInquisitor_Dead" />
+					<attribute id="Title" type="TranslatedString" handle="hb355e164g6aadg4b4fgb914g63d066452888" version="1" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="OnDeathActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="10" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="ApplyDeathTypeBloodCheck" type="bool" value="True" />
+											<attribute id="CellAtGrow" type="int32" value="2" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="ExternalCauseAsSurfaceOwner" type="bool" value="True" />
+											<attribute id="GrowTimer" type="float" value="0.4" />
+											<attribute id="LifeTime" type="float" value="60" />
+											<attribute id="SurfaceType" type="FixedString" value="SurfaceNone" />
+											<attribute id="Timeout" type="float" value="0" />
+											<attribute id="TotalCells" type="int32" value="10" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Saelethil -->
+				<node id="GameObjects">
+					<attribute id="Archetype" type="FixedString" value="melee_smart" />
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="f24e9c29-f3fc-7f2f-e797-faf7939c8621" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h59fae68cgafdfg4752gbf55g17a44a947a6a" version="1" />
+					<attribute id="Equipment" type="FixedString" value="EQP_Longsword_Shield" />
+					<attribute id="ExplodedResourceID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="Faction" type="guid" value="64321d50-d516-b1b2-cfac-2eb773de1ff6" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Icon" type="FixedString" value="f24e9c29-f3fc-7f2f-e797-faf7939c8621-JL_FOTV_Saelethil_PortraitGenerator_(JL_FOTV_Saelethil_Icon)" />
+					<attribute id="IsLootable" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="" />
+					<attribute id="LightID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="MapKey" type="FixedString" value="4e8c6995-2066-46c5-a55d-327008c2142f" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_RisenRoad_Valorous_Elf_Melee" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7e0ffe5c-8eb2-4ed1-926a-a6326c45cffd" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="f24e9c29-f3fc-7f2f-e797-faf7939c8621" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_RisenRoad_Valorous_Elf_Melee" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_SAELETHIL_SPELLS" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_CONSUMPTION" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="1f894f13-eac2-41e9-b0d8-c51e251d07e6" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Daregrir -->
+				<node id="GameObjects">
+					<attribute id="Archetype" type="FixedString" value="ranged_smart" />
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="422f7294-85b9-a994-3449-05b4e7b2e44c" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h33b3f896gf0dag444ag9a1dge4848b253a35" version="1" />
+					<attribute id="Equipment" type="FixedString" value="EQP_Longbow" />
+					<attribute id="ExplodedResourceID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="Faction" type="guid" value="64321d50-d516-b1b2-cfac-2eb773de1ff6" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Icon" type="FixedString" value="422f7294-85b9-a994-3449-05b4e7b2e44c-JL_FOTV_Daregrir_PortraitGenerator_(JL_FOTV_Daregrir_Icon)" />
+					<attribute id="IsLootable" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="" />
+					<attribute id="LightID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="MapKey" type="FixedString" value="680adec7-1019-4a18-9c19-a79e335813c4" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_RisenRoad_Valorous_Dwarf_Ranged" />
+					<attribute id="ParentTemplateId" type="FixedString" value="5e47508d-ff11-4ede-b115-afa735303413" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="422f7294-85b9-a994-3449-05b4e7b2e44c" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_RisenRoad_Valorous_Dwarf_Ranged" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_DAREGRIR_SPELLS" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="1f894f13-eac2-41e9-b0d8-c51e251d07e6" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Adrasteia -->
+				<node id="GameObjects">
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="6a080ebb-57c7-c7ba-c3d9-d14c4bcafd19" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h5af00d3bg6fd0g4329g91e8gd30635778c26" version="1" />
+					<attribute id="Equipment" type="FixedString" value="" />
+					<attribute id="ExplodedResourceID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="Faction" type="guid" value="cfb709b3-220f-9682-bcfb-6f0d8837462e" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Icon" type="FixedString" value="6a080ebb-57c7-c7ba-c3d9-d14c4bcafd19-JL_FOTV_Adrasteia_PortraitGenerator_(JL_FOTV_Adrasteia_Icon)" />
+					<attribute id="IsLootable" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="-1" />
+					<attribute id="LightID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="MapKey" type="FixedString" value="cdc396a6-dfd8-4c75-b9b2-4e69c3416134" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_UnderdarkInquisitor_Dead" />
+					<attribute id="ParentTemplateId" type="FixedString" value="07d79901-9cb9-41e7-a289-e8b38432d24e" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="6a080ebb-57c7-c7ba-c3d9-d14c4bcafd19" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_UnderdarkInquisitor_Dead" />
+					<attribute id="Title" type="TranslatedString" handle="hb355e164g6aadg4b4fgb914g63d066452888" version="1" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="OnDeathActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="10" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="ApplyDeathTypeBloodCheck" type="bool" value="True" />
+											<attribute id="CellAtGrow" type="int32" value="2" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="ExternalCauseAsSurfaceOwner" type="bool" value="True" />
+											<attribute id="GrowTimer" type="float" value="0.4" />
+											<attribute id="LifeTime" type="float" value="60" />
+											<attribute id="SurfaceType" type="FixedString" value="SurfaceNone" />
+											<attribute id="Timeout" type="float" value="0" />
+											<attribute id="TotalCells" type="int32" value="10" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Garrin -->
+				<node id="GameObjects">
+					<attribute id="Archetype" type="FixedString" value="melee_smart" />
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="2f989fb3-4029-c5e0-89d3-8aa730b8264e" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h4e0a5d97g5f84g41cbg9b2dg3594fdb0618d" version="1" />
+					<attribute id="Equipment" type="FixedString" value="EQP_Greatsword" />
+					<attribute id="ExplodedResourceID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="Faction" type="guid" value="64321d50-d516-b1b2-cfac-2eb773de1ff6" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Icon" type="FixedString" value="2f989fb3-4029-c5e0-89d3-8aa730b8264e-JL_FOTV_Garrin_PortraitGenerator_(JL_FOTV_Garrin_Icon)" />
+					<attribute id="IsLootable" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="" />
+					<attribute id="LightID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="MapKey" type="FixedString" value="fbff49fb-b912-45b3-92b7-1077adaf699c" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_SunlitWetlands_Valorous_Human_Melee" />
+					<attribute id="ParentTemplateId" type="FixedString" value="acd7060a-43bd-4dc9-b050-9d9b2cf7b7df" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="2f989fb3-4029-c5e0-89d3-8aa730b8264e" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_SunlitWetlands_Valorous_Human_Melee" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_GARRIN_SPELLS" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="1f894f13-eac2-41e9-b0d8-c51e251d07e6" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Taarogus Dantill -->
+				<node id="GameObjects">
+					<attribute id="Archetype" type="FixedString" value="melee_smart" />
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="870c81f4-e9dc-d414-8ba5-ed01c9b89390" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h7f721343g6de1g432dg82fdg0361f131adb2" version="1" />
+					<attribute id="Equipment" type="FixedString" value="EQP_JL_FOTV_Taarogus" />
+					<attribute id="ExplodedResourceID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="Faction" type="guid" value="80182081-6bb1-95f1-c40f-4c3cea368269" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Icon" type="FixedString" value="870c81f4-e9dc-d414-8ba5-ed01c9b89390-JL_FOTV_Taarogus_PortraitGenerator_(JL_FOTV_Taarogus_Icon)" />
+					<attribute id="IsBoss" type="bool" value="True" />
+					<attribute id="IsLootable" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="" />
+					<attribute id="LightID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="MapKey" type="FixedString" value="d470683c-99eb-45e3-a1f1-eeaa62789b6e" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_TaarogusDantill" />
+					<attribute id="ParentTemplateId" type="FixedString" value="2609ea6d-f065-4c0f-877f-ebecb988c478" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="870c81f4-e9dc-d414-8ba5-ed01c9b89390" />
+					<attribute id="Race" type="guid" value="88d0d219-9dcb-462b-aab6-ccf31eeee2e3" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_TaarogusDantill" />
+					<attribute id="Title" type="TranslatedString" handle="ha7d24445gb2b2g4051gac59gacf9d1cbbd07" version="1" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_TAAROGUS_SPELLS" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VALOR_SANCSLAYER_WARLEADERQUARRY" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_TAAROGUS_MINDCONTROL_1" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="1f894f13-eac2-41e9-b0d8-c51e251d07e6" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="6d08632e-0300-4587-80b9-8e411b0efb3b" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Qynoth -->
+				<node id="GameObjects">
+					<attribute id="Archetype" type="FixedString" value="ranged_smart" />
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="badb849b-6ef7-8fee-72f4-918e1e06ed76" />
+					<attribute id="DisplayName" type="TranslatedString" handle="he7a70df4g3521g4f7ag8a1ega6a52ab70665" version="1" />
+					<attribute id="Equipment" type="FixedString" value="EQP_Longbow_B_Leather_B" />
+					<attribute id="ExplodedResourceID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="Faction" type="guid" value="64321d50-d516-b1b2-cfac-2eb773de1ff6" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Icon" type="FixedString" value="badb849b-6ef7-8fee-72f4-918e1e06ed76-JL_FOTV_Qynoth_PortraitGenerator_(JL_FOTV_Qynoth_Icon)" />
+					<attribute id="IsLootable" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="" />
+					<attribute id="LightID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="MapKey" type="FixedString" value="00d2585c-da03-42bb-bb89-038b4167aae8" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_DankCrypt_Valorous_Githyanki" />
+					<attribute id="ParentTemplateId" type="FixedString" value="de838c80-5a17-4165-81ee-13d79194b629" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="badb849b-6ef7-8fee-72f4-918e1e06ed76" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_DankCrypt_Valorous_Githyanki" />
+					<attribute id="Title" type="TranslatedString" handle="hdbe699beg7a5cg4e83gb457g803086ada534" version="1" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_QYNOTH_SPELLS" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="ASTRAL_KNOWLEDGE_INTELLIGENCE" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="1f894f13-eac2-41e9-b0d8-c51e251d07e6" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="d6f9da6b-442a-49a4-a557-aa4709041284" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vogrevol -->
+				<node id="GameObjects">
+					<attribute id="Archetype" type="FixedString" value="melee_smart" />
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="6c679880-2e26-eff4-4dbc-be43709ec0e6" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h0cb51625gea43g4ac5g9cadg18aa992da5f3" version="1" />
+					<attribute id="Equipment" type="FixedString" value="EQP_JL_FOTV_Vogrevol" />
+					<attribute id="ExplodedResourceID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="Faction" type="guid" value="64321d50-d516-b1b2-cfac-2eb773de1ff6" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Icon" type="FixedString" value="6c679880-2e26-eff4-4dbc-be43709ec0e6-JL_FOTV_Vogrevol_PortraitGenerator_(JL_FOTV_Vogrevol_Icon)" />
+					<attribute id="IsLootable" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="" />
+					<attribute id="LightID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="MapKey" type="FixedString" value="7db3674d-a22e-4464-aa27-75a1c503e193" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_RisenRoad_Tactics_HalfOrc" />
+					<attribute id="ParentTemplateId" type="FixedString" value="a31730e7-73b9-4c34-b14a-d9bcd2366cb2" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="6c679880-2e26-eff4-4dbc-be43709ec0e6" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_RisenRoad_Tactics_HalfOrc" />
+					<attribute id="Title" type="TranslatedString" handle="hbaa0fa73g2d4eg4672gbd5dg06cf2be6778f" version="1" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VOGREVOL_SPELLS" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="1f894f13-eac2-41e9-b0d8-c51e251d07e6" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="359fe8bc-f384-4f96-ad13-b339b7867eb1" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Ronros -->
+				<node id="GameObjects">
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="24c2dac8-cce2-8a5d-11ad-0f16d5d3d827" />
+					<attribute id="DisplayName" type="TranslatedString" handle="ha8656579g83b6g4d65g8a45g30d00fc166d3" version="1" />
+					<attribute id="Equipment" type="FixedString" value="" />
+					<attribute id="ExplodedResourceID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="Faction" type="guid" value="cfb709b3-220f-9682-bcfb-6f0d8837462e" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="Icon" type="FixedString" value="ce9eb8fa-798d-43e2-9ee9-1379eb49b042-JL_FOTV_Ronros_PortraitGenerator_(JL_FOTV_Ronros_Icon)" />
+					<attribute id="IsLootable" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="" />
+					<attribute id="LightID" type="FixedString" value="00000000-0000-0000-0000-000000000000" />
+					<attribute id="MapKey" type="FixedString" value="ce9eb8fa-798d-43e2-9ee9-1379eb49b042" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WhisperingDepthsInquisitor_Dead" />
+					<attribute id="ParentTemplateId" type="FixedString" value="6edcf809-8039-4b1e-8d4a-2bc76a672967" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="24c2dac8-cce2-8a5d-11ad-0f16d5d3d827" />
+					<attribute id="Stats" type="FixedString" value="STATS_JL_FOTV_WhisperingDepthsInquisitor_Dead" />
+					<attribute id="Title" type="TranslatedString" handle="hb355e164g6aadg4b4fgb914g63d066452888" version="1" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="OnDeathActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="10" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="ApplyDeathTypeBloodCheck" type="bool" value="True" />
+											<attribute id="CellAtGrow" type="int32" value="2" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="ExternalCauseAsSurfaceOwner" type="bool" value="True" />
+											<attribute id="GrowTimer" type="float" value="0.4" />
+											<attribute id="LifeTime" type="float" value="60" />
+											<attribute id="SurfaceType" type="FixedString" value="SurfaceNone" />
+											<attribute id="Timeout" type="float" value="0" />
+											<attribute id="TotalCells" type="int32" value="10" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+		<!-- WRITING -->
+			<!-- An Introduction To Wordcasting -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h3e01b821ga107g4815g89fcgc769dc0456cd" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h0c28f7b5g5cebg4f30gb34dg9a42f3cc0cbb" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="b7882e6c-af8e-4383-ae56-29e14db71ce5" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_WordcastingIntro" />
+					<attribute id="ParentTemplateId" type="FixedString" value="148985be-bcc7-4feb-87b5-207d6563ca6d" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Book" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_WordcastingIntro_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Atropus is Nigh -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h80859d4bgb403g4757g8fc9g8fa8dc4b1a44" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hde7035a3g2351g4904gad09g758a015cbb0a" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_DwarfsPoem" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="681d059b-3e37-4666-9d2e-22f61eb3d652" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_AtropusIsNigh" />
+					<attribute id="ParentTemplateId" type="FixedString" value="1e6c0f7f-3159-44cf-aae8-b90e46c2aa9f" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_AtropusIsNigh_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- The Fall of the Valorous (Journal) -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h3bdd5058g3b98g4e24gaeccg7302fcd6786a" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h84e63107g0b2fg4cecg9607ge04f3651efae" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="68ba935c-43c8-4b25-b941-b11abe508813" />
+					<attribute id="Name" type="LSString" value="BOOK_JL_FOTV_FallOfTheValorous" />
+					<attribute id="ParentTemplateId" type="FixedString" value="3de2d01a-54fc-4412-98e0-218f674e8105" />
+					<attribute id="Stats" type="FixedString" value="BOOK_JL_FOTV_RareAct1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="BOOK_JL_FOTV_FallOfTheValorous_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="not HasStatus('JL_FOTV_RAVENER_DESECRATION',context.Target)" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_DESECRATION" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_JOURNAL_QUESTUPDATER_AURA" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Folly of our Forebears -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hd7ba6c17g7c6bg404fg9172g86fa240d5ace" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h077d8472ge21dg4722g9278g6d4e82b73bb4" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="76d897e1-9e92-43de-984a-7fc333556236" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_FollyOfOurForebears" />
+					<attribute id="ParentTemplateId" type="FixedString" value="bc8b4bf8-71cb-4ec5-8f97-25b567db79a7" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_FollyOfOurForebears" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_FollyOfOurForebears_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- In Need of an Iconoclast -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h2464cd72g023bg472dg94e2gbabab42136c4" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h5221846cg308dg45b6ga2d4g466922144d34" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_UNI_GOB_Scroll_GoblinDrawingBook" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="76a9cde8-b994-4162-b846-398565ebb5d4" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_NeedIconoclast" />
+					<attribute id="ParentTemplateId" type="FixedString" value="6d5f9187-6457-4f20-b878-f5b3f8272c6f" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="c8aeb397-7a16-1375-44bd-c22c9763a9fe" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_NeedIconoclast_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Inquisitions of Faerûn -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hd5cec7bcgb090g4354g80e4g53bf13d0bd92" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hfa325ab8gb7cfg43b0gb81age47676b12600" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="5fbc3c3c-8264-4504-a579-8ac812d4f0cf" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_InquisitionsOfFaerun" />
+					<attribute id="ParentTemplateId" type="FixedString" value="67d0aa41-9847-4305-8b30-e0cf4b9fa8ee" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Book" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_InquisitionsOfFaerun_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- It Is What Must Be Done -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h8acec241g794eg4b7bgadc4gb2c02eb8663a" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hfdfb1484g80fbg43b1gb82eg10d9c948f15a" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="71908e55-b38a-4d63-8da5-d2eb5936ca7e" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_WhatMustBeDone" />
+					<attribute id="ParentTemplateId" type="FixedString" value="438862c5-5984-4e62-8ac1-3e0b0bdf8ea0" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Book" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_WhatMustBeDone_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Lamentations -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h60815e16g0e0bg419ag93b7g7f98c64f5e98" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h85c99035g3551g4041g9d10g16496c4e4091" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="b2c42da7-995e-4805-a55f-fcd6c9a31440" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_Lamentations" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c0e41765-dda2-49c3-9e72-bd3b8fa45698" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_Lamentations_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Missive to Qynoth -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hd1604bcdg3817g43bcgb1b8g6832516e78b6" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hdfe45ad6g24ecg4b8cgb432gf13736c6d9cf" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="be147e4e-b9c4-45bf-acd4-2ea0d2376ac0" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_MissiveToQynoth" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c97f9697-6480-4204-94d1-628b1c49aa89" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_MissiveToQynoth_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Notes on the Ravener's Frightful Presence -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="he4b8be23g1561g4f9ag8d0bg270a9927cbb8" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h10f766b5gb37fg448ag9b7fg9465259ea380" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="32cc2e8c-65ab-485f-9fc0-cd771137e4e9" />
+					<attribute id="Name" type="LSString" value="SCROLL_JL_FOTV_FrightfulPresenceDruidNotes" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7eaa022b-ebf2-4340-bb76-59820bb3b7d8" />
+					<attribute id="Stats" type="FixedString" value="SCROLL_JL_FOTV_UncommonAct1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="SCROLL_JL_FOTV_FrightfulPresenceDruidNotes_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- On the Nature of Soul Wards -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h56de6ca0g14ccg441dgbb7dg97d63d461f21" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h16b3ae7agbe5dg4532ga423g30847bd7951b" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="4e2ca0cc-417c-4200-91c9-0b84dab760b4" />
+					<attribute id="Name" type="LSString" value="NOTE_JL_FOTV_NatureOfSoulWards" />
+					<attribute id="ParentTemplateId" type="FixedString" value="b789159c-025a-4190-aa75-c923d7a8c32b" />
+					<attribute id="Stats" type="FixedString" value="NOTE_JL_FOTV_UncommonAct1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="NOTE_JL_FOTV_NatureOfSoulWards_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Preservation -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hd1f25625gea7dg40ebg89f6gd1bb7d025838" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="heb00857aga04eg4372gb1b4g4a4aa2afc7f4" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Paper_Poster_B" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="dc7ac62d-c610-49a5-94e1-d51773a76059" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_Preservation" />
+					<attribute id="ParentTemplateId" type="FixedString" value="cdc04459-d1b1-4923-b073-85e85c1d0fb4" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_Preservation_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Ravener Malevolence: Human Case Study #4 -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h4b786790gbcb4g49e1gbc6egba1c31e8bdc5" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h8597e9dcgd2f5g4997g8c1aga63349ac4301" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="5130db5c-af5e-451d-8fff-cf982d3a475e" />
+					<attribute id="Name" type="LSString" value="BOOK_JL_FOTV_MalevolenceCaseStudy" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e411eec9-57f5-49be-8ce1-4d72ca8a71eb" />
+					<attribute id="Stats" type="FixedString" value="BOOK_JL_FOTV_UncommonAct1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="BOOK_JL_FOTV_MalevolenceCaseStudy_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Ruination -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hc0ea569ag20d6g4104g8d40g8a2341f13752" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="heeb74e3agf4c7g4387g81begf783762bf76f" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="c0c32723-6865-471d-a2a8-983b7fa54e28" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_Ruination" />
+					<attribute id="ParentTemplateId" type="FixedString" value="676c4b3d-73d6-4457-a028-df482b36232a" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_Ruination_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Saelethil's Ailment -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h3395fc55gcce1g46bbg9812g89c6359e2684" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h055bcfa7g736fg4460g8db9g09cc9409bc1e" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="065b4c8d-e628-4857-acbe-6e6fd8b83930" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_SaelethilAilment" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d86d96c9-3769-4799-aaa5-78793a4da7e7" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_SaelethilAilment" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_SaelethilAilment_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Saelethil's Farewell -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h0e57581cg1ce3g4a2bga499g4fef8b2a866b" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h4f4c00c5g2e1dg4953g817egeebce5e8ddad" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="41ea3875-bca5-4ed2-997e-2a0c598ff07f" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_SaelethilFarewell" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d86d96c9-3769-4799-aaa5-78793a4da7e7" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_SaelethilFarewell" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_SaelethilFarewell_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Speculations of an Iconoclast -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hdd2a3381g8c23g4e1fgb163ge16bdfce3279" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hb965ec0bgc0d3g47dfgacd1g39def582bba3" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="304ce3ab-2f8c-40e8-a7f2-ed7f8a928f14" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_IconoclastSpeculation" />
+					<attribute id="ParentTemplateId" type="FixedString" value="61b98c74-8f5c-4d05-b56c-0911b59c9078" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_IconoclastSpeculation_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Treatise on the Viandrioth Culling -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hd4cafe32gfcd7g4f76g88aeg2c91010eeeca" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h11e897d4g4849g404fgbc7eg1edb58cf484e" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="a689b654-cfd7-4896-ade2-bb11454fed57" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_ViandriothCulling" />
+					<attribute id="ParentTemplateId" type="FixedString" value="956b4768-5af5-4279-87cd-58d78bb38a82" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Book" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_ViandriothCulling_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- The Unholy Communion of Dragons and Unlife -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="ha0801565g31e8g4efdg81b9g52acf39cb922" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h18d0c446g24fag46e1gaf44gc894db253e9b" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="c2fa8b17-41f4-416e-ac06-f82f132dd6b7" />
+					<attribute id="Name" type="LSString" value="BOOK_JL_FOTV_UnholyCommunion" />
+					<attribute id="ParentTemplateId" type="FixedString" value="2ec5ceb8-eacd-4570-b935-ee0f250c6ddb" />
+					<attribute id="Stats" type="FixedString" value="BOOK_JL_FOTV_UncommonAct1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="BOOK_JL_FOTV_UnholyCommunion_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Valor Outposts of the Sword Coast-->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h77518e62gf4beg4d5eg9da5gd9bdcd335257" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h876ad37dg68e9g46f5g8c6dg7d9452f3c9fd" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="e4e2d676-ad1b-45a6-9581-9ed20d45cc4d" />
+					<attribute id="Name" type="LSString" value="MAP_JL_FOTV_A1_ValorOutposts" />
+					<attribute id="ParentTemplateId" type="FixedString" value="49444d88-b29a-4f01-b3a6-eff63a89558a" />
+					<attribute id="Stats" type="FixedString" value="MAP_JL_FOTV_RareAct1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="MAP_JL_FOTV_A1_ValorOutposts_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- The Valorous Virtues -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h0664c5e8gd802g46e9g8554gbf7a3d812432" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h9049f27aga1e6g4abcg98fcgff30239ce452" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="28850abb-8564-4f0a-bda9-c48b0cb4b298" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_ValorousVirtues" />
+					<attribute id="ParentTemplateId" type="FixedString" value="30cc0fd9-fc21-4d70-8934-16f07ac7d0a3" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Book" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_ValorousVirtues_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+		<!-- GEAR -->
+			<!-- Oathkeeper's Periapt (Tier 1) -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h65303791g6e0ag4703g8086gf6ce602defda" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h838cb854g58dbg4f0agaf00g3832b1945695" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="e530a44a-67c8-4906-bfbb-2809103082f5" />
+					<attribute id="Name" type="LSString" value="GEAR_JL_FOTV_OathkeeperPeriapt" />
+					<attribute id="ParentTemplateId" type="FixedString" value="50d054ee-4982-46eb-8f16-7a1c71ec8e28" />
+					<attribute id="Stats" type="FixedString" value="GEAR_JL_FOTV_OathkeeperPeriapt" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hf7e303b5g05e5g41acg818bg3480a0f15ae5" version="1" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Oathkeeper's Periapt (Tier 2) -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h65303791g6e0ag4703g8086gf6ce602defda" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h838cb854g58dbg4f0agaf00g3832b1945695" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="e969f150-061e-49f2-9bb7-e6b9d1c6ef6c" />
+					<attribute id="Name" type="LSString" value="GEAR_JL_FOTV_OathkeeperPeriapt_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="50d054ee-4982-46eb-8f16-7a1c71ec8e28" />
+					<attribute id="Stats" type="FixedString" value="GEAR_JL_FOTV_OathkeeperPeriapt_T2" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h1a38c7adgb295g464eg8214gcfc03e4b7e3f" version="1" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Oathkeeper's Periapt (Tier 3) -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h65303791g6e0ag4703g8086gf6ce602defda" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h838cb854g58dbg4f0agaf00g3832b1945695" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="b1fe9683-4c13-4d96-bf75-20e2e803b3f8" />
+					<attribute id="Name" type="LSString" value="GEAR_JL_FOTV_OathkeeperPeriapt_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="50d054ee-4982-46eb-8f16-7a1c71ec8e28" />
+					<attribute id="Stats" type="FixedString" value="GEAR_JL_FOTV_OathkeeperPeriapt_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Hallowed Ground (Invisible Helper)-->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="he992cbe1g1c2eg44b0g9855gf279d2d82971" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h55fe636fg3ebdg4e33ga4d5ge6946a270400" version="1" />
+					<attribute id="Faction" type="guid" value="80182081-6bb1-95f1-c40f-4c3cea368269" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="a6d977fd-ef6c-4687-9051-e0b67973946d" />
+					<attribute id="Name" type="LSString" value="Helper_Invisible_Summon_HallowedGround" />
+					<attribute id="ParentTemplateId" type="FixedString" value="06f96d65-0ee5-4ed5-a30a-92a3bfe3f708" />
+					<attribute id="Stats" type="FixedString" value="OBJ_GenericImmutableObject" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="fd5aa94f-66ec-14ec-fa97-b88fae69796b" />
+				</node>
+			<!-- Empyreal Scion's Mantle (Tier 1) -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h74c11ae2g6c7eg458dg88aag3b2e53f6670a" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h350db642gb508g4661gaef7g9d4daeb8716b" version="2" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="f2dbca2a-d55f-4a53-a604-c57e3b07bb5a" />
+					<attribute id="Name" type="LSString" value="GEAR_JL_FOTV_EmpyrealMantle" />
+					<attribute id="ParentTemplateId" type="FixedString" value="42e6357a-4c05-4eda-9415-6b6b4c7d44c5" />
+					<attribute id="Stats" type="FixedString" value="GEAR_JL_FOTV_EmpyrealMantle" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hc53d3f9fg7473g408fga400gac085039475f" version="1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="Equipment">
+							<children>
+								<node id="AfroLongHair" />
+								<node id="AfroShortHair" />
+								<node id="CurlyLongHair" />
+								<node id="CurlyShortHair" />
+								<node id="DreadLongHair" />
+								<node id="DreadShortHair" />
+								<node id="LongHair" />
+								<node id="ParentRace">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="f07faafa-0c6f-4f79-a049-70e96b23d51b" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="06aaae02-bb9e-4fa3-ac00-b08e13a5b0fa" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="9a8bbeba-850c-402f-bac5-ff15696e6497" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="6d38f246-15cb-48b5-9b85-378016a7a78e" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="eb81b1de-985e-4e3a-8573-5717dc1fa15c" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="6dd3db4f-e2db-4097-b82e-12f379f94c2e" />
+											<attribute id="MapValue" type="guid" value="00000000-0000-0000-0000-000000000000" />
+										</node>
+									</children>
+								</node>
+								<node id="ShortHair" />
+								<node id="Slot">
+									<attribute id="Object" type="FixedString" value="Body" />
+								</node>
+								<node id="VisualSet">
+									<attribute id="BodySetVisual" type="FixedString" value="" />
+									<attribute id="ShowEquipmentVisuals" type="bool" value="False" />
+									<children>
+										<node id="MaterialOverrides">
+											<attribute id="MaterialResource" type="FixedString" value="" />
+											<children>
+												<node id="MaterialPresets" />
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Cloth_Primary" />
+													<attribute id="Value" type="fvec3" value="0.0903516 0.15217689 0.25" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Cloth_Secondary" />
+													<attribute id="Value" type="fvec3" value="0.0903516 0.15217689 0.25" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Cloth_Tertiary" />
+													<attribute id="Value" type="fvec3" value="0.1 0.1 0.1" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Color_01" />
+													<attribute id="Value" type="fvec3" value="0.93227684 0.58597296 0" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Color_02" />
+													<attribute id="Value" type="fvec3" value="0.68002033 0 0" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Color_03" />
+													<attribute id="Value" type="fvec3" value="0.101145156 0.101145156 0.101145156" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Custom_1" />
+													<attribute id="Value" type="fvec3" value="0.93227684 0.58597296 0" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Custom_2" />
+													<attribute id="Value" type="fvec3" value="0.68002033 0 0" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Leather_Primary" />
+													<attribute id="Value" type="fvec3" value="0.101145156 0.101145156 0.101145156" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Leather_Secondary" />
+													<attribute id="Value" type="fvec3" value="0.93227684 0.58597296 0" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Leather_Tertiary" />
+													<attribute id="Value" type="fvec3" value="0.51033914 0.014906505 0.014906505" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Metal_Secondary" />
+													<attribute id="Value" type="fvec3" value="0.85 0.6414669 0.25500003" />
+												</node>
+												<node id="Vector3Parameters">
+													<attribute id="Color" type="bool" value="True" />
+													<attribute id="Custom" type="bool" value="False" />
+													<attribute id="Enabled" type="bool" value="True" />
+													<attribute id="Parameter" type="FixedString" value="Metal_Tertiary" />
+													<attribute id="Value" type="fvec3" value="0.5479935 0.29321614 0.108711146" />
+												</node>
+											</children>
+										</node>
+										<node id="RealMaterialOverrides" />
+									</children>
+								</node>
+								<node id="Visuals">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="7d73f501-f65e-46af-a13b-2cacf3985d05" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="98647b6e-9a52-3fe4-88e5-3ebc239eab21" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="7a79a71f-35ff-4ed6-7a1f-593fdc887c53" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="71180b76-5752-4a97-b71f-911a69197f58" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="28b9efee-0da6-f29d-1f00-6977155b8fb5" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="01e98505-64e9-81bb-4419-9b27c451aff9" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="e39505f7-f576-4e70-a99e-8e29cd381a11" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="badb219e-d7ac-fb09-b783-98bb2ce35129" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="b436106f-c67f-45e2-62a8-4bf7cac8cc3f" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="47c0315c-7dc6-4862-b39b-8bf3a10f8b54" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="fac027ba-50c8-8ca9-7625-5802c268022d" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="be343cf9-5c3e-7572-4104-90de80936957" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="f07faafa-0c6f-4f79-a049-70e96b23d51b" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="c72a2bae-dffe-4f0f-3f1c-c565d1808b28" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="838033b2-46d0-6fa3-1e8e-16a78eb2c187" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="06aaae02-bb9e-4fa3-ac00-b08e13a5b0fa" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="2ef96f66-44fc-7dfc-fe44-ef5a8d6c9dd7" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="649313a6-1055-006a-d920-d97d2f32c37c" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="abf674d2-2ea4-4a74-ade0-125429f69f83" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="f1108205-9ba6-6fc1-7cb1-53485f1f07e9" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="fab603c5-4195-186e-a868-091f1df58e2b" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="b4a34ce7-41be-44d9-8486-938fe1472149" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="0d17d87c-f273-4538-9c31-a5e564028f81" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="45db3ea3-b3d1-ab1e-b34c-dadf41286ea8" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="a933e2a8-aee1-4ecb-80d2-8f47b706f024" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="833c74ec-042d-da17-d62a-5b8e8c822883" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="19024bff-ee5c-9b4c-63b9-f132c46b9f6f" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="8f00cf38-4588-433a-8175-8acdbbf33f33" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="d145894b-70a9-1fb2-ed36-632b13732cb1" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="930aadc5-7137-2e0c-cfa5-3a2e895d932a" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="5640e766-aa53-428d-815b-6a0b4ef95aca" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="cbbbb37f-2048-8962-dd9f-35c369dfb9b5" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="b289a650-a712-8fe9-942d-4a23ec840bf9" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="c491d027-4332-4fda-948f-4a3df6772baa" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="feed7161-6047-6b79-02db-c01ef8264e7c" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="44dab5be-0714-8d29-885e-d8e7962828a0" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="9a8bbeba-850c-402f-bac5-ff15696e6497" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="d9aae4a3-26ad-07cf-c1f6-1687216b350d" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="f4a76d7d-c370-a101-a9c7-530c611448e6" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="6d38f246-15cb-48b5-9b85-378016a7a78e" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="96fec725-8cf1-a9e5-c2e2-d9095324d2c5" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="a8a6f1a0-5975-4ab9-e775-a0512e989c64" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="eb81b1de-985e-4e3a-8573-5717dc1fa15c" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="66c9dcc2-f1d9-7b39-e47e-24224d74861a" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="56ae5d29-46fc-6596-cc35-e99d23b4e6bc" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="6dd3db4f-e2db-4097-b82e-12f379f94c2e" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="76b63979-4641-6ef4-8cbe-2b3fc8a7911d" />
+												</node>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="0e07ad6c-2ecc-151f-0c14-3f854deebf51" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="WavyLongHair" />
+								<node id="WavyShortHair" />
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Empyreal Scion's Mantle (Tier 2) -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="c93c70aa-5e80-4399-b5e4-2dec32ff5efc" />
+					<attribute id="Name" type="LSString" value="GEAR_JL_FOTV_EmpyrealMantle_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f2dbca2a-d55f-4a53-a604-c57e3b07bb5a" />
+					<attribute id="Stats" type="FixedString" value="GEAR_JL_FOTV_EmpyrealMantle_T2" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h4dadb61egfc17g4638gba74gbe9a479396c3" version="1" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Empyreal Scion's Mantle (Tier 3) -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="b8b815d3-ddb6-4b28-a6c9-236cba2c04e0" />
+					<attribute id="Name" type="LSString" value="GEAR_JL_FOTV_EmpyrealMantle_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f2dbca2a-d55f-4a53-a604-c57e3b07bb5a" />
+					<attribute id="Stats" type="FixedString" value="GEAR_JL_FOTV_EmpyrealMantle_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Longsword] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="adc31816-0459-4809-847d-3574dd80b437" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Longsword" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e3b2adb6-7493-466e-9c65-4281fb74e83f" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Longsword" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Longsword] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="d7c9b9e4-624b-4e90-ad76-a38f025f05d8" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Longsword_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="adc31816-0459-4809-847d-3574dd80b437" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Longsword_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Longsword] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="708e0345-50f2-470e-b67c-e4c0e30a7693" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Longsword_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="adc31816-0459-4809-847d-3574dd80b437" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Longsword_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Battleaxe] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="78f2641a-eb66-4530-aec8-3509c0c000b3" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Battleaxe" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7faff867-9cb3-432b-aa27-8de281b7428e" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Battleaxe" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Battleaxe] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="4fb38a07-32f4-4201-9392-7a0af8656dcd" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Battleaxe_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="78f2641a-eb66-4530-aec8-3509c0c000b3" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Battleaxe_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Battleaxe] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="8da3d733-32ac-4f27-97fa-dc18b8dd0608" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Battleaxe_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="78f2641a-eb66-4530-aec8-3509c0c000b3" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Battleaxe_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Dagger] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="7b431c6f-69d2-4f27-9b2a-d19c0a503a4f" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Dagger" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c68026c8-8af9-4a05-b77a-246a01bafe61" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Dagger" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Dagger] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="71007c8f-e9d3-41c6-8604-323c951c5f50" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Dagger_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7b431c6f-69d2-4f27-9b2a-d19c0a503a4f" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Dagger_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Dagger] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="6e6fdfbc-7e10-4db5-a3ec-6f30bb01db82" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Dagger_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7b431c6f-69d2-4f27-9b2a-d19c0a503a4f" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Dagger_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Glaive] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="534dd97b-f103-4ee1-87ad-a2aea6a24663" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Glaive" />
+					<attribute id="ParentTemplateId" type="FixedString" value="bc1c2a84-27f5-46e4-b4b4-0f5ca534469c" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Glaive" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Glaive] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="3b72f767-2a39-4262-8e88-afd9eb59bd21" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Glaive_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="534dd97b-f103-4ee1-87ad-a2aea6a24663" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Glaive_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Glaive] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="3f4f2adf-fa41-4817-88c4-5c8372207d5e" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Glaive_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="534dd97b-f103-4ee1-87ad-a2aea6a24663" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Glaive_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Morningstar] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="4beeabf4-470d-46fa-a3d7-5f0806543946" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Morningstar" />
+					<attribute id="ParentTemplateId" type="FixedString" value="9e2c45b2-0411-42cc-bac6-6222c1334cb0" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Morningstar" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Morningstar] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="cd27f4f3-69a0-43d1-9559-20c08edcbe8a" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Morningstar_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="4beeabf4-470d-46fa-a3d7-5f0806543946" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Morningstar_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Morningstar] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="2b79136b-ae5d-4731-ab83-c33ec3abfce7" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Morningstar_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="4beeabf4-470d-46fa-a3d7-5f0806543946" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Morningstar_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Scimitar] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="25cec03b-3ec0-40e3-9f83-0f92ddbadf30" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Scimitar" />
+					<attribute id="ParentTemplateId" type="FixedString" value="5193af64-48c1-406f-90bf-87f7f01b4684" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Scimitar" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Scimitar] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="dab1ce92-976a-4f40-9832-cb814677107c" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Scimitar_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="25cec03b-3ec0-40e3-9f83-0f92ddbadf30" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Scimitar_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Scimitar] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="66b7d2ad-30e8-4d5e-819e-990f86bbeff4" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Scimitar_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="25cec03b-3ec0-40e3-9f83-0f92ddbadf30" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Scimitar_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Shortsword] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="b69712cc-4875-424b-b3bf-849afb4c4451" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Shortsword" />
+					<attribute id="ParentTemplateId" type="FixedString" value="0839fb15-24ab-4c3a-b168-413a47ed710a" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Shortsword" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Shortsword] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="c1eb5398-542c-47d0-8f56-62ef035cb481" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Shortsword_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="b69712cc-4875-424b-b3bf-849afb4c4451" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Shortsword_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Shortsword] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="69aa5b72-970f-446b-83ff-2ab21ab9ab63" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Shortsword_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="b69712cc-4875-424b-b3bf-849afb4c4451" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Shortsword_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Sickle] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="fe5167a4-8d18-4b9d-8602-e826d3aec808" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Sickle" />
+					<attribute id="ParentTemplateId" type="FixedString" value="5b4b10cd-089f-4675-8392-5bfa6749d79c" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Sickle" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Sickle] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="0c40ef18-7021-4f87-840d-44555cfc3ff6" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Sickle_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="fe5167a4-8d18-4b9d-8602-e826d3aec808" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Sickle_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Sickle] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="75e25338-3d4b-41af-ba5a-7bb15ee12698" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Sickle_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="fe5167a4-8d18-4b9d-8602-e826d3aec808" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Sickle_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Spear] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="ec717db5-1aa8-484d-89cf-8188ee499b4c" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Spear" />
+					<attribute id="ParentTemplateId" type="FixedString" value="74d9758a-84e9-4244-9ae8-14acee76acb3" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Spear" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Spear] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="cdadf463-d7ca-4515-876a-d7c71d98c718" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Spear_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ec717db5-1aa8-484d-89cf-8188ee499b4c" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Spear_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Spear] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="909763c2-598a-427b-9c2f-79b84b6046a7" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Spear_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ec717db5-1aa8-484d-89cf-8188ee499b4c" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Spear_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Trident] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="7022d31f-a146-456b-b683-d47879159d7f" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Trident" />
+					<attribute id="ParentTemplateId" type="FixedString" value="6cf827d6-5bae-480a-a1b4-d7fdb0e68801" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Trident" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Trident] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="3fb31f39-42b4-49f7-bc47-e6a8e2ca1939" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Trident_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7022d31f-a146-456b-b683-d47879159d7f" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Trident_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Trident] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="41d46039-526c-43c6-8fbe-7a813aa36084" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Trident_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7022d31f-a146-456b-b683-d47879159d7f" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Trident_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Unarmed] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="908bb5a6-473e-4d9f-b782-c5613ef1803a" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Quarterstaff" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e1e112b2-5465-4e37-acdc-372666ec1521" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Quarterstaff" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Unarmed] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="be2e13d7-e586-4df1-9119-fee17e4cb198" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Quarterstaff_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="908bb5a6-473e-4d9f-b782-c5613ef1803a" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Quarterstaff_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Unarmed] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="d96151f5-578c-4d58-8c7c-653a5c4df4e0" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Quarterstaff_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="908bb5a6-473e-4d9f-b782-c5613ef1803a" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Quarterstaff_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Warhammer] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="3ad8ef80-3b55-42bf-808c-9bde1cd95be7" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Warhammer" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e6b027a7-40bb-445e-b199-38b08d2b4832" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Warhammer" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Warhammer] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="38dba805-d78c-4443-838c-630f8da09a73" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Warhammer_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="3ad8ef80-3b55-42bf-808c-9bde1cd95be7" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Warhammer_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Warhammer] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="e2a3b4ff-18cd-4813-836b-6ed435f9f708" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Warhammer_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="3ad8ef80-3b55-42bf-808c-9bde1cd95be7" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Warhammer_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 1) [Warpick] -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
+					<attribute id="MapKey" type="FixedString" value="3d383cbc-9ae3-4812-9fa3-07425626edfd" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_WarPick" />
+					<attribute id="ParentTemplateId" type="FixedString" value="a5012da9-9cfa-467b-901a-61e33db55516" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_WarPick" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Vindicator's Resplendence (Tier 2) [Warpick] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="d75a3002-567f-4a56-bf3b-8574a6f86d21" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_WarPick_T2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="3d383cbc-9ae3-4812-9fa3-07425626edfd" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_WarPick_T2" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			<!-- Vindicator's Resplendence (Tier 3) [Warpick] -->
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="dc02a423-bdff-4e9e-87d4-3cb086eb343e" />
+					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_WarPick_T3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="3d383cbc-9ae3-4812-9fa3-07425626edfd" />
+					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_WarPick_T3" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+		<!-- ITEMS -->
+			<!-- Ravener Appendages -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hec429557ga5d8g482eg8ebegeddf61ffb0cf" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc8f19290g9901g4c09ga16ega3cf378c5a47" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="47f24dce-4a4a-43c3-8b41-8570d26ac0e5" />
+					<attribute id="Name" type="LSString" value="OBJECT_JL_FOTV_RavenerAppendages" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7862493e-b0c7-43d8-955f-bfe73b508681" />
+					<attribute id="Stats" type="FixedString" value="OBJECT_JL_FOTV_RavenerBone_VeryRare" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

@@ -1,0 +1,10 @@
+new entry "OBJECT_JL_FOTV_RavenerBone_VeryRare"
+type "Object"
+using "OBJ_GenericLootItem"
+data "Rarity" "VeryRare"
+data "ValueOverride" "200"
+
+new entry "OBJECT_JL_FOTV_RavenerAppendages"
+type "Object"
+using "OBJECT_JL_FOTV_RavenerBone_VeryRare"
+data "RootTemplate" "47f24dce-4a4a-43c3-8b41-8570d26ac0e5"

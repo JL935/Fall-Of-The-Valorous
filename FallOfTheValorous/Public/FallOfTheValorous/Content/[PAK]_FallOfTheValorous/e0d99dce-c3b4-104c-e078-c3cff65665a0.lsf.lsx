@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="e0d99dce-c3b4-104c-e078-c3cff65665a0" />
+					<attribute id="Name" type="LSString" value="VFX_Status_JL_FOTV_RavenerDesecration_AURA" />
+					<attribute id="SourceFile" type="LSString" value="Public/FallOfTheValorous/Assets/Effects/Effects_Banks/VFX_Status_JL_FOTV_RavenerDesecration_AURA.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Status_JL_FOTV_RavenerDesecration_AURA" />
+					<attribute id="BoundsMin" type="fvec3" value="-5 -5 -5" />
+					<attribute id="BoundsMax" type="fvec3" value="5 5 5" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="3.016356" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6c9f069e-bdce-199a-0dc6-05f672dc3f17" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="39f6fbef-4b40-0bdb-e513-aff7232349a8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f6db11f4-c563-6173-245b-23e6910c5b83" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="99595f93-7104-e008-117c-cdb755831a06" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="7d91ca07-e60a-ab4e-8205-1eb2513c63ca" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="35616aa2-cdec-342a-943c-74b0fd665ecf" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e8a4937f-b05a-eb00-3785-2e1e75cf34db" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

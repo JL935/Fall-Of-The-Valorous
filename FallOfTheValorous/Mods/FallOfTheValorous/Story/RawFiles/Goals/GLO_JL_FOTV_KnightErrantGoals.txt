@@ -1,0 +1,247 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "GLO_Noble_Approval", 054c1be7-1284-49f6-ad31-de2768dffed7, "GlobalAvatar");
+DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97, "GLO_KnightErrant_BossOneShot", f73f942a-716c-4e45-af3a-bd8ba052c56e);
+
+KBSECTION
+
+// The way they set up Strategist makes it so that only Soldier can complete it, so here I copy everything but make it unique to Knight-Errant instead
+IF
+UsingSpell((CHARACTER)_Player, _, _, _, _)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell(_Player, _)
+THEN
+PROC_GLO_Backgrounds_KnightErrant_BossOneShotClear(_Player);
+
+IF
+UsingSpell((CHARACTER)_PartyMember, _, _, _, _StoryActionID)
+AND
+DB_PartyMembers(_PartyMember)
+AND
+NOT DB_GLO_Backgrounds_Blocked("GLO_KnightErrant_BossOneShot")
+AND
+DB_GLO_Backgrounds_Tags((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell(_PartyMember, _)
+THEN
+DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell((CHARACTER)_PartyMember, _StoryActionID);
+
+IF
+CastSpellFailed((CHARACTER)_Player, _, _, _, _StoryActionID)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell(_Player, _StoryActionID)
+THEN
+PROC_GLO_Backgrounds_KnightErrant_BossOneShotClear(_Player);
+
+IF
+CastedSpell((CHARACTER)_Player, _, _, _, _StoryActionID)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell(_Player, _StoryActionID)
+THEN
+PROC_GLO_Backgrounds_KnightErrant_BossOneShotClear(_Player);
+
+IF
+Died(_Boss)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotDamaged(_Boss, _Player, _StoryActionID)
+THEN
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotDamaged(_Boss, _Player, _StoryActionID);
+
+PROC
+PROC_GLO_Backgrounds_KnightErrant_BossOneShotClear((CHARACTER)_Player)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotAwaitsBlocking(_Boss, _Player, _StoryActionId)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss)
+THEN
+DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss);
+
+PROC
+PROC_GLO_Backgrounds_KnightErrant_BossOneShotClear((CHARACTER)_Player)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotDamaged(_Boss, _Player, _StoryActionId)
+AND
+NOT DB_PermaDefeated(_Boss)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotAwaitsBlocking(_Boss, _Player, _StoryActionId)
+THEN
+DB_GLO_Backgrounds_KnightErrant_BossOneShotAwaitsBlocking(_Boss, _Player, _StoryActionId);
+
+PROC
+PROC_GLO_Backgrounds_KnightErrant_BossOneShotClear((CHARACTER)_Player)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell(_Player, _StoryActionID)
+THEN
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell(_Player, _StoryActionID);
+
+PROC
+PROC_GLO_Backgrounds_KnightErrant_BossOneShotClear((CHARACTER)_Player)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotDamaged(_Boss, _Player, _StoryActionId)
+THEN
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotDamaged(_Boss, _Player, _StoryActionId);
+
+IF
+AttackedBy((CHARACTER)_Boss, (CHARACTER)_Player, _, _, _, _, _StoryActionId)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell(_Player, _StoryActionId)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotDamaged(_Boss, _, _)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotAwaitsBlocking(_Boss, _, _)
+AND
+IsBoss(_Boss, 1)
+THEN
+DB_GLO_Backgrounds_KnightErrant_BossOneShotDamaged(_Boss, _Player, _StoryActionId);
+
+IF
+AttackedBy((CHARACTER)_Boss, (CHARACTER)_Player, _, _, _, _, _StoryActionId)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotAwaitsBlocking(_Boss, _, _)
+THEN
+DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss);
+
+IF
+AttackedBy((CHARACTER)_Boss, (CHARACTER)_Character, _, _, _, _, _StoryActionId)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss)
+AND
+NOT DB_GLO_Backgrounds_Blocked("GLO_KnightErrant_BossOneShot")
+AND
+DB_GLO_Backgrounds_Tags((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97)
+AND
+NOT QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NoSpellOrCurrent(_Boss, _Character, _StoryActionId)
+AND
+IsBoss(_Boss, 1)
+THEN
+DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss);
+
+IF
+HitpointsChanged((CHARACTER)_Boss, _Percentage)
+AND
+_Percentage < 100.0
+AND
+_Percentage > 0.0
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell(_, _)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss)
+AND
+NOT DB_GLO_Backgrounds_Blocked("GLO_KnightErrant_BossOneShot")
+AND
+DB_GLO_Backgrounds_Tags((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97)
+AND
+IsBoss(_Boss, 1)
+THEN
+DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss);
+
+IF
+KilledBy((CHARACTER)_Boss, (CHARACTER)_Player, _, _StoryActionId)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss)
+AND
+NOT DB_GLO_Backgrounds_Blocked("GLO_KnightErrant_BossOneShot")
+AND
+DB_GLO_Backgrounds_Tags((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97)
+AND
+QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NoSpellOrCurrent(_Boss, _Player, _StoryActionId)
+AND
+QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NotAwaitsBlockingOrCurrent(_Boss, _Player, _StoryActionId)
+AND
+IsBoss(_Boss, 1)
+THEN
+PROC_GLO_Backgrounds_CompleteGoal(_Player, "GLO_KnightErrant_BossOneShot");
+
+IF
+EnteredChasm((CHARACTER)_Boss, _PartyMember, _, _X, _Y, _Z)
+AND
+DB_PartyMembers((CHARACTER)_PartyMember)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss)
+AND
+NOT DB_GLO_Backgrounds_Blocked("GLO_KnightErrant_BossOneShot")
+AND
+DB_GLO_Backgrounds_Tags((TAG)JL_FOTV_KNIGHT_ERRANT_d79399e1-1c15-4a83-b4cc-c2e44e91df97)
+AND
+QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NoSpellOrCurrent(_Boss, _PartyMember, -1)
+AND
+QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NotAwaitsBlockingOrCurrent(_Boss, _PartyMember, -1)
+AND
+IsBoss(_Boss, 1)
+AND
+GetDistanceToPosition(_PartyMember, _X, _Y, _Z, _Distance)
+AND
+_Distance < 30.0
+THEN
+PROC_GLO_Backgrounds_CompleteGoal(_PartyMember, "GLO_KnightErrant_BossOneShot");
+
+IF
+HitpointsChanged((CHARACTER)_Boss, _Percentage)
+AND
+_Percentage >= 100.0
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss)
+THEN
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked(_Boss);
+
+QRY
+QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NoSpellOrCurrent((CHARACTER)_Boss, (CHARACTER)_Player, -1)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell(_Player, _StoryActionID)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NoSpellOrCurrent((CHARACTER)_Boss, (CHARACTER)_Player, (INTEGER)_StoryActionID)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell(_Player, _StoryActionID)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NoSpellOrCurrent(_Boss, _, _)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotDamaged(_Boss, _, _)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NotAwaitsBlockingOrCurrent((CHARACTER)_Boss, (CHARACTER)_Player, -1)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotAwaitsBlocking(_Boss, _Player, _StoryActionID)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NotAwaitsBlockingOrCurrent((CHARACTER)_Boss, (CHARACTER)_Player, (INTEGER)_StoryActionID)
+AND
+DB_GLO_Backgrounds_KnightErrant_BossOneShotAwaitsBlocking(_Boss, _Player, _StoryActionID)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_GLO_Backgrounds_KnightErrant_BossOneShot_NotAwaitsBlockingOrCurrent((CHARACTER)_Boss, (CHARACTER)_Player, (INTEGER)_StoryActionID)
+AND
+NOT DB_GLO_Backgrounds_KnightErrant_BossOneShotAwaitsBlocking(_Boss, _, _)
+THEN
+DB_NOOP(1);
+
+IF
+DB_GLO_Backgrounds_Blocked("GLO_KnightErrant_BossOneShot")
+THEN
+SysClear("DB_GLO_Backgrounds_KnightErrant_BossOneShotBlocked", 1);
+SysClear("DB_GLO_Backgrounds_KnightErrant_BossOneShotSpell", 2);
+SysClear("DB_GLO_Backgrounds_KnightErrant_BossOneShotDamaged", 3);
+SysClear("DB_GLO_Backgrounds_KnightErrant_BossOneShotAwaitsBlocking", 3);
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "ModWrapper_Gustav"

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="8fbb63a8-e301-57e3-9583-a485ffe23b4c" />
+					<attribute id="Name" type="LSString" value="VFX_Valor_Litany_Resurgence_Target_BodyFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/FallOfTheValorous/Assets/Effects/Effects_Banks/VFX_Valor_Litany_Resurgence_Target_BodyFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Valor_Litany_Resurgence_Target_BodyFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-6 -6 -6" />
+					<attribute id="BoundsMax" type="fvec3" value="6 6 6" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="2.008414" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="83fe3c2c-7557-b45f-e7c2-c988dc149799" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="85618ce5-276a-8c24-31e3-5a146e2c0150" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="bc8619b9-92cf-d0bc-f770-8e6775cb0220" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0304ee2e-6c7b-498b-2e84-02ce96eec15c" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="97ae239c-85b6-cc5a-cd23-7e0753c1ed3d" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5e1b3b30-8ca9-ea66-5346-d2a89dbf79fc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0fb917cc-128d-3eaa-0927-4c3a42f0101a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6d9e3d13-d153-5ecc-5248-0a46c058e001" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

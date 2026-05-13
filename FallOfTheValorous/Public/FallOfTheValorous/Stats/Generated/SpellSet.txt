@@ -1,0 +1,5 @@
+new spellset "JL_FOTV_RavenerCommonActions"
+//add spell "Shout_Dash_Drake"
+add spell "Projectile_Fly"
+add spell "Shout_Disengage_Drake"
+add spell "Shout_Hide_Drake"

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="060a97b1-c983-3978-3ae2-87c0c739e558" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_Prepare_Valor_LitanyWeakness_BanishingSmite_01" />
+					<attribute id="SourceFile" type="LSString" value="Public/FallOfTheValorous/Assets/Effects/Effects_Banks/VFX_Spells_Prepare_Valor_LitanyWeakness_BanishingSmite_01.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Spells_Prepare_Valor_LitanyWeakness_BanishingSmite_01" />
+					<attribute id="BoundsMin" type="fvec3" value="-5 -3.5 -5" />
+					<attribute id="BoundsMax" type="fvec3" value="5 6.5 5" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="4" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5987a823-d322-ac66-9954-ed85662d0c9e" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f7fc084b-d098-0d9a-8033-1cb61c3beb37" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="de5d88cb-4eaa-ee8e-c275-ee8a2091f0e0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a969305e-c655-c909-0b4b-6bff0f83c8a8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="026eeb30-cee4-6657-abde-06f2df6f91d2" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c4fd2046-3103-1578-cf7c-6f947e5a4d8f" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e0a2dc6d-f4fb-b5f4-edba-fbfc9b41f1d5" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="43ace358-6149-2611-ed7a-5d9232e79c28" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f725b8e0-e32a-e0fb-db9d-bdbb0d254c36" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="4f5b525d-cdf7-1d04-2db5-d1f6e28c013b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="4b32aed8-01c8-5ab2-adcc-2b5fad7712cf" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="65ddcfa5-6421-09ce-1b2f-c7b0cf039777" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

@@ -1,0 +1,251 @@
+function TargetSpellDC(fallbackDC, entity, ability)
+    local entity = entity or context.Target
+	local spellDC = fallbackDC or 10 -- Global default so that we don't return 0
+    local ability = ability or context.PreferredCastingAbility
+	if entity.IsValid then
+        try
+		    spellDC = CalculateSpellDC(ability, entity)
+        catch e then
+        end
+	end
+	return spellDC
+end
+
+function NegativeLevelDeathCheck(entity)
+    local entity = entity or context.Target
+    local charlevel = entity.Level
+    local neglevel = GetStatusDuration('JL_FOTV_NEGATIVELEVEL', entity)
+    return ConditionResult(neglevel >= charlevel)
+end
+
+function FrightfulPresenceImmuneCheck()
+    local notscared = IsImmuneToStatus('SG_Frightened',context.Target)
+    local despairaura = HasPassive('JL_FOTV_Ravener_AuraOfDespair',context.Source)
+    if (not notscared.Result) or (notscared.Result and despairaura.Result) then
+        st = SavingThrow(Ability.Wisdom,SourceSpellDC(),AdvantageOnFrightened(),DisadvantageOnFrightened())
+        return ConditionResult(st.Result,{},{},st.Chance)
+    elseif (notscared.Result) and (not despairaura.Result) then
+        return ConditionResult(true)
+    end
+    return ConditionResult(false)
+end
+
+function VaelythraTargetConditions()
+    local normalconditions = (Ally() & ~Dead()) | HasStatus('JL_FOTV_TAAROGUS_MINDCONTROL_4', context.Target)
+    local soulconsumed = HasStatus('JL_FOTV_RAVENER_CONSUMPTION', context.Target)
+    local ravenerdead = ~HasStatus('JL_FOTV_RAVENER_CONSUMPTION_BLOCK_VAELYTHRA',context.Target)
+    if soulconsumed.Result then
+        return ConditionResult(ravenerdead.Result, {ConditionError("SoulStillConsumed")})
+    end
+    return ConditionResult(normalconditions.Result, {ConditionError("MustBeAllyNotDead")})
+end
+
+function PotentLulixCheck(entity)
+    local entity = entity or context.Target
+    local potentenemy = Tagged('DRAGON',entity) | Tagged('FIEND',entity) | Tagged('UNDEAD',entity) | Tagged('UNDEAD_BEAST',entity)
+    return ConditionResult(potentenemy.Result)
+end
+
+function HasVaelythraCooldown()
+    local entity = entity or context.Source
+    local vaelythracooldown = HasStatus('JL_FOTV_VAELYTHRA_COOLDOWN',entity)
+    return ConditionResult(vaelythracooldown.Result, {}, {ConditionError("VaelythraCooldown")})
+end
+
+function HasArzimyrCooldown()
+    local entity = entity or context.Source
+    local arzimyrcooldown = HasStatus('JL_FOTV_ARZIMYR_COOLDOWN',entity)
+    return ConditionResult(arzimyrcooldown.Result, {}, {ConditionError("HolyWordLRCooldown")})
+end
+
+function HasXulvorithCooldown()
+    local entity = entity or context.Source
+    local xulvorithcooldown = HasStatus('JL_FOTV_XULVORITH_COOLDOWN',entity)
+    return ConditionResult(xulvorithcooldown.Result, {}, {ConditionError("HolyWordLRCooldown")})
+end
+
+function IsHolyClass(entity)
+    local entity = entity or context.Target
+    return Tagged('PALADIN', entity) | Tagged('CLERIC', entity) | Tagged('INQUISITOR', entity)
+end
+
+function SoulConsumedDivineInterventionCheck()
+    local result = HasStatus('JL_FOTV_RAVENER_SOULDEVOURED',context.Target)
+    return ConditionResult(result.Result,{},{ConditionError("RequiresDivineIntervention")})
+end
+
+function HasDemoralizingPresenceStatus(entity)
+    local entity = entity or context.Source
+    return HasAnyStatus({'JUDGMENT_CONVICTION','JUDGMENT_CONVICTION_2','JUDGMENT_CONVICTION_3','JUDGMENT_DESTRUCTION','JUDGMENT_DESTRUCTION_2','JUDGMENT_DESTRUCTION_3','JUDGMENT_JUSTICE','JUDGMENT_JUSTICE_2','JUDGMENT_JUSTICE_3'},{},{},entity)
+end
+
+function IsDemoralizingPresenceStatus()
+    return StatusId('JUDGMENT_CONVICTION') | StatusId('JUDGMENT_CONVICTION_2') | StatusId('JUDGMENT_CONVICTION_3') | StatusId('JUDGMENT_DESTRUCTION') | StatusId('JUDGMENT_DESTRUCTION_2') | StatusId('JUDGMENT_DESTRUCTION_3') | StatusId('JUDGMENT_JUSTICE') | StatusId('JUDGMENT_JUSTICE_2') | StatusId('JUDGMENT_JUSTICE_3')
+end
+
+function HasInspiringPresenceStatus(entity)
+    local entity = entity or context.Source
+    return HasAnyStatus({'JUDGMENT_PROTECTION','JUDGMENT_PROTECTION_2','JUDGMENT_PROTECTION_3','JUDGMENT_PURITY','JUDGMENT_PURITY_2','JUDGMENT_PURITY_3','JUDGMENT_RESILIENCY','JUDGMENT_RESILIENCY_2','JUDGMENT_RESILIENCY_3'},{},{},entity)
+end
+
+function IsInspiringPresenceStatus()
+    return StatusId('JUDGMENT_PROTECTION') | StatusId('JUDGMENT_PROTECTION_2') | StatusId('JUDGMENT_PROTECTION_3') | StatusId('JUDGMENT_PURITY') | StatusId('JUDGMENT_PURITY_2') | StatusId('JUDGMENT_PURITY_3') | StatusId('JUDGMENT_RESILIENCY') | StatusId('JUDGMENT_RESILIENCY_2') | StatusId('JUDGMENT_RESILIENCY_3')
+end
+
+function LitanyOfWeaknessRequirementCondition()
+    return ConditionResult(not HasStatus('JL_FOTV_VALOR_LITANYWEAKNESS').Result,{ConditionError("LitanyOfWeaknessConditionError")})
+end
+
+function JL_FOTV_IsFlanked(entity)
+    local entity = entity or context.Target
+    local result = HasStatus('FLANKING_FRAMEWORK_MAIN_STATUS_200002',entity) | HasStatus('JL_FOTV_LITANY_DUSKDAWN_ENEMY',entity)
+    return ConditionResult(result.Result)
+end
+
+function SoulConsumptionSave()
+    local notyoungravener = ~Tagged('JL_FOTV_YOUNG_RAVENER',context.Source)
+    local notadultravener = ~Tagged('JL_FOTV_ADULT_RAVENER',context.Source)
+    if notyoungravener.Result and notadultravener.Result then
+        st = ~SavingThrow(Ability.Constitution,SourceSpellDC())
+        return ConditionResult(st.Result,{},{},st.Chance)
+    end
+    return ConditionResult(false)
+end
+
+function IsARavener(entity)
+    local entity = entity or context.Target
+    return Tagged('JL_FOTV_YOUNG_RAVENER',entity) | Tagged('JL_FOTV_ADULT_RAVENER',entity) | Tagged('JL_FOTV_ANCIENT_RAVENER',entity) | Tagged('JL_FOTV_GREATWYRM_RAVENER',entity)
+end
+
+function IsHolyWordApostle(entity)
+    local entity = entity or context.Target
+    return ConditionResult(HasStatus('JL_FOTV_HOLYWORD_ENABLER').Result,{ConditionError("MustEnableHolyWords")})
+end
+
+function IsDemoralizingPresenceSpell()
+    return SpellId('Target_JudgmentConviction') | SpellId('Target_JudgmentDestruction') | SpellId('Target_JudgmentJustice') | SpellId('Shout_JudgmentConviction') | SpellId('Shout_JudgmentDestruction') | SpellId('Shout_JudgmentJustice') | SpellId('Shout_JudgmentConviction_Recast') | SpellId('Shout_JudgmentDestruction_Recast') | SpellId('Shout_JudgmentJustice_Recast') | SpellId('Shout_JudgmentConviction_Recast_2') | SpellId('Shout_JudgmentDestruction_Recast_2') | SpellId('Shout_JudgmentJustice_Recast_2') | SpellId('Shout_JudgmentConviction_Recast_3') | SpellId('Shout_JudgmentDestruction_Recast_3') | SpellId('Shout_JudgmentJustice_Recast_3')
+end
+
+function IsInspiringPresenceSpell()
+    return SpellId('Target_JudgmentProtection') | SpellId('Target_JudgmentPurity') | SpellId('Target_JudgmentResiliency') | SpellId('Shout_JudgmentProtection') | SpellId('Shout_JudgmentPurity') | SpellId('Shout_JudgmentResiliency') | SpellId('Shout_JudgmentProtection_Recast') | SpellId('Shout_JudgmentPurity_Recast') | SpellId('Shout_JudgmentResiliency_Recast') | SpellId('Shout_JudgmentProtection_Recast_2') | SpellId('Shout_JudgmentPurity_Recast_2') | SpellId('Shout_JudgmentResiliency_Recast_2') | SpellId('Shout_JudgmentProtection_Recast_3') | SpellId('Shout_JudgmentPurity_Recast_3') | SpellId('Shout_JudgmentResiliency_Recast_3')
+end
+
+function MalignantBleedCLC()
+    local ability = context.PreferredCastingAbility
+    local dc = 0
+
+    if HasStatus('JL_FOTV_RAVENER_BITEBLEED_YOUNGDC',context.Target) then
+        dc = 15
+    end
+    if HasStatus('JL_FOTV_RAVENER_BITEBLEED_ADULTDC',context.Target) then
+        dc = 18
+    end
+    if HasStatus('JL_FOTV_RAVENER_BITEBLEED_ANCIENTDC',context.Target) then
+        dc = 21
+    end
+
+    st = SavingThrow(ability,dc,false,false,context.Source)
+    return ConditionResult(st.Result,{},{},st.Chance)
+end
+
+function HallowedGroundInAuraCheck(entity)
+    local entity = entity or context.Target
+    return HasAnyStatus({'JL_FOTV_HALLOWEDGROUND_BONUSES_TIER2','JL_FOTV_HALLOWEDGROUND_BONUSES_TIER3'},{},{},entity)
+end
+
+function HallowedGroundEnemyCheck(entity)
+    local entity = entity or context.Source
+    return Tagged('ABERRATION',entity) | Tagged('FIEND',entity) | Tagged('MONSTROSITY',entity) | Tagged('UNDEAD',entity) | Tagged('UNDEAD_BEAST',entity)
+end
+
+function EmpyrealAdaptiveMissCheck(entity)
+    try
+        conditionRoll = context.HitDescription.GetLastConditionRoll(ConditionRollType.ConditionAttack)
+    catch e then
+        if ls.CheckType(e, ls.error.UnsupportedAttributeType) or ls.CheckType(e, ls.error.NotFound) then
+            return ConditionResult(false)
+        else
+            return ConditionResult(false)
+        end
+    end
+
+    local entity = entity or context.Source
+    local adaptivestacks = GetStatusDuration('JL_FOTV_EMPYREALMANTLE_PENALTIES', entity)
+    local adjustedroll = conditionRoll.Total
+    local ac = conditionRoll.Difficulty
+
+    return ConditionResult((adjustedroll + adaptivestacks) >= ac)
+end
+
+function IsHuntsmasterSpell()
+    return HasUseCosts('ChannelDivinity') | HasUseCosts('ChannelOath') | HasUseCosts('JudgmentCharge')
+end
+
+function VindicatorAlignmentEnemyCheck(entity1, entity2)
+    local entity1 = entity1 or context.Source
+    local entity2 = entity2 or context.Target
+
+    local goodaligned = Tagged('ALIGN_GOOD',entity1) & (Tagged('ABERRATION',entity2) | Tagged('FIEND',entity2) | Tagged('MONSTROSITY',entity2) | Tagged('UNDEAD',entity2) | Tagged('UNDEAD_BEAST',entity2))
+    local neutralaligned = Tagged('ALIGN_NEUTRAL',entity1) & (Tagged('BEAST',entity2) | Tagged('CONSTRUCT',entity2) | Tagged('DRAGON',entity2) | Tagged('ELEMENTAL',entity2) | Tagged('FEY',entity2) | Tagged('PLANT',entity2) | Tagged('OOZE',entity2))
+    local evilaligned = Tagged('ALIGN_EVIL',entity1) & (Tagged('CELESTIAL',entity2) | Tagged('GIANT',entity2) | Tagged('HUMANOID',entity2))
+
+    if goodaligned.Result or neutralaligned.Result or evilaligned.Result then
+        return ConditionResult(true)
+    end
+end
+
+function BurstOfRadianceCooldown(entity)
+    local entity = entity or context.Source
+    local borcooldown = HasStatus('JL_FOTV_BURSTOFRADIANCE_COOLDOWN',entity)
+    return ConditionResult(borcooldown.Result, {}, {ConditionError("JL_FOTV_PerCombatCooldown")})
+end
+
+function WarleaderDistanceCheck(distance, target)
+    distance = distance or 1.5
+    target = target or context.Target
+
+    local allies = GetAlliesWithinRange(distance, target, target)
+    if allies ~= nil then
+        for _, entity in ipairs(allies.Allies) do
+            iswarleaderally = HasStatus("JL_FOTV_VALOR_WARLEADER", entity)
+
+            if iswarleaderally.Result then
+                return ConditionResult(true)
+            end
+        end
+    end
+
+    return ConditionResult(false)
+end
+
+function CursedPeriaptRemoveCurseCheck()
+    local target = context.Target
+    
+    local highestmodifier = Skill.Arcana
+    if target.GetPassiveSkill(Skill.Religion) > target.GetPassiveSkill(Skill.Arcana) then
+        highestmodifier = Skill.Religion
+    end
+
+    local dc = 17
+    if HasStatus('JL_FOTV_PERIAPT_CURSE_DC_REDUCE1', target) then
+        dc = dc - GetStatusDuration('JL_FOTV_PERIAPT_CURSE_DC_REDUCE1', target)
+    end
+    
+    local skillCheck = SkillCheck(highestmodifier,dc,false,false,target,target)
+    return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
+end
+
+function CursedPeriaptHealRandomizer(value,entity)
+    local entity = entity or context.Target
+    return ConditionResult(GetStatusDuration('JL_FOTV_PERIAPT_HEALRANDOMIZER', entity) == value)
+end
+
+function CommanderDemoralizingCheck(entity)
+    local entity = entity or context.Source
+    return ConditionResult(GetStatusDuration('JL_FOTV_VALOR_DEMORALIZING_AURA', entity) >= 2)
+end
+
+function CommanderInspiringCheck(entity)
+    local entity = entity or context.Source
+    return ConditionResult(GetStatusDuration('JL_FOTV_VALOR_INSPIRING_AURA', entity) >= 2)
+end

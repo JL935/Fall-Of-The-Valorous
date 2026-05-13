@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="8" build="613"/>
+    <region id="ConditionErrors">
+        <node id="root">
+            <children>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hcb7fb076g8d8fg479bg8fecgbac3139c0735" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="SoulStillConsumed"/>
+                    <attribute id="UUID" type="guid" value="9feeb7ca-0649-45b0-8b64-6696bda5bd2b"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h35d9fb7eg6773g4acfg8b35geffd4c1ef002" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="MustBeAllyNotDead"/>
+                    <attribute id="UUID" type="guid" value="413d40c0-80be-4dcc-a6cb-468ae95563ba"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h2aad2447g87c6g47bfg8b2ag9dfe5640795e" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="VaelythraCooldown"/>
+                    <attribute id="UUID" type="guid" value="45fa88a3-c7f8-4a8b-8e53-5ea305f8c7c6"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h87309293gbce3g43dbg8495gb2e1fd4a042c" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="HolyWordLRCooldown"/>
+                    <attribute id="UUID" type="guid" value="bb6cda8e-2c54-4b0b-949c-5ccd788c66da"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="had316622g2ff7g44c0g9a21gd65ed6e767f9" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="RequiresDivineIntervention"/>
+                    <attribute id="UUID" type="guid" value="b1237c0f-1b64-4c50-997e-30dfa839338a"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h371cd5f4gce7ag4a0ag8c1ega33c263f93c2" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="LitanyOfWeaknessConditionError"/>
+                    <attribute id="UUID" type="guid" value="33979ddb-b44e-47e3-8cbd-18df5a57fe65"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="had45c104g7ff5g424fgab64gbc2c275bd0e8" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="MustEnableHolyWords"/>
+                    <attribute id="UUID" type="guid" value="74874569-1ada-4f38-9ea3-1e3b2ba06f21"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hfd94b9eegaebcg4816g8827g0083dabf9b8b" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="JL_FOTV_PerCombatCooldown"/>
+                    <attribute id="UUID" type="guid" value="bf199142-f642-4cde-a99b-43905af11cce"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

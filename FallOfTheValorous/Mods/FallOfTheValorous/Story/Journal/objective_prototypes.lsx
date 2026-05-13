@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="Objectives">
+        <node id="root">
+            <children>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h6f0ae3fbgac26g4984g96dcg79a2035dbcef" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_CleanseJournal"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_Act1"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="7acf9fe1-d0f1-4496-9407-8a1ef1075594"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h0ca6a488geb28g4e1ega544g8c7a837e7591" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_ReadJournal"/> 
+                    <attribute id="Priority" type="int32" value="1100"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_Act1"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="d73a30e7-5922-4e23-a998-4c98c7bb9573"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="ha008f04dgf418g4539ga6bbg8ddffebc572f" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_CallToAction"/> 
+                    <attribute id="Priority" type="int32" value="1200"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_Act1"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="26a6dd3f-1e31-4c81-a1a5-4c6e8990b88b"/>
+                </node>
+
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="he929a8b0g11dag4295g8456g0096d28e4e6e" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_HolyWordSeeker"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_HolyWords"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="459c472c-cf02-4578-b728-e54350afc5ea"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h04f5c552g7e17g4587gb5b4g7102dd8b32a6" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_ReturnToTaarogus"/> 
+                    <attribute id="Priority" type="int32" value="1100"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_HolyWords"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="cb7efeed-4e28-43bf-bba5-73f6516f8ccf"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h218b738egbfd8g436agab21g63b9c3eaad9c" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_TaarogusFightConclusion"/> 
+                    <attribute id="Priority" type="int32" value="1200"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_HolyWords"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="845a7070-1020-4144-a7db-f637c01dbf64"/>
+                </node>
+
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h358d0baagff6cg4e72gb097gf84e65026357" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_LoreSeeker"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_RavenerLore"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="1116e055-9493-45dc-aeda-b5bed57cfa01"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h6ed1d038ge922g4b33gab97g15036da9d371" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_LoreKnower"/> 
+                    <attribute id="Priority" type="int32" value="1100"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_RavenerLore"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="3a70f06d-5a7d-438c-a541-c28cf73e4ec8"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h218b738egbfd8g436agab21g63b9c3eaad9c" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_SentinelDead"/> 
+                    <attribute id="Priority" type="int32" value="1200"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_RavenerLore"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="f34dd65d-9274-4897-9c25-5baafa35e11b"/>
+                </node>
+
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="hc951c75fgac46g49b0gb36agc608bdd357b9" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_FoundAmuletNote"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_Cursebreaker"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="15b85bff-0727-4b86-94ac-35daca707373"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h59e6c28fg1714g43d7gad44g3f64693a3bcc" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_PickedAmuletNoIDCurse"/> 
+                    <attribute id="Priority" type="int32" value="1100"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_Cursebreaker"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="bc51f566-3b0e-4e40-a871-6d227a671f37"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h493d55d2gd185g4201ga574gcfb2bf6b6b23" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_BreakAmuletCurse"/> 
+                    <attribute id="Priority" type="int32" value="1200"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_Cursebreaker"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="a3e837c6-ac64-40b4-9353-248308a1917d"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h3525fe1dg5a38g427aga5b5g9a3261a3a4dc" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_AmuletCurseBrokenFindGrandInquisitor"/> 
+                    <attribute id="Priority" type="int32" value="1300"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_Cursebreaker"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="decb2dd4-e65c-4aa0-8477-6b629f1528f6"/>
+                </node>
+
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h9db20c26gae9fg42e7gb095gd722ed117abf" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_LiftTheCurse"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_LiftCurse"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="9079de5b-70a7-4ea0-9d77-7e0b68c3a2a8"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h8f79004cgd7cbg4c16gba5dg7ebbe21c7e3f" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_CurseLifted"/> 
+                    <attribute id="Priority" type="int32" value="1100"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_LiftCurse"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="a7939245-b00d-431c-8a95-fddb5e33cdfa"/>
+                </node>
+
+            </children>
+        </node>
+    </region>
+</save>

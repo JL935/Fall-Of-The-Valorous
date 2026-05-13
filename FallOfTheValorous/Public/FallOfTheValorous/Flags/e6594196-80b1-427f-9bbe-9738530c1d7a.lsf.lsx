@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Read notes on the soul ward" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_SoulWardRead" />
+			<attribute id="UUID" type="guid" value="e6594196-80b1-427f-9bbe-9738530c1d7a" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

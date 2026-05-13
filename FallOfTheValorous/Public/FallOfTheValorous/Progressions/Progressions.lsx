@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="328" />
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression"> Inquisitor 3
+                    <attribute id="AllowImprovement" type="bool" value="false" />
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1)" />
+                    <attribute id="Level" type="uint8" value="3" />
+                    <attribute id="Name" type="LSString" value="Inquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="InterrogativeMind" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(2b04958e-64c2-4e79-9ec4-632097bc4205,1,1)" />
+			        <attribute id="TableUUID" type="guid" value="96c25829-8c4d-4a6d-81f7-e8f91cab58ef" />
+                    <attribute id="UUID" type="guid" value="80838a0c-b27c-4765-acb3-fda1af64c3f6" />
+                    <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="4dc44aca-29ec-4fe5-8d34-bc58c8d7c269" />
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="040e41b0-e197-4856-a7c3-f7093ae85f0b" />
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="81e4c08b-ce20-4c3f-bad4-959966432f1c" />
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="e115216d-f6f8-4034-bca5-e06cd1e95dfe" />
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Progression"> Valor 3
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="3" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="JL_FOTV_Valor_ValorousTenacity;JL_FOTV_Valor_IndomitablePresence_Demoralizing;JL_FOTV_Valor_IndomitablePresence_Inspiring" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="AddSpells(daa86672-66e0-42ea-9c0d-ab1a77c4b523,DivineFavor)" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="2bdde173-15b5-4fc4-960e-ed4204995e82" />
+                </node>
+                <node id="Progression"> Valor 4
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="4" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="de49e84b-c5ef-4676-9fa4-29efa080658f" />
+                </node>
+                <node id="Progression"> Valor 5
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="5" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="AddSpells(f071d84f-5c15-420d-8722-dc37ced72ef5,DivineFavor)" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="0ab47f16-a1fd-4874-8807-65337bbc226b" />
+                </node>
+                <node id="Progression"> Valor 6
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="6" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="4b78a0c8-c12b-4777-a6b2-25c0a3b2ced6" />
+                </node>
+                <node id="Progression"> Valor 7
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="7" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="JL_FOTV_Valor_WarleaderQuarry" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="AddSpells(07f975fd-aaf5-4461-97b7-7cbcd4bc7538)" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="1d6d5f80-323f-415a-934a-6f046256ee82" />
+                </node>
+                <node id="Progression"> Valor 8
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="8" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="679d73f5-5aea-4ce3-9f9c-394df40a5cae" />
+                </node>
+                <node id="Progression"> Valor 9
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="9" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="AddSpells(47068504-51c4-470e-995d-2c9271fb75a3,DivineFavor)" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="6933def6-6466-4ce3-8d7b-256193ec38e4" />
+                </node>
+                <node id="Progression"> Valor 10
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="10" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="5641bbe4-8fdb-4d43-964a-64ae3972c98b" />
+                </node>
+                <node id="Progression"> Valor 11
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="11" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="b193819b-b58c-4490-befd-99d4c01fb7e3" />
+                </node>
+                <node id="Progression"> Valor 12
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="12" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="7dd953fd-6da7-46b5-bc32-1dd850a7f196" />
+                </node>
+                <node id="Progression"> Valor 13
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="13" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="AddSpells(889fc1a8-be03-454b-a348-175e54741473,DivineFavor)" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="fe6c9c57-09e2-4e9e-8477-5bbbc7585d03" />
+                </node>
+                <node id="Progression"> Valor 14
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="14" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="2dd5f683-23ac-47c2-834c-97af1c757876" />
+                </node>
+                <node id="Progression"> Valor 15
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="15" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="JL_FOTV_Valor_CommanderPresence" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="2a5627e8-13f8-44ac-85ea-9bcca64458b4" />
+                </node>
+                <node id="Progression"> Valor 16
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="16" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="83aacdfb-5b75-4946-95e0-4fb2cdf5dd89" />
+                </node>
+                <node id="Progression"> Valor 17
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="17" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="AddSpells(6ed3c495-b59f-4c6b-8c4d-8dd6433b7be5)" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="e20e0d43-3885-49df-95fe-fbdb9eebef3b" />
+                </node>
+                <node id="Progression"> Valor 18
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="18" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="55d15893-1c7c-463a-9565-d3e2b32a5d83" />
+                </node>
+                <node id="Progression"> Valor 19
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="19" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="17c788a5-160e-4f77-9ffd-2d9fc2693895" />
+                </node>
+                <node id="Progression"> Valor 20
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="20" />
+                    <attribute id="Name" type="LSString" value="ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
+                    <attribute id="UUID" type="guid" value="98a42a58-609c-4ec9-bb3a-17428ea7a831" />
+                </node>
+                <node id="Progression"> NPC Valor Inquisitor 1
+                    <attribute id="Boosts" type="LSString" value="ActionResource(JudgmentCharge,1,0);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Strength)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="NPC_ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="JL_FOTV_NPC_Inquisitor_AttackOverride_Passive" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b78879b4-61d8-4105-a008-63633b0c41c1)" />
+			        <attribute id="TableUUID" type="guid" value="eec97e3e-dc61-4ee9-b622-7a11e30b26c6" />
+                    <attribute id="UUID" type="guid" value="3ab92492-858a-48b2-ba8c-7cfd9527ce78" />
+                </node>
+                <node id="Progression"> NPC Valor Inquisitor 2
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,History)" />
+                    <attribute id="Level" type="uint8" value="2" />
+                    <attribute id="Name" type="LSString" value="NPC_ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="Inquisitor_DivineFavorInitiative;Inquisitor_MonsterLoreIntSkills" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(98d7f068-f4eb-4e97-8497-735faddc16c6)" />
+			        <attribute id="TableUUID" type="guid" value="eec97e3e-dc61-4ee9-b622-7a11e30b26c6" />
+                    <attribute id="UUID" type="guid" value="e664307a-a452-4385-9a75-4d041868a5e2" />
+                </node>
+                <node id="Progression"> NPC Valor Inquisitor 3
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="3" />
+                    <attribute id="Name" type="LSString" value="NPC_ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="JL_FOTV_Valor_ValorousTenacity;JL_FOTV_Valor_IndomitablePresence_Demoralizing;JL_FOTV_Valor_IndomitablePresence_Inspiring" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="eec97e3e-dc61-4ee9-b622-7a11e30b26c6" />
+                    <attribute id="UUID" type="guid" value="3260651d-2dc0-4346-97f5-07886da911d8" />
+                </node>
+                <node id="Progression"> NPC Valor Inquisitor 4
+                    <attribute id="Level" type="uint8" value="4" />
+                    <attribute id="Name" type="LSString" value="NPC_ValorInquisitor" />
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+			        <attribute id="TableUUID" type="guid" value="eec97e3e-dc61-4ee9-b622-7a11e30b26c6" />
+                    <attribute id="UUID" type="guid" value="9d239ce5-547b-4acc-958a-b30205944877" />
+                </node>
+                <node id="Progression"> NPC Valor Inquisitor 5
+                    <attribute id="Boosts" type="LSString" value="ActionResource(JudgmentCharge,1,0)" />
+                    <attribute id="Level" type="uint8" value="5" />
+                    <attribute id="Name" type="LSString" value="NPC_ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack" /> 
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="eec97e3e-dc61-4ee9-b622-7a11e30b26c6" />
+                    <attribute id="UUID" type="guid" value="60c04f06-a0be-4661-ad70-47394ab8a345" />
+                </node>
+                <node id="Progression"> NPC Valor Inquisitor 6
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="6" />
+                    <attribute id="Name" type="LSString" value="NPC_ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="eec97e3e-dc61-4ee9-b622-7a11e30b26c6" />
+                    <attribute id="UUID" type="guid" value="dd720420-6596-4be5-a941-846133d5956f" />
+                </node>
+                <node id="Progression"> NPC Valor Inquisitor 7
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="7" />
+                    <attribute id="Name" type="LSString" value="NPC_ValorInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="JL_FOTV_Valor_WarleaderQuarry" /> 
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="eec97e3e-dc61-4ee9-b622-7a11e30b26c6" />
+                    <attribute id="UUID" type="guid" value="47c02326-de54-4bb2-a549-e656c5399efd" />
+                </node>
+                <node id="Progression"> NPC Vengeance Inquisitor 1
+                    <attribute id="Boosts" type="LSString" value="ActionResource(JudgmentCharge,1,0)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="NPC_VengeanceInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="JL_FOTV_NPC_Inquisitor_AttackOverride_Passive" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b78879b4-61d8-4105-a008-63633b0c41c1)" />
+			        <attribute id="TableUUID" type="guid" value="57001723-1ee5-4a84-8a2c-02ca2a6b2158" />
+                    <attribute id="UUID" type="guid" value="c0cece9f-f4b6-42f8-a353-02320db9c874" />
+                </node>
+                <node id="Progression"> NPC Vengeance Inquisitor 2
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,History)" />
+                    <attribute id="Level" type="uint8" value="2" />
+                    <attribute id="Name" type="LSString" value="NPC_VengeanceInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="Inquisitor_DivineFavorInitiative;Inquisitor_MonsterLoreIntSkills;MonsterLore_Unlocker_NPC" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(98d7f068-f4eb-4e97-8497-735faddc16c6)" />
+			        <attribute id="TableUUID" type="guid" value="57001723-1ee5-4a84-8a2c-02ca2a6b2158" />
+                    <attribute id="UUID" type="guid" value="95c3bb86-58c5-4541-9e07-7aa61a5371d7" />
+                </node>
+                <node id="Progression"> NPC Vengeance Inquisitor 3
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="3" />
+                    <attribute id="Name" type="LSString" value="NPC_VengeanceInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="Vengeance_ExploitWeakness;Vengeance_AutoQuarry" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="57001723-1ee5-4a84-8a2c-02ca2a6b2158" />
+                    <attribute id="UUID" type="guid" value="f8778a50-fad2-4f15-8507-4f59230806ac" />
+                </node>
+                <node id="Progression"> NPC Vengeance Inquisitor 4
+                    <attribute id="Level" type="uint8" value="4" />
+                    <attribute id="Name" type="LSString" value="NPC_VengeanceInquisitor" />
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+			        <attribute id="TableUUID" type="guid" value="57001723-1ee5-4a84-8a2c-02ca2a6b2158" />
+                    <attribute id="UUID" type="guid" value="5f343a8e-4832-45c3-b620-95b5102a14d2" />
+                </node>
+                <node id="Progression"> NPC Vengeance Inquisitor 5
+                    <attribute id="Boosts" type="LSString" value="ActionResource(JudgmentCharge,1,0)" />
+                    <attribute id="Level" type="uint8" value="5" />
+                    <attribute id="Name" type="LSString" value="NPC_VengeanceInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack" /> 
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="57001723-1ee5-4a84-8a2c-02ca2a6b2158" />
+                    <attribute id="UUID" type="guid" value="798fdfc7-7dbd-4008-b6c9-65e4d3fa6632" />
+                </node>
+                <node id="Progression"> NPC Tactics Inquisitor 1
+                    <attribute id="Boosts" type="LSString" value="ActionResource(JudgmentCharge,1,0)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="NPC_TacticsInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="JL_FOTV_NPC_Inquisitor_AttackOverride_Passive" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b78879b4-61d8-4105-a008-63633b0c41c1)" />
+			        <attribute id="TableUUID" type="guid" value="fa908015-3eab-47b9-ad3b-e85804d86fbc" />
+                    <attribute id="UUID" type="guid" value="5aa32f44-46d7-46ec-b34b-753d966d24f3" />
+                </node>
+                <node id="Progression"> NPC Tactics Inquisitor 2
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,History)" />
+                    <attribute id="Level" type="uint8" value="2" />
+                    <attribute id="Name" type="LSString" value="NPC_TacticsInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="Inquisitor_DivineFavorInitiative;Inquisitor_MonsterLoreIntSkills;MonsterLore_Unlocker_NPC" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(98d7f068-f4eb-4e97-8497-735faddc16c6)" />
+			        <attribute id="TableUUID" type="guid" value="fa908015-3eab-47b9-ad3b-e85804d86fbc" />
+                    <attribute id="UUID" type="guid" value="0c5ff5fd-b372-4998-9355-e0e36f8a1e67" />
+                </node>
+                <node id="Progression"> NPC Tactics Inquisitor 3
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="3" />
+                    <attribute id="Name" type="LSString" value="NPC_TacticsInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="Tactics_SharedJudgmentUnlocker;TemperedChampion_Conviction;TemperedChampion_Destruction;TemperedChampion_Justice;TemperedChampion_Protection;TemperedChampion_Purity;TemperedChampion_Resiliency" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="fa908015-3eab-47b9-ad3b-e85804d86fbc" />
+                    <attribute id="UUID" type="guid" value="4d5c5dfe-a803-4d50-955e-940879fae9f1" />
+                </node>
+                <node id="Progression"> NPC Tactics Inquisitor 4
+                    <attribute id="Level" type="uint8" value="4" />
+                    <attribute id="Name" type="LSString" value="NPC_TacticsInquisitor" />
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+			        <attribute id="TableUUID" type="guid" value="fa908015-3eab-47b9-ad3b-e85804d86fbc" />
+                    <attribute id="UUID" type="guid" value="0b6d769e-374c-436e-9cd2-3c81087a38d9" />
+                </node>
+                <node id="Progression"> NPC Tactics Inquisitor 5
+                    <attribute id="Boosts" type="LSString" value="ActionResource(JudgmentCharge,1,0)" />
+                    <attribute id="Level" type="uint8" value="5" />
+                    <attribute id="Name" type="LSString" value="NPC_TacticsInquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack" /> 
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+                    <attribute id="Selectors" type="LSString" value="" />
+			        <attribute id="TableUUID" type="guid" value="fa908015-3eab-47b9-ad3b-e85804d86fbc" />
+                    <attribute id="UUID" type="guid" value="c9b68f04-a8f0-4c1b-9a2e-fc287e9dacbd" />
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

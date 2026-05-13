@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Used Consecrate on cursed entity" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_CursebreakerConsecrate" />
+			<attribute id="UUID" type="guid" value="94851472-0e91-4081-b869-2e1f3f9df375" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

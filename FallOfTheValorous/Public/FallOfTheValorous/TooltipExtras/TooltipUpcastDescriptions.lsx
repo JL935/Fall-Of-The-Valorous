@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="8" build="608"/>
+    <region id="TooltipUpcastDescriptions">
+        <node id="root">
+            <children>
+                <node id="TooltipUpcastDescriptions">
+                    <attribute id="Name" type="FixedString" value="Litany of Precision"/>
+                    <attribute id="Text" type="TranslatedString" handle="hc566dcaeg79a1g44f2g93f0g27f2cc90f7f5" version="1"/>
+                    <attribute id="UUID" type="guid" value="b8cd6d09-f2a0-44d9-adc6-dd8e0d9ca7c1"/>
+                </node>
+                <node id="TooltipUpcastDescriptions">
+                    <attribute id="Name" type="FixedString" value="Litany of Weakness"/>
+                    <attribute id="Text" type="TranslatedString" handle="hc20d977ag07f4g44bfg9abeg2a37573af72c" version="1"/>
+                    <attribute id="UUID" type="guid" value="55e7915b-a621-4a75-9d13-a25d952e9d8a"/>
+                </node>
+                <node id="TooltipUpcastDescriptions">
+                    <attribute id="Name" type="FixedString" value="Litany of Balance"/>
+                    <attribute id="Text" type="TranslatedString" handle="hbee95b3ag1adbg45c7g98fdg823234174968" version="1"/>
+                    <attribute id="UUID" type="guid" value="0edf0768-da16-4380-b433-0c8c77195310"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

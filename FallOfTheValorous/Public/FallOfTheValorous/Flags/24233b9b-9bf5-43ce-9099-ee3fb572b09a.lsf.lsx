@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_TestFlag2" />
+			<attribute id="UUID" type="guid" value="24233b9b-9bf5-43ce-9099-ee3fb572b09a" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>
