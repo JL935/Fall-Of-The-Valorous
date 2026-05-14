@@ -855,16 +855,16 @@
                     <children>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
-                            <attribute id="Description" type="TranslatedString" handle="h2ab53183g4122g4dd0gb398gf3557cdb9ac1" version="1"/> 
-                            <attribute id="DevComment" type="FixedString" value="Read iconoclast speculations"/> 
-                            <attribute id="DialogFlagGUID" type="guid" value="1a3dc4df-d814-44c3-9ebd-06d91f995a47"/>
+                            <attribute id="Description" type="TranslatedString" handle="h6ad5b50dg7ad4g4be2g81f0gbd18a32aed90" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="Sidequest start, go find Preservation"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="84009c4b-c2db-415d-adc2-a5138ecf732a"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_CursebreakerTips"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_FindPreservation"/>
                             <attribute id="LevelOverride" type="int32" value="0"/>
-                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_LiftTheCurse"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_FindPreservation"/>
                             <attribute id="QuestRewardCount" type="int32" value="0"/>
                             <attribute id="QuestRewardLevel" type="int32" value="0"/>
-                            <attribute id="QuestStepGuid" type="guid" value="5dca7646-6070-4abd-a4b6-28aec8120c4a"/>
+                            <attribute id="QuestStepGuid" type="guid" value="a4030a75-df54-4c64-965b-2e2aade0e57a"/>
                             <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
                             <attribute id="ReputationGain" type="int32" value="0"/>
                             <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -874,6 +874,94 @@
                             <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
                             <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                             <attribute id="UnlockDisable" type="int32" value="1"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h34ff2bbbge1dfg4ebbga6aeg03a0d1d83b7f" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="Read Preservation, go find Ruination"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="7e3607f3-e6b6-4945-9277-8f5b44d95b8b"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_FindRuination"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_FindRuination"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="53eed91d-84fe-4c3b-b001-80fb367d2ba1"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h5b3fb793g590dg43c5g9cecgc0b7426a9c23" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="Read Ruination, go beat spider mommy"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="63c5a1f0-1c7d-401b-bd60-c2766c4d6ba7"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_SlaySpider"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_SlaySpider"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="34d46a5c-ee4f-47ab-9cba-bb0d18e3d8cb"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h3c88856egd923g40a0gb077gf753424ecf9c" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="Defeated Matriarch, go sanctify Ronros"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="70207e59-cb09-4697-93c2-3bb88c14ba95"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_SanctifyValor"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_SanctifyValor"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="d8768f5b-442f-4e8f-966a-075bef96a6fe"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h78058ef0gb309g4d88gbaf0g032517f88875" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="Sanctified Ronros"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="7dfc40a8-3ee2-4322-9fa2-9fd6f13cedc8"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_UnlockedValor"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_UnlockedValor"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="8fc54606-947e-4288-aef4-29d94631f202"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="2"/>
                         </node>
                     </children>
                 </node>

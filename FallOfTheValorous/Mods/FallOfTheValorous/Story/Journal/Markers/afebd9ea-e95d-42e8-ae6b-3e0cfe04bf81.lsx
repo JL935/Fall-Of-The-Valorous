@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="302"/>
+    <region id="Markers">
+        <node id="root">
+            <children>
+                <node id="Marker">
+                    <attribute id="DisplayText" type="TranslatedString" handle="h23c8abf3g2411g47abg9bd2g83ceb5ee48b3" version="1"/>
+                    <attribute id="Guid" type="guid" value="afebd9ea-e95d-42e8-ae6b-3e0cfe04bf81"/>
+                    <attribute id="MarkerID" type="FixedString" value="MARKER_JL_FOTV_Ruination"/>
+                    <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
+                    <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
+                    <attribute id="MarkerTargetObjectType" type="FixedString" value="Trigger"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="fb1616e2-7661-4cfb-8b1f-2c10ab45751a"/>
+                    <attribute id="Radius" type="int32" value="10"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -114,6 +114,42 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="a7939245-b00d-431c-8a95-fddb5e33cdfa"/>
                 </node>
 
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h1fbc1ad1g2a07g4ebbga407g8a3771ad17b9" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_FindPreservation"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_UnlockValor"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="e00fe742-e933-46ea-a69e-a07802a9bba3"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h23c8abf3g2411g47abg9bd2g83ceb5ee48b3" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_FindRuination"/> 
+                    <attribute id="Priority" type="int32" value="1100"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_UnlockValor"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="4f0a42a8-ea54-4639-95d3-b69409a0eb4e"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="hb1a714abg9b4ag4957gbf1ag24f047a5067b" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_SlaySpider"/> 
+                    <attribute id="Priority" type="int32" value="1200"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_UnlockValor"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="8357ae39-9250-4c6b-89bb-18a155710ef9"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h8b43647fg9a17g4a38g932ag8db168d4a92d" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_SanctifyValor"/> 
+                    <attribute id="Priority" type="int32" value="1300"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_UnlockValor"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="dcfc2659-9e96-478c-9a56-1c69ddea2743"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h426bddddgdaa1g4a75ga8c7g03ae08751808" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_UnlockedValor"/> 
+                    <attribute id="Priority" type="int32" value="1400"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_UnlockValor"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="2b276050-0e60-49ab-8416-2faca0f7077d"/>
+                </node>
+
             </children>
         </node>
     </region>

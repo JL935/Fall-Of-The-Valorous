@@ -1439,20 +1439,45 @@ data "Level" "9"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:9"
 data "RootSpellID" "JL_FOTV_Shout_LitanyOfResurgence"
 data "PowerLevel" "9"
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////RONROS///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+new entry "JL_FOTV_RONROS_AURA_TECH"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "JL_FOTV_RONROS_AURA_TECH"
+data "StackType" "Ignore"
+data "AuraRadius" "3"
+data "AuraStatuses" "IF(Character() and Player()):ApplyStatus(JL_FOTV_RONROS_UNLOCKSPELL)"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
 
+new entry "JL_FOTV_RONROS_UNLOCKSPELL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "JL_FOTV_RONROS_UNLOCKSPELL"
+data "StackType" "Ignore"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
 
-
-
-
-
-
-
-
-
-
-
-
-
+new entry "JL_FOTV_Target_SanctifyRonros"
+type "SpellData"
+data "SpellType" "Target"
+data "SpellProperties" ""
+data "TargetConditions" "Tagged('JL_FOTV_INQUISITOR_NPC')"
+data "TargetRadius" "3"
+data "Icon" "Icon_JL_FOTV_Target_HallowedGround"
+data "DisplayName" "hd6451b4bg4ad3g46c0g8f8dg145df6e4ffb4;1"
+data "Description" "h11de4078gf937g4015gbd1cg77720d7e46a8;1"
+data "PrepareSound" "CrSpell_Prepare_Deva_Revivify"
+data "PrepareLoopSound" "CrSpell_Loop_Deva_Revivify"
+data "CastSound" "Spell_Cast_Summon_PlanarAlly_L6to8"
+data "TargetSound" "Spell_Impact_Summon_PlanarAlly_Celestial_L6to8"
+data "VocalComponentSound" "Vocal_Component_ResistDeath"
+data "CastTextEvent" "Cast"
+data "SpellAnimation" "72d47225-f44c-4186-a5b3-d0a6fd252f56,,;,,;d209d724-43ce-4343-8ee5-e23e2d8c29a5,,;67e67c93-3b95-4146-b84c-7a8cc6291e6f,,;0081292f-5e38-4d3a-9a1c-a3d0cd1b6127,,;,,;755311f9-5f6b-4860-ace0-d55668d38133,,;,,;,,"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;Temporary"
+data "PrepareEffect" "e1b1e12d-18d4-472c-942b-956459eae7e4"
+data "CastEffect" "e337c385-2f32-423c-a5d1-255039b105d6"
+data "PositionEffect" "07d2e7ea-6fb7-4c78-b838-5dd7421b7e03"
 
 
 

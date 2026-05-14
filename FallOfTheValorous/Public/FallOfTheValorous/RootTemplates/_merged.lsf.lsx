@@ -2132,6 +2132,20 @@
 								</node>
 							</children>
 						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="1f894f13-eac2-41e9-b0d8-c51e251d07e6" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RONROS_AURA_TECH" />
+								</node>
+							</children>
+						</node>
 					</children>
 				</node>
 		<!-- WRITING -->

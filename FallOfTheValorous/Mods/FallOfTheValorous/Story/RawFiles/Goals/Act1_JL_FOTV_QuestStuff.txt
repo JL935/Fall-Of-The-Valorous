@@ -98,11 +98,13 @@ TemplateAddTo(MAP_JL_FOTV_A1_ValorOutposts_e4e2d676-ad1b-45a6-9581-9ed20d45cc4d,
 QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction");
 QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedVaelythra");
 QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_GoFindRavenerLore");
+QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_FindPreservation");
 PROC_HidePartyMarker("MARKER_JL_FOTV_CursedJournal");
 PROC_UnlockPartyMarker("MARKER_JL_FOTV_Lulix");
 PROC_UnlockPartyMarker("MARKER_JL_FOTV_Arzimyr");
 PROC_UnlockPartyMarker("MARKER_JL_FOTV_Xulvorith");
 PROC_UnlockPartyMarker("MARKER_JL_FOTV_ThayanOutpostResearch");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_Moonhaven");
 //END_REGION
 
 //REGION Apostle of the Holy Word subquest
@@ -344,7 +346,67 @@ FlagSet(JL_FOTV_BrokeAmuletCurse_1fcc92f4-6f1c-459e-abca-5586f5956cd1, _, _)
 THEN
 QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCurseLifted");
 QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_AmuletCurseBrokenFindGrandInquisitor");
+//END_REGION
 
+//REGION No Monster Too Menacing side quest
+//Read Preservation
+IF
+GameBookInterfaceClosed(S_LORE_JL_FOTV_Preservation_978dcd20-1f8a-4067-8956-37f31f540427, _)
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_UnlockValor","STEP_JL_FOTV_FindPreservation")
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_Moonhaven");
+QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_FindRuination");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_Ruination");
+
+//Read Ruination
+IF
+GameBookInterfaceClosed(S_LORE_JL_FOTV_Ruination_33aabaca-21fa-489f-9ad9-c627b15e7cfd, _)
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_UnlockValor","STEP_JL_FOTV_FindRuination")
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_Ruination");
+QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SlaySpider");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_SpiderMommy");
+
+//Defeated Matriarch
+IF
+FlagSet(FOR_Bottomless_SpiderQueen_State_PermaDefeated_b749271f-fbee-43ec-bbc7-b1199d0f794a, _, _)
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_UnlockValor","STEP_JL_FOTV_SlaySpider")
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_SpiderMommy");
+QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SanctifyValor");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_Ronros");
+
+//Unlock sanctifying spell if you have the quest progressed to this point
+IF
+StatusApplied(_, "JL_FOTV_RONROS_UNLOCKSPELL", _, _)
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_UnlockValor","STEP_JL_FOTV_SanctifyValor")
+AND
+DB_Players(_Valorous)
+THEN
+AddSpell(_Valorous, "JL_FOTV_Target_SanctifyRonros");
+
+//Sanctified Ronros
+IF
+CastedSpell(_, "JL_FOTV_Target_SanctifyRonros", _, _, _)
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_Ronros");
+QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_UnlockedValor");
+SetFlag((FLAG)JL_FOTV_ValorSubclassUnlocked_30d714d5-35e8-458c-9a74-31dc9ccc512e);
+RemoveStatus(S_JL_FOTV_WhisperingDepthsInquisitor_Dead_a1a3cacf-6f5d-417e-8b58-341df4ea86ec, "JL_FOTV_RONROS_AURA_TECH");
+
+//Remove sanctifying spell once you've successfully used it
+IF
+StatusRemoved(_, "JL_FOTV_RONROS_UNLOCKSPELL", _, _)
+AND
+DB_Players(_Valorous)
+AND
+HasSpell(_Valorous, "JL_FOTV_Target_SanctifyRonros", 1)
+THEN
+RemoveSpell(_Valorous, "JL_FOTV_Target_SanctifyRonros");
 //END_REGION
 EXITSECTION
 

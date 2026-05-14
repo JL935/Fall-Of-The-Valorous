@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="302"/>
+    <region id="Markers">
+        <node id="root">
+            <children>
+                <node id="Marker">
+                    <attribute id="DisplayText" type="TranslatedString" handle="h1fbc1ad1g2a07g4ebbga407g8a3771ad17b9" version="1"/>
+                    <attribute id="Guid" type="guid" value="694872ef-45e4-46dc-b34b-45872b8857d5"/>
+                    <attribute id="MarkerID" type="FixedString" value="MARKER_JL_FOTV_Moonhaven"/>
+                    <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
+                    <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
+                    <attribute id="MarkerTargetObjectType" type="FixedString" value="Item"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="3884f144-3777-468d-88c9-b7115f0c4f50"/>
+                    <attribute id="Radius" type="int32" value="25"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
