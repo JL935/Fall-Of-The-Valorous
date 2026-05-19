@@ -26,7 +26,7 @@
         </node>
         <node id="SpellList">
           <attribute id="Comment" type="LSString" value="Valor Level 17" />
-          <attribute id="Spells" type="LSString" value="Target_BestowGrace;JL_FOTV_Shout_LitanyOfResurgence" />
+          <attribute id="Spells" type="LSString" value="Target_BestowGrace;JL_FOTV_LitanyOfExcoriation_Container" />
           <attribute id="UUID" type="guid" value="6ed3c495-b59f-4c6b-8c4d-8dd6433b7be5" />
         </node>
         <node id="SpellList">

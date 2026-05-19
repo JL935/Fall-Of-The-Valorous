@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="5fcab509-7052-4102-9335-5a86d147cd88" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_Prepare_Valor_LitanyExcoriation_WeaponAttack_Generic_01" />
+					<attribute id="SourceFile" type="LSString" value="Public/FallOfTheValorous/Assets/Effects/Effects_Banks/VFX_Spells_Prepare_Valor_LitanyExcoriation_WeaponAttack_Generic_01.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Spells_Prepare_Valor_LitanyExcoriation_WeaponAttack_Generic_01" />
+					<attribute id="BoundsMin" type="fvec3" value="-3 -3 -3" />
+					<attribute id="BoundsMax" type="fvec3" value="3 3 3" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1.6" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d3e28de7-619b-20c4-a1eb-281dafcf3605" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f93bc0ca-6b76-11ac-0de3-4142dfc8f48e" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

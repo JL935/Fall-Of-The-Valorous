@@ -373,14 +373,15 @@
     <content contentuid="hb4eb787eg49a1g4029g8220g55ac13268eba" version="1">For as long as you maintain Judgments of &lt;LSTag Type="Spell" Tooltip="Target_JudgmentProtection"&gt;Protection&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_JudgmentPurity"&gt;Purity&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_JudgmentResiliency"&gt;Resiliency&lt;/LSTag&gt;, allies within [1] are &lt;LSTag Type="Status" Tooltip="JL_FOTV_VALOR_INSPIRED_COMMANDER"&gt;Inspired&lt;/LSTag&gt;.</content>
     <content contentuid="h53c1ef65g9623g4bd5gad3bg8c679ae45bf2" version="1">Gains a +1d8 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 
-    <content contentuid="hadd9192cg9c81g4036g92a2gc2e341f0791f" version="1">Litany of Resurgence</content>
-    <content contentuid="hcf1b19e3ge989g4903gaaa2gb65375f80543" version="1">When you fail an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; or &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, all allies within [1] gain a +1d10 bonus on their next check of that type before the end of your next turn.&lt;br&gt;&lt;br&gt;When you succeed an Attack Roll or Saving Throw, all enemies within [1] have a 1d10 penalty on their next check of that type before the end of your next turn.&lt;br&gt;&lt;br&gt;You may activate each of these effects once per turn.</content>
-    <content contentuid="h7f1fea6cgd0d4g429fgaa74g57093a3b1551" version="1">Litany of Resurgence: Attack Bonus</content>
-    <content contentuid="h8840259fgf5ffg4d96ga4f2g16971253eb75" version="1">Litany of Resurgence: Saving Throw Bonus</content>
-    <content contentuid="hab4c870dg4ccfg4ee9ga9a9g9a1edafc41ea" version="1">Litany of Resurgence: Attack Penalty</content>
-    <content contentuid="hf23298d5g7a9fg4c5cgaedag69069fe0eb92" version="1">Litany of Resurgence: Saving Throw Penalty</content>
-    <content contentuid="h2a1f339bg938eg496bgb53dg24cd0ebfbc09" version="1">Entity has a 1d10 [1] on their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
-    <content contentuid="h363a1f9egd119g45b2ga878g2d9bc597a06d" version="1">Entity has a 1d10 [1] on their next &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+    <content contentuid="hadd9192cg9c81g4036g92a2gc2e341f0791f" version="1">Litany of Excoriation</content>
+    <content contentuid="h7f1fea6cgd0d4g429fgaa74g57093a3b1551" version="1">Litany of Excoriation (Melee)</content>
+    <content contentuid="h8840259fgf5ffg4d96ga4f2g16971253eb75" version="1">Litany of Excoriation (Ranged)</content>
+    <content contentuid="hcf1b19e3ge989g4903gaaa2gb65375f80543" version="1">Channeling a divine malison through your weapon, curse any foe that would dare stand in your path.</content>
+    <content contentuid="h628f8086gfe06g448dgb946g898986ac2d65" version="1">If the target is &lt;LSTag Type="Passive" Tooltip="JL_FOTV_FlankingTooltip"&gt;Flanked&lt;/LSTag&gt;, the additional[1] bypasses &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt;.</content>
+    <content contentuid="hab4c870dg4ccfg4ee9ga9a9g9a1edafc41ea" version="1">Valorous Imprecation</content>
+    <content contentuid="hf23298d5g7a9fg4c5cgaedag69069fe0eb92" version="1">Valorous Imprecation: Spellcasting Blocked</content>
+    <content contentuid="h2a1f339bg938eg496bgb53dg24cd0ebfbc09" version="1">Entity has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. Entity takes an additional [1] from all sources, and has a 50% chance to be unable to cast spells on its turn.</content>
+    <content contentuid="h363a1f9egd119g45b2ga878g2d9bc597a06d" version="1">Entity is unable to cast spells.</content>
 
     <content contentuid="h3198134eg293fg4474g99d4ga5d67e5cd363" version="1">Ravener</content>
     <content contentuid="h4a2a3d6cg78f2g4c53ga648gf77975428fee" version="1">Young Ravener</content>

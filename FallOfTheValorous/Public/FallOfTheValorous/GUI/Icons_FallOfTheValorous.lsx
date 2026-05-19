@@ -401,42 +401,42 @@
                     <attribute id="V2" type="float" value="0.28125"/> Bottom		
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence"/> 13
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_LitanyOfExcoriation_Container"/> 13
                     <attribute id="U1" type="float" value="0.84375"/> Left
                     <attribute id="U2" type="float" value="0.9140625"/> Right
                     <attribute id="V1" type="float" value="0.2109375"/> Top
                     <attribute id="V2" type="float" value="0.28125"/> Bottom		
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence_Status"/> 14
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Target_LitanyOfExcoriation"/> 14
                     <attribute id="U1" type="float" value="0.9140625"/> Left
                     <attribute id="U2" type="float" value="0.984375"/> Right
                     <attribute id="V1" type="float" value="0.2109375"/> Top
                     <attribute id="V2" type="float" value="0.28125"/> Bottom		
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence_ST_Buff"/> R5 1
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Projectile_LitanyOfExcoriation"/> R5 1
                     <attribute id="U1" type="float" value="0.0"/> Left
                     <attribute id="U2" type="float" value="0.0703125"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top
                     <attribute id="V2" type="float" value="0.3515625"/> Bottom		
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence_ST_Penalty"/> 2
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_LitanyOfExcoriation_Status"/> 2
                     <attribute id="U1" type="float" value="0.0703125"/> Left
                     <attribute id="U2" type="float" value="0.140625"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top
                     <attribute id="V2" type="float" value="0.3515625"/> Bottom			
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence_ATK_Buff"/> 3
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_LitanyOfExcoriation_Status_CastBlock"/> 3
                     <attribute id="U1" type="float" value="0.140625"/> Left
                     <attribute id="U2" type="float" value="0.2109375"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top
                     <attribute id="V2" type="float" value="0.3515625"/> Bottom			
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Abjuration_LitanyOfResurgence_ATK_Penalty"/> 4
+                    <attribute id="MapKey" type="FixedString" value=""/> 4
                     <attribute id="U1" type="float" value="0.2109375"/> Left
                     <attribute id="U2" type="float" value="0.28125"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top
