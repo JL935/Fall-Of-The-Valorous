@@ -436,14 +436,14 @@
                     <attribute id="V2" type="float" value="0.3515625"/> Bottom			
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/> 4
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Valor_AureoleOfVirtue"/> 4
                     <attribute id="U1" type="float" value="0.2109375"/> Left
                     <attribute id="U2" type="float" value="0.28125"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top
                     <attribute id="V2" type="float" value="0.3515625"/> Bottom			
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/> 5
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_Valor_AureoleOfVirtue_Status"/> 5
                     <attribute id="U1" type="float" value="0.28125"/> Left
                     <attribute id="U2" type="float" value="0.3515625"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top

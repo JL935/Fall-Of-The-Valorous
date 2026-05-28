@@ -383,6 +383,14 @@
     <content contentuid="h2a1f339bg938eg496bgb53dg24cd0ebfbc09" version="1">Entity has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. Entity takes an additional [1] from all sources, and has a 50% chance to be unable to cast spells on its turn.</content>
     <content contentuid="h363a1f9egd119g45b2ga878g2d9bc597a06d" version="1">Entity is unable to cast spells.</content>
 
+    <content contentuid="hec82addeg0dd3g4d68ga711g8192420d42ac" version="1">Aureole of Virtue</content>
+    <content contentuid="hc91f25ccg4fccg4fb2g84fag8b409430ecb9" version="1">Cast forth a luminous ring of valor and virtue, galvanizing your allies with righteous vigor.</content>
+    <content contentuid="ha875e966g1d80g4d35gb5a6g86cc5c95560b" version="1">Entity and allies within [1] are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to spell damage and have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells. Entity gains &lt;LSTag Type="Spell" Tooltip="JL_FOTV_Projectile_AureoleOfVirtue_Fly"&gt;Flight&lt;/LSTag&gt; and allies gain &lt;LSTag Type="Spell" Tooltip="JL_FOTV_Target_AureoleOfVirtue_BoostAttack"&gt;Aureole of Virtue: Galvanizing Attack&lt;/LSTag&gt;.</content>
+    <content contentuid="he999578ag0b87g4aacga7f6gf0e6ddad4268" version="1">Halo of Virtue</content>
+    <content contentuid="hf436c7e5g8fa7g4f48ga4d8gca44f35b40c3" version="1">Entity is &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to spell damage and has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells.</content>
+    <content contentuid="h7acf78d4gdd1fg49d8gaa3bg171c08d082c5" version="1">Aureole of Virtue: Galvanizing Attack</content>
+    <content contentuid="h6a8cd897g07f0g4931gb94fgfc989e96fe07" version="1">Add the Wisdom &lt;LSTag Tooltip="AbilityModifier"&gt;Modifier&lt;/LSTag&gt; of the Valor Inquisitor granting this interrupt to your &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, turning it into a successful attack and regaining [1].</content>
+
     <content contentuid="h3198134eg293fg4474g99d4ga5d67e5cd363" version="1">Ravener</content>
     <content contentuid="h4a2a3d6cg78f2g4c53ga648gf77975428fee" version="1">Young Ravener</content>
     <content contentuid="h0a0f9eb2g0793g4650g896cg4ea298be9df8" version="1">Adult Ravener</content>

@@ -35,6 +35,11 @@
           <attribute id="UUID" type="guid" value="07f975fd-aaf5-4461-97b7-7cbcd4bc7538" />
         </node>
         <node id="SpellList">
+          <attribute id="Comment" type="LSString" value="Aureole of Virtue" />
+          <attribute id="Spells" type="LSString" value="JL_FOTV_Valor_AureoleOfVirtue" />
+          <attribute id="UUID" type="guid" value="38c7aad4-faa3-455c-8db3-0d1c07975453" />
+        </node>
+        <node id="SpellList">
           <attribute id="Comment" type="LSString" value="NPC Valor Inquisitor Level 2" />
           <attribute id="Spells" type="LSString" value="JL_FOTV_NPC_Target_MonsterLore" />
           <attribute id="UUID" type="guid" value="98d7f068-f4eb-4e97-8497-735faddc16c6" />

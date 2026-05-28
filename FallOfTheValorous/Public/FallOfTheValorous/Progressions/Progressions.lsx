@@ -4,7 +4,7 @@
     <region id="Progressions">
         <node id="root">
             <children>
-                <node id="Progression"> Inquisitor 3
+                <!--<node id="Progression"> Inquisitor 3
                     <attribute id="AllowImprovement" type="bool" value="false" />
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1)" />
                     <attribute id="Level" type="uint8" value="3" />
@@ -33,7 +33,7 @@
                             </children>
                         </node>
                     </children>
-                </node>
+                </node>-->
                 <node id="Progression"> Valor 3
                     <attribute id="Boosts" type="LSString" value="" />
                     <attribute id="Level" type="uint8" value="3" />
@@ -195,7 +195,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="" /> 
                     <attribute id="PassivesRemoved" type="LSString" value="" />
                     <attribute id="ProgressionType" type="uint8" value="1" /> 
-                    <attribute id="Selectors" type="LSString" value="AddSpells(6ed3c495-b59f-4c6b-8c4d-8dd6433b7be5)" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(6ed3c495-b59f-4c6b-8c4d-8dd6433b7be5,DivineFavor)" />
 			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
                     <attribute id="UUID" type="guid" value="e20e0d43-3885-49df-95fe-fbdb9eebef3b" />
                 </node>
@@ -228,7 +228,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="" /> 
                     <attribute id="PassivesRemoved" type="LSString" value="" />
                     <attribute id="ProgressionType" type="uint8" value="1" /> 
-                    <attribute id="Selectors" type="LSString" value="" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(38c7aad4-faa3-455c-8db3-0d1c07975453)" />
 			        <attribute id="TableUUID" type="guid" value="6f436651-8550-48d0-b00e-d66333f65913" />
                     <attribute id="UUID" type="guid" value="98a42a58-609c-4ec9-bb3a-17428ea7a831" />
                 </node>

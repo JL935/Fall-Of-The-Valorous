@@ -249,3 +249,35 @@ function CommanderInspiringCheck(entity)
     local entity = entity or context.Source
     return ConditionResult(GetStatusDuration('JL_FOTV_VALOR_INSPIRING_AURA', entity) >= 2)
 end
+
+function IsAureoleWisModInteresting()
+    local srcwismod = GetStatusDuration('JL_FOTV_AUREOLEOFVIRTUE_WISMOD', context.Observer)
+    
+    if context.InterruptedRoll.RollCritical ~= RollCritical.None then
+        return ConditionResult(false, {ConditionError("IsCriticalFailSuccess")})
+    end
+
+    local atkFail = context.InterruptedRoll.Total < context.InterruptedRoll.Difficulty
+    
+    local result = atkFail and ((context.InterruptedRoll.Total + srcwismod) >= context.InterruptedRoll.Difficulty)
+    
+    return ConditionResult(result)
+end
+
+function IsFuckShitPiss(entity)
+    local entity = entity or context.Target
+    local max = GetStatusDuration('JL_FOTV_AUREOLEOFVIRTUE_WISMOD', context.Observer)
+    if context.InterruptedRoll.RollCritical ~= RollCritical.None then
+        return ConditionResult(false, {ConditionError("IsCriticalFailSuccess")})
+    end
+
+    local rollSuccess = context.InterruptedRoll.Total >= context.InterruptedRoll.Difficulty
+
+    if Enemy(context.Observer, entity).Result then
+        local result = rollSuccess and ((context.InterruptedRoll.Total - context.InterruptedRoll.Difficulty) < max)
+        return ConditionResult(result)
+    end
+
+    local result = not rollSuccess and ((context.InterruptedRoll.Difficulty - context.InterruptedRoll.Total) <= max)
+    return ConditionResult(result)
+end
