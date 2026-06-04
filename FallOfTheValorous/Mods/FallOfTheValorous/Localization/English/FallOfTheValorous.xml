@@ -228,7 +228,7 @@
     <content contentuid="h56da86c6geaf5g43c9g9a55g551f44a1acc9" version="1">Entity deals an additional [1] due to a nearby ravener.</content>
 
     <content contentuid="h94693da9g3b35g463dgadd3g2b634d2b3ec5" version="1">Divine Defiance</content>
-    <content contentuid="hd56e310fg48f7g4fe6gbb76g33c7cf405cb6" version="1">[1] raveners are resilient to magic from divine sources. You must pass a DC [2] &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; with your &lt;LSTag Tooltip="SpellcastingAbility"&gt;Spellcasting Ability&lt;/LSTag&gt; or fail to affect the ravener with your divine magic.</content>
+    <content contentuid="hd56e310fg48f7g4fe6gbb76g33c7cf405cb6" version="1">[1] raveners are resilient to magic from divine sources. You must pass a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; with your &lt;LSTag Tooltip="SpellcastingAbility"&gt;Spellcasting Ability&lt;/LSTag&gt; or fail to affect the ravener targeted or AoE divine magic.</content>
 
     <content contentuid="hc8f19290g9901g4c09ga16ega3cf378c5a47" version="1">Ravener Appendages</content>
     <content contentuid="hec429557ga5d8g482eg8ebegeddf61ffb0cf" version="1">This collection of bones shivers with insidious anticipation at its inevitable recorporation. </content>
