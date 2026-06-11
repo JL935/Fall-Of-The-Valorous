@@ -14,6 +14,9 @@ SetOnStage(S_JL_FOTV_RisenRoad_Tactics_HalfOrc_019a9841-994f-410b-9b2e-a25e7c174
 SetOnStage(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, 0);
 SetOnStage(S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, 0);
 
+//Disable interacting with the Empyreal Scion's Mantle for sneaky smoke and mirrors shit so it seems like there's actually a ward on it
+SetCanInteract(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, 0);
+
 //Enemies to set on stage when prereq flag is set
 DB_FOTV_SetOnStageLater(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
 DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Valorous_Githyanki_1053a85c-93b0-401d-a7a6-1e40979bc48e, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
@@ -211,7 +214,7 @@ TimerLaunch("JL_FOTV_TaarogusLeaves", 15000);
 IF
 TimerFinished("JL_FOTV_TaarogusLeaves")
 AND
-CreateAtObject(JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693, S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0, 0, "", 1, _Resplendence)
+CreateAtObject(JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0, 0, "", 1, _Resplendence)
 THEN
 SetOnStage(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0);
 //END_REGION

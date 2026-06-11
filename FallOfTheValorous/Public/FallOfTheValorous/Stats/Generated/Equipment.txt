@@ -1,7 +1,7 @@
 new equipment "EQP_JL_FOTV_Taarogus"
 add initialweaponset "Melee"
 add equipmentgroup
-add equipment entry "JL_FOTV_WPN_Vindicator_Longsword_T3"
+add equipment entry "JL_FOTV_WPN_Vindicator_Longsword"
 add equipmentgroup
 add equipment entry "WPN_Longbow_2"
 

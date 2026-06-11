@@ -57,6 +57,7 @@ DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_9");
 
 //i really couldn't think of a better way to do this
 //i just like making myself suffer
+//just don't look at it please
 DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_3d383cbc-9ae3-4812-9fa3-07425626edfd);
 DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_908bb5a6-473e-4d9f-b782-c5613ef1803a);
 DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_7b431c6f-69d2-4f27-9b2a-d19c0a503a4f);
@@ -464,6 +465,7 @@ IsEnemy((CHARACTER)_Attacker, (CHARACTER)_Player, 1)
 THEN
 ApplyStatus(_Attacker, "JL_FOTV_VINDICATION_ENEMY_ATTACKEDALLY", 6.0, 0, _Player);
 
+//remove the damage bonus if you don't meet the requirements to keep it
 IF
 StatusApplied(_Object, "JL_FOTV_VINDICATION_DECREASE", _, _)
 AND
@@ -471,6 +473,7 @@ HasActiveStatus(_Object, "JL_FOTV_VINDICATION_D4", 1)
 THEN
 RemoveStatus(_Object, "JL_FOTV_VINDICATION_D4");
 
+//increment the damage bonus downward if you don't meet the requirements to keep it
 IF
 StatusApplied(_Object, "JL_FOTV_VINDICATION_DECREASE", _, _)
 AND
@@ -480,6 +483,7 @@ HasActiveStatus(_Object, _NewDamage, 1)
 THEN
 ApplyStatus(_Object, _OldDamage, -1.0);
 
+//increment the damage bonus upward if you meet the requirements to increase it
 IF
 StatusApplied(_Object, "JL_FOTV_VINDICATION_INCREASE", _, _)
 AND
@@ -489,6 +493,7 @@ HasActiveStatus(_Object, _OldDamage, 1)
 THEN
 ApplyStatus(_Object, _NewDamage, -1.0);
 
+//apply the damage bonus the first time you meet the requirements to increase it
 IF
 StatusApplied(_Object, "JL_FOTV_VINDICATION_INCREASE", _, _)
 AND
@@ -498,6 +503,7 @@ HasActiveStatus(_Object, _ExtraDamage, 0)
 THEN
 ApplyStatus(_Object, "JL_FOTV_VINDICATION_D4", -1.0);
 
+//why did i do this in osi
 IF
 CastSpell(_Vindicator, _Spell, _, _, _)
 AND
@@ -509,7 +515,6 @@ IsAlly((CHARACTER)_Player, (CHARACTER)_Vindicator, 1)
 THEN
 ApplyStatus(_Player, "JL_FOTV_VINDICATOR_DICTUM_DAMAGE", 18.0, 0, _Vindicator);
 ApplyStatus(_Vindicator, "JL_FOTV_VINDICATOR_DICTUM_DAMAGE", 18.0, 0, _Vindicator);
-
 //END_REGION
 
 //REGION Weapon swapping T1

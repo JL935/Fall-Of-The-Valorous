@@ -23,9 +23,6 @@ DB_GLO_Backgrounds_ChainAfterGlobalFlagInDialog(UND_MyconidCircle_MyconidSoverei
 //Altering the "A Story for the Ages" inspiration to only work when persuading Kagha (and not also Omeluum)
 DB_GLO_Backgrounds_ChainAfterGlobalFlagInDialog((FLAG)DEN_ShadowDruid_Event_PersuadedFrescos_1616db07-c145-476f-39ac-3b3906e7068f, "Act1_KnightErrant_TellStory");
 
-
-//DB_GLO_Backgrounds_Goal((TAG)JL_FOTV_FEATOFRENOWN_36d884ad-bcd3-41c6-a3a2-fc2e4f5cf77a, "Act1_FoR_DtD", 0a30d65a-c707-4844-a468-0409fb9338ae);
-
 KBSECTION
 
 

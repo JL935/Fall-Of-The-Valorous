@@ -215,7 +215,7 @@ function GetSpellsByHolyClasses()
       count = count + 1
    end
 
-   _D(ValidSpells)
+   --_D(ValidSpells)
    _P("Holy spells loaded: " .. count .. " spells")
 end
 

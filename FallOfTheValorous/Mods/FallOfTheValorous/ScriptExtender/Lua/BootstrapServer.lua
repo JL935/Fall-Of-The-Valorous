@@ -219,7 +219,8 @@ end)
 local featsofrenown = {
     JL_FOTV_FOR_DTD_TECHNICAL = "0a30d65a-c707-4844-a468-0409fb9338ae",
     JL_FOTV_FOR_SOS_TECHNICAL = "245d0964-87c2-4725-be7c-cdc0752fb111",
-    JL_FOTV_FOR_HYH_TECHNICAL = "1febdc4d-65d1-4546-9327-526bacf8ccd1"
+    JL_FOTV_FOR_HYH_TECHNICAL = "1febdc4d-65d1-4546-9327-526bacf8ccd1",
+    JL_FOTV_FOR_ACT1_ANY_TECHNICAL = "f836e307-7732-4abe-a2b5-f7fe0e940bcb"
 }
 
 --hiding feats of renown from the inspiration menu
@@ -812,6 +813,83 @@ function FunctorManager:ExecuteFunctorString(functorString, source, target, cont
         end
     end
 end
+----------------------------------------------------------------------------------------------------
+-----------------------------------------ELYSIAN DEFENSE--------------------------------------------
+----------------------------------------------------------------------------------------------------
+-------credits: actually just me this time woah but also built off what LaughingLeader gave me------
+----------------------------------------------------------------------------------------------------
+---@type EntityHandle?
+local lastHitTarget = nil
+
+---@param e EsvLuaDealDamageEvent
+Ext.Events.DealDamage:Subscribe(function (e)
+	lastHitTarget = e.Target
+end)
+
+---@param e EsvLuaBeforeDealDamageEvent
+Ext.Events.BeforeDealDamage:Subscribe(function (e)
+    local hit = e.Hit
+    if lastHitTarget ~= nil then
+        if GetTotalDamage(hit) > 0 then
+            local targetGuid = lastHitTarget.Uuid.EntityUuid
+            local conditionrollExpression = hit.Damage.ConditionRoll.Expression
+            local nullify = 0
+            if conditionrollExpression ~= nil then
+                for conditionroll,expression in pairs(conditionrollExpression) do
+                    if conditionroll == "Params" then
+                        for _,params in pairs(expression) do
+                            if params == "Divide" then
+                            nullify = 1
+                            end
+                        end
+                    end
+                end
+            end
+            if hit.SaveAbility == "Constitution" and Osi.HasPassive(targetGuid, "JL_FOTV_EmpyrealMantle_ElysianDefense") == 1 then
+                if nullify == 0 then
+                    hit.TotalDamageDone = math.floor((hit.TotalDamageDone)/2)
+                    hit.Damage.TotalDamage = math.floor((hit.Damage.TotalDamage)/2)
+                    hit.Damage.AdditionalDamage = math.floor((hit.Damage.AdditionalDamage)/2)
+                    hit.Damage.FinalDamage = math.floor((hit.Damage.FinalDamage)/2)
+                    hit.Damage.SecondaryValue = math.floor((hit.Damage.SecondaryValue)/2)
+                    hit.Damage.BaseValue = math.floor((hit.Damage.BaseValue)/2)
+                    for _,rolls in pairs(hit.Damage.DamageRolls) do
+                        for _,roll in pairs(rolls) do
+                            roll.Result.Total = math.floor((roll.Result.Total)/2)
+                        end
+                    end
+                    for _,dlist in pairs(hit.DamageList) do
+                        dlist.Amount = math.floor((dlist.Amount)/2)
+                    end
+                    for _,tdpt in pairs(hit.Damage.TotalDamagePerType) do
+                        tdpt = math.floor((tdpt)/2)
+                    end
+                    for _,fdpt in pairs(hit.Damage.FinalDamagePerType) do
+                        fdpt = math.floor((fdpt)/2)
+                    end
+                elseif nullify == 1 then
+                    hit.TotalDamageDone = 0
+                    hit.DamageList = {}
+                    hit.Damage.TotalDamage = 0
+                    hit.Damage.TotalDamagePerType = {}
+                    hit.Damage.AdditionalDamage = 0
+                    hit.Damage.FinalDamage = 0
+                    hit.Damage.FinalDamagePerType = {}
+                    hit.Damage.SecondaryValue = 0
+                    hit.Damage.BaseValue = 0
+                    for _,rolls in pairs(hit.Damage.DamageRolls) do
+                        for _,roll in pairs(rolls) do
+                            roll.Result.Total = 0
+                        end
+                    end
+                    e.Attack.DamageList = {}
+                    e.Attack.TotalDamageDone = 0
+                end
+            end
+        end
+    end
+end)
+
 
 
 --lonely listener that doesnt fit anywhere else for now

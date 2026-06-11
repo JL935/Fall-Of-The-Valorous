@@ -776,6 +776,85 @@
 						</node>
 					</children>
 				</node>
+			<!-- Empyreal Scion's Mantle (Tier 1) -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h350db642gb508g4661gaef7g9d4daeb8716b" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="f269dc0a-183b-4454-b9bc-22dc8370d7f7" />
+					<attribute id="Name" type="LSString" value="S_GEAR_JL_FOTV_EmpyrealMantle" />
+					<attribute id="TemplateName" type="FixedString" value="f2dbca2a-d55f-4a53-a604-c57e3b07bb5a" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="1917a060-751f-a6ab-3f62-412dec9f9e7d" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="23782536-b753-6867-ce35-ee6eca689829" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="310.202 4.321 -168.662" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1.0" />
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_EMPYREALMANTLE_HOLYWARD" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- idk yet -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="hec82addeg0dd3g4d68ga711g8192420d42ac" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="c19d1652-3282-416c-8ab5-b6f96b7b1f47" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_EmpyrealMantle_HolyWard" />
+					<attribute id="TemplateName" type="FixedString" value="266f2722-eb09-4643-ab09-f8cd1dae5e6b" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="1917a060-751f-a6ab-3f62-412dec9f9e7d" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="23782536-b753-6867-ce35-ee6eca689829" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="310.202 4.321 -168.662" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1.0" />
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

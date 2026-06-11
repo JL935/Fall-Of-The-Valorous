@@ -8,7 +8,7 @@
     <content contentuid="he651ae9eg403dg4238g9a4dg558f01998110" version="1">My Word Is My Bond</content>
     <content contentuid="hb7af4eb2g2683g4f17g8f20g58fb93a29a5c" version="1">Death, Become My Blade Once More</content>
     
-    <content contentuid="hef7bdad0g54c9g43f6gb7b9g06c85f74187c" version="1">A Light From the Shadows Will Spring</content>
+    <content contentuid="hef7bdad0g54c9g43f6gb7b9g06c85f74187c" version="1">A Light From the Shadows Shall Spring</content>
     <content contentuid="hdd9c5475g2a62g4a5fg884cg78c0fe451283" version="1">Cast the Darkness From Your Heart</content>
     <content contentuid="he76914d7g355cg40a2g83cfg219c1a3e8dbe" version="1">Humble Beginnings</content>
     <content contentuid="he1aeb001gbb24g454fg9ab9gedfa7ad87ac1" version="1">Above All Shadows Rides the Sun</content>
@@ -36,7 +36,7 @@
     <content contentuid="h69700a4fg9876g49ffgbabbg68db434faf76" version="1">Mayst Thou Thy Peace Discov'r</content>
     <content contentuid="h56b01d3cg3bd2g4cbfga159g4b51a0ecee51" version="1">Grant Madeline forgiveness.</content>
     <content contentuid="h9c2a5eefg99ccg49d6gaad6g6e428c8f548b" version="1">Wroth Undoes the Wicked</content>
-    <content contentuid="h2e51a1dfg2eceg49f1gabeeg7e6631294439" version="1">Darkest Before Dawn</content>
+    <content contentuid="h2e51a1dfg2eceg49f1gabeeg7e6631294439" version="1">Evil Will Shall Evil Mar</content>
 
     <content contentuid="h4adfef97gffe6g40b1gb9d1gb3343ef2bff3" version="1">Every Secret Must Be Unearthed</content>
     <content contentuid="h6c586438g3226g4f51ga897g230a7cfec710" version="1">Heart Knows Only Virtue</content>
@@ -46,7 +46,7 @@
     <content contentuid="h79e294b1g6cf5g4ac4g9760g5d1d86d66bd2" version="1">Heart of Gold</content>
     <content contentuid="h122d77dagd1bag4576g86f9geb358a07b549" version="1">Don't You Dare Go Hollow</content>
     <content contentuid="h6c5555cdg8bc3g4ab8g911dgaa6667d36c86" version="1">Lesser, Greater, Middling</content>
-    <content contentuid="hbb08d204g305bg43b7gb4bbg07ec25ac8b69" version="1">Sworn To Valor</content>
+    <content contentuid="hbb08d204g305bg43b7gb4bbg07ec25ac8b69" version="1">Aurë Entuluva</content>
     <content contentuid="h252105ffg8572g4114g80a9g1590e8bd9d3b" version="1">Kindred Spirits</content>
     <content contentuid="hd577d75ag10d7g40d7g99eag7835ac13e5f2" version="1">Let Them Linger</content>
     <content contentuid="h4f63c001g7af3g4054ga40cg42d6c15940b7" version="1">Resurgam</content>
@@ -282,8 +282,10 @@
 
     <content contentuid="h350db642gb508g4661gaef7g9d4daeb8716b" version="1">Empyreal Scion's Mantle</content>
     <content contentuid="h74c11ae2g6c7eg458dg88aag3b2e53f6670a" version="1">Legend tells that the first suits of Empyreal Scion Armour were forged from the battered, cast-off breastplates worn by solars in battle. These suits were gifted to powerful mortal heroes and have since changed hands many times.</content>
-    <content contentuid="hfea985fdgac92g48f1g8a12g3328c61319fb" version="1">Solar's Ascent</content>
-    <content contentuid="hd36276d7g84aeg4bc8ga741g023a8b99a379" version="1">Zealous Implacability</content>
+    <content contentuid="h0ebc3fa6ga4c3g4040g8716g073d392f5991" version="1">Elysian Defense</content>
+    <content contentuid="h13b875f7g617bg4485ga847gfe008b7c55d7" version="1">You take no damage at all on successful &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against attacks that allow a Constitution Saving Throw for half damage. You take only half damage even if you fail your saving throw.</content>
+    <content contentuid="hfea985fdgac92g48f1g8a12g3328c61319fb" version="1">Archon's Ascent</content>
+    <content contentuid="hd36276d7g84aeg4bc8ga741g023a8b99a379" version="1">Solar's Implacability</content>
     <content contentuid="hb6e83b98gc676g411dga5f1g7624aab3e421" version="1">Damage dealt to you by the last enemy you damaged is reduced by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
     <content contentuid="h77c98645gc427g4e16ga797g165177fd03b2" version="1">Damage dealt to you by the last enemy you damaged is reduced by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;When an enemy hits you, your AC is increased by 1 against them. This effect stacks until the enemy misses you due to the additional AC, after which it resets.</content>
     <content contentuid="hc53d3f9fg7473g408fga400gac085039475f" version="1">(do something) to upgrade this item.</content>
@@ -474,16 +476,15 @@
     <content contentuid="h426bddddgdaa1g4a75ga8c7g03ae08751808" version="1">Carry on the legacy of the Valorous</content>
     <content contentuid="h78058ef0gb309g4d88gbaf0g032517f88875" version="1">We sanctified the body of Ronros, a Valor inquisitor. In return, he passed on his knowledge of the Valor Inquisition.</content>
 
-
     <content contentuid="heae6ce6fgbce5g4668gb4eag50dbe80bad2a" version="1">Ravener King's Subjugation</content>
     <content contentuid="ha1c86811g147ag48b1g9daege7d3a6293305" version="1">Entity is under the complete dominion of the Ravener King.</content>
     <content contentuid="h233d405eg423dg43cegb013g25fd67a0bdfa" version="1">Ravener King's Command</content>
     <content contentuid="h83930807g19f7g4a8fg9f24gcab582768fc1" version="1">The Ravener King will not lose his favorite minion so easily. Taarogus receives the benefits of &lt;LSTag Type="Passive" Tooltip="JL_FOTV_Ravener_DegeneratingStrikes_Taarogus"&gt;Degenerating Strikes&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="JL_FOTV_Ravener_FrightfulPresence_Taarogus"&gt;Frightful Presence&lt;/LSTag&gt;, and &lt;LSTag Type="Passive" Tooltip="JL_FOTV_Ravener_DivineDefiance_Taarogus"&gt;Divine Defiance&lt;/LSTag&gt;.</content>
     <content contentuid="h272d012cgffb5g4646g80b4g4520bf1fd7f7" version="1">Those under the Ravener King's Command score a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; when rolling an 18 or higher. On a Critical Hit, targets must pass a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be afflicted by a &lt;LSTag Type="Status" Tooltip="JL_FOTV_NEGATIVELEVEL"&gt;Negative Level&lt;/LSTag&gt;.</content>
     <content contentuid="h3d07ce4eg6ad6g4417gae0dg7e70e66119c5" version="1">Those under the Ravener King's Command emanate an aura of fear. The first time you enter this entity's Frightful Presence, you must pass a Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be afflicted by &lt;LSTag Type="Status" Tooltip="JL_FOTV_RAVENER_FRIGHTFULPRESENCE_PENALTIES"&gt;Ravener's Dread&lt;/LSTag&gt; for as long as you are within [1] of the entity.&lt;br&gt;&lt;br&gt;This entity deals an additional [2] to enemies that they have afflicted with their dreadful presence.</content>
-    <content contentuid="h2751d176g7a1fg409agb22dg15522604a26f" version="1">Those under the Ravener King's Command are resilient to magic from divine sources. You must pass a DC [1] &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; with your &lt;LSTag Tooltip="SpellcastingAbility"&gt;Spellcasting Ability&lt;/LSTag&gt; or fail to affect this entity with your divine magic.</content>
+    <content contentuid="h2751d176g7a1fg409agb22dg15522604a26f" version="1">Those under the Ravener King's Command are resilient to magic from divine sources. You must pass a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; with your &lt;LSTag Tooltip="SpellcastingAbility"&gt;Spellcasting Ability&lt;/LSTag&gt; or fail to affect this entity with your divine magic.</content>
 
-
+    <content contentuid="haa2457f8geaf2g4778ga0d2gb9137307e926" version="1">Feat of Renown: Wilderness Warden</content>
     <content contentuid="h31ff333bg7db3g4e98gbfa3gaf072df4767e" version="1">Feat of Renown: Defend The Defenseless</content>
     <content contentuid="h58808886g8081g4dd6g81bbga40193abdc25" version="1">Feat of Renown: Savior of the Subjugated</content>
     <content contentuid="h502274bdg95a6g4fe2g9459g6962ce157eb9" version="1">Feat of Renown: Hypogeal Hero</content>
@@ -497,6 +498,7 @@
     <content contentuid="h3598c3bfg07b5g44c2g91dbgea4bda05a610" version="1">sys placeholder</content>
     <content contentuid="hda8d30d0gbea0g4d66ga33cgb64489617c9c" version="1">Hypogeal Hero</content>
     <content contentuid="he6f472ffgecdfg48ffgae5fgdda66f445a8a" version="1">hyh placeholder</content>
+    <content contentuid="h34aff5edge704g4c38g8eefge2f78650debd" version="1">Wilderness Warden</content>
 
     <content contentuid="h9ba3e4c8g9716g436dg963fg3d71141bac82" version="1">Lyv the Luminous</content>
 
