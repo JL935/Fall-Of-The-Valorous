@@ -151,6 +151,13 @@
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h18fead2dg5a9bg469bg85afgde2b62ec10fd" version="1" />
+					<attribute id="UUID" type="FixedString" value="JL_FOTV_CahootShrine_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
 
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="h32017387g92d0g462cgb74eg8f233ebe4639" version="1" />

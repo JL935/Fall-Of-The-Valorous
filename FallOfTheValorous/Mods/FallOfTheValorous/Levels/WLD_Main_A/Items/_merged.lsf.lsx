@@ -770,7 +770,7 @@
 							</children>
 						</node>
 						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="-447.286 12.682 -381.669" />
+							<attribute id="Position" type="fvec3" value="-446.8463 12.58289 -381.9993" />
 							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
 							<attribute id="Scale" type="float" value="0.7" />
 						</node>
@@ -819,9 +819,9 @@
 						</node>
 					</children>
 				</node>
-			<!-- idk yet -->
+			<!-- Aegis of the Sacrosanct -->
 				<node id="GameObjects">
-					<attribute id="DisplayName" type="TranslatedString" handle="hec82addeg0dd3g4d68ga711g8192420d42ac" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h996c6f69g1cabg45b9g9184ga8bdc3addaec" version="1" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="c19d1652-3282-416c-8ab5-b6f96b7b1f47" />
@@ -851,6 +851,45 @@
 						<node id="Transform">
 							<attribute id="Position" type="fvec3" value="310.202 4.321 -168.662" />
 							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1.0" />
+						</node>
+					</children>
+				</node>
+			<!-- Cahoot Shrine -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h119bb211g77a7g4278gb37ag6340a804deb5" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="66395e14-9a44-4360-88fe-6efe5f75e7f8" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_CahootShrine" />
+					<attribute id="TemplateName" type="FixedString" value="cd0ef340-f053-415b-aa05-a1939c1cf2aa" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="46bf2460-7de1-6bba-140d-dd1238dbe671" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="cfbcf0de-a416-4650-9a15-4a847e822020" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="955c9a26-aee0-baa9-3f13-dda786f03c2e" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-455.715 5.428 -175.234" />
+							<attribute id="RotationQuat" type="fvec4" value="-0.5345315 0.3137768 0.0026215 0.7847377" />
 							<attribute id="Scale" type="float" value="1.0" />
 						</node>
 					</children>

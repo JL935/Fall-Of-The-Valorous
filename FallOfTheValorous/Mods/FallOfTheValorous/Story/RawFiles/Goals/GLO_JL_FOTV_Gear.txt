@@ -197,6 +197,22 @@ DB_GLO_FOTV_IdolStatusQuestSteps("JL_FOTV_PERIAPTCOMMUNE_PASSED_GOOD", "STEP_JL_
 DB_GLO_FOTV_IdolStatusQuestSteps("JL_FOTV_PERIAPTCOMMUNE_PASSED_NEUTRAL", "STEP_JL_FOTV_CursebreakerCommunionNeutral");
 DB_GLO_FOTV_IdolStatusQuestSteps("JL_FOTV_PERIAPTCOMMUNE_PASSED_EVIL", "STEP_JL_FOTV_CursebreakerCommunionEvil");
 
+//Count up holy sites visited for chestpiece quest
+PROC_DeclareCounter("JL_FOTV_HolySitesVisited");
+
+//DB for holy site triggers
+DB_GLO_FOTV_HolySiteTriggers(S_CHA_Crypt_JergalReligionCheck_4f24d7ac-b650-45cf-b3b4-1557c682e400);
+DB_GLO_FOTV_HolySiteTriggers(S_GOB_TempleAccess_PuzzleApproach_AD_04cc41aa-0675-4c25-b5a7-5360f33a85a1);
+DB_GLO_FOTV_HolySiteTriggers(S_JL_FOTV_EilistraeeHolySite_816d377a-f75c-4f9d-a791-a8ab5e41520a);
+DB_GLO_FOTV_HolySiteTriggers(S_UND_KuoToaGod_SpeakWithBOOOALTrigger_52658a25-6c89-45a2-ad12-f713b41cadf6);
+DB_GLO_FOTV_HolySiteTriggers(S_CRE_MonkAmulet_StatueBanter_f83fe070-3bae-4996-a349-7e14f0a0573a);
+DB_GLO_FOTV_HolySiteTriggers(S_JL_FOTV_VlaakithHolySite_f2d64c42-2edc-443c-a527-c55f72044a12);
+DB_GLO_FOTV_HolySiteTriggers(S_JL_FOTV_LolthHolySite_7e56da69-6ca5-4c2d-b0dc-b2a376a2c65e);
+DB_GLO_FOTV_HolySiteTriggers(S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8a0a-e325864ff57e);
+
+//DB for holy site statuses
+DB_GLO_FOTV_HolySiteStatuses("DEN_SILVANUS_BLESSING");
+
 KBSECTION
 //REGION Upgrading Tier 1 --> Tier 2
 //When the condition is met to upgrade the gear, run PROC
@@ -828,27 +844,6 @@ HasActiveStatus(_Caster, "JL_FOTV_SUPERNALSTRIKE_UNARMED_DAT", 1)
 THEN
 RemoveStatus(_Caster, "JL_FOTV_SUPERNALSTRIKE_UNARMED_DAT");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //REGION Cursed Oathkeeper's Periapt - Identification and Ownership
 //Roll to identify the amulet curse
 IF
@@ -1007,6 +1002,44 @@ AND
 HasActiveStatus(_Character, "JL_FOTV_PERIAPT_CURSE", 0)
 THEN
 SetFlag(JL_FOTV_BrokeAmuletCurse_1fcc92f4-6f1c-459e-abca-5586f5956cd1);
+//END_REGION
+
+//REGION Holy site tracking for chestpiece
+IF
+EnteredTrigger((CHARACTER)_Character, (TRIGGER)_Trigger)
+AND
+DB_GLO_FOTV_HolySiteTriggers(_Trigger)
+AND
+DB_Players(_Character)
+AND
+DB_Avatars(_Avatar)
+THEN
+PROC_IncreaseCounter("JL_FOTV_HolySitesVisited");
+ApplyStatus(_Avatar, "JL_FOTV_HOLYSITE_ENTER_APPLYVFX", 0.0);
+//NOT DB_GLO_FOTV_HolySiteTriggers(_Trigger);
+
+IF
+StatusApplied((CHARACTER)_Object, (STRING)_Status, _, _)
+AND
+DB_GLO_FOTV_HolySiteStatuses(_Status)
+AND
+DB_Players(_Object)
+AND
+DB_Avatars(_Avatar)
+THEN
+PROC_IncreaseCounter("JL_FOTV_HolySitesVisited");
+ApplyStatus(_Avatar, "JL_FOTV_HOLYSITE_ENTER_APPLYVFX", 0.0);
+//NOT DB_GLO_FOTV_HolySiteStatuses(_Status);
+
+IF
+GameBookInterfaceClosed(S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, _)
+//AND
+//QRY_OnlyOnce("JL_FOTV_CahootPaidRespects")
+AND
+DB_Avatars(_Avatar)
+THEN
+PROC_IncreaseCounter("JL_FOTV_HolySitesVisited");
+ApplyStatus(_Avatar, "JL_FOTV_HOLYSITE_ENTER_APPLYVFX", 0.0);
 //END_REGION
 
 EXITSECTION

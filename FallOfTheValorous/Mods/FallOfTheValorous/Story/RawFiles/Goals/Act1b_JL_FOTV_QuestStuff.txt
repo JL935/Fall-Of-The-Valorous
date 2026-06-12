@@ -1,0 +1,13 @@
+Version 1
+SubGoalCombiner SGC_AND
+//fuckign parent target edges
+INITSECTION
+// register custom triggers
+PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_VlaakithHolySite_f2d64c42-2edc-443c-a527-c55f72044a12);
+
+KBSECTION
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act1b"

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids,lsf_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+			<!-- Eilistraee Holy Site Trigger -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="816d377a-f75c-4f9d-a791-a8ab5e41520a" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_EilistraeeHolySite" />
+					<attribute id="Radius" type="float" value="5" />
+					<attribute id="TemplateName" type="FixedString" value="5e41a73b-05ce-4011-b188-d313c15760ee" />
+					<attribute id="Type" type="FixedString" value="trigger" />
+					<children>
+						<node id="FadeChildren" />
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="bcbd2318-2dbf-1b20-6649-ed6d380538af" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="dce3bd94-bb0b-c3bc-cbfd-c9993738bbd0" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="117.689 54.219 -191.295" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+			<!-- Lolth Holy Site Trigger -->
+				<node id="GameObjects">
+					<attribute id="Extents" type="fvec3" value="7.96 2 7.443" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="7e56da69-6ca5-4c2d-b0dc-b2a376a2c65e" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_LolthHolySite" />
+					<attribute id="TemplateName" type="FixedString" value="987b8a4d-2208-4bae-a92d-706db0e593e8" />
+					<attribute id="Type" type="FixedString" value="trigger" />
+					<children>
+						<node id="FadeChildren" />
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="ee2e93e4-c274-dfc3-e4e6-5370146163fc" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="b0aeea2c-8aab-bf02-f353-c7b2f98d7d54" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-513.218 1.913 -403.746" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0.43395 0 0.900937" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+			<!-- Sharran Holy Site Trigger -->
+				<node id="GameObjects">
+					<attribute id="Extents" type="fvec3" value="11.071 1.4 9.391" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="4ea3163e-2379-4ee7-8a0a-e325864ff57e" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_SharranHolySite" />
+					<attribute id="TemplateName" type="FixedString" value="987b8a4d-2208-4bae-a92d-706db0e593e8" />
+					<attribute id="Type" type="FixedString" value="trigger" />
+					<children>
+						<node id="FadeChildren" />
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="53403475-3141-4317-fa26-9f114ae0c2d9" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="1186705f-c239-e022-e3de-26132f651a17" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="c9964370-f486-115b-f19b-ee3e534f8690" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-590.767 1.116 406.007" />
+							<attribute id="RotationQuat" type="fvec4" value="0 -0.0092239 0 0.9999575" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

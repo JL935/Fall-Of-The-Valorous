@@ -62,6 +62,11 @@ DB_QuestDef_ConditionalState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedArcaneRese
 //If you didn't already have all the lore, then read the Veizoadeoth note, then get all the lore, get the quest step to go find V
 DB_QuestDef_ConditionalState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedAllActOne", "STEP_JL_FOTV_ConfrontSentinel", "STEP_JL_FOTV_LearnedArcaneResearch", 1);
 
+//register custom triggers
+PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_EilistraeeHolySite_816d377a-f75c-4f9d-a791-a8ab5e41520a);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_LolthHolySite_7e56da69-6ca5-4c2d-b0dc-b2a376a2c65e);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8a0a-e325864ff57e);
+
 KBSECTION
 //When the prereqs are met, set the proper enemies on stage
 IF
@@ -411,6 +416,8 @@ HasSpell(_Valorous, "JL_FOTV_Target_SanctifyRonros", 1)
 THEN
 RemoveSpell(_Valorous, "JL_FOTV_Target_SanctifyRonros");
 //END_REGION
+
+//REGION Holy Is As Holy Does side quest
 EXITSECTION
 
 ENDEXITSECTION
