@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Visited holy site of Eilistraee" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_VisitedHolySite_Eilistraee" />
+			<attribute id="UUID" type="guid" value="2ecdcd7f-01c3-4a87-82c2-c4e2360910e1" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

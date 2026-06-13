@@ -132,6 +132,10 @@
     <content contentuid="h0e57581cg1ce3g4a2bga499g4fef8b2a866b" version="1">This tattered note is redolent with the fetid odor of death and decay.</content>
     <content contentuid="h00c2696cgbf91g48aag9eadgfbd14e0a186d" version="1">We cannot win. I use what little agency that remains to tell you this: it is utterly hopeless. Raveners will claim the earth and Atropus will claim the sky. The Ravener King erodes my mind, turning my thoughts to his dark whims. Beyond the quill with which I write this valedictory is a purgatory everlasting. Atropus is nigh.</content>
 
+    <content contentuid="h2b88af58g3715g472eg817ag3f5f693eb6f4" version="1">Someone Come Move This Thing</content>
+    <content contentuid="h521d112ag378cg462ega4c0g7940dc7391a3" version="1">A somewhat interesting, mildly adorned note.</content>
+    <content contentuid="ha4b9030eg2a4bg4e6dgaf20g0fc3c9752923" version="1">I called in a favor from Z to have him explain what I'm looking at here. Some kind of divine magic, if I understood his explanation. Some Selûnite inquisitors in the Underdark came up with it. We can't get past it because we “aren't holy enough.” Go figure. Z says we oughta go on some kind of holy pilgrimage to prove that we're good enough. That old shrine to Cahoot oughta suffice, eh?&lt;br&gt;&lt;br&gt;Or not. Avernus isn't hot enough for some of you bastards.&lt;br&gt;&lt;br&gt;How the hells did you even move this thing in here</content>
+
     <content contentuid="hb965ec0bgc0d3g47dfgacd1g39def582bba3" version="1">Speculations of an Iconoclast</content>
     <content contentuid="hdd2a3381g8c23g4e1fgb163ge16bdfce3279" version="1">A set of notes covered in arcane diagrams, divine scripture, and invocations of a multitude of otherworldly beings.</content>
     <content contentuid="h712a7974g5405g444cgb806g1af0f8be6b82" version="1">Prayers alone have been insufficient in assuaging the voices. We need some kind of divine focus component - intelligence suggests there are multiple idols in the region that may serve as a powerful enough focus for a deific invocation.&lt;br&gt;&lt;br&gt;Most insidious is the localized antimagic field upon the amulet. It craves life essence, and as such we must wear the amulet to disable the field. The volunteer receives reduced effects from our restorations, yet claims to feel more attuned to the curse with each application of curative magics. However, our progress seems to be coming at the expense of his sanity. Perhaps at the expense of all of our sanity, as I too feel as though I hear the sinister whispers of a power far beyond our comprehension.</content>
@@ -476,7 +480,43 @@
     <content contentuid="h426bddddgdaa1g4a75ga8c7g03ae08751808" version="1">Carry on the legacy of the Valorous</content>
     <content contentuid="h78058ef0gb309g4d88gbaf0g032517f88875" version="1">We sanctified the body of Ronros, a Valor inquisitor. In return, he passed on his knowledge of the Valor Inquisition.</content>
 
-    <content contentuid="h5bb65829gd12dg44afgb636g6719d77c065d" version="1">Visited Holy Site</content>
+    <content contentuid="h5bb65829gd12dg44afgb636g6719d77c065d" version="1">Holy Is As Holy Does</content>
+    <content contentuid="hd053ec01ga12fg4b33gaa4fg7f7a5e44eec7" version="1">Investigate the Aegis of the Sacrosanct</content>
+    <content contentuid="hbea30c75gf0aeg43a9ga821g64c4f3935f6e" version="1">We found a piece of armor surrounded by an impenetrable iridescent ward. We should investigate ways to dispel the ward.</content>
+    <content contentuid="hdf9aeae7g371ag4953gbc12g1e9da9837ef3" version="1">Zhentarim Note</content>
+    <content contentuid="h8e4ff1e0g6763g48b0ga51cg3c019dc158b2" version="1">Become virtuous enough to overcome the Aegis of the Sacrosanct</content>
+    <content contentuid="h917963b5g9badg4c13g9c0bgaa8260f53238" version="1">We found some leads on how to become more virtuous and overcome the holy ward. We should follow them and see if the Zhentarim's contact was correct.</content>
+    <content contentuid="h89a5e46fgc3edg4fc4ga305g2e01cf016fcf" version="1">We completed a Feat of Renown.</content>
+    <content contentuid="ha1c9978ag6d5bg4b7agbe85g9e0f18e9f153" version="1">We have visited 5 holy sites throughout the wilderness and amassed a significant amount of latent divine energy.</content>
+    <content contentuid="h25e991fcgab11g4bedga7c5gdca8bfecfcb4" version="1">Surmount the Aegis of the Sacrosanct</content>
+    <content contentuid="h6f93e6a6g3dcdg4b47ga74bg0b57ad1c39ee" version="1">We are now virtuous enough to overcome the Aegis of the Sacrosanct and claim the armor within.</content>
+    <content contentuid="hdeda3a16g3135g4cdegbe3bg0ec47afc7d57" version="1">An Abundance of Vs</content>
+    <content contentuid="h6482e989g0349g45ddg9b44g3a0967fe26ad" version="1">Learn of the doctrines of virtuosity</content>
+    <content contentuid="h0b35814cg46b7g4668g9060gf51ff5042bab" version="1">We should learn more about what it means to be virtuous in the eyes of the inquisition.</content>
+    <content contentuid="ha8e50d2dg04ccg4fefga8d2g8bdaf1f0b6ab" version="1">Perform a Feat of Renown</content>
+    <content contentuid="h5b9f4fafg7aa4g4b5fgb5beg2510852c890a" version="1">We need to perform acts of Valor, Honor, Compassion, Generosity and Wisdom to be considered virtuous in the eyes of the inquisition.</content>
+    <content contentuid="hb616c200g71afg481eg884cg105add64f0f7" version="1">We performed a valorous act.</content>
+    <content contentuid="hc461a2d6g8307g4893g97ddg8893e2b70161" version="1">We performed an honorable act.</content>
+    <content contentuid="hce6a0fbeg14feg4db8g9bfcg0d5aa7a9a724" version="1">We performed a compassionate act.</content>
+    <content contentuid="hfd93a24agffffg4fc9g870agd850dc2ac6ac" version="1">We performed a generous act.</content>
+    <content contentuid="hbceffb1fg41f7g4823g8161gd840085f8ac5" version="1">We performed a wise act.</content>
+    <content contentuid="hbd8e2cadge088g4a5dg966eg5263f01dfbe7" version="1">Continue to be virtuous</content>
+    <content contentuid="h43112e08gf1bdg46b3gb61ag23574d93ffcf" version="1">We performed a Feat of Renown by adhering to the Valorous Virtues.</content>
+    <content contentuid="he715bdb7g1f1ag4733g95c0ga1d21dcdd477" version="1">Voyage of the Virtuous</content>
+    <content contentuid="hf5154aefgbac9g4a5ega3f5g4639c00f355b" version="1">Make a pilgrimage to holy sites across the wilderness</content>
+    <content contentuid="h44b7d9f9g147eg408aga662g61fb20b4ed7e" version="1">The Zhentarim think that visiting holy sites could grant them enough holiness to bypass the Aegis of the Sacrosanct. We should visit places of worship and see if they're right.</content>
+    <content contentuid="h805cbb18g39e3g4e54g8e98g30d5d87af613" version="1">We amassed some latent divine energy from a holy site of Jergal.</content>
+    <content contentuid="h257470c7gaefcg4638g81a6g4a3032c59541" version="1">We amassed some latent divine energy from a holy site of Selûne.</content>
+    <content contentuid="hc2aeeacegbc51g4591g98bag3992343e639b" version="1">We amassed some latent divine energy from a holy site of Eilistraee.</content>
+    <content contentuid="hc7fc2464gc2dfg4f7eg827dg05411fb755fa" version="1">We amassed some latent divine energy from a holy site of BOOOAL.</content>
+    <content contentuid="h5b12798dg5d4ag492dgbdf3ga0ca5067facc" version="1">We amassed some latent divine energy from a holy site of Lathander.</content>
+    <content contentuid="h9a582bf5g8025g481agae2fgafaabb54661b" version="1">We amassed some latent divine energy from a holy site of Vlaakith.</content>
+    <content contentuid="h37f4030cg388fg44dag892ag2b01d0762646" version="1">We amassed some latent divine energy from a holy site of Lolth.</content>
+    <content contentuid="h172f552dg9268g4d16g885fgb1c10b6b9aba" version="1">We amassed some latent divine energy from a holy site of Shar.</content>
+    <content contentuid="h8a5ba5f5gb22eg4f61gaf78ge986e78ab601" version="1">We amassed some latent divine energy from a holy site of Silvanus.</content>
+    <content contentuid="h78aad2eeg9fd9g4dc0ga451gb0c52033bfb9" version="1">We amassed some latent energy from a site dedicated to a venerated man known as Cahoot.</content>
+    <content contentuid="h34daf877g97d5g4031gbdf5gc167b7a54e24" version="1">We have visited at least 5 holy sites, collecting enough divine energy to bypass the Aegis of the Sacrosanct.</content>
+    <content contentuid="h0f225a46g045cg4968ga9d0g16a1c92bdfc5" version="1">Shrine to Cahoot</content>
     <content contentuid="h996c6f69g1cabg45b9g9184ga8bdc3addaec" version="1">Aegis of the Sacrosanct</content>
     <content contentuid="h119bb211g77a7g4278gb37ag6340a804deb5" version="1">In a fight, right?</content>
     <content contentuid="h18fead2dg5a9bg469bg85afgde2b62ec10fd" version="1">Here marks the spot where the man known as Cahoot took 10 men at once.</content>

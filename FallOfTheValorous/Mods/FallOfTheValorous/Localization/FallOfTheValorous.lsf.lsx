@@ -158,6 +158,13 @@
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="ha4b9030eg2a4bg4e6dgaf20g0fc3c9752923" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_ZhentNote_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
 
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="h32017387g92d0g462cgb74eg8f233ebe4639" version="1" />

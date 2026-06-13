@@ -14,8 +14,10 @@ SetOnStage(S_JL_FOTV_RisenRoad_Tactics_HalfOrc_019a9841-994f-410b-9b2e-a25e7c174
 SetOnStage(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, 0);
 SetOnStage(S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, 0);
 
-//Disable interacting with the Empyreal Scion's Mantle for sneaky smoke and mirrors shit so it seems like there's actually a ward on it
+//Disable interacting with the quest stuff for sneaky smoke and mirrors
 SetCanInteract(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, 0);
+SetCanInteract(S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82, 0);
+SetCanInteract(S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, 0);
 
 //Enemies to set on stage when prereq flag is set
 DB_FOTV_SetOnStageLater(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
@@ -416,8 +418,6 @@ HasSpell(_Valorous, "JL_FOTV_Target_SanctifyRonros", 1)
 THEN
 RemoveSpell(_Valorous, "JL_FOTV_Target_SanctifyRonros");
 //END_REGION
-
-//REGION Holy Is As Holy Does side quest
 EXITSECTION
 
 ENDEXITSECTION

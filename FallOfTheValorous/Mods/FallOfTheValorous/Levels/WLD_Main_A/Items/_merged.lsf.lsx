@@ -894,6 +894,42 @@
 						</node>
 					</children>
 				</node>
+			<!-- Someone Come Move This Thing -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h2b88af58g3715g472eg817ag3f5f693eb6f4" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="e90048c0-7734-4ab9-96c8-4b1177e2ac82" />
+					<attribute id="Name" type="LSString" value="S_LORE_JL_FOTV_ZhentNote" />
+					<attribute id="TemplateName" type="FixedString" value="dd60fb69-0a49-45dd-94f2-d02025cc2a44" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="1917a060-751f-a6ab-3f62-412dec9f9e7d" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="23782536-b753-6867-ce35-ee6eca689829" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="304.348 6.044 -166.414" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1.0" />
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

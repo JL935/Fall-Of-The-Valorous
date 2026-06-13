@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="302"/>
+    <region id="Markers">
+        <node id="root">
+            <children>
+                <node id="Marker">
+                    <attribute id="DisplayText" type="TranslatedString" handle="h350db642gb508g4661gaef7g9d4daeb8716b" version="1"/>
+                    <attribute id="Guid" type="guid" value="dfe2b970-d925-4cc5-ac10-fdfacbad360e"/>
+                    <attribute id="MarkerID" type="FixedString" value="MARKER_JL_FOTV_DestroyAegis"/>
+                    <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
+                    <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
+                    <attribute id="MarkerTargetObjectType" type="FixedString" value="Item"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="f269dc0a-183b-4454-b9bc-22dc8370d7f7"/>
+                    <attribute id="Radius" type="int32" value="0"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

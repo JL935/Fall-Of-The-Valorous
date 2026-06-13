@@ -150,6 +150,58 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="2b276050-0e60-49ab-8416-2faca0f7077d"/>
                 </node>
 
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="hd053ec01ga12fg4b33gaa4fg7f7a5e44eec7" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_ReadZhentNote"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_BecomeHoly"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="50ce19bb-fc37-434c-b584-8cdc261fe4a1"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h8e4ff1e0g6763g48b0ga51cg3c019dc158b2" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_GoBecomeVirtuous"/> 
+                    <attribute id="Priority" type="int32" value="1100"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_BecomeHoly"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="e9dda11a-035e-496c-818b-da98ac5e539f"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h25e991fcgab11g4bedga7c5gdca8bfecfcb4" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_BreakTheAegis"/> 
+                    <attribute id="Priority" type="int32" value="1200"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_BecomeHoly"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="cd78a8ee-1417-4351-9d67-bb8bda781457"/>
+                </node>
+
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h6482e989g0349g45ddg9b44g3a0967fe26ad" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_ReadValorousVirtues"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_FeatOfRenown"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="fa6a78ad-6751-4c71-a220-beea110d5b4c"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="ha8e50d2dg04ccg4fefga8d2g8bdaf1f0b6ab" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_GoDoRenownThings"/> 
+                    <attribute id="Priority" type="int32" value="1100"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_FeatOfRenown"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="cfcf8cd2-2419-42ce-b65d-f5056544fa9a"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="hbd8e2cadge088g4a5dg966eg5263f01dfbe7" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_FinishedRenown"/> 
+                    <attribute id="Priority" type="int32" value="1200"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_FeatOfRenown"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="d84a8f58-7feb-4007-98ec-1fc29fc57d8a"/>
+                </node>
+
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="hf5154aefgbac9g4a5ega3f5g4639c00f355b" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_PilgrimTime"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_VirtuousVoyage"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="3442d6c1-7123-4c39-b62c-d00896061f4d"/>
+                </node>
+
             </children>
         </node>
     </region>

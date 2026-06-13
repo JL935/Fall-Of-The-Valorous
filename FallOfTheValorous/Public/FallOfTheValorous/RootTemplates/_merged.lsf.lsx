@@ -2598,6 +2598,33 @@
 						</node>
 					</children>
 				</node>
+			<!-- Someone Come Move This Thing -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h521d112ag378cg462ega4c0g7940dc7391a3" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h2b88af58g3715g472eg817ag3f5f693eb6f4" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="dd60fb69-0a49-45dd-94f2-d02025cc2a44" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_ZhentNote" />
+					<attribute id="ParentTemplateId" type="FixedString" value="6d5f9187-6457-4f20-b878-f5b3f8272c6f" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_ZhentNote_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			<!-- Speculations of an Iconoclast -->
 				<node id="GameObjects">
 					<attribute id="Description" type="TranslatedString" handle="hdd2a3381g8c23g4e1fgb163ge16bdfce3279" version="1" />

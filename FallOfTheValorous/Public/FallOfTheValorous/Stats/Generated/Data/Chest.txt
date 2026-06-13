@@ -19,21 +19,6 @@ type "PassiveData"
 data "Icon" "Icon_JL_FOTV_ElysianDefense"
 data "DisplayName" "h0ebc3fa6ga4c3g4040g8716g073d392f5991;1"
 data "Description" "h13b875f7g617bg4485ga847gfe008b7c55d7;1"
-
-new entry "JL_FOTV_EMPYREALMANTLE_HOLYWARD"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StatusEffect" "de551e99-dea8-470f-a473-ee840b80e6b8"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_HOLYSITE_ENTER_APPLYVFX"
-type "StatusData"
-data "StatusType" "BOOST"
-data "DisplayName" "h5bb65829gd12dg44afgb636g6719d77c065d;1"
-data "StackId" "JL_FOTV_HOLYSITE_ENTER_APPLYVFX"
-data "StackType" "Ignore"
-data "ApplyEffect" "5119b58e-c015-445e-ba84-6cadf32379a8"
-data "StatusPropertyFlags" "DisableCombatlog;DisablePortraitIndicator"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////TIER 2///////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -130,3 +115,30 @@ data "Boosts" "IF(HasStatus('JL_FOTV_EMPYREALMANTLE_AC',context.Target)):RollBon
 data "RemoveEvents" "OnAttack"
 data "RemoveConditions" "IsMiss() and EmpyrealAdaptiveMissCheck()"
 data "StatusPropertyFlags" "FreezeDuration;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////QUEST STUFF/////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+new entry "JL_FOTV_EMPYREALMANTLE_HOLYWARD"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "JL_FOTV_EMPYREALMANTLE_HOLYWARD"
+data "StackType" "Ignore"
+data "AuraRadius" "3"
+data "AuraStatuses" "IF(Character() and Player()):ApplyStatus(JL_FOTV_NEARMANTLE)"
+data "StatusEffect" "de551e99-dea8-470f-a473-ee840b80e6b8"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+
+new entry "JL_FOTV_NEARMANTLE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "JL_FOTV_NEARMANTLE"
+data "StackType" "Ignore"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+
+new entry "JL_FOTV_HOLYSITE_ENTER_APPLYVFX"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "JL_FOTV_HOLYSITE_ENTER_APPLYVFX"
+data "StackType" "Ignore"
+data "ApplyEffect" "5119b58e-c015-445e-ba84-6cadf32379a8"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"

@@ -517,7 +517,7 @@
                     <attribute id="ExperienceReward" type="guid" value="85d04f48-87c7-45e0-83c5-fdd5b11465df"/>
                     <attribute id="InspirationPoints" type="uint32" value="1"/>
                     <attribute id="RewardLevel" type="uint32" value="1"/>
-                    <attribute id="Title" type="TranslatedString" handle="haa2457f8geaf2g4778ga0d2gb9137307e926" version="1"/>
+                    <attribute id="Title" type="TranslatedString" handle="h34aff5edge704g4c38g8eefge2f78650debd" version="1"/>
                     <attribute id="UUID" type="guid" value="f836e307-7732-4abe-a2b5-f7fe0e940bcb"/>
                 </node>
 

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Completed your first Generosity VV" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_ValorousVirtue_Generosity" />
+			<attribute id="UUID" type="guid" value="de99f1dc-6b75-4560-8807-f5492a81ab8c" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="302"/>
+    <region id="Markers">
+        <node id="root">
+            <children>
+                <node id="Marker">
+                    <attribute id="DisplayText" type="TranslatedString" handle="h9049f27aga1e6g4abcg98fcgff30239ce452" version="1"/>
+                    <attribute id="Guid" type="guid" value="2a924a51-36c2-4afe-b1bc-f7b730f2f44a"/>
+                    <attribute id="MarkerID" type="FixedString" value="MARKER_JL_FOTV_ValorousVirtues"/>
+                    <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
+                    <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
+                    <attribute id="MarkerTargetObjectType" type="FixedString" value="Item"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="a556aa87-01f4-4734-b07a-306041fb6109"/>
+                    <attribute id="Radius" type="int32" value="0"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

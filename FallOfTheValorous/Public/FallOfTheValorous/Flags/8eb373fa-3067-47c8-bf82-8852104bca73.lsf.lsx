@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Visited holy site of Selune" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_VisitedHolySite_Selune" />
+			<attribute id="UUID" type="guid" value="8eb373fa-3067-47c8-bf82-8852104bca73" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

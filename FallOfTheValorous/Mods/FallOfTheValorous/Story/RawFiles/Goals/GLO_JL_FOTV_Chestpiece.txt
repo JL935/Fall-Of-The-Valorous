@@ -1,0 +1,301 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//reminder to self - this commented stuff happens in the a1 or a1b quest file cuz of the whole not existing on init thingy
+
+//SetCanInteract(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, 0);
+//SetCanInteract(S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82, 0);
+//SetCanInteract(S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, 0);
+//PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_EilistraeeHolySite_816d377a-f75c-4f9d-a791-a8ab5e41520a);
+//PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_LolthHolySite_7e56da69-6ca5-4c2d-b0dc-b2a376a2c65e);
+//PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8a0a-e325864ff57e);
+//PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_VlaakithHolySite_f2d64c42-2edc-443c-a527-c55f72044a12);
+
+//Count up holy sites visited for chestpiece quest
+PROC_DeclareCounter("JL_FOTV_HolySitesVisited");
+
+//DB for holy site triggers and associated flags
+DB_GLO_FOTV_HolySiteTriggers(S_CHA_Crypt_JergalReligionCheck_4f24d7ac-b650-45cf-b3b4-1557c682e400, (FLAG)JL_FOTV_VisitedHolySite_Jergal_ea262497-20a5-4823-9167-b8e52e042a51);
+DB_GLO_FOTV_HolySiteTriggers(S_GOB_TempleAccess_PuzzleApproach_AD_04cc41aa-0675-4c25-b5a7-5360f33a85a1, (FLAG)JL_FOTV_VisitedHolySite_Selune_8eb373fa-3067-47c8-bf82-8852104bca73);
+DB_GLO_FOTV_HolySiteTriggers(S_JL_FOTV_EilistraeeHolySite_816d377a-f75c-4f9d-a791-a8ab5e41520a, (FLAG)JL_FOTV_VisitedHolySite_Eilistraee_2ecdcd7f-01c3-4a87-82c2-c4e2360910e1);
+DB_GLO_FOTV_HolySiteTriggers(S_UND_KuoToaGod_SpeakWithBOOOALTrigger_52658a25-6c89-45a2-ad12-f713b41cadf6, (FLAG)JL_FOTV_VisitedHolySite_BOOOAL_5a2a4747-078e-4a0a-9ef4-773be057faf4);
+DB_GLO_FOTV_HolySiteTriggers(S_CRE_MonkAmulet_StatueBanter_f83fe070-3bae-4996-a349-7e14f0a0573a, (FLAG)JL_FOTV_VisitedHolySite_Lathander_aa92ffef-6bb9-483d-b150-e846cb9c1dde);
+DB_GLO_FOTV_HolySiteTriggers(S_JL_FOTV_VlaakithHolySite_f2d64c42-2edc-443c-a527-c55f72044a12, (FLAG)JL_FOTV_VisitedHolySite_Vlaakith_2ff433bf-8454-4e98-a86f-ec7d60dbc4bb);
+DB_GLO_FOTV_HolySiteTriggers(S_JL_FOTV_LolthHolySite_7e56da69-6ca5-4c2d-b0dc-b2a376a2c65e, (FLAG)JL_FOTV_VisitedHolySite_Lolth_75013497-5437-4aba-a058-a5d6cf7b532d);
+DB_GLO_FOTV_HolySiteTriggers(S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8a0a-e325864ff57e, (FLAG)JL_FOTV_VisitedHolySite_Shar_545698b2-071c-409f-882b-a456fb5a8ab4);
+
+//DB for holy site statuses and associated flags and quest steps
+DB_GLO_FOTV_HolySiteStatuses("DEN_SILVANUS_BLESSING", (FLAG)JL_FOTV_VisitedHolySite_Silvanus_f21a694a-c5a9-4288-919f-0547538bc228);
+
+//just flags and quests cuz idk why i split up the holy sites into 3 different methods of acquisition fuck my chungus life
+DB_GLO_FOTV_HolySiteFlagsAndQuests((FLAG)JL_FOTV_VisitedHolySite_Jergal_ea262497-20a5-4823-9167-b8e52e042a51, "STEP_JL_FOTV_VisitedJergal");
+DB_GLO_FOTV_HolySiteFlagsAndQuests((FLAG)JL_FOTV_VisitedHolySite_Selune_8eb373fa-3067-47c8-bf82-8852104bca73, "STEP_JL_FOTV_VisitedSelune");
+DB_GLO_FOTV_HolySiteFlagsAndQuests((FLAG)JL_FOTV_VisitedHolySite_Eilistraee_2ecdcd7f-01c3-4a87-82c2-c4e2360910e1, "STEP_JL_FOTV_VisitedEilistraee");
+DB_GLO_FOTV_HolySiteFlagsAndQuests((FLAG)JL_FOTV_VisitedHolySite_BOOOAL_5a2a4747-078e-4a0a-9ef4-773be057faf4, "STEP_JL_FOTV_VisitedBOOOAL");
+DB_GLO_FOTV_HolySiteFlagsAndQuests((FLAG)JL_FOTV_VisitedHolySite_Lathander_aa92ffef-6bb9-483d-b150-e846cb9c1dde, "STEP_JL_FOTV_VisitedLathander");
+DB_GLO_FOTV_HolySiteFlagsAndQuests((FLAG)JL_FOTV_VisitedHolySite_Vlaakith_2ff433bf-8454-4e98-a86f-ec7d60dbc4bb, "STEP_JL_FOTV_VisitedVlaakith");
+DB_GLO_FOTV_HolySiteFlagsAndQuests((FLAG)JL_FOTV_VisitedHolySite_Lolth_75013497-5437-4aba-a058-a5d6cf7b532d, "STEP_JL_FOTV_VisitedLolth");
+DB_GLO_FOTV_HolySiteFlagsAndQuests((FLAG)JL_FOTV_VisitedHolySite_Shar_545698b2-071c-409f-882b-a456fb5a8ab4, "STEP_JL_FOTV_VisitedShar");
+DB_GLO_FOTV_HolySiteFlagsAndQuests((FLAG)JL_FOTV_VisitedHolySite_Silvanus_f21a694a-c5a9-4288-919f-0547538bc228, "STEP_JL_FOTV_VisitedSilvanus");
+DB_GLO_FOTV_HolySiteFlagsAndQuests((FLAG)JL_FOTV_VisitedHolySite_Cahoot_2c671fdf-ce4d-42ec-9ef6-6ecc196f1eb1, "STEP_JL_FOTV_VisitedCahoot");
+
+//Book flag
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_ValorousVirtues_a556aa87-01f4-4734-b07a-306041fb6109, (FLAG)JL_FOTV_KnowsValorousVirtues_f90fa4f9-381b-438d-882c-ad1b86615b24);
+
+//Journal stuff
+DB_QuestDef_BookReadState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoBecomeVirtuous", S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82);
+DB_QuestDef_ChainedState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_FinishedRenown", "STEP_JL_FOTV_IsRenowned");
+DB_QuestDef_ChainedState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_WhoUpFaringTheyWay", "STEP_JL_FOTV_IsItinerant");
+
+//DB for VV thingies and flags and quest steps
+DB_GLO_FOTV_VV_Flag_QS("JL_FOTV_FoR_Act1_Valor", (FLAG)JL_FOTV_ValorousVirtue_Valor_9f5f321e-092c-401c-8499-4b631c5870c5, "STEP_JL_FOTV_RenownVVV");
+DB_GLO_FOTV_VV_Flag_QS("JL_FOTV_FoR_Act1_Honor", (FLAG)JL_FOTV_ValorousVirtue_Honor_5b8d570b-fa50-41f2-9419-d989dd845a70, "STEP_JL_FOTV_RenownHVV");
+DB_GLO_FOTV_VV_Flag_QS("JL_FOTV_FoR_Act1_Compassion", (FLAG)JL_FOTV_ValorousVirtue_Compassion_fb029f2f-e42d-4efc-aa38-2bbccb5239a5, "STEP_JL_FOTV_RenownCVV");
+DB_GLO_FOTV_VV_Flag_QS("JL_FOTV_FoR_Act1_Generosity", (FLAG)JL_FOTV_ValorousVirtue_Generosity_de99f1dc-6b75-4560-8807-f5492a81ab8c, "STEP_JL_FOTV_RenownGVV");
+DB_GLO_FOTV_VV_Flag_QS("JL_FOTV_FoR_Act1_Wisdom", (FLAG)JL_FOTV_ValorousVirtue_Wisdom_0727e40f-a925-452d-91ee-ff386a483b24, "STEP_JL_FOTV_RenownWVV");
+
+KBSECTION
+//REGION Holy site tracking/flag setting
+IF
+EnteredTrigger((CHARACTER)_Character, (TRIGGER)_HSTrigger)
+AND
+DB_GLO_FOTV_HolySiteTriggers(_HSTrigger, _HSFlag)
+AND
+DB_Players(_Character)
+AND
+DB_Avatars(_Avatar)
+THEN
+SetFlag(_HSFlag);
+PROC_IncreaseCounter("JL_FOTV_HolySitesVisited");
+ApplyStatus(_Avatar, "JL_FOTV_HOLYSITE_ENTER_APPLYVFX", 0.0);
+NOT DB_GLO_FOTV_HolySiteTriggers(_HSTrigger, _HSFlag);
+
+IF
+StatusApplied((CHARACTER)_Object, (STRING)_HSStatus, _, _)
+AND
+DB_GLO_FOTV_HolySiteStatuses(_HSStatus, _HSFlag)
+AND
+DB_Players(_Object)
+AND
+DB_Avatars(_Avatar)
+THEN
+SetFlag(_HSFlag);
+PROC_IncreaseCounter("JL_FOTV_HolySitesVisited");
+ApplyStatus(_Avatar, "JL_FOTV_HOLYSITE_ENTER_APPLYVFX", 0.0);
+NOT DB_GLO_FOTV_HolySiteStatuses(_HSStatus, _HSFlag);
+
+IF
+GameBookInterfaceClosed(S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, _)
+AND
+QRY_OnlyOnce("JL_FOTV_CahootPaidRespects")
+AND
+DB_Avatars(_Avatar)
+THEN
+SetFlag((FLAG)JL_FOTV_VisitedHolySite_Cahoot_2c671fdf-ce4d-42ec-9ef6-6ecc196f1eb1);
+PROC_IncreaseCounter("JL_FOTV_HolySitesVisited");
+ApplyStatus(_Avatar, "JL_FOTV_HOLYSITE_ENTER_APPLYVFX", 0.0);
+PROC_HidePartyMarker("MARKER_JL_FOTV_BootyCahooty");
+//END_REGION
+
+//REGION Holy Is As Holy Does side quest
+//start quest when ur near chestpiece
+IF
+StatusApplied((CHARACTER)_Player, "JL_FOTV_NEARMANTLE", _, _)
+AND
+DB_Players(_Player)
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_ReadZhentNote");
+SetCanInteract(S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82, 1);
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_ZhentNote");
+
+//proc subquests when u read the zhent note
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoBecomeVirtuous")
+THEN
+SetCanInteract(S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, 1);
+PROC_HidePartyMarker("MARKER_JL_FOTV_ZhentNote");
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_ReadValorousVirtues");
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_ValorousVirtues");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_BootyCahooty");
+
+//set flag for finishing VV subquest
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_IsRenowned")
+THEN
+SetFlag(JL_FOTV_Chestpiece_IsRenowned_13b3661e-6f55-4e57-a2ae-21f641afa6cf);
+
+//set flag for finishing voyager subquest
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_IsItinerant")
+THEN
+SetFlag(JL_FOTV_Chestpiece_IsItinerant_72d8ad21-b730-4091-8374-78659d053347);
+PROC_HidePartyMarker("MARKER_JL_FOTV_BootyCahooty");
+
+//advance main quest when both subquests completed
+IF
+DB_GlobalFlag((FLAG)JL_FOTV_Chestpiece_IsRenowned_13b3661e-6f55-4e57-a2ae-21f641afa6cf)
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_Chestpiece_IsItinerant_72d8ad21-b730-4091-8374-78659d053347)
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_BreakTheAegis");
+PROC_UnlockPartyMarker("MARKER_JL_FOTV_DestroyAegis");
+
+//grant the spell to break the aegis when you're close to it and have completed a feat of renown
+IF
+StatusApplied((CHARACTER)_Player, "JL_FOTV_NEARMANTLE", _, _)
+AND
+DB_Players(_Player)
+AND
+GetFlag(JL_FOTV_Chestpiece_IsRenowned_13b3661e-6f55-4e57-a2ae-21f641afa6cf, NULL_00000000-0000-0000-0000-000000000000, 1)
+THEN
+AddSpell(_Player, "JL_FOTV_Projectile_Fly_EmpyrealMantle");
+
+//remove the breaky spell when far from chest
+IF
+StatusRemoved((CHARACTER)_Player, "JL_FOTV_NEARMANTLE", _, _)
+AND
+DB_Players(_Player)
+AND
+HasSpell(_Player, "JL_FOTV_Projectile_Fly_EmpyrealMantle", 1)
+THEN
+RemoveSpell(_Player, "JL_FOTV_Projectile_Fly_EmpyrealMantle");
+
+//break the aegis when u cast the spell
+IF
+CastSpell(_, "JL_FOTV_Projectile_Fly_EmpyrealMantle", _, _, _)
+THEN
+RemoveStatus(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, "JL_FOTV_EMPYREALMANTLE_HOLYWARD");
+SetCanInteract(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, 1);
+SetOnStage(S_JL_FOTV_EmpyrealMantle_HolyWard_c19d1652-3282-416c-8ab5-b6f96b7b1f47, 0);
+QuestClose("QST_JL_FOTV_BecomeHoly");
+//END_REGION
+
+//REGION An Abundance of Vs subquest
+//already read book before quest update
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_ReadValorousVirtues")
+AND
+GetFlag(JL_FOTV_KnowsValorousVirtues_f90fa4f9-381b-438d-882c-ad1b86615b24, NULL_00000000-0000-0000-0000-000000000000, 1)
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_ValorousVirtues");
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings");
+
+//not read book before quest update
+IF
+GameBookInterfaceClosed(S_LORE_JL_FOTV_ValorousVirtues_a556aa87-01f4-4734-b07a-306041fb6109, _)
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly","STEP_JL_FOTV_ReadValorousVirtues")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly","STEP_JL_FOTV_GoDoRenownThings")
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_ValorousVirtues");
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings");
+
+//if u already completed any FoR, skip right to the end
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings")
+AND
+DB_GlobalCounter("JL_FOTV_FoR_TotalCompletions",_Count)
+AND
+_Count >= 1
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_FinishedRenown");
+
+//set the quest steps for any VV already completed
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings")
+AND
+DB_GLO_FOTV_VV_Flag_QS(_VVCounter, _VVFlag, _VVStep)
+AND
+GetFlag(_VVFlag, NULL_00000000-0000-0000-0000-000000000000, 1)
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", _VVStep);
+NOT DB_GLO_FOTV_VV_Flag_QS(_VVCounter, _VVFlag, _VVStep);
+
+//set the flag for completing a VV
+IF
+DB_GlobalCounter(_VVCounter, _Count)
+AND
+DB_GLO_FOTV_VV_Flag_QS(_VVCounter, _VVFlag, _)
+AND
+_Count >= 1
+THEN
+SetFlag(_VVFlag);
+
+//if you haven't already unlocked the relevant step, do so when the flag is set for completing ur first VV of that type
+IF
+FlagSet(_VVFlag, _, _)
+AND
+DB_GLO_FOTV_VV_Flag_QS(_VVCounter, _VVFlag, _VVStep)
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", _VVStep)
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", _VVStep);
+NOT DB_GLO_FOTV_VV_Flag_QS(_VVCounter, _VVFlag, _VVStep);
+
+//finish subquest once u finish any FoR
+IF
+DB_GlobalCounter("JL_FOTV_FoR_TotalCompletions",_Count)
+AND
+_Count >= 1
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_IsRenowned")
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_FinishedRenown");
+//END_REGION
+
+//REGION Voyage of the Virtuous subquest
+//if u already visited enough holy sites, skip right to the end
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime")
+AND
+DB_GlobalCounter("JL_FOTV_HolySitesVisited",_Count)
+AND
+_Count >= 5
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_WhoUpFaringTheyWay");
+
+//retroactive quest steps for holy sites u already visited before starting the subquest
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime")
+AND
+DB_GLO_FOTV_HolySiteFlagsAndQuests(_HSFlag, _HSQuest)
+AND
+GetFlag(_HSFlag, NULL_00000000-0000-0000-0000-000000000000, 1)
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", _HSQuest);
+
+//if you haven't already unlocked the relevant step, do so when the flag is set for visiting the holy site
+IF
+FlagSet(_HSFlag, _, _)
+AND
+DB_GLO_FOTV_HolySiteFlagsAndQuests(_HSFlag, _HSQuest)
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", _HSQuest)
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", _HSQuest);
+NOT DB_GLO_FOTV_HolySiteFlagsAndQuests(_HSFlag, _HSQuest);
+
+//finish subquest once u been to 5 holy sites
+IF
+DB_GlobalCounter("JL_FOTV_HolySitesVisited",_Count)
+AND
+_Count >= 5
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_IsItinerant")
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_WhoUpFaringTheyWay");
+//END_REGION
+
+EXITSECTION
+
+ENDEXITSECTION
