@@ -52,6 +52,12 @@
                     <attribute id="Identifier" type="FixedString" value="JL_FOTV_PerCombatCooldown"/>
                     <attribute id="UUID" type="guid" value="bf199142-f642-4cde-a99b-43905af11cce"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3cbf6a96g0d71g44b7gabf1g338d4021fc5c" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="MustVisitMoreHolySites"/>
+                    <attribute id="UUID" type="guid" value="3b97baba-237b-48ec-abb1-2ea19268919d"/>
+                </node>
             </children>
         </node>
     </region>

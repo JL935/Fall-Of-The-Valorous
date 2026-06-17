@@ -2,7 +2,7 @@ Version 1
 SubGoalCombiner SGC_AND
 //And also Feats of Renown since they're valor-adjacent
 INITSECTION
-//as usual i swear there's probably a better way to do this
+//i swear there's gotta be a better way to do this
 PROC_DeclareCounter("JL_FOTV_FoR_TotalCompletions");
 PROC_DeclareCounter("JL_FOTV_FoR_DtD");
 PROC_DeclareCounter("JL_FOTV_FoR_SoS");

@@ -1,16 +1,6 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-//reminder to self - this commented stuff happens in the a1 or a1b quest file cuz of the whole not existing on init thingy
-
-//SetCanInteract(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, 0);
-//SetCanInteract(S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82, 0);
-//SetCanInteract(S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, 0);
-//PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_EilistraeeHolySite_816d377a-f75c-4f9d-a791-a8ab5e41520a);
-//PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_LolthHolySite_7e56da69-6ca5-4c2d-b0dc-b2a376a2c65e);
-//PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8a0a-e325864ff57e);
-//PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_VlaakithHolySite_f2d64c42-2edc-443c-a527-c55f72044a12);
-
 //Count up holy sites visited for chestpiece quest
 PROC_DeclareCounter("JL_FOTV_HolySitesVisited");
 
@@ -148,8 +138,15 @@ AND
 DB_Players(_Player)
 AND
 GetFlag(JL_FOTV_Chestpiece_IsRenowned_13b3661e-6f55-4e57-a2ae-21f641afa6cf, NULL_00000000-0000-0000-0000-000000000000, 1)
+AND
+DB_GlobalCounter("JL_FOTV_HolySitesVisited",_Count)
+AND
+IntegerProduct(_Count, 6, _Product)
+AND
+IntegerToReal(_Product, _R)
 THEN
-AddSpell(_Player, "JL_FOTV_Projectile_Fly_EmpyrealMantle");
+ApplyStatus(_Player, "JL_FOTV_HOLYSITES_TRACKER", _R);
+AddSpell(_Player, "JL_FOTV_Mantle_DestroyAegis");
 
 //remove the breaky spell when far from chest
 IF
@@ -157,13 +154,14 @@ StatusRemoved((CHARACTER)_Player, "JL_FOTV_NEARMANTLE", _, _)
 AND
 DB_Players(_Player)
 AND
-HasSpell(_Player, "JL_FOTV_Projectile_Fly_EmpyrealMantle", 1)
+HasSpell(_Player, "JL_FOTV_Mantle_DestroyAegis", 1)
 THEN
-RemoveSpell(_Player, "JL_FOTV_Projectile_Fly_EmpyrealMantle");
+RemoveSpell(_Player, "JL_FOTV_Mantle_DestroyAegis");
+RemoveStatus(_Player, "JL_FOTV_HOLYSITES_TRACKER");
 
 //break the aegis when u cast the spell
 IF
-CastSpell(_, "JL_FOTV_Projectile_Fly_EmpyrealMantle", _, _, _)
+CastSpell(_, "JL_FOTV_Mantle_DestroyAegis", _, _, _)
 THEN
 RemoveStatus(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, "JL_FOTV_EMPYREALMANTLE_HOLYWARD");
 SetCanInteract(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, 1);

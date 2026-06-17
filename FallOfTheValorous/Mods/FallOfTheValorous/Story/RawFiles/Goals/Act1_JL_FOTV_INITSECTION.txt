@@ -1,0 +1,44 @@
+Version 1
+SubGoalCombiner SGC_AND
+//this one is just for stuff that needs to happen in ParentTargetEdge Act1
+INITSECTION
+///Setting stuff off stage
+//Inquisiboss encounter
+SetOnStage(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0);
+SetOnStage(S_JL_FOTV_DankCrypt_Valorous_Githyanki_1053a85c-93b0-401d-a7a6-1e40979bc48e, 0);
+SetOnStage(S_JL_FOTV_DankCrypt_Mummy_18457071-fd04-4efc-85a9-2e0aa335eaa4, 0);
+SetOnStage(S_JL_FOTV_DankCrypt_Ghast_46577897-db51-4171-b069-3862d2fadd68, 0);
+SetOnStage(S_JL_FOTV_DankCrypt_Wraith_ad6ec7f0-9ef4-4511-b817-e1e7db511068, 0);
+//Ravener boss encounter
+SetOnStage(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c, 0);
+SetOnStage(S_CHARACTER_JL_FOTV_RisenRoad_AdultRedRavener_54532d4a-9ea2-4381-b122-c7324bbf34c5, 0);
+SetOnStage(S_JL_FOTV_RisenRoad_Tactics_HalfOrc_019a9841-994f-410b-9b2e-a25e7c174c54, 0);
+//Echoes of the Righteous quest items
+SetOnStage(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, 0);
+SetOnStage(S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, 0);
+
+///Disabling interactions
+//Holy Is As Holy Does quest items
+SetCanInteract(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, 0);
+SetCanInteract(S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82, 0);
+SetCanInteract(S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, 0);
+
+///Registering triggers
+PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_EilistraeeHolySite_816d377a-f75c-4f9d-a791-a8ab5e41520a);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_LolthHolySite_7e56da69-6ca5-4c2d-b0dc-b2a376a2c65e);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8a0a-e325864ff57e);
+
+///Setting ravener health for the lore reasons
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_Apothecary_YoungRavener_6e0bfd73-330a-4d7d-b6e7-fd7dba65b0a4, 36.4);
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_Underdark_YoungRavener_01_39d670bc-01e7-4863-b124-3b2f43d8f1be, 36.4);
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_Underdark_YoungRavener_02_000940ec-dff0-41f2-8de8-6907ace2cda7, 36.4);
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_SunlitWetlands_AdultRavener_b2242e11-7388-45a5-8b6c-92476cd6c427, 33.3);
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_Underdark_AdultRavener_296f4f1a-a8e9-48fb-bdc0-e9c5c997e809, 32.9);
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_MountainPass_AdultRavener_f1b3519f-abae-4962-bdfa-6955ec267b2b, 39.8);
+
+KBSECTION
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act1"

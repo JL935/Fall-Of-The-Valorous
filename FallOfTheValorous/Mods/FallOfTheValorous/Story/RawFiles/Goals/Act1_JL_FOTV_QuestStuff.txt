@@ -1,24 +1,6 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-//Enemies that start off stage, only spawn later on when the prereqs are met
-SetOnStage(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0);
-SetOnStage(S_JL_FOTV_DankCrypt_Valorous_Githyanki_1053a85c-93b0-401d-a7a6-1e40979bc48e, 0);
-SetOnStage(S_JL_FOTV_DankCrypt_Mummy_18457071-fd04-4efc-85a9-2e0aa335eaa4, 0);
-SetOnStage(S_JL_FOTV_DankCrypt_Ghast_46577897-db51-4171-b069-3862d2fadd68, 0);
-SetOnStage(S_JL_FOTV_DankCrypt_Wraith_ad6ec7f0-9ef4-4511-b817-e1e7db511068, 0);
-SetOnStage(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c, 0);
-SetOnStage(S_CHARACTER_JL_FOTV_RisenRoad_AdultRedRavener_54532d4a-9ea2-4381-b122-c7324bbf34c5, 0);
-SetOnStage(S_JL_FOTV_RisenRoad_Tactics_HalfOrc_019a9841-994f-410b-9b2e-a25e7c174c54, 0);
-//and some items
-SetOnStage(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, 0);
-SetOnStage(S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, 0);
-
-//Disable interacting with the quest stuff for sneaky smoke and mirrors
-SetCanInteract(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, 0);
-SetCanInteract(S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82, 0);
-SetCanInteract(S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, 0);
-
 //Enemies to set on stage when prereq flag is set
 DB_FOTV_SetOnStageLater(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
 DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Valorous_Githyanki_1053a85c-93b0-401d-a7a6-1e40979bc48e, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
@@ -28,13 +10,8 @@ DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Wraith_ad6ec7f0-9ef4-4511-b817-e1e7d
 DB_FOTV_SetOnStageLater(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c, (FLAG)JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
 DB_FOTV_SetOnStageLater(S_CHARACTER_JL_FOTV_RisenRoad_AdultRedRavener_54532d4a-9ea2-4381-b122-c7324bbf34c5, (FLAG)JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
 DB_FOTV_SetOnStageLater(S_JL_FOTV_RisenRoad_Tactics_HalfOrc_019a9841-994f-410b-9b2e-a25e7c174c54, (FLAG)JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
-//and some items
-DB_FOTV_SetOnStageLater(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, (FLAG)JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64);
-DB_FOTV_SetOnStageLater(S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, (FLAG)JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64);
 
 //book flags
-DB_BookFlags((ITEM)S_LORE_JL_FOTV_NeedIconoclast_ecb9a47c-7774-4c84-a37d-d84594d33a02, (FLAG)JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64);
-DB_BookFlags((ITEM)S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, (FLAG)JL_FOTV_KnowsCurseHints_1b6e901c-7097-4bb6-bdcb-956d3998cede);
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_SaelethilAilment_83d24be7-3fb0-4c1a-a2dc-d0a80e2df0f5, (FLAG)JL_FOTV_KnowsMindControlBreakHint_846e807c-134c-4700-8f99-02712bf1be5b);
 
 //Questy things
@@ -63,11 +40,6 @@ DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SentinelDead", "STEP_
 DB_QuestDef_ConditionalState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedArcaneResearch", "STEP_JL_FOTV_ConfrontSentinel", "STEP_JL_FOTV_LearnedAllActOne", 1);
 //If you didn't already have all the lore, then read the Veizoadeoth note, then get all the lore, get the quest step to go find V
 DB_QuestDef_ConditionalState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedAllActOne", "STEP_JL_FOTV_ConfrontSentinel", "STEP_JL_FOTV_LearnedArcaneResearch", 1);
-
-//register custom triggers
-PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_EilistraeeHolySite_816d377a-f75c-4f9d-a791-a8ab5e41520a);
-PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_LolthHolySite_7e56da69-6ca5-4c2d-b0dc-b2a376a2c65e);
-PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8a0a-e325864ff57e);
 
 KBSECTION
 //When the prereqs are met, set the proper enemies on stage
@@ -300,62 +272,6 @@ Died(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c)
 THEN
 SetFlag(JL_FOTV_VeizoadeothDefeated_6beb5d1c-0df1-483f-be01-aac924896540);
 PROC_HidePartyMarker("MARKER_JL_FOTV_Veizoadeoth");
-//END_REGION
-
-//REGION Echoes of the Righteous
-//Start the quest by reading In Need of an Iconoclast
-IF
-FlagSet(JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64, _, _)
-THEN
-QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_FoundAmuletNote");
-PROC_UnlockPartyMarker("MARKER_JL_FOTV_CursedPeriapt");
-
-//Picked up amulet and haven't identified the curse
-IF
-AddedTo((GUIDSTRING)S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, _, _)
-AND
-HasActiveStatus((GUIDSTRING)S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, "JL_FOTV_PERIAPT_CURSE_TECHNICAL", 1)
-AND
-NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Cursebreaker","STEP_JL_FOTV_PickedAmuletNoIDCurse")
-AND
-NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Cursebreaker","STEP_JL_FOTV_PickedAmuletYesIDCurse")
-THEN
-QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_PickedAmuletNoIDCurse");
-PROC_HidePartyMarker("MARKER_JL_FOTV_CursedPeriapt");
-
-//Picked up amulet and yes identified curse
-IF
-AddedTo((GUIDSTRING)S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, _, _)
-AND
-HasActiveStatus((GUIDSTRING)S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, "JL_FOTV_PERIAPT_CURSE_TECHNICAL", 0)
-AND
-NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Cursebreaker","STEP_JL_FOTV_PickedAmuletNoIDCurse")
-AND
-NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Cursebreaker","STEP_JL_FOTV_PickedAmuletYesIDCurse")
-THEN
-QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_PickedAmuletYesIDCurse");
-PROC_HidePartyMarker("MARKER_JL_FOTV_CursedPeriapt");
-
-//Didn't identify the curse at first but did later
-IF
-StatusRemoved(_, "JL_FOTV_PERIAPT_CURSE_TECHNICAL", _, _)
-AND
-QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_Cursebreaker","STEP_JL_FOTV_PickedAmuletNoIDCurse")
-THEN
-QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_PickedAmuletYesIDCurse");
-
-//Read the iconoclast speculations
-IF
-FlagSet(JL_FOTV_KnowsCurseHints_1b6e901c-7097-4bb6-bdcb-956d3998cede, _, _)
-THEN
-QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerTips");
-
-//Broke the curse
-IF
-FlagSet(JL_FOTV_BrokeAmuletCurse_1fcc92f4-6f1c-459e-abca-5586f5956cd1, _, _)
-THEN
-QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCurseLifted");
-QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_AmuletCurseBrokenFindGrandInquisitor");
 //END_REGION
 
 //REGION No Monster Too Menacing side quest

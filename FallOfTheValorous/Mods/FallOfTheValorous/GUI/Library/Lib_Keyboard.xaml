@@ -10,6 +10,5 @@
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="FOTV_Tooltips.xaml"/>
-        <ResourceDictionary Source="pack://application:,,,/MainUI;component/Library/Tooltips.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

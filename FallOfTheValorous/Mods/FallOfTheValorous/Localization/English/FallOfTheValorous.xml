@@ -164,19 +164,23 @@
     <content contentuid="hb99d47f2g298bg4055g979fgbc0b92b72fc7" version="1">To speak a Word of Power is to invite a primal, volatile current of magic into your body, mind, and soul. Their power comes with a price:&lt;br&gt;&lt;br&gt;Your AC is reduced by 1. For every 2 Holy Words you learn beyond this, your AC is reduced by an additional 1. For every 2 Holy Words you learn, all of your &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; are reduced by 1.&lt;br&gt;&lt;br&gt;Activating this toggle while in combat will &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stun&lt;/LSTag&gt; you for one round, as the overwhelming power of the Holy Words floods your mind.</content>
     <content contentuid="had45c104g7ff5g424fgab64gbc2c275bd0e8" version="1">Must be an Apostle of the Holy Word.</content>
 
-    <content contentuid="h83ab74a3gbd8bg42ecg8611g5ff377717f4f" version="1">Vaelythra, Word of Soothing</content>
+    <content contentuid="h83ab74a3gbd8bg42ecg8611g5ff377717f4f" version="1">Vaelythra</content>
+    <content contentuid="h58c1f6c3g4eb9g49ecga2c3g14e4fc189b02" version="1">Word of Soothing</content>
     <content contentuid="h37285e30g65ffg4cffga298g64d0ed6cb89a" version="1">You whisper a word of repose that soothes and heals your allies. You restore [1] per point of your Wisdom &lt;LSTag Tooltip="AbilityModifier"&gt;Modifier&lt;/LSTag&gt; to the target.</content>
 
-    <content contentuid="h15ab953dg26fdg400dg8053g499e0928f22d" version="1">Lulix, Word of Brilliance</content>
+    <content contentuid="h15ab953dg26fdg400dg8053g499e0928f22d" version="1">Lulix</content>
+    <content contentuid="h71baf166g063cg4955g8b82g8896cd1383e2" version="1">Word of Brilliance</content>
     <content contentuid="hc3159f19g0823g44fcgb8b0g0bb7f5707b87" version="1">You utter a divine word and burning radiance erupts from you.&lt;br&gt;&lt;br&gt;Dragons, fiends and undead have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on their &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 
-    <content contentuid="habcebed3g5fafg40c1gb008g9e7f3cb5415d" version="1">Arzimyr, Word of Resolve</content>
+    <content contentuid="habcebed3g5fafg40c1gb008g9e7f3cb5415d" version="1">Arzimyr</content>
+    <content contentuid="h9090f287g568eg40b4ga38cg364652ecec44" version="1">Word of Resolve</content>
     <content contentuid="h22b4ba01g830eg46a8gab7agbb697c15979d" version="1">Your battle cry rouses the target to stand steadfast in the heat of battle. The target gains &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against &lt;LSTag Tooltip="CharmedGroup"&gt;Charmed&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt;, and &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt; conditions, and is freed from any &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysis&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stun&lt;/LSTag&gt; effects.</content>
     <content contentuid="h1c2bd98cg404dg4c6bga946g3e821abf3ff6" version="1">Arzimyr's Resolve</content>
     <content contentuid="h2585212fg7193g4a27ga8f6gb8ae6325a67e" version="1">Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against &lt;LSTag Tooltip="CharmedGroup"&gt;Charmed&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt;, and &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt; conditions.</content>
     <content contentuid="h1fa58a51g0092g418agb13fg4eb7ba010b4e" version="1">Grants immunity to a ravener's Frightful Presence.</content>
 
-    <content contentuid="h553c6e2cg9885g47a2g87edg4cabceca6ea7" version="1">Xulvorith, Word of Penance</content>
+    <content contentuid="h553c6e2cg9885g47a2g87edg4cabceca6ea7" version="1">Xulvorith</content>
+    <content contentuid="ha396aeadg643cg4ab6gac66ga0bcc9f73696" version="1">Word of Penance</content>
     <content contentuid="hf6c171c4g77c7g4bf6g8e99g18b55680e10f" version="1">With a muttered curse, all damage dealt by the target during the duration of Word of Penance is dealt back to them as[1] when the spell expires.</content>
     <content contentuid="h64b7324fge59eg4abega820geda30a04f75c" version="1">Xulvorith's Damnation</content>
     <content contentuid="h9d9357f9g02b0g4f0dg8066ge71d09dcbf72" version="1">Damage dealt by this entity while this status is active is dealt back to them as[1] when the status expires.</content>
@@ -520,6 +524,9 @@
     <content contentuid="h996c6f69g1cabg45b9g9184ga8bdc3addaec" version="1">Aegis of the Sacrosanct</content>
     <content contentuid="h119bb211g77a7g4278gb37ag6340a804deb5" version="1">In a fight, right?</content>
     <content contentuid="h18fead2dg5a9bg469bg85afgde2b62ec10fd" version="1">Here marks the spot where the man known as Cahoot took 10 men at once.</content>
+    <content contentuid="h950d1b5dg780bg4fd7gb62bge8c92047db6b" version="1">Conquer Aegis</content>
+    <content contentuid="h198bf035g519ag4156g9dccgd824cccc0882" version="1">Surmount the Aegis of the Sacrosanct.</content>
+    <content contentuid="h3cbf6a96g0d71g44b7gabf1g338d4021fc5c" version="1">Must visit more holy sites.</content>
 
     <content contentuid="heae6ce6fgbce5g4668gb4eag50dbe80bad2a" version="1">Ravener King's Subjugation</content>
     <content contentuid="ha1c86811g147ag48b1g9daege7d3a6293305" version="1">Entity is under the complete dominion of the Ravener King.</content>

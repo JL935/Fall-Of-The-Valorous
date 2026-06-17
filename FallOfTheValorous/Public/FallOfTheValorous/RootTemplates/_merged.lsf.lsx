@@ -3519,7 +3519,7 @@
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Trident_T3" />
 					<attribute id="Type" type="FixedString" value="item" />
 				</node>
-			<!-- Vindicator's Resplendence (Tier 1) [Unarmed] -->
+			<!-- Vindicator's Resplendence (Tier 1) [Quarterstaff] -->
 				<node id="GameObjects">
 					<attribute id="Description" type="TranslatedString" handle="habe04ae8gd54bg4121gb4cdgca932c102179" version="1" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1" />
@@ -3538,7 +3538,7 @@
 						</node>
 					</children>
 				</node>
-			<!-- Vindicator's Resplendence (Tier 2) [Unarmed] -->
+			<!-- Vindicator's Resplendence (Tier 2) [Quarterstaff] -->
 				<node id="GameObjects">
 					<attribute id="MapKey" type="FixedString" value="be2e13d7-e586-4df1-9119-fee17e4cb198" />
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Quarterstaff_T2" />
@@ -3546,7 +3546,7 @@
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Quarterstaff_T2" />
 					<attribute id="Type" type="FixedString" value="item" />
 				</node>
-			<!-- Vindicator's Resplendence (Tier 3) [Unarmed] -->
+			<!-- Vindicator's Resplendence (Tier 3) [Quarterstaff] -->
 				<node id="GameObjects">
 					<attribute id="MapKey" type="FixedString" value="d96151f5-578c-4d58-8c7c-653a5c4df4e0" />
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Quarterstaff_T3" />
