@@ -133,6 +133,120 @@
                         </node>
                     </children>
                 </node>
+            <!-- Fearless and Forgotten -->
+                <node id="Quest">
+                    <attribute id="CategoryID" type="FixedString" value="CAT_JL_FallOfTheValorous"/>
+                    <attribute id="ParentQuestID" type="FixedString" value=""/>
+                    <attribute id="QuestGuid" type="guid" value="2bc5823d-39d2-4f0d-af0c-79629f546d0d"/>
+                    <attribute id="QuestID" type="FixedString" value="NLQST_JL_FOTV_NonlinearityFaF"/>
+                    <attribute id="QuestRewardTarget" type="uint8" value="2"/>
+                    <attribute id="QuestTitle" type="TranslatedString" handle="he110cf4agfe6dg4902ga0d6g318554afdbda" version="1"/>
+                    <attribute id="QuestVisiblity" type="bool" value="true"/>
+                    <attribute id="SortingPriority" type="int32" value="1"/>
+                    <children>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="hc2fe06a0ga06ag4bc5gbe2eg64b1ee175cff" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="Nonlinearity - found an important inquisitor corpse before finding FotV"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="7f21d8db-2670-42e5-8a33-ed88a4574a35"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_NL_FoundDeadquisitor"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_NL_FoundCorpsequisitor"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="9e4907eb-e4ac-43e2-9723-b42239f7cde5"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="1"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h2fd0504cg6f76g4ad6g8796g2b0aa03f8d0d" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="Nonlinearity - learned what a valorquisitor is"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="6092ba2c-9806-4b97-8240-d2d225f4167f"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_NL_GoFindTheJournal"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_NL_GoFindTheJournal"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="f1049437-1c47-431f-bcd6-8b762f362663"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
+                        </node>
+                    </children>
+                </node>
+            <!-- Dark Secrets Unearthed -->
+                <node id="Quest">
+                    <attribute id="CategoryID" type="FixedString" value="CAT_JL_FallOfTheValorous"/>
+                    <attribute id="ParentQuestID" type="FixedString" value=""/>
+                    <attribute id="QuestGuid" type="guid" value="9258a907-9df6-408d-b22e-3411c446c232"/>
+                    <attribute id="QuestID" type="FixedString" value="NLQST_JL_FOTV_NonlinearityDSU"/>
+                    <attribute id="QuestRewardTarget" type="uint8" value="2"/>
+                    <attribute id="QuestTitle" type="TranslatedString" handle="he25c6435g14cag48ecg9434g1b356ccd4833" version="1"/>
+                    <attribute id="QuestVisiblity" type="bool" value="true"/>
+                    <attribute id="SortingPriority" type="int32" value="1"/>
+                    <children>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="hdc0b3c64ga93fg42a4g9134gbb040b541545" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="Nonlinearity - read ravener lore before finding FotV"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="f51d97fc-3067-41bb-a77e-b2d58bb565d3"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_NL_ReadSomeLore"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_NL_ReadSomeLore"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="6e42ba26-aec0-4742-b068-151e7e00027c"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="1"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="haef65da4gb6b7g4819gaf2bg88c7ebd0c920" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="Nonlinearity - learned the valorquisitor-ravener link"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="82c2fb1d-8a71-4ba1-8598-54e0c3fb9f6a"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_NL_GoFindTheBastion"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_NL_GoFindTheBastion"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="7a15edfd-2196-4a58-b515-b2a4f98c1d90"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
+                        </node>
+                    </children>
+                </node>
             <!-- Apostle of the Holy Word -->
                 <node id="Quest">
                     <attribute id="CategoryID" type="FixedString" value="CAT_JL_FallOfTheValorous"/>

@@ -3,8 +3,8 @@
 	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
 	<region id="Flags">
 		<node id="Flags">
-			<attribute id="Description" type="LSString" value="Used Bless on cursed entity" />
-			<attribute id="Name" type="FixedString" value="JL_FOTV_CursebreakerBless" />
+			<attribute id="Description" type="LSString" value="Read Folly of our Forebears" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_ForebearFollyRead" />
 			<attribute id="UUID" type="guid" value="6f5b0194-55b7-4d53-bdba-485b9067ab8b" />
 			<attribute id="Usage" type="uint8" value="5" />
 		</node>

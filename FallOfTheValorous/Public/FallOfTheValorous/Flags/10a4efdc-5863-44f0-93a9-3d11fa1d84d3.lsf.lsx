@@ -3,8 +3,8 @@
 	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
 	<region id="Flags">
 		<node id="Flags">
-			<attribute id="Description" type="LSString" value="Used Greater Restoration on cursed entity" />
-			<attribute id="Name" type="FixedString" value="JL_FOTV_CursebreakerGreaterRestoration" />
+			<attribute id="Description" type="LSString" value="Read Missive to Qynoth" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_QynothMissiveRead" />
 			<attribute id="UUID" type="guid" value="10a4efdc-5863-44f0-93a9-3d11fa1d84d3" />
 			<attribute id="Usage" type="uint8" value="5" />
 		</node>

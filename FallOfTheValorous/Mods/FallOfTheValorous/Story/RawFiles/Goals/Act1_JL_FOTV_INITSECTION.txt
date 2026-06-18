@@ -24,6 +24,7 @@ SetCanInteract(S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82, 0)
 SetCanInteract(S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, 0);
 
 ///Registering triggers
+PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_CtV_QuestStart_a8f39236-fa25-4cde-a310-74082d89ecde);
 PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_EilistraeeHolySite_816d377a-f75c-4f9d-a791-a8ab5e41520a);
 PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_LolthHolySite_7e56da69-6ca5-4c2d-b0dc-b2a376a2c65e);
 PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8a0a-e325864ff57e);

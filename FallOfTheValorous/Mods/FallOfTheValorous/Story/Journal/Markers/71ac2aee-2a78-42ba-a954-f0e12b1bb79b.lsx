@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="302"/>
+    <region id="Markers">
+        <node id="root">
+            <children>
+                <node id="Marker">
+                    <attribute id="DisplayText" type="TranslatedString" handle="h11e897d4g4849g404fgbc7eg1edb58cf484e" version="1"/>
+                    <attribute id="Guid" type="guid" value="71ac2aee-2a78-42ba-a954-f0e12b1bb79b"/>
+                    <attribute id="MarkerID" type="FixedString" value="MARKER_JL_FOTV_ViandriothCulling"/>
+                    <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
+                    <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
+                    <attribute id="MarkerTargetObjectType" type="FixedString" value="Item"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="5a737bfd-82f0-4911-8ecd-419b015bad72"/>
+                    <attribute id="Radius" type="int32" value="0"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

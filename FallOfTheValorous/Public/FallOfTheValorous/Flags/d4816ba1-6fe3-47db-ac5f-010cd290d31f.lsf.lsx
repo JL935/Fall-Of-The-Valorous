@@ -3,8 +3,8 @@
 	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
 	<region id="Flags">
 		<node id="Flags">
-			<attribute id="Description" type="LSString" value="Used Heal on cursed entity" />
-			<attribute id="Name" type="FixedString" value="JL_FOTV_CursebreakerHealSpell" />
+			<attribute id="Description" type="LSString" value="Started the Call To Valor quest" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_StartedCallToValor" />
 			<attribute id="UUID" type="guid" value="d4816ba1-6fe3-47db-ac5f-010cd290d31f" />
 			<attribute id="Usage" type="uint8" value="5" />
 		</node>

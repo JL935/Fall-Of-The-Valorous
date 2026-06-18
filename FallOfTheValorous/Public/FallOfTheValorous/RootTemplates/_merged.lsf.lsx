@@ -2234,9 +2234,9 @@
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_DESECRATION" />
 								</node>
-								<node id="Status">
+								<!--<node id="Status">
 									<attribute id="Object" type="FixedString" value="JL_FOTV_JOURNAL_QUESTUPDATER_AURA" />
-								</node>
+								</node>-->
 							</children>
 						</node>
 					</children>

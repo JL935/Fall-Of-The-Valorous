@@ -4,6 +4,7 @@
     <region id="Objectives">
         <node id="root">
             <children>
+            <!-- A Call to Valor -->
                 <node id="Objective">
                     <attribute id="Description" type="TranslatedString" handle="h6f0ae3fbgac26g4984g96dcg79a2035dbcef" version="1"/> 
                     <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_CleanseJournal"/> 
@@ -26,6 +27,7 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="26a6dd3f-1e31-4c81-a1a5-4c6e8990b88b"/>
                 </node>
 
+            <!-- Apostle of the Holy Word -->
                 <node id="Objective">
                     <attribute id="Description" type="TranslatedString" handle="he929a8b0g11dag4295g8456g0096d28e4e6e" version="1"/> 
                     <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_HolyWordSeeker"/> 
@@ -48,6 +50,7 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="845a7070-1020-4144-a7db-f637c01dbf64"/>
                 </node>
 
+            <!-- Seeker of Lost Lore -->
                 <node id="Objective">
                     <attribute id="Description" type="TranslatedString" handle="h358d0baagff6cg4e72gb097gf84e65026357" version="1"/> 
                     <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_LoreSeeker"/> 
@@ -70,6 +73,39 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="f34dd65d-9274-4897-9c25-5baafa35e11b"/>
                 </node>
 
+            <!-- Fearless and Forgotten -->
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h56ce6517gf566g4db2g891bg63a0acde717c" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_NL_FoundCorpsequisitor"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="NLQST_JL_FOTV_NonlinearityFaF"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="fcb6c723-435d-4b48-a1ac-c77cfbd28b51"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="hba93566agba56g4bb2g8818g465dac2675a2" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_NL_GoFindTheJournal"/> 
+                    <attribute id="Priority" type="int32" value="1100"/>
+                    <attribute id="QuestID" type="FixedString" value="NLQST_JL_FOTV_NonlinearityFaF"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="11e3ec32-f468-4fa0-ab9d-30543ef0f98b"/>
+                </node>
+
+            <!-- Dark Secrets Unearthed -->
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h793ff562g6d74g48bcgb223gab48c0d09871" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_NL_ReadSomeLore"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="NLQST_JL_FOTV_NonlinearityDSU"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="af31719b-cea0-4834-aa25-e3cf126724e5"/>
+                </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="hba93566agba56g4bb2g8818g465dac2675a2" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_NL_GoFindTheBastion"/> 
+                    <attribute id="Priority" type="int32" value="1100"/>
+                    <attribute id="QuestID" type="FixedString" value="NLQST_JL_FOTV_NonlinearityDSU"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="6c1e2ac5-d6bd-4c2a-add2-182a350e72f3"/>
+                </node>
+
+            <!-- Echoes of the Righteous -->
                 <node id="Objective">
                     <attribute id="Description" type="TranslatedString" handle="hc951c75fgac46g49b0gb36agc608bdd357b9" version="1"/> 
                     <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_FoundAmuletNote"/> 
@@ -99,6 +135,7 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="decb2dd4-e65c-4aa0-8477-6b629f1528f6"/>
                 </node>
 
+            <!-- Lifting the Curse -->
                 <node id="Objective">
                     <attribute id="Description" type="TranslatedString" handle="h9db20c26gae9fg42e7gb095gd722ed117abf" version="1"/> 
                     <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_LiftTheCurse"/> 
@@ -114,6 +151,7 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="a7939245-b00d-431c-8a95-fddb5e33cdfa"/>
                 </node>
 
+            <!-- No Monster Too Menacing, No Duty Too Daunting -->
                 <node id="Objective">
                     <attribute id="Description" type="TranslatedString" handle="h1fbc1ad1g2a07g4ebbga407g8a3771ad17b9" version="1"/> 
                     <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_FindPreservation"/> 
@@ -150,6 +188,7 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="2b276050-0e60-49ab-8416-2faca0f7077d"/>
                 </node>
 
+            <!-- Holy Is As Holy Does -->
                 <node id="Objective">
                     <attribute id="Description" type="TranslatedString" handle="hd053ec01ga12fg4b33gaa4fg7f7a5e44eec7" version="1"/> 
                     <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_ReadZhentNote"/> 
@@ -172,6 +211,7 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="cd78a8ee-1417-4351-9d67-bb8bda781457"/>
                 </node>
 
+            <!-- An Abundance of Vs -->
                 <node id="Objective">
                     <attribute id="Description" type="TranslatedString" handle="h6482e989g0349g45ddg9b44g3a0967fe26ad" version="1"/> 
                     <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_ReadValorousVirtues"/> 
@@ -194,6 +234,7 @@
                     <attribute id="QuestObjectiveGuid" type="guid" value="d84a8f58-7feb-4007-98ec-1fc29fc57d8a"/>
                 </node>
 
+            <!-- Voyage of the Virtuous -->
                 <node id="Objective">
                     <attribute id="Description" type="TranslatedString" handle="hf5154aefgbac9g4a5ega3f5g4639c00f355b" version="1"/> 
                     <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_PilgrimTime"/> 

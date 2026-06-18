@@ -4,6 +4,43 @@
 	<region id="Templates">
 		<node id="Templates">
 			<children>
+			<!-- A Call To Valor quest start trigger -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="a8f39236-fa25-4cde-a310-74082d89ecde" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_CtV_QuestStart" />
+					<attribute id="Radius" type="float" value="10" />
+					<attribute id="TemplateName" type="FixedString" value="5e41a73b-05ce-4011-b188-d313c15760ee" />
+					<attribute id="Type" type="FixedString" value="trigger" />
+					<children>
+						<node id="FadeChildren" />
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0d1b3e0e-930a-23a0-2ad9-f0f3deba210b" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="784e0a2b-908e-edcc-02dd-e6aa5c34dc6c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-323.243 18.707 -259.614" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1.0" />
+						</node>
+					</children>
+				</node>
 			<!-- Eilistraee Holy Site Trigger -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
