@@ -4,7 +4,7 @@
 	<region id="Templates">
 		<node id="Templates">
 			<children>
-			<!-- A Call To Valor quest start trigger -->
+			<!-- A Call To Valor quest start -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
@@ -41,7 +41,84 @@
 						</node>
 					</children>
 				</node>
-			<!-- Eilistraee Holy Site Trigger -->
+			<!-- Ronros spell granter -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="befd2603-4a9c-49f2-b703-5332052894d2" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_Ronros_SanctifySpell" />
+					<attribute id="Radius" type="float" value="3" />
+					<attribute id="TemplateName" type="FixedString" value="5e41a73b-05ce-4011-b188-d313c15760ee" />
+					<attribute id="Type" type="FixedString" value="trigger" />
+					<children>
+						<node id="FadeChildren" />
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="ee2e93e4-c274-dfc3-e4e6-5370146163fc" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="6594abcb-a82c-a984-fd4e-e9e2acecf030" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-567.035 -10.116 -352.316" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+			<!-- Identify curse arcana check -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="92e3c65b-41b5-42ba-b315-65fe310954a2" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_Cursebreaker_ArcanaCheck" />
+					<attribute id="Radius" type="float" value="4" />
+					<attribute id="TemplateName" type="FixedString" value="5e41a73b-05ce-4011-b188-d313c15760ee" />
+					<attribute id="Type" type="FixedString" value="trigger" />
+					<children>
+						<node id="FadeChildren" />
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="d092dace-9f6c-2013-dac7-91de3fe17459" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="a9beeb82-b824-5c94-c3a5-fe40674b172c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-408.906 0.43 239.993" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
+			<!-- Eilistraee Holy Site -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
@@ -81,7 +158,7 @@
 						</node>
 					</children>
 				</node>
-			<!-- Lolth Holy Site Trigger -->
+			<!-- Lolth Holy Site -->
 				<node id="GameObjects">
 					<attribute id="Extents" type="fvec3" value="7.96 2 7.443" />
 					<attribute id="Flag" type="int32" value="1" />
@@ -121,7 +198,7 @@
 						</node>
 					</children>
 				</node>
-			<!-- Sharran Holy Site Trigger -->
+			<!-- Sharran Holy Site -->
 				<node id="GameObjects">
 					<attribute id="Extents" type="fvec3" value="11.071 1.4 9.391" />
 					<attribute id="Flag" type="int32" value="1" />

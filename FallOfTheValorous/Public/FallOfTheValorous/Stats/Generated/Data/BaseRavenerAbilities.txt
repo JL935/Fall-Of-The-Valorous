@@ -54,22 +54,6 @@ data "TickFunctors" "DealDamage(2d8,Necrotic,Magical,,0,,true,true,false,true)"
 data "OnApplyFunctors" "DealDamage(2d8,Necrotic,Magical,,0,,true,true,false,true)"
 data "StatusEffect" "1d4b5727-45c1-44a9-81fb-565b73af895d"
 data "StatusEffectOnTurn" "a70f7b2c-1b1d-45db-a787-a2d37b0e451b"
-
-//cuz idk how tf triggers work
-//new entry "JL_FOTV_JOURNAL_QUESTUPDATER_AURA"
-//type "StatusData"
-//data "StatusType" "BOOST"
-//data "StackId" "JL_FOTV_JOURNAL_QUESTUPDATER_AURA"
-//data "AuraRadius" "10"
-//data "AuraStatuses" "TARGET:IF(Character() and not Dead()):ApplyStatus(JL_FOTV_JOURNAL_QUESTUPDATER)"
-//data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-//new entry "JL_FOTV_JOURNAL_QUESTUPDATER"
-//type "StatusData"
-//data "StatusType" "BOOST"
-//data "StackId" "JL_FOTV_JOURNAL_QUESTUPDATER"
-//data "StackType" "Ignore"
-//data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////UNDEAD TRAITS///////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////

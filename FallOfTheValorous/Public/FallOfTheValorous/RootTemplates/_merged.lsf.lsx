@@ -2139,13 +2139,13 @@
 								</node>
 							</children>
 						</node>
-						<node id="StatusList">
+						<!--<node id="StatusList">
 							<children>
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="JL_FOTV_RONROS_AURA_TECH" />
 								</node>
 							</children>
-						</node>
+						</node>-->
 					</children>
 				</node>
 		<!-- WRITING -->
@@ -2272,14 +2272,12 @@
 				<node id="GameObjects">
 					<attribute id="Description" type="TranslatedString" handle="h2464cd72g023bg472dg94e2gbabab42136c4" version="1" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h5221846cg308dg45b6ga2d4g466922144d34" version="1" />
-					<attribute id="Icon" type="FixedString" value="Item_UNI_GOB_Scroll_GoblinDrawingBook" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="MapKey" type="FixedString" value="76a9cde8-b994-4162-b846-398565ebb5d4" />
 					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_NeedIconoclast" />
 					<attribute id="ParentTemplateId" type="FixedString" value="6d5f9187-6457-4f20-b878-f5b3f8272c6f" />
 					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
 					<attribute id="Type" type="FixedString" value="item" />
-					<attribute id="VisualTemplate" type="FixedString" value="c8aeb397-7a16-1375-44bd-c22c9763a9fe" />
 					<children>
 						<node id="OnUsePeaceActions">
 							<children>
@@ -2629,12 +2627,14 @@
 				<node id="GameObjects">
 					<attribute id="Description" type="TranslatedString" handle="hdd2a3381g8c23g4e1fgb163ge16bdfce3279" version="1" />
 					<attribute id="DisplayName" type="TranslatedString" handle="hb965ec0bgc0d3g47dfgacd1g39def582bba3" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_UNI_GOB_Scroll_GoblinDrawingBook" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="MapKey" type="FixedString" value="304ce3ab-2f8c-40e8-a7f2-ed7f8a928f14" />
 					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_IconoclastSpeculation" />
-					<attribute id="ParentTemplateId" type="FixedString" value="61b98c74-8f5c-4d05-b56c-0911b59c9078" />
+					<attribute id="ParentTemplateId" type="FixedString" value="6d5f9187-6457-4f20-b878-f5b3f8272c6f" />
 					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
 					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="c8aeb397-7a16-1375-44bd-c22c9763a9fe" />
 					<children>
 						<node id="OnUsePeaceActions">
 							<children>

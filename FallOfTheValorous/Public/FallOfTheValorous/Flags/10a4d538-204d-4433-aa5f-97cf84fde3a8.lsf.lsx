@@ -3,9 +3,9 @@
 	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
 	<region id="Flags">
 		<node id="Flags">
-			<attribute id="Description" type="LSString" value="Read the 4 A1 ravener lores" />
-			<attribute id="Name" type="FixedString" value="JL_FOTV_KnowsAllRavenerLoreA1" />
-			<attribute id="UUID" type="guid" value="db155e2f-ce1f-4d6c-a100-244bd5367959" />
+			<attribute id="Description" type="LSString" value="Communed with evil deity idol" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_EvilCommunion" />
+			<attribute id="UUID" type="guid" value="10a4d538-204d-4433-aa5f-97cf84fde3a8" />
 			<attribute id="Usage" type="uint8" value="5" />
 		</node>
 	</region>

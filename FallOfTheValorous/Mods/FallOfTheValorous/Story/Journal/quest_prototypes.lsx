@@ -796,7 +796,7 @@
                             <attribute id="DevComment" type="FixedString" value="Picked up the amulet and identified the curse"/> 
                             <attribute id="DialogFlagGUID" type="guid" value="5270224e-e185-4a85-9d73-a10949334158"/>
                             <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
-                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_PickedAmuletYesIDCurse"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_KnowsAmuletCursed"/>
                             <attribute id="LevelOverride" type="int32" value="0"/>
                             <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_BreakAmuletCurse"/>
                             <attribute id="QuestRewardCount" type="int32" value="0"/>

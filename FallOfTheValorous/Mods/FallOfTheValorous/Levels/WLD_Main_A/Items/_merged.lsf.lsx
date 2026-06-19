@@ -587,13 +587,13 @@
 							<attribute id="RotationQuat" type="fvec4" value="0.0315106 0.9841708 0.0624093 0.1628495" />
 							<attribute id="Scale" type="float" value="0.75" />
 						</node>
-						<node id="StatusList">
+						<!--<node id="StatusList">
 							<children>
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="JL_FOTV_PERIAPT_CURSE_TECHNICAL" />
 								</node>
 							</children>
-						</node>
+						</node>-->
 					</children>
 				</node>
 			<!-- In Need of an Iconoclast -->

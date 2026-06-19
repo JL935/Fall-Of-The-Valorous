@@ -3,9 +3,9 @@
 	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
 	<region id="Flags">
 		<node id="Flags">
-			<attribute id="Description" type="LSString" value="Read the 4 A1 ravener lores" />
-			<attribute id="Name" type="FixedString" value="JL_FOTV_KnowsAllRavenerLoreA1" />
-			<attribute id="UUID" type="guid" value="db155e2f-ce1f-4d6c-a100-244bd5367959" />
+			<attribute id="Description" type="LSString" value="Read Ruination" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_RuinationRead" />
+			<attribute id="UUID" type="guid" value="4d512cc3-60f8-4b78-92d7-d6bd71d577a3" />
 			<attribute id="Usage" type="uint8" value="5" />
 		</node>
 	</region>
