@@ -30,6 +30,7 @@ PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_LolthHolySite_7e56da69-6ca5-4c
 PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8a0a-e325864ff57e);
 PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_Ronros_SanctifySpell_befd2603-4a9c-49f2-b703-5332052894d2);
 //PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_Cursebreaker_ArcanaCheck_92e3c65b-41b5-42ba-b315-65fe310954a2);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_HolyIsAsHolyDoes_QuestStart_ac4a04fd-3683-47be-8bc7-95af65db0d04);
 
 ///Setting ravener health for the lore reasons
 PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_Apothecary_YoungRavener_6e0bfd73-330a-4d7d-b6e7-fd7dba65b0a4, 36.4);

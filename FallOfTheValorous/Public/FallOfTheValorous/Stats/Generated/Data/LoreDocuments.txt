@@ -62,3 +62,8 @@ new entry "LORE_JL_FOTV_SaelethilAilment"
 type "Object"
 using "LORE_JL_FOTV_CommonAct1_Note"
 data "RootTemplate" "065b4c8d-e628-4857-acbe-6e6fd8b83930"
+
+new entry "LORE_JL_FOTV_VeiledInDeathShroud"
+type "Object"
+using "LORE_JL_FOTV_CommonAct1_Note"
+data "RootTemplate" "87b58c94-a9fb-4779-82ea-9be3fc02702c"

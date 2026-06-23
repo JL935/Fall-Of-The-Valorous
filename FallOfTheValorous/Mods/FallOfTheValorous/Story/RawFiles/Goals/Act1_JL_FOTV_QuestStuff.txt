@@ -31,11 +31,30 @@ DB_BookFlags((ITEM)S_LORE_JL_FOTV_Ruination_33aabaca-21fa-489f-9ad9-c627b15e7cfd
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_NeedIconoclast_ecb9a47c-7774-4c84-a37d-d84594d33a02, (FLAG)JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64);
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, (FLAG)JL_FOTV_KnowsCurseHints_1b6e901c-7097-4bb6-bdcb-956d3998cede);
 
+///Holy Is As Holy Does
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82, (FLAG)JL_FOTV_ReadZhentNote_46c02478-9e43-459f-a269-20c9e3d18b09);
+DB_BookFlags((ITEM)S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, (FLAG)JL_FOTV_VisitedHolySite_Cahoot_2c671fdf-ce4d-42ec-9ef6-6ecc196f1eb1);
+
+///An Abundance of Vs
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_ValorousVirtues_a556aa87-01f4-4734-b07a-306041fb6109, (FLAG)JL_FOTV_KnowsValorousVirtues_f90fa4f9-381b-438d-882c-ad1b86615b24);
+
+///Di Immortalis
+DB_BookFlags((ITEM)S_LORE_JL_FOTV_VeiledInDeathShroud_58a6e514-709d-4d57-9814-077c64e8367b, (FLAG)JL_FOTV_KnowsDiImmortalis_c26eca14-c44e-4755-a67e-1a0115bb8d72);
 
 /////   ENTERING TRIGGER    /////
 ///A Call To Valor
 DB_FOTV_QuestTriggerFlag((TRIGGER)S_JL_FOTV_CtV_QuestStart_a8f39236-fa25-4cde-a310-74082d89ecde, (FLAG)JL_FOTV_StartedCallToValor_d4816ba1-6fe3-47db-ac5f-010cd290d31f);
 
+///Holy Is As Holy Does
+DB_FOTV_QuestTriggerFlag((TRIGGER)S_JL_FOTV_HolyIsAsHolyDoes_QuestStart_ac4a04fd-3683-47be-8bc7-95af65db0d04, (FLAG)JL_FOTV_SeenEmpyrealMantle_fd84411b-1f6e-4e98-b672-fb7f15733350);
+DB_FOTV_QuestTriggerFlag((TRIGGER)S_CHA_Crypt_JergalReligionCheck_4f24d7ac-b650-45cf-b3b4-1557c682e400, (FLAG)JL_FOTV_VisitedHolySite_Jergal_ea262497-20a5-4823-9167-b8e52e042a51);
+DB_FOTV_QuestTriggerFlag((TRIGGER)S_GOB_TempleAccess_PuzzleApproach_AD_04cc41aa-0675-4c25-b5a7-5360f33a85a1, (FLAG)JL_FOTV_VisitedHolySite_Selune_8eb373fa-3067-47c8-bf82-8852104bca73);
+DB_FOTV_QuestTriggerFlag((TRIGGER)S_JL_FOTV_EilistraeeHolySite_816d377a-f75c-4f9d-a791-a8ab5e41520a, (FLAG)JL_FOTV_VisitedHolySite_Eilistraee_2ecdcd7f-01c3-4a87-82c2-c4e2360910e1);
+DB_FOTV_QuestTriggerFlag((TRIGGER)S_UND_KuoToaGod_SpeakWithBOOOALTrigger_52658a25-6c89-45a2-ad12-f713b41cadf6, (FLAG)JL_FOTV_VisitedHolySite_BOOOAL_5a2a4747-078e-4a0a-9ef4-773be057faf4);
+DB_FOTV_QuestTriggerFlag((TRIGGER)S_CRE_MonkAmulet_StatueBanter_f83fe070-3bae-4996-a349-7e14f0a0573a, (FLAG)JL_FOTV_VisitedHolySite_Lathander_aa92ffef-6bb9-483d-b150-e846cb9c1dde);
+DB_FOTV_QuestTriggerFlag((TRIGGER)S_JL_FOTV_VlaakithHolySite_f2d64c42-2edc-443c-a527-c55f72044a12, (FLAG)JL_FOTV_VisitedHolySite_Vlaakith_2ff433bf-8454-4e98-a86f-ec7d60dbc4bb);
+DB_FOTV_QuestTriggerFlag((TRIGGER)S_JL_FOTV_LolthHolySite_7e56da69-6ca5-4c2d-b0dc-b2a376a2c65e, (FLAG)JL_FOTV_VisitedHolySite_Lolth_75013497-5437-4aba-a058-a5d6cf7b532d);
+DB_FOTV_QuestTriggerFlag((TRIGGER)S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8a0a-e325864ff57e, (FLAG)JL_FOTV_VisitedHolySite_Shar_545698b2-071c-409f-882b-a456fb5a8ab4);
 
 /////   SAW FLAGS   /////
 ///Apostle of the Holy Word
@@ -46,10 +65,18 @@ DB_FOTV_SawValorInquisitor((CHARACTER)S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427
 
 /////   REMOVING STATUSES   /////
 ///A Call To Valor
-DB_FOTV_ImportantStatuses(S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, "JL_FOTV_RAVENER_DESECRATION", (FLAG)JL_FOTV_CleansedJournal_b5962d11-a556-4d06-80bf-885d0bfe0480);
+DB_FOTV_ImportantStatusRemoved(S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, "JL_FOTV_RAVENER_DESECRATION", (FLAG)JL_FOTV_CleansedJournal_b5962d11-a556-4d06-80bf-885d0bfe0480);
 
 ///Apostle of the Holy Word
-DB_FOTV_ImportantStatuses(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, "JL_FOTV_TAAROGUS_MINDCONTROL_1", (FLAG)JL_FOTV_TaarogusFreed_6f837c93-11be-4530-97e8-c7526431e1ec);
+DB_FOTV_ImportantStatusRemoved(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, "JL_FOTV_TAAROGUS_MINDCONTROL_1", (FLAG)JL_FOTV_TaarogusFreed_6f837c93-11be-4530-97e8-c7526431e1ec);
+
+
+/////   GAINING STATUSES    /////
+///Echoes of the Righteous
+DB_FOTV_ImportantStatusGained("JL_FOTV_PERIAPT_CURSED_ISREADYTOBREAKCURSE", (FLAG)JL_FOTV_IsReadyToBreakCurse_e382a98c-65c7-4f35-874a-8dfd3086f08b);
+
+///Holy Is As Holy Does
+DB_FOTV_ImportantStatusGained("DEN_SILVANUS_BLESSING", (FLAG)JL_FOTV_VisitedHolySite_Silvanus_f21a694a-c5a9-4288-919f-0547538bc228);
 
 
 /////   DEFEATED + DYING    /////
@@ -65,6 +92,15 @@ DB_DeadOnceFlag(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e
 DB_FOTV_CastQuestSpell("JL_FOTV_Shout_DeityCurseCommune_Good", (FLAG)JL_FOTV_GoodCommunion_1fe5cb0a-f155-405c-a82a-793485f54eed);
 DB_FOTV_CastQuestSpell("JL_FOTV_Shout_DeityCurseCommune_Neutral", (FLAG)JL_FOTV_NeutralCommunion_6ab823e4-597d-46e0-a309-5a7e2fef3ef6);
 DB_FOTV_CastQuestSpell("JL_FOTV_Shout_DeityCurseCommune_Evil", (FLAG)JL_FOTV_EvilCommunion_10a4d538-204d-4433-aa5f-97cf84fde3a8);
+DB_FOTV_CastQuestSpell("JL_FOTV_Mantle_DestroyAegis", (FLAG)JL_FOTV_DestroyedSacrosanctAegis_0d42a3b6-4889-480e-bede-cf641ff629a1);
+
+
+/////   GLOBAL COUNTERS   /////
+DB_GLO_FOTV_VV_Flag("JL_FOTV_FoR_Act1_Valor", (FLAG)JL_FOTV_ValorousVirtue_Valor_9f5f321e-092c-401c-8499-4b631c5870c5);
+DB_GLO_FOTV_VV_Flag("JL_FOTV_FoR_Act1_Honor", (FLAG)JL_FOTV_ValorousVirtue_Honor_5b8d570b-fa50-41f2-9419-d989dd845a70);
+DB_GLO_FOTV_VV_Flag("JL_FOTV_FoR_Act1_Compassion", (FLAG)JL_FOTV_ValorousVirtue_Compassion_fb029f2f-e42d-4efc-aa38-2bbccb5239a5);
+DB_GLO_FOTV_VV_Flag("JL_FOTV_FoR_Act1_Generosity", (FLAG)JL_FOTV_ValorousVirtue_Generosity_de99f1dc-6b75-4560-8807-f5492a81ab8c);
+DB_GLO_FOTV_VV_Flag("JL_FOTV_FoR_Act1_Wisdom", (FLAG)JL_FOTV_ValorousVirtue_Wisdom_0727e40f-a925-452d-91ee-ff386a483b24);
 
 
 //////////  UPDATING QUEST STEPS    //////////
@@ -155,7 +191,61 @@ DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_Cursebreaker", "STEP_JL_FO
 DB_QuestDef_State(JL_FOTV_GoodCommunion_1fe5cb0a-f155-405c-a82a-793485f54eed, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCommunionGood");
 DB_QuestDef_State(JL_FOTV_NeutralCommunion_6ab823e4-597d-46e0-a309-5a7e2fef3ef6, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCommunionNeutral");
 DB_QuestDef_State(JL_FOTV_EvilCommunion_10a4d538-204d-4433-aa5f-97cf84fde3a8, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCommunionEvil");
+DB_QuestDef_State(JL_FOTV_IsReadyToBreakCurse_e382a98c-65c7-4f35-874a-8dfd3086f08b, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_IsReadyToBreakCurse");
 DB_QuestDef_State(JL_FOTV_BrokeAmuletCurse_1fcc92f4-6f1c-459e-abca-5586f5956cd1, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCurseLifted");
+
+///Holy Is As Holy Does
+DB_QuestDef_State(JL_FOTV_SeenEmpyrealMantle_fd84411b-1f6e-4e98-b672-fb7f15733350, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_ReadZhentNote");
+DB_QuestDef_State(JL_FOTV_ReadZhentNote_46c02478-9e43-459f-a269-20c9e3d18b09, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoBecomeVirtuous");
+DB_QuestDef_State(JL_FOTV_DestroyedSacrosanctAegis_0d42a3b6-4889-480e-bede-cf641ff629a1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_BrokeAegis");
+
+///An Abundance of Vs
+//don't start subquest if you read VV book before getting to the right step in HiaHD
+DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_KnowsValorousVirtues_f90fa4f9-381b-438d-882c-ad1b86615b24, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings", 1, (FLAG)JL_FOTV_ReadZhentNote_46c02478-9e43-459f-a269-20c9e3d18b09);
+//if already read VV book before starting the subquest
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoBecomeVirtuous", 1, (FLAG)JL_FOTV_KnowsValorousVirtues_f90fa4f9-381b-438d-882c-ad1b86615b24, "STEP_JL_FOTV_GoDoRenownThings");
+//you can only progress the VV part of the subquest if you've read VV book and are on that step of the subquest
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_ValorousVirtue_Valor_9f5f321e-092c-401c-8499-4b631c5870c5, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_RenownVVV", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_ValorousVirtue_Honor_5b8d570b-fa50-41f2-9419-d989dd845a70, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_RenownHVV", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_ValorousVirtue_Compassion_fb029f2f-e42d-4efc-aa38-2bbccb5239a5, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_RenownCVV", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_ValorousVirtue_Generosity_de99f1dc-6b75-4560-8807-f5492a81ab8c, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_RenownGVV", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_ValorousVirtue_Wisdom_0727e40f-a925-452d-91ee-ff386a483b24, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_RenownWVV", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings");
+//if you completed a VV step before reading VV book, retroactive when read book and on quest step and shit
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings", 1, (FLAG)JL_FOTV_ValorousVirtue_Valor_9f5f321e-092c-401c-8499-4b631c5870c5, "STEP_JL_FOTV_RenownVVV");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings", 1, (FLAG)JL_FOTV_ValorousVirtue_Honor_5b8d570b-fa50-41f2-9419-d989dd845a70, "STEP_JL_FOTV_RenownHVV");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings", 1, (FLAG)JL_FOTV_ValorousVirtue_Compassion_fb029f2f-e42d-4efc-aa38-2bbccb5239a5, "STEP_JL_FOTV_RenownCVV");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings", 1, (FLAG)JL_FOTV_ValorousVirtue_Generosity_de99f1dc-6b75-4560-8807-f5492a81ab8c, "STEP_JL_FOTV_RenownGVV");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings", 1, (FLAG)JL_FOTV_ValorousVirtue_Wisdom_0727e40f-a925-452d-91ee-ff386a483b24, "STEP_JL_FOTV_RenownWVV");
+DB_QuestDef_State(JL_FOTV_Chestpiece_IsRenowned_13b3661e-6f55-4e57-a2ae-21f641afa6cf, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_FinishedRenown");
+
+
+///Voyage of the Virtuous
+//only progress VotV when u visit a holy site if u already started subquest
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_Jergal_ea262497-20a5-4823-9167-b8e52e042a51, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedJergal", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_Selune_8eb373fa-3067-47c8-bf82-8852104bca73, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedSelune", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_Eilistraee_2ecdcd7f-01c3-4a87-82c2-c4e2360910e1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedEilistraee", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_BOOOAL_5a2a4747-078e-4a0a-9ef4-773be057faf4, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedBOOOAL", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_Lathander_aa92ffef-6bb9-483d-b150-e846cb9c1dde, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedLathander", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_Vlaakith_2ff433bf-8454-4e98-a86f-ec7d60dbc4bb, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedVlaakith", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_Lolth_75013497-5437-4aba-a058-a5d6cf7b532d, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedLolth", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_Shar_545698b2-071c-409f-882b-a456fb5a8ab4, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedShar", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_Silvanus_f21a694a-c5a9-4288-919f-0547538bc228, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedSilvanus", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_Cahoot_2c671fdf-ce4d-42ec-9ef6-6ecc196f1eb1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedCahoot", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
+//if u start pilgrim time and already visited some holy sites, wdtciowyoitcfoohetf
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Jergal_ea262497-20a5-4823-9167-b8e52e042a51, "STEP_JL_FOTV_VisitedJergal");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Selune_8eb373fa-3067-47c8-bf82-8852104bca73, "STEP_JL_FOTV_VisitedSelune");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Eilistraee_2ecdcd7f-01c3-4a87-82c2-c4e2360910e1, "STEP_JL_FOTV_VisitedEilistraee");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_BOOOAL_5a2a4747-078e-4a0a-9ef4-773be057faf4, "STEP_JL_FOTV_VisitedBOOOAL");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Lathander_aa92ffef-6bb9-483d-b150-e846cb9c1dde, "STEP_JL_FOTV_VisitedLathander");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Vlaakith_2ff433bf-8454-4e98-a86f-ec7d60dbc4bb, "STEP_JL_FOTV_VisitedVlaakith");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Lolth_75013497-5437-4aba-a058-a5d6cf7b532d, "STEP_JL_FOTV_VisitedLolth");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Shar_545698b2-071c-409f-882b-a456fb5a8ab4, "STEP_JL_FOTV_VisitedShar");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Silvanus_f21a694a-c5a9-4288-919f-0547538bc228, "STEP_JL_FOTV_VisitedSilvanus");
+DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Cahoot_2c671fdf-ce4d-42ec-9ef6-6ecc196f1eb1, "STEP_JL_FOTV_VisitedCahoot");
+DB_QuestDef_State(JL_FOTV_Chestpiece_IsItinerant_72d8ad21-b730-4091-8374-78659d053347, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_WhoUpFaringTheyWay");
+
+///Di Immortalis
+DB_QuestDef_State(JL_FOTV_KnowsDiImmortalis_c26eca14-c44e-4755-a67e-1a0115bb8d72, "QST_JL_FOTV_DiImmortalis", "STEP_JL_FOTV_FindInquisifriends");
 
 /////   CHAINING    /////
 ///Apostle of the Holy Word
@@ -173,6 +263,16 @@ DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction", "QST_J
 
 ///Echoes of the Righteous
 DB_QuestDef_ChainedState("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCurseLifted", "STEP_JL_FOTV_AmuletCurseBrokenFindGrandInquisitor");
+
+///Holy Is As Holy Does
+DB_QuestDef_ChainedState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_FinishedRenown", "STEP_JL_FOTV_IsRenowned");
+DB_QuestDef_ChainedState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_WhoUpFaringTheyWay", "STEP_JL_FOTV_IsItinerant");
+
+///An Abundance of Vs
+DB_QuestDef_ChainedState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoBecomeVirtuous", "STEP_JL_FOTV_ReadValorousVirtues");
+
+///Voyage of the Virtuous
+DB_QuestDef_ChainedState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoBecomeVirtuous", "STEP_JL_FOTV_PilgrimTime");
 
 //////////  QUEST MARKERS   //////////
 
@@ -212,6 +312,16 @@ DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Ronros", "STEP_JL_FOTV_Sanctif
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_CursedPeriapt", "STEP_JL_FOTV_FoundAmuletNote");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_IconoclastSpeculations", "STEP_JL_FOTV_KnowsAmuletCursed");
 
+///Holy Is As Holy Does
+DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_ZhentNote", "STEP_JL_FOTV_ReadZhentNote");
+DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_DestroyAegis", "STEP_JL_FOTV_BreakTheAegis");
+
+///An Abundance of Vs
+DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_ValorousVirtues", "STEP_JL_FOTV_ReadValorousVirtues");
+
+///Voyage of the Virtuous
+DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_BootyCahooty", "STEP_JL_FOTV_PilgrimTime");
+
 /////   REMOVING    /////
 ///Fearless and Forgotten
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_InquisitionsOfFaerun", "STEP_JL_FOTV_NL_GoFindTheJournal");
@@ -247,6 +357,16 @@ DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Ronros", "STEP_JL_FOTV_Unlo
 ///Echoes of the Righteous
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_CursedPeriapt", "STEP_JL_FOTV_KnowsAmuletCursed");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_IconoclastSpeculations", "STEP_JL_FOTV_CursebreakerTips");
+
+///Holy Is As Holy Does
+DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_ZhentNote", "STEP_JL_FOTV_GoBecomeVirtuous");
+DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_DestroyAegis", "STEP_JL_FOTV_BrokeAegis");
+
+///An Abundance of Vs
+DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_ValorousVirtues", "STEP_JL_FOTV_GoDoRenownThings");
+
+///Voyage of the Virtuous
+DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_BootyCahooty", "STEP_JL_FOTV_IsItinerant");
 
 //////////   TRIGGER STUFF   //////////
 
@@ -289,6 +409,25 @@ DB_FOTV_ItemGrantsSpell((ITEMROOT)LOOT_GEN_Idol_Selune_Silver_A_a8491759-fcb1-41
 DB_FOTV_ItemGrantsSpell((ITEMROOT)LOOT_GEN_Idol_Silvanus_Wood_A_bd8795e9-7daa-4d92-bac4-93f5dd8f66b2, "JL_FOTV_Shout_DeityCurseCommune_Neutral", "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerTips");
 DB_FOTV_ItemGrantsSpell((ITEMROOT)LOOT_GEN_Idol_Shar_Onyx_A_f48ab49f-943b-4702-aabe-e6c17867ec86, "JL_FOTV_Shout_DeityCurseCommune_Evil", "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerTips");
 
+
+//////////  HOLY IS AS HOLY DOES  //////////
+PROC_DeclareCounter("JL_FOTV_HolySitesVisited");
+
+DB_GLO_FOTV_HolySiteFlag((FLAG)JL_FOTV_VisitedHolySite_Jergal_ea262497-20a5-4823-9167-b8e52e042a51);
+DB_GLO_FOTV_HolySiteFlag((FLAG)JL_FOTV_VisitedHolySite_Selune_8eb373fa-3067-47c8-bf82-8852104bca73);
+DB_GLO_FOTV_HolySiteFlag((FLAG)JL_FOTV_VisitedHolySite_Eilistraee_2ecdcd7f-01c3-4a87-82c2-c4e2360910e1);
+DB_GLO_FOTV_HolySiteFlag((FLAG)JL_FOTV_VisitedHolySite_BOOOAL_5a2a4747-078e-4a0a-9ef4-773be057faf4);
+DB_GLO_FOTV_HolySiteFlag((FLAG)JL_FOTV_VisitedHolySite_Lathander_aa92ffef-6bb9-483d-b150-e846cb9c1dde);
+DB_GLO_FOTV_HolySiteFlag((FLAG)JL_FOTV_VisitedHolySite_Vlaakith_2ff433bf-8454-4e98-a86f-ec7d60dbc4bb);
+DB_GLO_FOTV_HolySiteFlag((FLAG)JL_FOTV_VisitedHolySite_Lolth_75013497-5437-4aba-a058-a5d6cf7b532d);
+DB_GLO_FOTV_HolySiteFlag((FLAG)JL_FOTV_VisitedHolySite_Shar_545698b2-071c-409f-882b-a456fb5a8ab4);
+DB_GLO_FOTV_HolySiteFlag((FLAG)JL_FOTV_VisitedHolySite_Silvanus_f21a694a-c5a9-4288-919f-0547538bc228);
+DB_GLO_FOTV_HolySiteFlag((FLAG)JL_FOTV_VisitedHolySite_Cahoot_2c671fdf-ce4d-42ec-9ef6-6ecc196f1eb1);
+
+DB_FOTV_CanInteractAfterFlagSet((ITEM)S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82, (FLAG)JL_FOTV_SeenEmpyrealMantle_fd84411b-1f6e-4e98-b672-fb7f15733350);
+DB_FOTV_CanInteractAfterFlagSet((ITEM)S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, (FLAG)JL_FOTV_ReadZhentNote_46c02478-9e43-459f-a269-20c9e3d18b09);
+DB_FOTV_CanInteractAfterFlagSet((ITEM)S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, (FLAG)JL_FOTV_DestroyedSacrosanctAegis_0d42a3b6-4889-480e-bede-cf641ff629a1);
+
 KBSECTION
 //REGION the important stuff
 //When the prereqs are met, set the proper enemies on stage
@@ -311,7 +450,17 @@ SetFlag(_SeenFlag);
 IF
 StatusRemoved(_QuestObject, _QuestStatus, _, _)
 AND
-DB_FOTV_ImportantStatuses(_QuestObject, _QuestStatus, _QuestFlag)
+DB_FOTV_ImportantStatusRemoved(_QuestObject, _QuestStatus, _QuestFlag)
+THEN
+SetFlag(_QuestFlag);
+
+//Set flag for gaining a status
+IF
+StatusApplied((CHARACTER)_Player, _QuestStatus, _, _)
+AND
+DB_Players(_Player)
+AND
+DB_FOTV_ImportantStatusGained(_QuestStatus, _QuestFlag)
 THEN
 SetFlag(_QuestFlag);
 
@@ -324,6 +473,14 @@ AND
 DB_FOTV_QuestTriggerFlag(_QuestTrigger, _QuestFlag)
 THEN
 SetFlag(_QuestFlag);
+
+//Enable interaction when a flag is set
+IF
+FlagSet(_QuestFlag, NULL_00000000-0000-0000-0000-000000000000, _)
+AND
+DB_FOTV_CanInteractAfterFlagSet(_QuestItem, _QuestFlag)
+THEN
+SetCanInteract(_QuestItem, 1);
 
 //Show quest markers
 IF
@@ -391,7 +548,7 @@ AddSpell(_Character, _QuestSpell);
 
 //when you cast a quest spell granted by a trigger --> set a flag, unregister the trigger
 IF
-CastedSpell(_, (STRING)_QuestSpell, _, _, _)
+CastSpell(_, (STRING)_QuestSpell, _, _, _)
 AND
 DB_FOTV_TriggerSpellSetsFlag(_QuestSpell, _QuestFlag)
 AND
@@ -448,7 +605,7 @@ RemoveSpell(_Character, _QuestSpell);
 
 //when you cast a quest spell, lose it (single use plastics)
 IF
-CastedSpell((CHARACTER)_Caster, _QuestSpell, _, _, _)
+CastSpell((CHARACTER)_Caster, _QuestSpell, _, _, _)
 AND
 DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _Quest, _QuestStep)
 THEN
@@ -457,7 +614,7 @@ NOT DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _Quest, _QuestStep);
 
 //when you cast a quest spell, set a flag
 IF
-CastedSpell(_, _QuestSpell, _, _, _)
+CastSpell(_, _QuestSpell, _, _, _)
 AND
 DB_FOTV_CastQuestSpell(_QuestSpell, _QuestFlag)
 THEN
@@ -558,6 +715,8 @@ IF
 TimerFinished("JL_FOTV_TaarogusLeaves")
 AND
 CreateAtObject(JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0, 0, "", 1, _Resplendence)
+AND
+CreateAtObject(LORE_JL_FOTV_VeiledInDeathShroud_87b58c94-a9fb-4779-82ea-9be3fc02702c, S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0, 0, "", 1, _Immortalis)
 THEN
 SetOnStage(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 0);
 //END_REGION
@@ -653,6 +812,131 @@ RemoveStatus(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d
 RemoveStatus(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, "JL_FOTV_PERIAPT_CURSE_BOUND");
 LockUnequip(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, 0);
 NOT DB_FOTV_CursedAmuletOwner(_Character);
+//END_REGION
+
+//REGION Holy Is As Holy Does
+//vfx and counter for entering a holy site
+IF
+FlagSet(_HolySiteFlag, _, _)
+AND
+DB_GLO_FOTV_HolySiteFlag(_HolySiteFlag)
+AND
+DB_Avatars(_Avatar)
+THEN
+PROC_IncreaseCounter("JL_FOTV_HolySitesVisited");
+ApplyStatus(_Avatar, "JL_FOTV_HOLYSITE_ENTER_APPLYVFX", 0.0);
+
+//special script for removing cahoot shrine marker cuz idk
+IF
+GameBookInterfaceClosed(S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, _)
+THEN
+PROC_HidePartyMarker("MARKER_JL_FOTV_BootyCahooty");
+
+//if u already completed any FoR, skip right to the end of the subquest
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings")
+AND
+DB_GlobalCounter("JL_FOTV_FoR_TotalCompletions",_Count)
+AND
+_Count >= 1
+THEN
+SetFlag(JL_FOTV_Chestpiece_IsRenowned_13b3661e-6f55-4e57-a2ae-21f641afa6cf);
+
+//set the flag for completing a VV
+IF
+DB_GlobalCounter(_VVCounter, _Count)
+AND
+DB_GLO_FOTV_VV_Flag(_VVCounter, _VVFlag)
+AND
+_Count >= 1
+THEN
+SetFlag(_VVFlag);
+
+//finish subquest once u finish any FoR
+IF
+DB_GlobalCounter("JL_FOTV_FoR_TotalCompletions",_Count)
+AND
+_Count >= 1
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_IsRenowned")
+THEN
+SetFlag(JL_FOTV_Chestpiece_IsRenowned_13b3661e-6f55-4e57-a2ae-21f641afa6cf);
+
+//if u already visited enough holy sites, skip right to the end of subquest
+IF
+QuestUpdateUnlocked(_, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime")
+AND
+DB_GlobalCounter("JL_FOTV_HolySitesVisited",_Count)
+AND
+_Count >= 5
+THEN
+SetFlag(JL_FOTV_Chestpiece_IsItinerant_72d8ad21-b730-4091-8374-78659d053347);
+
+//finish subquest once u been to 5 holy sites
+IF
+DB_GlobalCounter("JL_FOTV_HolySitesVisited",_Count)
+AND
+_Count >= 5
+AND
+QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime")
+AND
+NOT QRY_QuestUpdateIsUnlockedForAny("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_IsItinerant")
+THEN
+SetFlag(JL_FOTV_Chestpiece_IsItinerant_72d8ad21-b730-4091-8374-78659d053347);
+
+//advance quest when both subquests are complete
+IF
+DB_GlobalFlag((FLAG)JL_FOTV_Chestpiece_IsRenowned_13b3661e-6f55-4e57-a2ae-21f641afa6cf)
+AND
+DB_GlobalFlag((FLAG)JL_FOTV_Chestpiece_IsItinerant_72d8ad21-b730-4091-8374-78659d053347)
+THEN
+QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_BreakTheAegis");
+
+//grant the spell to break the aegis when you're close to it and have completed a feat of renown
+IF
+EnteredTrigger((CHARACTER)_Player, (TRIGGER)S_JL_FOTV_HolyIsAsHolyDoes_QuestStart_ac4a04fd-3683-47be-8bc7-95af65db0d04)
+AND
+DB_Players(_Player)
+AND
+GetFlag(JL_FOTV_Chestpiece_IsRenowned_13b3661e-6f55-4e57-a2ae-21f641afa6cf, NULL_00000000-0000-0000-0000-000000000000, 1)
+AND
+DB_GlobalCounter("JL_FOTV_HolySitesVisited",_Count)
+AND
+IntegerProduct(_Count, 6, _Product)
+AND
+IntegerToReal(_Product, _R)
+THEN
+ApplyStatus(_Player, "JL_FOTV_HOLYSITES_TRACKER", _R);
+AddSpell(_Player, "JL_FOTV_Mantle_DestroyAegis");
+
+//remove the breaky spell when far from chest
+IF
+LeftTrigger((CHARACTER)_Player, (TRIGGER)S_JL_FOTV_HolyIsAsHolyDoes_QuestStart_ac4a04fd-3683-47be-8bc7-95af65db0d04)
+AND
+DB_Players(_Player)
+AND
+HasSpell(_Player, "JL_FOTV_Mantle_DestroyAegis", 1)
+THEN
+RemoveSpell(_Player, "JL_FOTV_Mantle_DestroyAegis");
+RemoveStatus(_Player, "JL_FOTV_HOLYSITES_TRACKER");
+
+//misc stuff happens when u break aegis
+IF
+CastSpell(_, "JL_FOTV_Mantle_DestroyAegis", _, _, _)
+THEN
+RemoveStatus(S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, "JL_FOTV_EMPYREALMANTLE_HOLYWARD");
+SetOnStage(S_JL_FOTV_EmpyrealMantle_HolyWard_c19d1652-3282-416c-8ab5-b6f96b7b1f47, 0);
+PROC_TriggerUnregisterForPlayers(S_JL_FOTV_HolyIsAsHolyDoes_QuestStart_ac4a04fd-3683-47be-8bc7-95af65db0d04);
+//END_REGION
+
+//REGION Di Immortalis
+IF
+TemplateUseFinished(_, (ITEMROOT)LORE_JL_FOTV_VeiledInDeathShroud_87b58c94-a9fb-4779-82ea-9be3fc02702c, _, _)
+THEN
+SetFlag(JL_FOTV_KnowsDiImmortalis_c26eca14-c44e-4755-a67e-1a0115bb8d72);
+//END_REGION
 
 EXITSECTION
 

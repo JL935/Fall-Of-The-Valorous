@@ -165,6 +165,13 @@
 					<attribute id="ExtraData" type="LSString" value="" />
 					<attribute id="Stub" type="bool" value="True" />
 				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="hc6a0fbddg60ccg4166ga27bg0b8c01391e3f" version="1" />
+					<attribute id="UUID" type="FixedString" value="LORE_JL_FOTV_VeiledInDeathShroud_CONTENTS" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
 
 				<node id="TranslatedStringKey">
 					<attribute id="Content" type="TranslatedString" handle="h32017387g92d0g462cgb74eg8f233ebe4639" version="1" />

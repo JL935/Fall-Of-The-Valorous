@@ -118,6 +118,43 @@
 						</node>
 					</children>
 				</node>
+			<!-- HiaHD quest start -->
+				<node id="GameObjects">
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="ac4a04fd-3683-47be-8bc7-95af65db0d04" />
+					<attribute id="Name" type="LSString" value="S_JL_FOTV_HolyIsAsHolyDoes_QuestStart" />
+					<attribute id="Radius" type="float" value="3" />
+					<attribute id="TemplateName" type="FixedString" value="5e41a73b-05ce-4011-b188-d313c15760ee" />
+					<attribute id="Type" type="FixedString" value="trigger" />
+					<children>
+						<node id="FadeChildren" />
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="1917a060-751f-a6ab-3f62-412dec9f9e7d" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="23782536-b753-6867-ce35-ee6eca689829" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="310.202 4.321 -168.662" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1.0" />
+						</node>
+					</children>
+				</node>
 			<!-- Eilistraee Holy Site -->
 				<node id="GameObjects">
 					<attribute id="Flag" type="int32" value="1" />

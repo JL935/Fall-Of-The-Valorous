@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="Flags">
+		<node id="Flags">
+			<attribute id="Description" type="LSString" value="Read Someone Come Move This Thing" />
+			<attribute id="Name" type="FixedString" value="JL_FOTV_ReadZhentNote" />
+			<attribute id="UUID" type="guid" value="46c02478-9e43-459f-a269-20c9e3d18b09" />
+			<attribute id="Usage" type="uint8" value="5" />
+		</node>
+	</region>
+</save>

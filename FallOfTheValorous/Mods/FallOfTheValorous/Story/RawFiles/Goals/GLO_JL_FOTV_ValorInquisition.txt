@@ -14,11 +14,6 @@ PROC_DeclareCounter("JL_FOTV_FoR_Act1_Compassion");
 PROC_DeclareCounter("JL_FOTV_FoR_Act1_Generosity");
 PROC_DeclareCounter("JL_FOTV_FoR_Act1_Wisdom");
 
-//Lore to read to unlock Valor
-//DB_BookFlags((ITEM)S_LORE_JL_FOTV_InquisitionsOfFaerun_82edbb9d-6c4a-45ca-8f22-5e5cc37d7e97, (FLAG)JL_FOTV_KnowsInquisitionsOfFaerun_b9315548-7173-4fdc-877c-b108d64aa5dc);
-//DB_BookFlags((ITEM)S_LORE_JL_FOTV_WhatMustBeDone_2f243df4-4140-4f38-9aa7-a591ddbeb2ff, (FLAG)JL_FOTV_KnowsHistoryOfArdor_0f6aca59-e578-4a3f-ba27-d508ec466e69);
-//DB_BookFlags((ITEM)S_LORE_JL_FOTV_ViandriothCulling_5a737bfd-82f0-4911-8ecd-419b015bad72, (FLAG)JL_FOTV_KnowsViandriothCulling_9aa8a798-c044-4f1f-af2c-92a83b875a17);
-
 KBSECTION
 //For NPC inquisitor stuff
 QRY
@@ -82,6 +77,8 @@ AND
 DB_Players(_Character)
 AND
 DB_Avatars(_Avatar)
+AND
+QRY_OnlyOnce("FOTV_FoR_DtD_Completed")
 THEN
 ApplyStatus(_Avatar, "JL_FOTV_FOR_DTD_TECHNICAL", 6.0);
 ApplyStatus(_Character, "JL_FOTV_FOR_DTD", -1.0);
@@ -182,6 +179,8 @@ AND
 DB_Players(_Character)
 AND
 DB_Avatars(_Avatar)
+AND
+QRY_OnlyOnce("FOTV_FoR_SoS_Completed")
 THEN
 ApplyStatus(_Avatar, "JL_FOTV_FOR_SOS_TECHNICAL", 6.0);
 ApplyStatus(_Character, "JL_FOTV_FOR_SOS", -1.0);
@@ -285,6 +284,8 @@ AND
 DB_Players(_Character)
 AND
 DB_Avatars(_Avatar)
+AND
+QRY_OnlyOnce("FOTV_FoR_HyH_Completed")
 THEN
 ApplyStatus(_Avatar, "JL_FOTV_FOR_HYH_TECHNICAL", 6.0);
 ApplyStatus(_Character, "JL_FOTV_FOR_HYH", -1.0);
@@ -317,6 +318,8 @@ AND
 DB_Players(_Character)
 AND
 DB_Avatars(_Avatar)
+AND
+QRY_OnlyOnce("FOTV_FoR_Generalized_Completed")
 THEN
 SetFlag(JL_FOTV_GeneralizedFoR_Completed_a264e6f7-365b-4a8b-b5c2-8f8e6818a054);
 ApplyStatus(_Avatar, "JL_FOTV_FOR_ACT1_ANY_TECHNICAL", 0.0);

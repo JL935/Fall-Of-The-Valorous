@@ -156,6 +156,10 @@
     <content contentuid="h0664c5e8gd802g46e9g8554gbf7a3d812432" version="1">This enchiridion bears the faintest traces of divine magic woven into every word.</content>
     <content contentuid="h583f21b4g80a4g4703gaaa6gcdd0395f854b" version="1">So named due to their popularization by T. Dantill of the Valor Inquisition, the Valorous Virtues are a set of 5 ideals of which knights of the realm should strive to embody. It is said that adherence to the Valorous Virtues strengthens one's ties to their deity and to themselves, empowering their resolve and cementing them as a paragon of chivalry.&lt;br&gt;&lt;br&gt;A knight possessing &lt;b&gt;Valor&lt;/b&gt; does not hesitate to stand against the majority, nor do they shy away from acts requiring bravery and heroism.&lt;br&gt;&lt;br&gt;A knight of &lt;b&gt;Honor&lt;/b&gt; stands behind their actions, holds fast to their morals and convictions, and faces every challenge head-on.&lt;br&gt;&lt;br&gt;A knight with &lt;b&gt;Compassion&lt;/b&gt; never turns a blind eye to misfortune, and always stands in defense of the wronged.&lt;br&gt;&lt;br&gt;A knight possessing &lt;b&gt;Generosity&lt;/b&gt; never lets others go without - they share their prosperity with others and let their allies want for nothing.&lt;br&gt;&lt;br&gt;&lt;b&gt;Wisdom&lt;/b&gt; is a virtue which one should strive to cultivate throughout their life. A wise choice is not always the simple choice nor the easy choice, but to possess Wisdom is to make the choices that make one better.</content>
 
+    <content contentuid="h0362cefag8764g4630g9a47gc6fc1a28b3bc" version="1">Veiled In Death's Shroud</content>
+    <content contentuid="h5f283537gaee1g4a75g8d75g43a53aa55dd4" version="1">This letter, bearing the insignia of the Valor Inquisition, is neatly folded and addressed directly to you.</content>
+    <content contentuid="hc6a0fbddg60ccg4166ga27bg0b8c01391e3f" version="1">Whether this letter reaches you by my hand or by my corpse, I thank you for freeing me from the chains of servitude. My dearest companions, however, were not so fortunate as to have escaped the clutches of the Ravener King. I fear that my insurgent actions against the Ravener King sparked his ire, which he exacted upon my allies. Prithee, find my faithful compatriots:&lt;br&gt;&lt;br&gt;Naldrase Elsidyi, the Archon of Justice&lt;br&gt;Zinia Kalyphise, the Harbinger of Harmony&lt;br&gt;Xandril Felgorn, the Bulwark of the Righteous&lt;br&gt;&lt;br&gt;And free them from the clutches of evil.&lt;br&gt;&lt;br&gt;Should I yet live, I will begin the hunt as well. In life or death, I hope our paths may cross once more.&lt;br&gt;&lt;br&gt;Yours faithfully,&lt;br&gt;Taarogus Dantill</content>
+
     <content contentuid="h7fb0c7aeg0d66g484ega4f6gc6340b0c3844" version="1">Word of Power</content>
     <content contentuid="h6df6a500g9838g4007gbe21g15049fff2307" version="1">Holy Words</content>
     <content contentuid="hbe5dfc2cgf6c6g4e59g9e6eg55256d2f73e6" version="1">Speak into existence the divine language that you have acquired on your journey.</content>
@@ -475,6 +479,7 @@
     <content contentuid="h4b61b4ffgb38eg40f5ga243g1c7b092904fc" version="1">We successfully communed with Selûne, who weakened the curse.</content>
     <content contentuid="h871b9cfbg61bbg48e0g8398gc1184786b914" version="1">We successfully communed with Silvanus, who weakened the curse.</content>
     <content contentuid="h55d1d3bbgf6c9g4816gbcecge4a6c18006f8" version="1">We successfully communed with Shar, who weakened the curse.</content>
+    <content contentuid="h8ea8c3bag61f7g472cg979cg79fb88a91e84" version="1">We have significantly weakened Maradi's Malediction by healing during combat. The curse should now be easily removed by Remove Curse or Greater Restoration.</content>
     <content contentuid="h8f79004cgd7cbg4c16gba5dg7ebbe21c7e3f" version="1">Continue the search for the Grand Inquisitor</content>
     <content contentuid="he24a3aa2g9e59g4630g87acg3559fdc5aaea" version="1">We successfully cleansed the Oathkeeper's Periapt of Maradi's Malediction. Perhaps new leads will appear regarding the disappearance of the Grand Inquisitor.</content>
 
@@ -503,6 +508,8 @@
     <content contentuid="ha1c9978ag6d5bg4b7agbe85g9e0f18e9f153" version="1">We have visited 5 holy sites throughout the wilderness and amassed a significant amount of latent divine energy.</content>
     <content contentuid="h25e991fcgab11g4bedga7c5gdca8bfecfcb4" version="1">Surmount the Aegis of the Sacrosanct</content>
     <content contentuid="h6f93e6a6g3dcdg4b47ga74bg0b57ad1c39ee" version="1">We are now virtuous enough to overcome the Aegis of the Sacrosanct and claim the armor within.</content>
+    <content contentuid="h165dfb70gd86fg4fa7g8d3bg5a00d7fc1126" version="1">Continue to be holy</content>
+    <content contentuid="h6925a7b7g7ef8g48ccga944g09d2643dcc1c" version="1">We have broken the Aegis of the Sacrosanct and claimed our reward.</content>
     <content contentuid="hdeda3a16g3135g4cdegbe3bg0ec47afc7d57" version="1">An Abundance of Vs</content>
     <content contentuid="h6482e989g0349g45ddg9b44g3a0967fe26ad" version="1">Learn of the doctrines of virtuosity</content>
     <content contentuid="h0b35814cg46b7g4668g9060gf51ff5042bab" version="1">We should learn more about what it means to be virtuous in the eyes of the inquisition.</content>
@@ -536,6 +543,10 @@
     <content contentuid="h950d1b5dg780bg4fd7gb62bge8c92047db6b" version="1">Conquer Aegis</content>
     <content contentuid="h198bf035g519ag4156g9dccgd824cccc0882" version="1">Surmount the Aegis of the Sacrosanct.</content>
     <content contentuid="h3cbf6a96g0d71g44b7gabf1g338d4021fc5c" version="1">Must visit more holy sites.</content>
+
+    <content contentuid="haaf7e5cagf728g46d7gbdf8gab00d2edf5ac" version="1">Di Immortalis</content>
+    <content contentuid="hc5177e53g0e97g480cgb13eg9713ccf68799" version="1">Search for Taarogus' companions</content>
+    <content contentuid="h8032ded7g7b20g445agb71cg3826975a70cb" version="1">Taarogus Dantill has beseeched us to find his allies and free them from the grasp of the Ravener King. We may encounter them as we venture deeper into the shadows.</content>
 
     <content contentuid="heae6ce6fgbce5g4668gb4eag50dbe80bad2a" version="1">Ravener King's Subjugation</content>
     <content contentuid="ha1c86811g147ag48b1g9daege7d3a6293305" version="1">Entity is under the complete dominion of the Ravener King.</content>

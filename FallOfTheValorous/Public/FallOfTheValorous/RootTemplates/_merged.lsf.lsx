@@ -2234,9 +2234,6 @@
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_DESECRATION" />
 								</node>
-								<!--<node id="Status">
-									<attribute id="Object" type="FixedString" value="JL_FOTV_JOURNAL_QUESTUPDATER_AURA" />
-								</node>-->
 							</children>
 						</node>
 					</children>
@@ -2277,6 +2274,7 @@
 					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_NeedIconoclast" />
 					<attribute id="ParentTemplateId" type="FixedString" value="6d5f9187-6457-4f20-b878-f5b3f8272c6f" />
 					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Note" />
+					<attribute id="StoryItem" type="bool" value="True" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="OnUsePeaceActions">
@@ -2752,6 +2750,34 @@
 										<node id="Attributes">
 											<attribute id="Animation" type="FixedString" value="" />
 											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_ValorousVirtues_CONTENTS" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- Veiled in Death’s Shroud -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h5f283537gaee1g4a75g8d75g43a53aa55dd4" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h0362cefag8764g4630g9a47gc6fc1a28b3bc" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="87b58c94-a9fb-4779-82ea-9be3fc02702c" />
+					<attribute id="Name" type="LSString" value="LORE_JL_FOTV_VeiledInDeathShroud" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c0de891b-f804-4d89-953d-97c5dcd54946" />
+					<attribute id="Stats" type="FixedString" value="LORE_JL_FOTV_CommonAct1_Book" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="11" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="BookId" type="FixedString" value="LORE_JL_FOTV_VeiledInDeathShroud_CONTENTS" />
 											<attribute id="Conditions" type="LSString" value="" />
 										</node>
 									</children>

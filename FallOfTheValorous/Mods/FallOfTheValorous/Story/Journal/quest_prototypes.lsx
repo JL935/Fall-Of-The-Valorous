@@ -13,7 +13,7 @@
                     <attribute id="QuestRewardTarget" type="uint8" value="2"/>
                     <attribute id="QuestTitle" type="TranslatedString" handle="hda759eddg1249g405fga063g93d0988bdd8a" version="1"/>
                     <attribute id="QuestVisiblity" type="bool" value="true"/>
-                    <attribute id="SortingPriority" type="int32" value="3"/>
+                    <attribute id="SortingPriority" type="int32" value="5"/>
                     <children>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
@@ -744,7 +744,7 @@
                     <attribute id="QuestRewardTarget" type="uint8" value="2"/>
                     <attribute id="QuestTitle" type="TranslatedString" handle="h69ea3c03g5809g4d19g9c3cg27ce02e9d4a3" version="1"/>
                     <attribute id="QuestVisiblity" type="bool" value="true"/>
-                    <attribute id="SortingPriority" type="int32" value="2"/>
+                    <attribute id="SortingPriority" type="int32" value="4"/>
                     <children>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
@@ -940,6 +940,28 @@
                         </node>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h8ea8c3bag61f7g472cg979cg79fb88a91e84" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="did the hard part of cursebreaking"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="95dfe77f-eab3-4483-a3b2-935dc78c1546"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_IsReadyToBreakCurse"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_LiftTheCurse"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="415dd63f-5269-4530-8ec9-250b5ffaae9a"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
                             <attribute id="Description" type="TranslatedString" handle="he24a3aa2g9e59g4630g87acg3559fdc5aaea" version="1"/> 
                             <attribute id="DevComment" type="FixedString" value="broke the curse"/> 
                             <attribute id="DialogFlagGUID" type="guid" value="fd9f3a30-b333-4708-9e26-e6525c6ac8f8"/>
@@ -971,7 +993,7 @@
                     <attribute id="QuestRewardTarget" type="uint8" value="2"/>
                     <attribute id="QuestTitle" type="TranslatedString" handle="hd418a4b3g77b2g4eb0gb543g05fcc99f24fd" version="1"/>
                     <attribute id="QuestVisiblity" type="bool" value="true"/>
-                    <attribute id="SortingPriority" type="int32" value="1"/>
+                    <attribute id="SortingPriority" type="int32" value="3"/>
                     <children>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
@@ -1094,7 +1116,7 @@
                     <attribute id="QuestRewardTarget" type="uint8" value="2"/>
                     <attribute id="QuestTitle" type="TranslatedString" handle="h5bb65829gd12dg44afgb636g6719d77c065d" version="1"/>
                     <attribute id="QuestVisiblity" type="bool" value="true"/>
-                    <attribute id="SortingPriority" type="int32" value="2"/>
+                    <attribute id="SortingPriority" type="int32" value="4"/>
                     <children>
                         <node id="QuestStep">
                             <attribute id="Achievement" type="FixedString" value=""/>
@@ -1205,6 +1227,28 @@
                             <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
                             <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                             <attribute id="UnlockDisable" type="int32" value="0"/>
+                        </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h6925a7b7g7ef8g48ccga944g09d2643dcc1c" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="broke aegis"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="9e5c1052-8e14-422c-b272-95b92eed11fa"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_BrokeAegis"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_BrokeAegis"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="e7dd9621-e5a6-4862-8608-7765d59e3571"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="2"/>
                         </node>
                         <node id="SubQuests">
                             <attribute id="SubQuests" type="FixedString" value="SUBQST_JL_FOTV_FeatOfRenown" />
@@ -1677,6 +1721,41 @@
                             <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
                             <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                             <attribute id="UnlockDisable" type="int32" value="2"/>
+                        </node>
+                    </children>
+                </node>
+            <!-- Di Immortalis -->
+                <node id="Quest">
+                    <attribute id="CategoryID" type="FixedString" value="CAT_JL_FallOfTheValorous"/>
+                    <attribute id="ParentQuestID" type="FixedString" value=""/>
+                    <attribute id="QuestGuid" type="guid" value="70f98377-48b2-4abd-8d53-ea6ed8ff9df9"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_DiImmortalis"/>
+                    <attribute id="QuestRewardTarget" type="uint8" value="2"/>
+                    <attribute id="QuestTitle" type="TranslatedString" handle="haaf7e5cagf728g46d7gbdf8gab00d2edf5ac" version="1"/>
+                    <attribute id="QuestVisiblity" type="bool" value="true"/>
+                    <attribute id="SortingPriority" type="int32" value="4"/>
+                    <children>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h8032ded7g7b20g445agb71cg3826975a70cb" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="Sidequest start, can't do anything in a1"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="f295e95f-916f-4232-b313-aa0a1c5c6532"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_FindInquisifriends"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_FindInquisifriends"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="26e094a4-f1a4-4e62-ba4b-29230d817e45"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="1"/>
                         </node>
                     </children>
                 </node>

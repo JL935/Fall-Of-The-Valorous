@@ -930,6 +930,42 @@
 						</node>
 					</children>
 				</node>
+			<!-- Veiled in Death's Shroud -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h0362cefag8764g4630g9a47gc6fc1a28b3bc" version="1" />
+					<attribute id="Flag" type="int32" value="1" />
+					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
+					<attribute id="MapKey" type="FixedString" value="58a6e514-709d-4d57-9814-077c64e8367b" />
+					<attribute id="Name" type="LSString" value="S_LORE_JL_FOTV_VeiledInDeathShroud" />
+					<attribute id="TemplateName" type="FixedString" value="87b58c94-a9fb-4779-82ea-9be3fc02702c" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="FixedString" value="WLD_Main_A" />
+											<children>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="0d1b3e0e-930a-23a0-2ad9-f0f3deba210b" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="784e0a2b-908e-edcc-02dd-e6aa5c34dc6c" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Transform">
+							<attribute id="Position" type="fvec3" value="-293.767 -5.47 -248.035" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<attribute id="Scale" type="float" value="1" />
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

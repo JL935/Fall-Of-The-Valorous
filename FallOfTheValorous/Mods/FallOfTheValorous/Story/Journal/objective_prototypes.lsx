@@ -210,6 +210,13 @@
                     <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_BecomeHoly"/> 
                     <attribute id="QuestObjectiveGuid" type="guid" value="cd78a8ee-1417-4351-9d67-bb8bda781457"/>
                 </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h165dfb70gd86fg4fa7g8d3bg5a00d7fc1126" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_BrokeAegis"/> 
+                    <attribute id="Priority" type="int32" value="1300"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_BecomeHoly"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="3ded4b4a-58e8-44e2-b70e-42323b09de7a"/>
+                </node>
 
             <!-- An Abundance of Vs -->
                 <node id="Objective">
@@ -241,6 +248,15 @@
                     <attribute id="Priority" type="int32" value="1000"/>
                     <attribute id="QuestID" type="FixedString" value="SUBQST_JL_FOTV_VirtuousVoyage"/> 
                     <attribute id="QuestObjectiveGuid" type="guid" value="3442d6c1-7123-4c39-b62c-d00896061f4d"/>
+                </node>
+
+            <!-- Di Immortalis -->
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="hc5177e53g0e97g480cgb13eg9713ccf68799" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_FindInquisifriends"/> 
+                    <attribute id="Priority" type="int32" value="1000"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_DiImmortalis"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="6a01376e-c83f-4116-8dfe-22dd94edccdd"/>
                 </node>
 
             </children>
