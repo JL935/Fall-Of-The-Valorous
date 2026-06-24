@@ -2,18 +2,14 @@ Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
 //////////  FLAGS   //////////
-
 /////   BOOK FLAGS  /////
 ///Fearless and Forgotten
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_InquisitionsOfFaerun_82edbb9d-6c4a-45ca-8f22-5e5cc37d7e97, (FLAG)JL_FOTV_KnowsInquisitionsOfFaerun_b9315548-7173-4fdc-877c-b108d64aa5dc);
-
 ///Dark Secrets Unearthed
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_ViandriothCulling_5a737bfd-82f0-4911-8ecd-419b015bad72, (FLAG)JL_FOTV_KnowsViandriothCulling_9aa8a798-c044-4f1f-af2c-92a83b875a17);
-
 ///A Call To Valor
 DB_BookFlags((ITEM)S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, (FLAG)JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562);
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_SaelethilAilment_83d24be7-3fb0-4c1a-a2dc-d0a80e2df0f5, (FLAG)JL_FOTV_KnowsMindControlBreakHint_846e807c-134c-4700-8f99-02712bf1be5b);
-
 ///Seeker of Lost Lore
 DB_BookFlags((ITEM)S_SCROLL_JL_FOTV_FrightfulPresenceDruidNotes_6ba2518a-99fc-4bfd-aa15-5ac548bdc979, (FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66);
 DB_BookFlags((ITEM)S_NOTE_JL_FOTV_NatureOfSoulWards_36053007-e66d-4d49-910f-81c396e3209c, (FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a);
@@ -22,29 +18,23 @@ DB_BookFlags((ITEM)S_BOOK_JL_FOTV_UnholyCommunion_20e6a289-1c9a-4ee9-a7d0-8b1db7
 DB_BookFlags((ITEM)S_BOOK_JL_FOTV_MalevolenceCaseStudy_a474e74a-4567-4827-bac5-c69579514963, (FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af7b-42e0-8f45-ac3826a4afe1);
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_FollyOfOurForebears_3d3ec557-abf1-4a2e-8ca0-8aabfbf4c16c, (FLAG)JL_FOTV_ForebearFollyRead_6f5b0194-55b7-4d53-bdba-485b9067ab8b);
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_MissiveToQynoth_6b69d881-f7f5-4631-8427-c222c78d4c7a, (FLAG)JL_FOTV_QynothMissiveRead_10a4efdc-5863-44f0-93a9-3d11fa1d84d3);
-
 ///No Monster Too Menacing, No Duty Too Daunting
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_Preservation_978dcd20-1f8a-4067-8956-37f31f540427, (FLAG)JL_FOTV_PreservationRead_8b19a6b7-9622-4989-901c-2c5517e281f4);
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_Ruination_33aabaca-21fa-489f-9ad9-c627b15e7cfd, (FLAG)JL_FOTV_RuinationRead_4d512cc3-60f8-4b78-92d7-d6bd71d577a3);
-
 ///Echoes of the Righteous
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_NeedIconoclast_ecb9a47c-7774-4c84-a37d-d84594d33a02, (FLAG)JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64);
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, (FLAG)JL_FOTV_KnowsCurseHints_1b6e901c-7097-4bb6-bdcb-956d3998cede);
-
 ///Holy Is As Holy Does
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab9-96c8-4b1177e2ac82, (FLAG)JL_FOTV_ReadZhentNote_46c02478-9e43-459f-a269-20c9e3d18b09);
 DB_BookFlags((ITEM)S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, (FLAG)JL_FOTV_VisitedHolySite_Cahoot_2c671fdf-ce4d-42ec-9ef6-6ecc196f1eb1);
-
 ///An Abundance of Vs
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_ValorousVirtues_a556aa87-01f4-4734-b07a-306041fb6109, (FLAG)JL_FOTV_KnowsValorousVirtues_f90fa4f9-381b-438d-882c-ad1b86615b24);
-
 ///Di Immortalis
 DB_BookFlags((ITEM)S_LORE_JL_FOTV_VeiledInDeathShroud_58a6e514-709d-4d57-9814-077c64e8367b, (FLAG)JL_FOTV_KnowsDiImmortalis_c26eca14-c44e-4755-a67e-1a0115bb8d72);
 
 /////   ENTERING TRIGGER    /////
 ///A Call To Valor
 DB_FOTV_QuestTriggerFlag((TRIGGER)S_JL_FOTV_CtV_QuestStart_a8f39236-fa25-4cde-a310-74082d89ecde, (FLAG)JL_FOTV_StartedCallToValor_d4816ba1-6fe3-47db-ac5f-010cd290d31f);
-
 ///Holy Is As Holy Does
 DB_FOTV_QuestTriggerFlag((TRIGGER)S_JL_FOTV_HolyIsAsHolyDoes_QuestStart_ac4a04fd-3683-47be-8bc7-95af65db0d04, (FLAG)JL_FOTV_SeenEmpyrealMantle_fd84411b-1f6e-4e98-b672-fb7f15733350);
 DB_FOTV_QuestTriggerFlag((TRIGGER)S_CHA_Crypt_JergalReligionCheck_4f24d7ac-b650-45cf-b3b4-1557c682e400, (FLAG)JL_FOTV_VisitedHolySite_Jergal_ea262497-20a5-4823-9167-b8e52e042a51);
@@ -62,38 +52,30 @@ DB_FOTV_SawValorInquisitor((CHARACTER)S_JL_FOTV_ApothecaryInquisitor_Dead_b730b1
 DB_FOTV_SawValorInquisitor((CHARACTER)S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1, (FLAG)JL_FOTV_SawSaelethil_94851472-0e91-4081-b869-2e1f3f9df375);
 DB_FOTV_SawValorInquisitor((CHARACTER)S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, (FLAG)JL_FOTV_SawAdrasteia_b93bb4b1-f688-498b-a584-cd5044cc4a3e);
 
-
 /////   REMOVING STATUSES   /////
 ///A Call To Valor
 DB_FOTV_ImportantStatusRemoved(S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, "JL_FOTV_RAVENER_DESECRATION", (FLAG)JL_FOTV_CleansedJournal_b5962d11-a556-4d06-80bf-885d0bfe0480);
-
 ///Apostle of the Holy Word
 DB_FOTV_ImportantStatusRemoved(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, "JL_FOTV_TAAROGUS_MINDCONTROL_1", (FLAG)JL_FOTV_TaarogusFreed_6f837c93-11be-4530-97e8-c7526431e1ec);
-
 
 /////   GAINING STATUSES    /////
 ///Echoes of the Righteous
 DB_FOTV_ImportantStatusGained("JL_FOTV_PERIAPT_CURSED_ISREADYTOBREAKCURSE", (FLAG)JL_FOTV_IsReadyToBreakCurse_e382a98c-65c7-4f35-874a-8dfd3086f08b);
-
 ///Holy Is As Holy Does
 DB_FOTV_ImportantStatusGained("DEN_SILVANUS_BLESSING", (FLAG)JL_FOTV_VisitedHolySite_Silvanus_f21a694a-c5a9-4288-919f-0547538bc228);
-
 
 /////   DEFEATED + DYING    /////
 ///Apostle of the Holy Word
 DB_DefeatedOnceFlag(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, (FLAG)JL_FOTV_TaarogusSpared_c24fb08a-78fc-4b0f-8287-c57200dfbec2);
 DB_DeadOnceFlag(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, (FLAG)JL_FOTV_TaarogusDead_f054f9e7-c259-47f2-b8ff-21975d7e6743);
-
 ///Seeker of Lost Lore
 DB_DeadOnceFlag(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c, (FLAG)JL_FOTV_VeizoadeothDefeated_6beb5d1c-0df1-483f-be01-aac924896540);
-
 
 /////   CASTING SPELLS  /////
 DB_FOTV_CastQuestSpell("JL_FOTV_Shout_DeityCurseCommune_Good", (FLAG)JL_FOTV_GoodCommunion_1fe5cb0a-f155-405c-a82a-793485f54eed);
 DB_FOTV_CastQuestSpell("JL_FOTV_Shout_DeityCurseCommune_Neutral", (FLAG)JL_FOTV_NeutralCommunion_6ab823e4-597d-46e0-a309-5a7e2fef3ef6);
 DB_FOTV_CastQuestSpell("JL_FOTV_Shout_DeityCurseCommune_Evil", (FLAG)JL_FOTV_EvilCommunion_10a4d538-204d-4433-aa5f-97cf84fde3a8);
 DB_FOTV_CastQuestSpell("JL_FOTV_Mantle_DestroyAegis", (FLAG)JL_FOTV_DestroyedSacrosanctAegis_0d42a3b6-4889-480e-bede-cf641ff629a1);
-
 
 /////   GLOBAL COUNTERS   /////
 DB_GLO_FOTV_VV_Flag("JL_FOTV_FoR_Act1_Valor", (FLAG)JL_FOTV_ValorousVirtue_Valor_9f5f321e-092c-401c-8499-4b631c5870c5);
@@ -104,7 +86,6 @@ DB_GLO_FOTV_VV_Flag("JL_FOTV_FoR_Act1_Wisdom", (FLAG)JL_FOTV_ValorousVirtue_Wisd
 
 
 //////////  UPDATING QUEST STEPS    //////////
-
 /////   FLAGS   /////
 ///Fearless and Forgotten
 //these should only trigger if you find the dead valorquisitors before having found the FotV journal at all
@@ -113,7 +94,6 @@ DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_SawSaelethil_94851472-0e91-4081-
 DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_SawAdrasteia_b93bb4b1-f688-498b-a584-cd5044cc4a3e, "NLQST_JL_FOTV_NonlinearityFaF", "STEP_JL_FOTV_NL_FoundDeadquisitor", 0, (FLAG)JL_FOTV_StartedCallToValor_d4816ba1-6fe3-47db-ac5f-010cd290d31f);
 //if you've already read IoF when you start FaF, immediately jump to the next step
 DB_QuestDef_ChainedState_ConditionalFlag("NLQST_JL_FOTV_NonlinearityFaF", "STEP_JL_FOTV_NL_FoundDeadquisitor", 1, (FLAG)JL_FOTV_KnowsInquisitionsOfFaerun_b9315548-7173-4fdc-877c-b108d64aa5dc, "STEP_JL_FOTV_NL_GoFindTheJournal");
-
 ///Dark Secrets Unearthed
 //these should only trigger if you read the lore before having found the FotV journal at all
 DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, "NLQST_JL_FOTV_NonlinearityDSU", "STEP_JL_FOTV_NL_ReadSomeLore", 0, (FLAG)JL_FOTV_StartedCallToValor_d4816ba1-6fe3-47db-ac5f-010cd290d31f);
@@ -122,12 +102,10 @@ DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af
 DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba, "NLQST_JL_FOTV_NonlinearityDSU", "STEP_JL_FOTV_NL_ReadSomeLore", 0, (FLAG)JL_FOTV_StartedCallToValor_d4816ba1-6fe3-47db-ac5f-010cd290d31f);
 //if you've already read the treatise when you start DSU, immediately jump to the next step
 DB_QuestDef_ChainedState_ConditionalFlag("NLQST_JL_FOTV_NonlinearityDSU", "STEP_JL_FOTV_NL_ReadSomeLore", 1, (FLAG)JL_FOTV_KnowsViandriothCulling_9aa8a798-c044-4f1f-af2c-92a83b875a17, "STEP_JL_FOTV_NL_GoFindTheBastion");
-
 ///A Call To Valor
 DB_QuestDef_State((FLAG)JL_FOTV_StartedCallToValor_d4816ba1-6fe3-47db-ac5f-010cd290d31f, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_CleanseJournal");
 DB_QuestDef_State((FLAG)JL_FOTV_CleansedJournal_b5962d11-a556-4d06-80bf-885d0bfe0480, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_ReadJournal");
 DB_QuestDef_State((FLAG)JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction");
-
 ///Apostle of the Holy Word
 //update the quest steps when you see the important valorquisitors only if you've read FotV
 DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_SawKhionzu_61e2ef35-3f53-42d2-b214-e00925198d64, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_FoundKhionzu", 1, (FLAG)JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562);
@@ -144,7 +122,6 @@ DB_QuestDef_State((FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd
 DB_QuestDef_State((FLAG)JL_FOTV_TaarogusDead_f054f9e7-c259-47f2-b8ff-21975d7e6743, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusDead");
 DB_QuestDef_State((FLAG)JL_FOTV_TaarogusSpared_c24fb08a-78fc-4b0f-8287-c57200dfbec2, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusSpared");
 DB_QuestDef_State((FLAG)JL_FOTV_TaarogusFreed_6f837c93-11be-4530-97e8-c7526431e1ec, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusFreed");
-
 ///Seeker of Lost Lore
 //update the quest steps when you read the ravener lore only if you've read FotV
 DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedSoulWard", 1, (FLAG)JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562);
@@ -167,7 +144,6 @@ DB_QuestDef_ConditionalState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedArcaneRese
 //for if you read the 4th lore book after reading the Missive to Qynoth
 DB_QuestDef_ConditionalState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedAllActOne", "STEP_JL_FOTV_ConfrontSentinel", "STEP_JL_FOTV_LearnedArcaneResearch", 1);
 DB_QuestDef_State(JL_FOTV_VeizoadeothDefeated_6beb5d1c-0df1-483f-be01-aac924896540, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_SentinelDead");
-
 ///No Monster Too Menacing, No Duty Too Daunting
 //quest only updates if you've started it (obviously?)
 DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_PreservationRead_8b19a6b7-9622-4989-901c-2c5517e281f4, "QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_FindRuination", 1, (FLAG)JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562);
@@ -178,11 +154,9 @@ DB_QuestDef_NewChainedState_ConditionalFlag("QST_JL_FOTV_Act1", "STEP_JL_FOTV_Ca
 DB_QuestDef_NewChainedState_ConditionalFlag("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction", 1, (FLAG)JL_FOTV_RuinationRead_4d512cc3-60f8-4b78-92d7-d6bd71d577a3, "QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SlaySpider");
 DB_QuestDef_NewChainedState_ConditionalFlag("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction", 1, (FLAG)FOR_Bottomless_SpiderQueen_State_PermaDefeated_b749271f-fbee-43ec-bbc7-b1199d0f794a, "QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SanctifyValor");
 DB_QuestDef_State(JL_FOTV_ValorSubclassUnlocked_30d714d5-35e8-458c-9a74-31dc9ccc512e, "QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_UnlockedValor");
-
 ///Echoes of the Righteous
 DB_QuestDef_State(JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_FoundAmuletNote");
 DB_QuestDef_State(JL_FOTV_IdentifiedMalediction_002f2d77-e7b7-4b12-acbc-3309025bd58d, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_KnowsAmuletCursed");
-
 ///Lifting the Curse
 //LtC only unlocks if you've already identified the amulet curse
 DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_KnowsCurseHints_1b6e901c-7097-4bb6-bdcb-956d3998cede, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerTips", 1, (FLAG)JL_FOTV_IdentifiedMalediction_002f2d77-e7b7-4b12-acbc-3309025bd58d);
@@ -193,12 +167,10 @@ DB_QuestDef_State(JL_FOTV_NeutralCommunion_6ab823e4-597d-46e0-a309-5a7e2fef3ef6,
 DB_QuestDef_State(JL_FOTV_EvilCommunion_10a4d538-204d-4433-aa5f-97cf84fde3a8, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCommunionEvil");
 DB_QuestDef_State(JL_FOTV_IsReadyToBreakCurse_e382a98c-65c7-4f35-874a-8dfd3086f08b, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_IsReadyToBreakCurse");
 DB_QuestDef_State(JL_FOTV_BrokeAmuletCurse_1fcc92f4-6f1c-459e-abca-5586f5956cd1, "QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCurseLifted");
-
 ///Holy Is As Holy Does
 DB_QuestDef_State(JL_FOTV_SeenEmpyrealMantle_fd84411b-1f6e-4e98-b672-fb7f15733350, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_ReadZhentNote");
 DB_QuestDef_State(JL_FOTV_ReadZhentNote_46c02478-9e43-459f-a269-20c9e3d18b09, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoBecomeVirtuous");
 DB_QuestDef_State(JL_FOTV_DestroyedSacrosanctAegis_0d42a3b6-4889-480e-bede-cf641ff629a1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_BrokeAegis");
-
 ///An Abundance of Vs
 //don't start subquest if you read VV book before getting to the right step in HiaHD
 DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_KnowsValorousVirtues_f90fa4f9-381b-438d-882c-ad1b86615b24, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings", 1, (FLAG)JL_FOTV_ReadZhentNote_46c02478-9e43-459f-a269-20c9e3d18b09);
@@ -217,8 +189,6 @@ DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV
 DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings", 1, (FLAG)JL_FOTV_ValorousVirtue_Generosity_de99f1dc-6b75-4560-8807-f5492a81ab8c, "STEP_JL_FOTV_RenownGVV");
 DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings", 1, (FLAG)JL_FOTV_ValorousVirtue_Wisdom_0727e40f-a925-452d-91ee-ff386a483b24, "STEP_JL_FOTV_RenownWVV");
 DB_QuestDef_State(JL_FOTV_Chestpiece_IsRenowned_13b3661e-6f55-4e57-a2ae-21f641afa6cf, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_FinishedRenown");
-
-
 ///Voyage of the Virtuous
 //only progress VotV when u visit a holy site if u already started subquest
 DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)JL_FOTV_VisitedHolySite_Jergal_ea262497-20a5-4823-9167-b8e52e042a51, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_VisitedJergal", 1, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime");
@@ -243,7 +213,6 @@ DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV
 DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Silvanus_f21a694a-c5a9-4288-919f-0547538bc228, "STEP_JL_FOTV_VisitedSilvanus");
 DB_QuestDef_ChainedState_ConditionalFlag("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime", 1, (FLAG)JL_FOTV_VisitedHolySite_Cahoot_2c671fdf-ce4d-42ec-9ef6-6ecc196f1eb1, "STEP_JL_FOTV_VisitedCahoot");
 DB_QuestDef_State(JL_FOTV_Chestpiece_IsItinerant_72d8ad21-b730-4091-8374-78659d053347, "QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_WhoUpFaringTheyWay");
-
 ///Di Immortalis
 DB_QuestDef_State(JL_FOTV_KnowsDiImmortalis_c26eca14-c44e-4755-a67e-1a0115bb8d72, "QST_JL_FOTV_DiImmortalis", "STEP_JL_FOTV_FindInquisifriends");
 
@@ -253,47 +222,36 @@ DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction", "STEP_
 DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusDead", "STEP_JL_FOTV_ApostleCompleted");
 DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusSpared", "STEP_JL_FOTV_ApostleCompleted");
 DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusFreed", "STEP_JL_FOTV_ApostleCompleted");
-
 ///Seeker of Lost Lore
 DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction", "STEP_JL_FOTV_GoFindRavenerLore");
 DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SentinelDead", "STEP_JL_FOTV_SeekerCompleted");
-
 ///No Monster Too Menacing, No Duty Too Daunting
 DB_QuestDef_ChainedState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction", "QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_FindPreservation");
-
 ///Echoes of the Righteous
 DB_QuestDef_ChainedState("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCurseLifted", "STEP_JL_FOTV_AmuletCurseBrokenFindGrandInquisitor");
-
 ///Holy Is As Holy Does
 DB_QuestDef_ChainedState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_FinishedRenown", "STEP_JL_FOTV_IsRenowned");
 DB_QuestDef_ChainedState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_WhoUpFaringTheyWay", "STEP_JL_FOTV_IsItinerant");
-
 ///An Abundance of Vs
 DB_QuestDef_ChainedState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoBecomeVirtuous", "STEP_JL_FOTV_ReadValorousVirtues");
-
 ///Voyage of the Virtuous
 DB_QuestDef_ChainedState("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoBecomeVirtuous", "STEP_JL_FOTV_PilgrimTime");
 
 //////////  QUEST MARKERS   //////////
-
 /////   ADDING  /////
 ///Fearless and Forgotten
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_InquisitionsOfFaerun", "STEP_JL_FOTV_NL_FoundDeadquisitor");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_NL_CursedJournal", "STEP_JL_FOTV_NL_GoFindTheJournal");
-
 ///Dark Secrets Unearthed
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_ViandriothCulling", "STEP_JL_FOTV_NL_ReadSomeLore");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_NL_CursedJournal", "STEP_JL_FOTV_NL_GoFindTheBastion");
-
 ///A Call To Valor
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_CursedJournal", "STEP_JL_FOTV_CleanseJournal");
-
 ///Apostle of the Holy Word
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Lulix", "STEP_JL_FOTV_CallToAction");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Arzimyr", "STEP_JL_FOTV_CallToAction");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Xulvorith", "STEP_JL_FOTV_CallToAction");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_EvilTaarogus", "STEP_JL_FOTV_ReturnToTheHolyLand");
-
 ///Seeker of Lost Lore
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_ThayanOutpostResearch", "STEP_JL_FOTV_CallToAction");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_GroveOutpostResearch", "STEP_JL_FOTV_LearnedGroveCrecheResearch");
@@ -301,24 +259,19 @@ DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_CrecheOutpostResearch", "STEP_
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_QynothMissive", "STEP_JL_FOTV_LearnedGroveCrecheResearch");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_ArcaneOutpostResearch", "STEP_JL_FOTV_LearnedArcaneResearch");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Veizoadeoth", "STEP_JL_FOTV_ConfrontSentinel");
-
 ///No Monster Too Menacing, No Duty Too Daunting
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Moonhaven", "STEP_JL_FOTV_CallToAction");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Ruination", "STEP_JL_FOTV_FindRuination");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_SpiderMommy", "STEP_JL_FOTV_SlaySpider");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Ronros", "STEP_JL_FOTV_SanctifyValor");
-
 ///Echoes of the Righteous
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_CursedPeriapt", "STEP_JL_FOTV_FoundAmuletNote");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_IconoclastSpeculations", "STEP_JL_FOTV_KnowsAmuletCursed");
-
 ///Holy Is As Holy Does
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_ZhentNote", "STEP_JL_FOTV_ReadZhentNote");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_DestroyAegis", "STEP_JL_FOTV_BreakTheAegis");
-
 ///An Abundance of Vs
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_ValorousVirtues", "STEP_JL_FOTV_ReadValorousVirtues");
-
 ///Voyage of the Virtuous
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_BootyCahooty", "STEP_JL_FOTV_PilgrimTime");
 
@@ -326,20 +279,16 @@ DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_BootyCahooty", "STEP_JL_FOTV_P
 ///Fearless and Forgotten
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_InquisitionsOfFaerun", "STEP_JL_FOTV_NL_GoFindTheJournal");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_NL_CursedJournal", "STEP_JL_FOTV_CallToAction");
-
 ///Dark Secrets Unearthed
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_ViandriothCulling", "STEP_JL_FOTV_NL_GoFindTheBastion");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_NL_CursedJournal", "STEP_JL_FOTV_CallToAction");
-
 ///A Call To Valor
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_CursedJournal", "STEP_JL_FOTV_CallToAction");
-
 ///Apostle of the Holy Word
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Lulix", "STEP_JL_FOTV_SavedKhionzu");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Arzimyr", "STEP_JL_FOTV_SavedSaelethil");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Xulvorith", "STEP_JL_FOTV_SavedAdrasteia");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_EvilTaarogus", "STEP_JL_FOTV_ApostleCompleted");
-
 //Seeker of Lost Lore
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_ThayanOutpostResearch", "STEP_JL_FOTV_LearnedSoulWard");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_GroveOutpostResearch", "STEP_JL_FOTV_LearnedFrightfulPresence");
@@ -347,53 +296,42 @@ DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_CrecheOutpostResearch", "ST
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_QynothMissive", "STEP_JL_FOTV_LearnedArcaneResearch");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_ArcaneOutpostResearch", "STEP_JL_FOTV_LearnedUndeath");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Veizoadeoth", "STEP_JL_FOTV_SentinelDead");
-
 ///No Monster Too Menacing, No Duty Too Daunting
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Moonhaven", "STEP_JL_FOTV_FindRuination");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Ruination", "STEP_JL_FOTV_SlaySpider");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_SpiderMommy", "STEP_JL_FOTV_SanctifyValor");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Ronros", "STEP_JL_FOTV_UnlockedValor");
-
 ///Echoes of the Righteous
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_CursedPeriapt", "STEP_JL_FOTV_KnowsAmuletCursed");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_IconoclastSpeculations", "STEP_JL_FOTV_CursebreakerTips");
-
 ///Holy Is As Holy Does
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_ZhentNote", "STEP_JL_FOTV_GoBecomeVirtuous");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_DestroyAegis", "STEP_JL_FOTV_BrokeAegis");
-
 ///An Abundance of Vs
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_ValorousVirtues", "STEP_JL_FOTV_GoDoRenownThings");
-
 ///Voyage of the Virtuous
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_BootyCahooty", "STEP_JL_FOTV_IsItinerant");
 
 //////////   TRIGGER STUFF   //////////
-
 /////   GRANTING SPELLS /////
 ///No Monster Too Menacing, No Duty Too Daunting
 DB_FOTV_TriggerGrantsSpell((TRIGGER)S_JL_FOTV_Ronros_SanctifySpell_befd2603-4a9c-49f2-b703-5332052894d2, "QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SanctifyValor", "JL_FOTV_Target_SanctifyRonros");
-
 /////   SETTING FLAGS   /////
 ///No Monster Too Menacing, No Duty Too Daunting
 DB_FOTV_TriggerSpellSetsFlag("JL_FOTV_Target_SanctifyRonros", (FLAG)JL_FOTV_ValorSubclassUnlocked_30d714d5-35e8-458c-9a74-31dc9ccc512e);
 
 
-
 //////////   SET ON STAGE   //////////
-
 ///Apostle of the Holy Word
 DB_FOTV_SetOnStageLater(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
 DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Valorous_Githyanki_1053a85c-93b0-401d-a7a6-1e40979bc48e, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
 DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Mummy_18457071-fd04-4efc-85a9-2e0aa335eaa4, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
 DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Ghast_46577897-db51-4171-b069-3862d2fadd68, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
 DB_FOTV_SetOnStageLater(S_JL_FOTV_DankCrypt_Wraith_ad6ec7f0-9ef4-4511-b817-e1e7db511068, (FLAG)JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
-
 ///Seeker of Lost Lore
 DB_FOTV_SetOnStageLater(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c, (FLAG)JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
 DB_FOTV_SetOnStageLater(S_CHARACTER_JL_FOTV_RisenRoad_AdultRedRavener_54532d4a-9ea2-4381-b122-c7324bbf34c5, (FLAG)JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
 DB_FOTV_SetOnStageLater(S_JL_FOTV_RisenRoad_Tactics_HalfOrc_019a9841-994f-410b-9b2e-a25e7c174c54, (FLAG)JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
-
 ///Echoes of the Righteous
 DB_FOTV_SetOnStageLater(S_GEAR_JL_FOTV_OathkeeperPeriapt_a93af86d-7ccb-4d66-be1c-ea9712d35d9f, (FLAG)JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64);
 DB_FOTV_SetOnStageLater(S_LORE_JL_FOTV_IconoclastSpeculation_b2b68116-f9a3-472e-adbb-01e2d1434a27, (FLAG)JL_FOTV_ReadIconoclastMissive_0f5c11bc-ea59-43ba-b343-0ed21dd7ae64);
@@ -687,14 +625,14 @@ IsInCombat(S_JL_FOTV_TaarogusDantill_f9c25b00-4ae7-4681-b783-3a72ba413211, 1)
 AND
 DB_Players(_Player)
 THEN
-DB_FOTV_TaarogusCrpytCombatGuid(_CombatGuid);
+DB_FOTV_TaarogusCryptCombatGuid(_CombatGuid);
 RemoveStatus(_Player, "JL_FOTV_ARZIMYR_COOLDOWN");
 
 //If the combat ends and Taarogus is free of mind control, do special stuff
 IF
 CombatEnded(_CombatGuid)
 AND
-DB_FOTV_TaarogusCrpytCombatGuid(_CombatGuid)
+DB_FOTV_TaarogusCryptCombatGuid(_CombatGuid)
 AND
 GetFlag(JL_FOTV_TaarogusFreed_6f837c93-11be-4530-97e8-c7526431e1ec, NULL_00000000-0000-0000-0000-000000000000, 1)
 THEN

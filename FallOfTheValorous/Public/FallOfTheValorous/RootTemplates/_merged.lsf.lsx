@@ -2139,13 +2139,6 @@
 								</node>
 							</children>
 						</node>
-						<!--<node id="StatusList">
-							<children>
-								<node id="Status">
-									<attribute id="Object" type="FixedString" value="JL_FOTV_RONROS_AURA_TECH" />
-								</node>
-							</children>
-						</node>-->
 					</children>
 				</node>
 		<!-- WRITING -->
@@ -3203,6 +3196,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Longsword" />
 					<attribute id="ParentTemplateId" type="FixedString" value="e3b2adb6-7493-466e-9c65-4281fb74e83f" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Longsword" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3238,6 +3232,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Battleaxe" />
 					<attribute id="ParentTemplateId" type="FixedString" value="7faff867-9cb3-432b-aa27-8de281b7428e" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Battleaxe" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3273,6 +3268,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Dagger" />
 					<attribute id="ParentTemplateId" type="FixedString" value="c68026c8-8af9-4a05-b77a-246a01bafe61" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Dagger" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3308,6 +3304,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Glaive" />
 					<attribute id="ParentTemplateId" type="FixedString" value="bc1c2a84-27f5-46e4-b4b4-0f5ca534469c" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Glaive" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3343,6 +3340,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Morningstar" />
 					<attribute id="ParentTemplateId" type="FixedString" value="9e2c45b2-0411-42cc-bac6-6222c1334cb0" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Morningstar" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3378,6 +3376,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Scimitar" />
 					<attribute id="ParentTemplateId" type="FixedString" value="5193af64-48c1-406f-90bf-87f7f01b4684" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Scimitar" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3413,6 +3412,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Shortsword" />
 					<attribute id="ParentTemplateId" type="FixedString" value="0839fb15-24ab-4c3a-b168-413a47ed710a" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Shortsword" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3448,6 +3448,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Sickle" />
 					<attribute id="ParentTemplateId" type="FixedString" value="5b4b10cd-089f-4675-8392-5bfa6749d79c" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Sickle" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3483,6 +3484,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Spear" />
 					<attribute id="ParentTemplateId" type="FixedString" value="74d9758a-84e9-4244-9ae8-14acee76acb3" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Spear" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3518,6 +3520,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Trident" />
 					<attribute id="ParentTemplateId" type="FixedString" value="6cf827d6-5bae-480a-a1b4-d7fdb0e68801" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Trident" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3553,6 +3556,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Quarterstaff" />
 					<attribute id="ParentTemplateId" type="FixedString" value="e1e112b2-5465-4e37-acdc-372666ec1521" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Quarterstaff" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3588,6 +3592,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_Warhammer" />
 					<attribute id="ParentTemplateId" type="FixedString" value="e6b027a7-40bb-445e-b199-38b08d2b4832" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_Warhammer" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">
@@ -3623,6 +3628,7 @@
 					<attribute id="Name" type="LSString" value="JL_FOTV_WPN_Vindicator_WarPick" />
 					<attribute id="ParentTemplateId" type="FixedString" value="a5012da9-9cfa-467b-901a-61e33db55516" />
 					<attribute id="Stats" type="FixedString" value="JL_FOTV_WPN_Vindicator_WarPick" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9e153d1egfa31g4df8ga6dag0350cd2759f2" version="1" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<children>
 						<node id="StatusList">

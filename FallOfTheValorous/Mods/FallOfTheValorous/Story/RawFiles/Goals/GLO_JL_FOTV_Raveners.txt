@@ -10,16 +10,13 @@ INITSECTION
 DB_RavenerDesecrationDamageStatus("JL_FOTV_RAVENER_DESECRATION_DAMAGE");
 DB_RavenerDesecrationDamageStatus("JL_FOTV_RAVENER_DESECRATION_DAMAGE_2");
 
+//Removing Ravener's Desecration with radiant damage
+DB_FOTV_DealRadiantToDispel(S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, 10, "JL_FOTV_RAVENER_DESECRATION");
+DB_FOTV_DealRadiantToDispel(S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, 20, "JL_FOTV_RAVENER_DESECRATION_2");
+
 //DB to tie together raveners with dead inquisitors - ravener must be defeated before inquisitor can be targeted by Vaelythra holy word
 DB_FOTV_SoulConsumers((GUIDSTRING)S_CHARACTER_JL_FOTV_Apothecary_YoungRavener_6e0bfd73-330a-4d7d-b6e7-fd7dba65b0a4, (GUIDSTRING)S_JL_FOTV_ApothecaryInquisitor_Dead_b730b18d-fb32-4436-a073-86a10c934f92);
 DB_FOTV_SoulConsumers((GUIDSTRING)S_CHARACTER_JL_FOTV_Underdark_AdultRavener_296f4f1a-a8e9-48fb-bdc0-e9c5c997e809, (GUIDSTRING)S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882);
-
-//Adding to the DB that ties together books with the flags they set
-DB_BookFlags((ITEM)S_SCROLL_JL_FOTV_FrightfulPresenceDruidNotes_6ba2518a-99fc-4bfd-aa15-5ac548bdc979, (FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66);
-DB_BookFlags((ITEM)S_NOTE_JL_FOTV_NatureOfSoulWards_36053007-e66d-4d49-910f-81c396e3209c, (FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a);
-DB_BookFlags((ITEM)S_NOTE_JL_FOTV_NatureOfSoulWards_36053007-e66d-4d49-910f-81c396e3209c, (FLAG)JL_FOTV_SoulConsumptionRead_acd764a2-d55d-4e0c-9d04-fbdf9a7a6ffa);
-DB_BookFlags((ITEM)S_BOOK_JL_FOTV_UnholyCommunion_20e6a289-1c9a-4ee9-a7d0-8b1db7bbad51, (FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba);
-DB_BookFlags((ITEM)S_BOOK_JL_FOTV_MalevolenceCaseStudy_a474e74a-4567-4827-bac5-c69579514963, (FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af7b-42e0-8f45-ac3826a4afe1);
 
 //DB to tie together global flags with the passives they reveal on raveners
 DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af7b-42e0-8f45-ac3826a4afe1, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_Ravener_DegeneratingStrikes");
@@ -59,6 +56,16 @@ AND
 DB_RavenerDesecrationDamageStatus(_DesecrationStatus)
 THEN
 ForceTurnBasedMode((CHARACTER)_Object, 1);
+
+//Dispelling Ravener's Desecration
+IF
+AttackedBy(_Desecrated, _, _, "Radiant", _DamageAmount, _, _)
+AND
+DB_FOTV_DealRadiantToDispel(_Desecrated, _RequiredAmount, _EvilStatus)
+AND
+_DamageAmount >= _RequiredAmount
+THEN
+RemoveStatus(_Desecrated, _EvilStatus);
 
 //Reveal the relevant passive on all raveners when you read the appropriate lore document
 IF

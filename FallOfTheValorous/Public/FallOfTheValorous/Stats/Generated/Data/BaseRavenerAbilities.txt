@@ -17,8 +17,8 @@ data "Boosts" "Resistance(Fire,Immune);Resistance(Poison,Immune);Resistance(Psyc
 data "AuraRadius" "3"
 data "AuraStatuses" "TARGET:IF(Character() and not Dead()):ApplyStatus(JL_FOTV_RAVENER_DESECRATION_DAMAGE)"
 data "AuraFlags" "IgnoreItems"
-data "RemoveEvents" "OnStatusApplied;OnDamaged"
-data "RemoveConditions" "(IsStatusEvent(StatusEvent.OnStatusApplied) and HasStatus('CONSECRATION_AURA_BONUSES')) or (IsStatusEvent(StatusEvent.OnDamaged) and HasDamageDoneForType(DamageType.Radiant) and TotalDamageDoneGreaterThan(9))"
+data "RemoveEvents" "OnStatusApplied"
+data "RemoveConditions" "HasStatus('CONSECRATION_AURA_BONUSES')"
 data "StatusEffect" "f5af4ccb-a79b-4a93-b379-679dbcd9272f"
 
 new entry "JL_FOTV_RAVENER_DESECRATION_DAMAGE"
@@ -41,7 +41,6 @@ type "StatusData"
 data "StatusType" "BOOST"
 using "JL_FOTV_RAVENER_DESECRATION"
 data "AuraStatuses" "TARGET:IF(Character() and not Dead()):ApplyStatus(JL_FOTV_RAVENER_DESECRATION_DAMAGE_2)"
-data "RemoveConditions" "(IsStatusEvent(StatusEvent.OnStatusApplied) and HasStatus('CONSECRATION_AURA_BONUSES')) or (IsStatusEvent(StatusEvent.OnDamaged) and HasDamageDoneForType(DamageType.Radiant) and TotalDamageDoneGreaterThan(19))"
 data "StatusEffect" "6e9022c8-09c1-47f6-9e8a-774a27bfcd93"
 data "StatusPropertyFlags" "ApplyToDead"
 

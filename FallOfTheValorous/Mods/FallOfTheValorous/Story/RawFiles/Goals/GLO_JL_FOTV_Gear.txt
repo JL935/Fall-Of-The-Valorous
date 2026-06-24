@@ -34,150 +34,35 @@ DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d8");
 DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d10");
 DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d12");
 
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_BurstOfRadiance_d4_Unarmed");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_4");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_5");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_6");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_7");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_8");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_9");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_5");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_6");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_7");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_8");
-DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_9");
-
-//i really couldn't think of a better way to do this
-//i just like making myself suffer
-//just don't look at it please
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_3d383cbc-9ae3-4812-9fa3-07425626edfd);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_908bb5a6-473e-4d9f-b782-c5613ef1803a);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_7b431c6f-69d2-4f27-9b2a-d19c0a503a4f);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_78f2641a-eb66-4530-aec8-3509c0c000b3);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_7022d31f-a146-456b-b683-d47879159d7f);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_3ad8ef80-3b55-42bf-808c-9bde1cd95be7);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_4beeabf4-470d-46fa-a3d7-5f0806543946);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Scimitar_25cec03b-3ec0-40e3-9f83-0f92ddbadf30);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Glaive_534dd97b-f103-4ee1-87ad-a2aea6a24663);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Spear_ec717db5-1aa8-484d-89cf-8188ee499b4c);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Sickle_fe5167a4-8d18-4b9d-8602-e826d3aec808);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_b69712cc-4875-424b-b3bf-849afb4c4451);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T2_d75a3002-567f-4a56-bf3b-8574a6f86d21);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T2_be2e13d7-e586-4df1-9119-fee17e4cb198);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T2_71007c8f-e9d3-41c6-8604-323c951c5f50);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_T2_4fb38a07-32f4-4201-9392-7a0af8656dcd);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_T2_3fb31f39-42b4-49f7-bc47-e6a8e2ca1939);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_T2_38dba805-d78c-4443-838c-630f8da09a73);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_T2_cd27f4f3-69a0-43d1-9559-20c08edcbe8a);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Scimitar_T2_dab1ce92-976a-4f40-9832-cb814677107c);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Glaive_T2_3b72f767-2a39-4262-8e88-afd9eb59bd21);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Spear_T2_cdadf463-d7ca-4515-876a-d7c71d98c718);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Sickle_T2_0c40ef18-7021-4f87-840d-44555cfc3ff6);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_T2_c1eb5398-542c-47d0-8f56-62ef035cb481);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T3_dc02a423-bdff-4e9e-87d4-3cb086eb343e);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T3_d96151f5-578c-4d58-8c7c-653a5c4df4e0);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T3_6e6fdfbc-7e10-4db5-a3ec-6f30bb01db82);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_T3_8da3d733-32ac-4f27-97fa-dc18b8dd0608);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_T3_41d46039-526c-43c6-8fbe-7a813aa36084);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_T3_e2a3b4ff-18cd-4813-836b-6ed435f9f708);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_T3_2b79136b-ae5d-4731-ab83-c33ec3abfce7);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Scimitar_T3_66b7d2ad-30e8-4d5e-819e-990f86bbeff4);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Glaive_T3_3f4f2adf-fa41-4817-88c4-5c8372207d5e);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Spear_T3_909763c2-598a-427b-9c2f-79b84b6046a7);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Sickle_T3_75e25338-3d4b-41af-ba5a-7bb15ee12698);
-DB_GLO_FOTV_VindicatorWeapon((ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_T3_69aa5b72-970f-446b-83ff-2ab21ab9ab63);
-
-DB_GLO_FOTV_GodWeaponPair((TAG)BAHAMUT_fdccfc34-47e9-45ff-8755-511f91cb0e97, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_3d383cbc-9ae3-4812-9fa3-07425626edfd);
-DB_GLO_FOTV_GodWeaponPair((TAG)BANE_494bddcf-9325-4883-a937-817fbdf11161, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_908bb5a6-473e-4d9f-b782-c5613ef1803a);
-DB_GLO_FOTV_GodWeaponPair((TAG)BHAAL_f5e62c47-fb93-449f-9057-cb1a3c003aff, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_7b431c6f-69d2-4f27-9b2a-d19c0a503a4f);
-DB_GLO_FOTV_GodWeaponPair((TAG)CORELLONLARETHIAN_575b3b3c-4a5b-44d5-868f-0c6875f95568, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437);
-DB_GLO_FOTV_GodWeaponPair((TAG)EILISTRAEE_7cef166f-7766-4332-b9aa-d0d06fbca61e, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437);
-DB_GLO_FOTV_GodWeaponPair((TAG)GARLGLITTERGOLD_4a4130a1-c96a-43e8-91cc-1e3959e50053, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_78f2641a-eb66-4530-aec8-3509c0c000b3);
-DB_GLO_FOTV_GodWeaponPair((TAG)GRUUMSH_7ef33e10-bdb0-4268-833a-5da1e52aa26a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_7022d31f-a146-456b-b683-d47879159d7f);
-DB_GLO_FOTV_GodWeaponPair((TAG)HELM_c33d2cf7-1c8d-41ea-b4d9-4773778410f6, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437);
-DB_GLO_FOTV_GodWeaponPair((TAG)ILMATER_75586076-1aaf-4e4a-a516-93f1e6cd3472, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_908bb5a6-473e-4d9f-b782-c5613ef1803a);
-DB_GLO_FOTV_GodWeaponPair((TAG)KELEMVOR_23541bea-8177-496d-b58b-c29c4f13c22c, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437);
-DB_GLO_FOTV_GodWeaponPair((TAG)LADUGUER_92919073-a23b-490a-a316-a083f179f083, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_3ad8ef80-3b55-42bf-808c-9bde1cd95be7);
-DB_GLO_FOTV_GodWeaponPair((TAG)LATHANDER_7cae2d74-89f3-4312-9816-6ae6827f318c, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_4beeabf4-470d-46fa-a3d7-5f0806543946);
-DB_GLO_FOTV_GodWeaponPair((TAG)LOLTH_899a6ce7-731e-473b-b87b-5d0cf383abff, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_7b431c6f-69d2-4f27-9b2a-d19c0a503a4f);
-DB_GLO_FOTV_GodWeaponPair((TAG)MIELIKKI_f21f419c-bbf8-42df-ae89-f1de72e90cf5, (ITEMROOT)JL_FOTV_WPN_Vindicator_Scimitar_25cec03b-3ec0-40e3-9f83-0f92ddbadf30);
-DB_GLO_FOTV_GodWeaponPair((TAG)MORADIN_cfad7ead-098a-4944-84a6-d0570a98984d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_3ad8ef80-3b55-42bf-808c-9bde1cd95be7);
-DB_GLO_FOTV_GodWeaponPair((TAG)MYRKUL_f1fc9c3f-0db9-4d19-adb4-18b1174a6b9d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Glaive_534dd97b-f103-4ee1-87ad-a2aea6a24663);
-DB_GLO_FOTV_GodWeaponPair((TAG)MYSTRA_e79d9eca-e8ac-486a-bd21-cf42ef1133af, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_7b431c6f-69d2-4f27-9b2a-d19c0a503a4f);
-DB_GLO_FOTV_GodWeaponPair((TAG)OGHMA_7b019d89-9b7e-4c2a-a6b4-ffb64f25f734, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437);
-DB_GLO_FOTV_GodWeaponPair((TAG)RAVENQUEEN_33dc5cf2-f2d6-4bb8-b64e-519f5d5ca308, (ITEMROOT)JL_FOTV_WPN_Vindicator_Spear_ec717db5-1aa8-484d-89cf-8188ee499b4c);
-DB_GLO_FOTV_GodWeaponPair((TAG)SELUNE_4533d292-5b1f-43c7-ad44-6bc7db1000ca, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_4beeabf4-470d-46fa-a3d7-5f0806543946);
-DB_GLO_FOTV_GodWeaponPair((TAG)SHAR_486e4a27-e6f9-40a5-9dd1-108a1d0f60eb, (ITEMROOT)JL_FOTV_WPN_Vindicator_Sickle_fe5167a4-8d18-4b9d-8602-e826d3aec808);
-DB_GLO_FOTV_GodWeaponPair((TAG)TALOS_c8650f16-4610-4648-95d1-18a44a1188b7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_7022d31f-a146-456b-b683-d47879159d7f);
-DB_GLO_FOTV_GodWeaponPair((TAG)TEMPUS_f6b88f18-328f-41c3-a579-e8a9b99c410b, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_78f2641a-eb66-4530-aec8-3509c0c000b3);
-DB_GLO_FOTV_GodWeaponPair((TAG)TIAMAT_328683c2-8785-4b71-b128-7cec90df0abe, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_3d383cbc-9ae3-4812-9fa3-07425626edfd);
-DB_GLO_FOTV_GodWeaponPair((TAG)TYMORA_c0b03fe2-6495-4340-a0c8-ed6ccf206bcc, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_7b431c6f-69d2-4f27-9b2a-d19c0a503a4f);
-DB_GLO_FOTV_GodWeaponPair((TAG)TYR_aa9a53ed-afad-4a6d-824c-ff0125986eb7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437);
-DB_GLO_FOTV_GodWeaponPair((TAG)VLAAKITH_d84b4081-6800-45f9-b03f-16dba592c75d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437);
-DB_GLO_FOTV_GodWeaponPair((TAG)YONDALLA_4335093d-2fa7-4775-a4cc-bc17b5d16e5a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_b69712cc-4875-424b-b3bf-849afb4c4451);
-
-DB_GLO_FOTV_GodWeaponPairT2((TAG)BAHAMUT_fdccfc34-47e9-45ff-8755-511f91cb0e97, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T2_d75a3002-567f-4a56-bf3b-8574a6f86d21);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)BANE_494bddcf-9325-4883-a937-817fbdf11161, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T2_be2e13d7-e586-4df1-9119-fee17e4cb198);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)BHAAL_f5e62c47-fb93-449f-9057-cb1a3c003aff, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T2_71007c8f-e9d3-41c6-8604-323c951c5f50);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)CORELLONLARETHIAN_575b3b3c-4a5b-44d5-868f-0c6875f95568, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)EILISTRAEE_7cef166f-7766-4332-b9aa-d0d06fbca61e, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)GARLGLITTERGOLD_4a4130a1-c96a-43e8-91cc-1e3959e50053, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_T2_4fb38a07-32f4-4201-9392-7a0af8656dcd);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)GRUUMSH_7ef33e10-bdb0-4268-833a-5da1e52aa26a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_T2_3fb31f39-42b4-49f7-bc47-e6a8e2ca1939);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)HELM_c33d2cf7-1c8d-41ea-b4d9-4773778410f6, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)ILMATER_75586076-1aaf-4e4a-a516-93f1e6cd3472, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T2_be2e13d7-e586-4df1-9119-fee17e4cb198);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)KELEMVOR_23541bea-8177-496d-b58b-c29c4f13c22c, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)LADUGUER_92919073-a23b-490a-a316-a083f179f083, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_T2_38dba805-d78c-4443-838c-630f8da09a73);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)LATHANDER_7cae2d74-89f3-4312-9816-6ae6827f318c, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_T2_cd27f4f3-69a0-43d1-9559-20c08edcbe8a);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)LOLTH_899a6ce7-731e-473b-b87b-5d0cf383abff, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T2_71007c8f-e9d3-41c6-8604-323c951c5f50);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)MIELIKKI_f21f419c-bbf8-42df-ae89-f1de72e90cf5, (ITEMROOT)JL_FOTV_WPN_Vindicator_Scimitar_T2_dab1ce92-976a-4f40-9832-cb814677107c);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)MORADIN_cfad7ead-098a-4944-84a6-d0570a98984d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_T2_38dba805-d78c-4443-838c-630f8da09a73);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)MYRKUL_f1fc9c3f-0db9-4d19-adb4-18b1174a6b9d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Glaive_T2_3b72f767-2a39-4262-8e88-afd9eb59bd21);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)MYSTRA_e79d9eca-e8ac-486a-bd21-cf42ef1133af, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T2_71007c8f-e9d3-41c6-8604-323c951c5f50);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)OGHMA_7b019d89-9b7e-4c2a-a6b4-ffb64f25f734, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)RAVENQUEEN_33dc5cf2-f2d6-4bb8-b64e-519f5d5ca308, (ITEMROOT)JL_FOTV_WPN_Vindicator_Spear_T2_cdadf463-d7ca-4515-876a-d7c71d98c718);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)SELUNE_4533d292-5b1f-43c7-ad44-6bc7db1000ca, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_T2_cd27f4f3-69a0-43d1-9559-20c08edcbe8a);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)SHAR_486e4a27-e6f9-40a5-9dd1-108a1d0f60eb, (ITEMROOT)JL_FOTV_WPN_Vindicator_Sickle_T2_0c40ef18-7021-4f87-840d-44555cfc3ff6);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)TALOS_c8650f16-4610-4648-95d1-18a44a1188b7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_T2_3fb31f39-42b4-49f7-bc47-e6a8e2ca1939);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)TEMPUS_f6b88f18-328f-41c3-a579-e8a9b99c410b, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_T2_4fb38a07-32f4-4201-9392-7a0af8656dcd);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)TIAMAT_328683c2-8785-4b71-b128-7cec90df0abe, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T2_d75a3002-567f-4a56-bf3b-8574a6f86d21);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)TYMORA_c0b03fe2-6495-4340-a0c8-ed6ccf206bcc, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T2_71007c8f-e9d3-41c6-8604-323c951c5f50);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)TYR_aa9a53ed-afad-4a6d-824c-ff0125986eb7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)VLAAKITH_d84b4081-6800-45f9-b03f-16dba592c75d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8);
-DB_GLO_FOTV_GodWeaponPairT2((TAG)YONDALLA_4335093d-2fa7-4775-a4cc-bc17b5d16e5a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_T2_c1eb5398-542c-47d0-8f56-62ef035cb481);
-
-DB_GLO_FOTV_GodWeaponPairT3((TAG)BAHAMUT_fdccfc34-47e9-45ff-8755-511f91cb0e97, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T3_dc02a423-bdff-4e9e-87d4-3cb086eb343e);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)BANE_494bddcf-9325-4883-a937-817fbdf11161, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T3_d96151f5-578c-4d58-8c7c-653a5c4df4e0);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)BHAAL_f5e62c47-fb93-449f-9057-cb1a3c003aff, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T3_6e6fdfbc-7e10-4db5-a3ec-6f30bb01db82);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)CORELLONLARETHIAN_575b3b3c-4a5b-44d5-868f-0c6875f95568, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)EILISTRAEE_7cef166f-7766-4332-b9aa-d0d06fbca61e, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)GARLGLITTERGOLD_4a4130a1-c96a-43e8-91cc-1e3959e50053, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_T3_8da3d733-32ac-4f27-97fa-dc18b8dd0608);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)GRUUMSH_7ef33e10-bdb0-4268-833a-5da1e52aa26a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_T3_41d46039-526c-43c6-8fbe-7a813aa36084);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)HELM_c33d2cf7-1c8d-41ea-b4d9-4773778410f6, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)ILMATER_75586076-1aaf-4e4a-a516-93f1e6cd3472, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T3_d96151f5-578c-4d58-8c7c-653a5c4df4e0);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)KELEMVOR_23541bea-8177-496d-b58b-c29c4f13c22c, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)LADUGUER_92919073-a23b-490a-a316-a083f179f083, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_T3_e2a3b4ff-18cd-4813-836b-6ed435f9f708);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)LATHANDER_7cae2d74-89f3-4312-9816-6ae6827f318c, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_T3_2b79136b-ae5d-4731-ab83-c33ec3abfce7);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)LOLTH_899a6ce7-731e-473b-b87b-5d0cf383abff, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T3_6e6fdfbc-7e10-4db5-a3ec-6f30bb01db82);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)MIELIKKI_f21f419c-bbf8-42df-ae89-f1de72e90cf5, (ITEMROOT)JL_FOTV_WPN_Vindicator_Scimitar_T3_66b7d2ad-30e8-4d5e-819e-990f86bbeff4);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)MORADIN_cfad7ead-098a-4944-84a6-d0570a98984d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_T3_e2a3b4ff-18cd-4813-836b-6ed435f9f708);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)MYRKUL_f1fc9c3f-0db9-4d19-adb4-18b1174a6b9d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Glaive_T3_3f4f2adf-fa41-4817-88c4-5c8372207d5e);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)MYSTRA_e79d9eca-e8ac-486a-bd21-cf42ef1133af, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T3_6e6fdfbc-7e10-4db5-a3ec-6f30bb01db82);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)OGHMA_7b019d89-9b7e-4c2a-a6b4-ffb64f25f734, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)RAVENQUEEN_33dc5cf2-f2d6-4bb8-b64e-519f5d5ca308, (ITEMROOT)JL_FOTV_WPN_Vindicator_Spear_T3_909763c2-598a-427b-9c2f-79b84b6046a7);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)SELUNE_4533d292-5b1f-43c7-ad44-6bc7db1000ca, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_T3_2b79136b-ae5d-4731-ab83-c33ec3abfce7);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)SHAR_486e4a27-e6f9-40a5-9dd1-108a1d0f60eb, (ITEMROOT)JL_FOTV_WPN_Vindicator_Sickle_T3_75e25338-3d4b-41af-ba5a-7bb15ee12698);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)TALOS_c8650f16-4610-4648-95d1-18a44a1188b7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_T3_41d46039-526c-43c6-8fbe-7a813aa36084);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)TEMPUS_f6b88f18-328f-41c3-a579-e8a9b99c410b, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_T3_8da3d733-32ac-4f27-97fa-dc18b8dd0608);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)TIAMAT_328683c2-8785-4b71-b128-7cec90df0abe, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T3_dc02a423-bdff-4e9e-87d4-3cb086eb343e);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)TYMORA_c0b03fe2-6495-4340-a0c8-ed6ccf206bcc, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T3_6e6fdfbc-7e10-4db5-a3ec-6f30bb01db82);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)TYR_aa9a53ed-afad-4a6d-824c-ff0125986eb7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)VLAAKITH_d84b4081-6800-45f9-b03f-16dba592c75d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
-DB_GLO_FOTV_GodWeaponPairT3((TAG)YONDALLA_4335093d-2fa7-4775-a4cc-bc17b5d16e5a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_T3_69aa5b72-970f-446b-83ff-2ab21ab9ab63);
+//my modder license should be revoked for how shit ass this code was before i reworked it
+DB_GLO_FOTV_GodWeaponPair((TAG)BAHAMUT_fdccfc34-47e9-45ff-8755-511f91cb0e97, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_3d383cbc-9ae3-4812-9fa3-07425626edfd, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T2_d75a3002-567f-4a56-bf3b-8574a6f86d21, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T3_dc02a423-bdff-4e9e-87d4-3cb086eb343e);
+DB_GLO_FOTV_GodWeaponPair((TAG)BANE_494bddcf-9325-4883-a937-817fbdf11161, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_908bb5a6-473e-4d9f-b782-c5613ef1803a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T2_be2e13d7-e586-4df1-9119-fee17e4cb198, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T3_d96151f5-578c-4d58-8c7c-653a5c4df4e0);
+DB_GLO_FOTV_GodWeaponPair((TAG)BHAAL_f5e62c47-fb93-449f-9057-cb1a3c003aff, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_7b431c6f-69d2-4f27-9b2a-d19c0a503a4f, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T2_71007c8f-e9d3-41c6-8604-323c951c5f50, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T3_6e6fdfbc-7e10-4db5-a3ec-6f30bb01db82);
+DB_GLO_FOTV_GodWeaponPair((TAG)CORELLONLARETHIAN_575b3b3c-4a5b-44d5-868f-0c6875f95568, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
+DB_GLO_FOTV_GodWeaponPair((TAG)EILISTRAEE_7cef166f-7766-4332-b9aa-d0d06fbca61e, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
+DB_GLO_FOTV_GodWeaponPair((TAG)GARLGLITTERGOLD_4a4130a1-c96a-43e8-91cc-1e3959e50053, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_78f2641a-eb66-4530-aec8-3509c0c000b3, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_T2_4fb38a07-32f4-4201-9392-7a0af8656dcd, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_T3_8da3d733-32ac-4f27-97fa-dc18b8dd0608);
+DB_GLO_FOTV_GodWeaponPair((TAG)GRUUMSH_7ef33e10-bdb0-4268-833a-5da1e52aa26a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_7022d31f-a146-456b-b683-d47879159d7f, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_T2_3fb31f39-42b4-49f7-bc47-e6a8e2ca1939, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_T3_41d46039-526c-43c6-8fbe-7a813aa36084);
+DB_GLO_FOTV_GodWeaponPair((TAG)HELM_c33d2cf7-1c8d-41ea-b4d9-4773778410f6, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
+DB_GLO_FOTV_GodWeaponPair((TAG)ILMATER_75586076-1aaf-4e4a-a516-93f1e6cd3472, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_908bb5a6-473e-4d9f-b782-c5613ef1803a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T2_be2e13d7-e586-4df1-9119-fee17e4cb198, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T3_d96151f5-578c-4d58-8c7c-653a5c4df4e0);
+DB_GLO_FOTV_GodWeaponPair((TAG)KELEMVOR_23541bea-8177-496d-b58b-c29c4f13c22c, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
+DB_GLO_FOTV_GodWeaponPair((TAG)LADUGUER_92919073-a23b-490a-a316-a083f179f083, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_3ad8ef80-3b55-42bf-808c-9bde1cd95be7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_T2_38dba805-d78c-4443-838c-630f8da09a73, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_T3_e2a3b4ff-18cd-4813-836b-6ed435f9f708);
+DB_GLO_FOTV_GodWeaponPair((TAG)LATHANDER_7cae2d74-89f3-4312-9816-6ae6827f318c, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_4beeabf4-470d-46fa-a3d7-5f0806543946, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_T2_cd27f4f3-69a0-43d1-9559-20c08edcbe8a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_T3_2b79136b-ae5d-4731-ab83-c33ec3abfce7);
+DB_GLO_FOTV_GodWeaponPair((TAG)LOLTH_899a6ce7-731e-473b-b87b-5d0cf383abff, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_7b431c6f-69d2-4f27-9b2a-d19c0a503a4f, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T2_71007c8f-e9d3-41c6-8604-323c951c5f50, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T3_6e6fdfbc-7e10-4db5-a3ec-6f30bb01db82);
+DB_GLO_FOTV_GodWeaponPair((TAG)MIELIKKI_f21f419c-bbf8-42df-ae89-f1de72e90cf5, (ITEMROOT)JL_FOTV_WPN_Vindicator_Scimitar_25cec03b-3ec0-40e3-9f83-0f92ddbadf30, (ITEMROOT)JL_FOTV_WPN_Vindicator_Scimitar_T2_dab1ce92-976a-4f40-9832-cb814677107c, (ITEMROOT)JL_FOTV_WPN_Vindicator_Scimitar_T3_66b7d2ad-30e8-4d5e-819e-990f86bbeff4);
+DB_GLO_FOTV_GodWeaponPair((TAG)MORADIN_cfad7ead-098a-4944-84a6-d0570a98984d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_3ad8ef80-3b55-42bf-808c-9bde1cd95be7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_T2_38dba805-d78c-4443-838c-630f8da09a73, (ITEMROOT)JL_FOTV_WPN_Vindicator_Warhammer_T3_e2a3b4ff-18cd-4813-836b-6ed435f9f708);
+DB_GLO_FOTV_GodWeaponPair((TAG)MYRKUL_f1fc9c3f-0db9-4d19-adb4-18b1174a6b9d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Glaive_534dd97b-f103-4ee1-87ad-a2aea6a24663, (ITEMROOT)JL_FOTV_WPN_Vindicator_Glaive_T2_3b72f767-2a39-4262-8e88-afd9eb59bd21, (ITEMROOT)JL_FOTV_WPN_Vindicator_Glaive_T3_3f4f2adf-fa41-4817-88c4-5c8372207d5e);
+DB_GLO_FOTV_GodWeaponPair((TAG)MYSTRA_e79d9eca-e8ac-486a-bd21-cf42ef1133af, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_7b431c6f-69d2-4f27-9b2a-d19c0a503a4f, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T2_71007c8f-e9d3-41c6-8604-323c951c5f50, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T3_6e6fdfbc-7e10-4db5-a3ec-6f30bb01db82);
+DB_GLO_FOTV_GodWeaponPair((TAG)OGHMA_7b019d89-9b7e-4c2a-a6b4-ffb64f25f734, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
+DB_GLO_FOTV_GodWeaponPair((TAG)RAVENQUEEN_33dc5cf2-f2d6-4bb8-b64e-519f5d5ca308, (ITEMROOT)JL_FOTV_WPN_Vindicator_Spear_ec717db5-1aa8-484d-89cf-8188ee499b4c, (ITEMROOT)JL_FOTV_WPN_Vindicator_Spear_T2_cdadf463-d7ca-4515-876a-d7c71d98c718, (ITEMROOT)JL_FOTV_WPN_Vindicator_Spear_T3_909763c2-598a-427b-9c2f-79b84b6046a7);
+DB_GLO_FOTV_GodWeaponPair((TAG)SELUNE_4533d292-5b1f-43c7-ad44-6bc7db1000ca, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_4beeabf4-470d-46fa-a3d7-5f0806543946, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_T2_cd27f4f3-69a0-43d1-9559-20c08edcbe8a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Morningstar_T3_2b79136b-ae5d-4731-ab83-c33ec3abfce7);
+DB_GLO_FOTV_GodWeaponPair((TAG)SHAR_486e4a27-e6f9-40a5-9dd1-108a1d0f60eb, (ITEMROOT)JL_FOTV_WPN_Vindicator_Sickle_fe5167a4-8d18-4b9d-8602-e826d3aec808, (ITEMROOT)JL_FOTV_WPN_Vindicator_Sickle_T2_0c40ef18-7021-4f87-840d-44555cfc3ff6, (ITEMROOT)JL_FOTV_WPN_Vindicator_Sickle_T3_75e25338-3d4b-41af-ba5a-7bb15ee12698);
+DB_GLO_FOTV_GodWeaponPair((TAG)TALOS_c8650f16-4610-4648-95d1-18a44a1188b7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_7022d31f-a146-456b-b683-d47879159d7f, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_T2_3fb31f39-42b4-49f7-bc47-e6a8e2ca1939, (ITEMROOT)JL_FOTV_WPN_Vindicator_Trident_T3_41d46039-526c-43c6-8fbe-7a813aa36084);
+DB_GLO_FOTV_GodWeaponPair((TAG)TEMPUS_f6b88f18-328f-41c3-a579-e8a9b99c410b, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_78f2641a-eb66-4530-aec8-3509c0c000b3, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_T2_4fb38a07-32f4-4201-9392-7a0af8656dcd, (ITEMROOT)JL_FOTV_WPN_Vindicator_Battleaxe_T3_8da3d733-32ac-4f27-97fa-dc18b8dd0608);
+DB_GLO_FOTV_GodWeaponPair((TAG)TIAMAT_328683c2-8785-4b71-b128-7cec90df0abe, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_3d383cbc-9ae3-4812-9fa3-07425626edfd, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T2_d75a3002-567f-4a56-bf3b-8574a6f86d21, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T3_dc02a423-bdff-4e9e-87d4-3cb086eb343e);
+DB_GLO_FOTV_GodWeaponPair((TAG)TYMORA_c0b03fe2-6495-4340-a0c8-ed6ccf206bcc, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_7b431c6f-69d2-4f27-9b2a-d19c0a503a4f, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T2_71007c8f-e9d3-41c6-8604-323c951c5f50, (ITEMROOT)JL_FOTV_WPN_Vindicator_Dagger_T3_6e6fdfbc-7e10-4db5-a3ec-6f30bb01db82);
+DB_GLO_FOTV_GodWeaponPair((TAG)TYR_aa9a53ed-afad-4a6d-824c-ff0125986eb7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
+DB_GLO_FOTV_GodWeaponPair((TAG)VLAAKITH_d84b4081-6800-45f9-b03f-16dba592c75d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
+DB_GLO_FOTV_GodWeaponPair((TAG)YONDALLA_4335093d-2fa7-4775-a4cc-bc17b5d16e5a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_b69712cc-4875-424b-b3bf-849afb4c4451, (ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_T2_c1eb5398-542c-47d0-8f56-62ef035cb481, (ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_T3_69aa5b72-970f-446b-83ff-2ab21ab9ab63);
 
 KBSECTION
 //REGION Upgrading
@@ -231,7 +116,6 @@ DB_FOTV_OldGearWasEquipped((ITEM)_ValorItem)
 THEN
 Equip((CHARACTER)_ValorCharacter, (ITEM)_ValorItemUpgrade);
 NOT DB_FOTV_OldGearWasEquipped((ITEM)_ValorItem);
-NOT DB_GLO_FOTV_ItemUpgradeFlagSetPair(_Flag, _ValorDowngrade, _ValorItemTemplateUpgrade);
 
 //If the item to be upgraded wasn't equipped but in someone's inventory, destroy it and add the new one to their inventory
 PROC
@@ -247,7 +131,6 @@ ItemIsInUserInventory(_ValorItem, _ValorCharacter, 0, 1)
 THEN
 RequestDelete(_ValorItem);
 TemplateAddTo(_ValorItemTemplateUpgrade, _ValorCharacter, 1, 1);
-NOT DB_GLO_FOTV_ItemUpgradeFlagSetPair(_Flag, _ValorItemTemplate, _ValorItemTemplateUpgrade);
 
 //If the item is in no one's inventory and has met the requirements of upgrading, destroy old upon adding to inventory and replace with new
 IF
@@ -259,8 +142,213 @@ GetFlag(_Flag, NULL_00000000-0000-0000-0000-000000000000, 1)
 THEN
 RequestDelete(_ValorItem);
 TemplateAddTo(_ValorItemTemplateUpgrade, _ValorCharacter, 1, 1);
-NOT DB_GLO_FOTV_ItemUpgradeFlagSetPair(_Flag, _ValorItemTemplate, _ValorItemTemplateUpgrade);
 //END_REGION
+
+//REGION Weapon swapping
+//Weapon was added to your inventory but doesn't match your deity's favored (should cover picking up directly and transferring between party members)
+IF
+TemplateAddedTo((ITEMROOT)_ResplendenceTemplate, (ITEM)_ResplendenceItem, (CHARACTER)_Vindicator, _)
+AND
+HasActiveStatus((ITEM)_ResplendenceItem, "JL_FOTV_VINDICATOR_RESPLENDENCE_TECHNICAL", 1) //is the item you just gained even a resplendent weapon - this works because all resplendent weapons have this status
+AND
+QRY_FOTV_GetResplendentWeaponAndTier((CHARACTER)_Vindicator) //if it is, figure out what the correct weapon and tier should be based on character's deity
+AND
+DB_FOTV_QRYRTN_TieredWeaponIs((ITEMROOT)_TieredWeapon) //this returns the item template of the weapon it should be - type and tier
+AND
+_TieredWeapon != _ResplendenceTemplate //weapon that was just obtained isn't what it should be
+THEN
+RequestDelete(_ResplendenceItem); //get rid of the incorrect weapon
+TemplateAddTo(_TieredWeapon, _Vindicator, 1, 1); //add the correct weapon template to the character
+
+//You just respecced deity, you faithless scum
+IF
+TagSet((CHARACTER)_Vindicator, (TAG)_DeityTag)
+AND
+DB_GLO_FOTV_GodWeaponPair(_DeityTag, _, _, _)
+THEN
+RealtimeObjectTimerCancel(_Vindicator, "JL_FOTV_VindicatorRespecCheck");
+RealtimeObjectTimerLaunch(_Vindicator, "JL_FOTV_VindicatorRespecCheck", 500);
+
+//Post-deity respec, you have a resplendent weapon in your inventory that needs swapping
+IF
+ObjectTimerFinished((CHARACTER)_Vindicator, "JL_FOTV_VindicatorRespecCheck")
+AND
+QRY_FOTV_HasResplendenceInInventory((CHARACTER)_Vindicator) //check if the character has a resplendent weapon in their inventory
+AND
+DB_FOTV_QRYRTN_ResplendentInventoryIs(_ResplendenceTemplate) //return the resplendent template in the character's inventory if it exists
+AND
+GetEquippedWeapon(_Vindicator, _VindicatorEquipped) //figure out what weapon the vindicator currently has equipped
+AND
+GetTemplate(_VindicatorEquipped, (ITEMROOT)_VindicatorTemplate) //get the equipped weapon's template
+AND
+NOT QRY_FOTV_IsWeaponResplendent((ITEMROOT)_VindicatorTemplate) //check to make sure the equipped weapon isn't resplendent cuz there's a separate script for that
+AND
+QRY_FOTV_GetResplendentWeaponAndTier((CHARACTER)_Vindicator) //retrieve what the weapon *should* be with the new deity
+AND
+DB_FOTV_QRYRTN_TieredWeaponIs((ITEMROOT)_TieredWeapon) //return the weapon based on deity and tier
+AND
+_TieredWeapon != _ResplendenceTemplate //check if the previously held weapon matches what it should be
+AND
+GetItemByTemplateInInventory(_ResplendenceTemplate, _Vindicator, _ResplendenceItem) //get the ITEM of the existing (and wrong) resplendence template
+THEN
+RequestDelete(_ResplendenceItem); //get rid of the incorrect weapon
+TemplateAddTo(_TieredWeapon, _Vindicator, 1, 1); //add the correct weapon template to the character
+
+//Post-deity respec, you have a resplendent weapon equipped that needs swapping
+IF
+ObjectTimerFinished((CHARACTER)_Vindicator, "JL_FOTV_VindicatorRespecCheck")
+AND
+GetEquippedWeapon(_Vindicator, _VindicatorEquipped) //figure out what weapon the vindicator currently has equipped
+AND
+GetTemplate(_VindicatorEquipped, (ITEMROOT)_VindicatorTemplate) //get the equipped weapon's template
+AND
+QRY_FOTV_IsWeaponResplendent((ITEMROOT)_VindicatorTemplate) //check if the equipped weapon is resplendent
+AND
+QRY_FOTV_GetResplendentWeaponAndTier((CHARACTER)_Vindicator) //retrieve what the weapon *should* be with the new deity
+AND
+DB_FOTV_QRYRTN_TieredWeaponIs((ITEMROOT)_TieredWeapon) //return the weapon based on deity and tier
+AND
+_TieredWeapon != _VindicatorTemplate //check if the previously held weapon matches what it should be
+THEN
+RequestDelete(_VindicatorEquipped); //get rid of the incorrect weapon
+DB_FOTV_ResplendentToBeEquipped(_TieredWeapon); //extra check for the following rule so not all resplendent weapons are immediately equipped
+TemplateAddTo(_TieredWeapon, _Vindicator, 1, 1); //add the correct weapon template to the character
+
+//Followup rule to equip the new weapon
+IF
+TemplateAddedTo((ITEMROOT)_ResplendenceTemplate, (ITEM)_ResplendenceItem, (CHARACTER)_Vindicator, _)
+AND
+DB_FOTV_ResplendentToBeEquipped(_ResplendenceTemplate)
+THEN
+Equip((CHARACTER)_Vindicator, (ITEM)_ResplendenceItem);
+NOT DB_FOTV_ResplendentToBeEquipped(_ResplendenceTemplate);
+
+//is the weapon you just gained a tier 1 weapon
+QRY
+QRY_FOTV_IsWeaponResplendent((ITEMROOT)_ResplendenceTemplate)
+AND
+DB_GLO_FOTV_GodWeaponPair(_, _TierOneWeapon, _, _)
+AND
+_ResplendenceTemplate == _TierOneWeapon
+THEN
+DB_NOOP(1);
+
+//is the weapon you just gained a tier 2 weapon
+QRY
+QRY_FOTV_IsWeaponResplendent((ITEMROOT)_ResplendenceTemplate)
+AND
+DB_GLO_FOTV_GodWeaponPair(_, _, _TierTwoWeapon, _)
+AND
+_ResplendenceTemplate == _TierTwoWeapon
+THEN
+DB_NOOP(1);
+
+//is the weapon you just gained a tier 3 weapon
+QRY
+QRY_FOTV_IsWeaponResplendent((ITEMROOT)_ResplendenceTemplate)
+AND
+DB_GLO_FOTV_GodWeaponPair(_, _, _, _TierThreeWeapon)
+AND
+_ResplendenceTemplate == _TierThreeWeapon
+THEN
+DB_NOOP(1);
+
+//clear any existing entry in the QRYRTN DB
+QRY
+QRY_FOTV_HasResplendenceInInventory((CHARACTER)_Vindicator)
+AND
+DB_FOTV_QRYRTN_ResplendentInventoryIs(_TieredWeapon)
+THEN
+NOT DB_FOTV_QRYRTN_ResplendentInventoryIs(_TieredWeapon);
+
+//character has a t1 resplendent weapon in their inventory
+QRY
+QRY_FOTV_HasResplendenceInInventory((CHARACTER)_Vindicator)
+AND
+DB_GLO_FOTV_GodWeaponPair(_, _TierOneWeapon, _, _)
+AND
+TemplateIsInInventory(_TierOneWeapon, _Vindicator, 1)
+THEN
+DB_FOTV_QRYRTN_ResplendentInventoryIs(_TierOneWeapon);
+
+//character has a t2 resplendent weapon in their inventory
+QRY
+QRY_FOTV_HasResplendenceInInventory((CHARACTER)_Vindicator)
+AND
+DB_GLO_FOTV_GodWeaponPair(_, _, _TierTwoWeapon, _)
+AND
+TemplateIsInInventory(_TierTwoWeapon, _Vindicator, 1)
+THEN
+DB_FOTV_QRYRTN_ResplendentInventoryIs(_TierTwoWeapon);
+
+//character has a t3 resplendent weapon in their inventory
+QRY
+QRY_FOTV_HasResplendenceInInventory((CHARACTER)_Vindicator)
+AND
+DB_GLO_FOTV_GodWeaponPair(_, _, _, _TierThreeWeapon)
+AND
+TemplateIsInInventory(_TierThreeWeapon, _Vindicator, 1)
+THEN
+DB_FOTV_QRYRTN_ResplendentInventoryIs(_TierThreeWeapon);
+
+//clear any existing entry in the QRYRTN DB
+QRY
+QRY_FOTV_GetResplendentWeaponAndTier((CHARACTER)_Vindicator)
+AND
+DB_FOTV_QRYRTN_TieredWeaponIs(_TieredWeapon)
+THEN
+NOT DB_FOTV_QRYRTN_TieredWeaponIs(_TieredWeapon);
+
+QRY
+QRY_FOTV_GetResplendentWeaponAndTier((CHARACTER)_Vindicator) //is the weapon supposed to be tier 1
+AND
+GetFlag(JL_FOTV_TestFlag_a05a5465-2ae9-4bd2-911c-77adba312d5d, NULL_00000000-0000-0000-0000-000000000000, 0) //the t1 > t2 flag isn't set
+AND
+GetFlag(JL_FOTV_TestFlag2_24233b9b-9bf5-43ce-9099-ee3fb572b09a, NULL_00000000-0000-0000-0000-000000000000, 0) //the t2 > t3 flag isn't set
+AND
+DB_GLO_FOTV_GodWeaponPair(_DeityTag, _TierOneWeapon, _, _) //therefore the weapon is t1
+AND
+IsTagged(_Vindicator, _DeityTag, 1) //check to make sure the character has a deity
+THEN
+DB_FOTV_QRYRTN_TieredWeaponIs(_TierOneWeapon); //return the tier 1 weapon of that deity
+
+QRY
+QRY_FOTV_GetResplendentWeaponAndTier((CHARACTER)_Vindicator) //is the weapon supposed to be tier 2
+AND
+GetFlag(JL_FOTV_TestFlag_a05a5465-2ae9-4bd2-911c-77adba312d5d, NULL_00000000-0000-0000-0000-000000000000, 1) //the t1 > t2 flag is set
+AND
+GetFlag(JL_FOTV_TestFlag2_24233b9b-9bf5-43ce-9099-ee3fb572b09a, NULL_00000000-0000-0000-0000-000000000000, 0) //the t2 > t3 flag isn't set
+AND
+DB_GLO_FOTV_GodWeaponPair(_DeityTag, _, _TierTwoWeapon, _) //therefore the weapon is t2
+AND
+IsTagged(_Vindicator, _DeityTag, 1) //check to make sure the character has a deity
+THEN
+DB_FOTV_QRYRTN_TieredWeaponIs(_TierTwoWeapon); //return the tier 2 weapon of that deity
+
+QRY
+QRY_FOTV_GetResplendentWeaponAndTier((CHARACTER)_Vindicator) //is the weapon supposed to be tier 3
+AND
+GetFlag(JL_FOTV_TestFlag_a05a5465-2ae9-4bd2-911c-77adba312d5d, NULL_00000000-0000-0000-0000-000000000000, 1) //the t1 > t2 flag is set
+AND
+GetFlag(JL_FOTV_TestFlag2_24233b9b-9bf5-43ce-9099-ee3fb572b09a, NULL_00000000-0000-0000-0000-000000000000, 1) //the t2 > t3 flag is set
+AND
+DB_GLO_FOTV_GodWeaponPair(_DeityTag, _, _, _TierThreeWeapon) //therefore the weapon is t3
+AND
+IsTagged(_Vindicator, _DeityTag, 1) //check to make sure the character has a deity
+THEN
+DB_FOTV_QRYRTN_TieredWeaponIs(_TierThreeWeapon); //return the tier 3 weapon of that deity
+//END_REGION
+
+
+
+
+
+
+
+
+
+
+
 
 //REGION Weapon
 //Mark enemies that attack allies of the wielder of Vindicator's Resplendence
@@ -332,317 +420,6 @@ THEN
 ApplyStatus(_Player, "JL_FOTV_VINDICATOR_DICTUM_DAMAGE", 18.0, 0, _Vindicator);
 ApplyStatus(_Vindicator, "JL_FOTV_VINDICATOR_DICTUM_DAMAGE", 18.0, 0, _Vindicator);
 //END_REGION
-
-//REGION Weapon swapping T1
-//Added to inventory and deity/weapon mismatch
-IF
-TemplateAddedTo((ITEMROOT)_VindicatorWeapon, (ITEM)_VindicatorItem, (CHARACTER)_Vindicator, _)
-AND
-DB_GLO_FOTV_VindicatorWeapon(_VindicatorWeapon)
-AND
-QRY_FOTV_VindicatorIsTierOne()
-AND
-DB_GLO_FOTV_GodWeaponPair(_DeityTag, _TierOneWeapon)
-AND
-IsTagged(_Vindicator, _DeityTag, 1)
-AND
-_VindicatorWeapon != _TierOneWeapon
-THEN
-RequestDelete(_VindicatorItem);
-TemplateAddTo(_TierOneWeapon, (CHARACTER)_Vindicator, 1, 1);
-
-//Respeccing deity stuff
-IF
-TagSet((CHARACTER)_Vindicator, (TAG)_DeityTag)
-AND
-DB_GLO_FOTV_GodWeaponPair(_DeityTag, _)
-THEN
-RealtimeObjectTimerCancel(_Vindicator, "JL_FOTV_VindicatorRespecCheck");
-RealtimeObjectTimerLaunch(_Vindicator, "JL_FOTV_VindicatorRespecCheck", 500);
-
-//Respec deity, have Vindicator's Resplendence in inventory, mismatch with what it should be
-IF
-ObjectTimerFinished((CHARACTER)_Vindicator, "JL_FOTV_VindicatorRespecCheck")
-AND
-DB_GLO_FOTV_VindicatorWeapon(_OldWeapon)
-AND
-TemplateIsInInventory(_OldWeapon, _Vindicator, _Count)
-AND
-_Count > 0
-AND
-QRY_FOTV_VindicatorIsTierOne()
-AND
-DB_GLO_FOTV_GodWeaponPair(_DeityTag, _TierOneWeapon)
-AND
-IsTagged(_Vindicator, _DeityTag, 1)
-AND
-_OldWeapon != _TierOneWeapon
-AND
-GetItemByTemplateInInventory(_OldWeapon, _Vindicator, (ITEM)_VindicatorItem)
-AND
-IsEquipped(_VindicatorItem, 0)
-THEN
-RequestDelete(_VindicatorItem);
-TemplateAddTo(_TierOneWeapon, _Vindicator, 1, 1);
-
-//Respec deity, have Vindicator's Resplendence equipped, mismatch with what it should be
-IF
-ObjectTimerFinished((CHARACTER)_Vindicator, "JL_FOTV_VindicatorRespecCheck")
-AND
-DB_GLO_FOTV_VindicatorWeapon(_OldWeapon)
-AND
-TemplateIsInInventory(_OldWeapon, _Vindicator, _Count)
-AND
-_Count > 0
-AND
-QRY_FOTV_VindicatorIsTierOne()
-AND
-DB_GLO_FOTV_GodWeaponPair(_DeityTag, _TierOneWeapon)
-AND
-IsTagged(_Vindicator, _DeityTag, 1)
-AND
-_OldWeapon != _TierOneWeapon
-AND
-GetItemByTemplateInInventory(_OldWeapon, _Vindicator, (ITEM)_VindicatorItem)
-AND
-IsEquipped(_VindicatorItem, 1)
-AND
-GetOwner(_VindicatorItem, _Wielder)
-AND
-_Wielder == _Vindicator
-THEN
-DB_FOTV_VindicatorToBeEquipped(_TierOneWeapon);
-RequestDelete(_VindicatorItem);
-TemplateAddTo(_TierOneWeapon, _Vindicator, 1, 1);
-
-//Followup rule to equip the new weapon
-IF
-TemplateAddedTo((ITEMROOT)_VindicatorWeapon, (ITEM)_VindicatorItem, (CHARACTER)_Vindicator, _)
-AND
-DB_FOTV_VindicatorToBeEquipped(_VindicatorWeapon)
-THEN
-Equip((CHARACTER)_Vindicator, (ITEM)_VindicatorItem);
-NOT DB_FOTV_VindicatorToBeEquipped(_VindicatorWeapon);
-
-//If neither of the global flags have been set for the weapon tier upgrade, it's tier 1
-QRY
-QRY_FOTV_VindicatorIsTierOne()
-AND
-GetFlag(JL_FOTV_TestFlag_a05a5465-2ae9-4bd2-911c-77adba312d5d, NULL_00000000-0000-0000-0000-000000000000, 0)
-AND
-GetFlag(JL_FOTV_TestFlag2_24233b9b-9bf5-43ce-9099-ee3fb572b09a, NULL_00000000-0000-0000-0000-000000000000, 0)
-THEN
-DB_NOOP(1);
-//END_REGION
-
-//REGION Weapon swapping T2
-//my divine punishment for sucking at osi
-//Added to inventory and deity/weapon mismatch
-IF
-TemplateAddedTo((ITEMROOT)_VindicatorWeapon, (ITEM)_VindicatorItem, (CHARACTER)_Vindicator, _)
-AND
-DB_GLO_FOTV_VindicatorWeapon(_VindicatorWeapon)
-AND
-QRY_FOTV_VindicatorIsTierTwo()
-AND
-DB_GLO_FOTV_GodWeaponPairT2(_DeityTag, _TierTwoWeapon)
-AND
-IsTagged(_Vindicator, _DeityTag, 1)
-AND
-_VindicatorWeapon != _TierTwoWeapon
-THEN
-RequestDelete(_VindicatorItem);
-TemplateAddTo(_TierTwoWeapon, (CHARACTER)_Vindicator, 1, 1);
-
-//Respeccing deity stuff
-IF
-TagSet((CHARACTER)_Vindicator, (TAG)_DeityTag)
-AND
-DB_GLO_FOTV_GodWeaponPair(_DeityTag, _)
-THEN
-RealtimeObjectTimerCancel(_Vindicator, "JL_FOTV_VindicatorRespecCheck");
-RealtimeObjectTimerLaunch(_Vindicator, "JL_FOTV_VindicatorRespecCheck", 500);
-
-//Respec deity, have Vindicator's Resplendence in inventory, mismatch with what it should be
-IF
-ObjectTimerFinished((CHARACTER)_Vindicator, "JL_FOTV_VindicatorRespecCheck")
-AND
-DB_GLO_FOTV_VindicatorWeapon(_OldWeapon)
-AND
-TemplateIsInInventory(_OldWeapon, _Vindicator, _Count)
-AND
-_Count > 0
-AND
-QRY_FOTV_VindicatorIsTierTwo()
-AND
-DB_GLO_FOTV_GodWeaponPairT2(_DeityTag, _TierTwoWeapon)
-AND
-IsTagged(_Vindicator, _DeityTag, 1)
-AND
-_OldWeapon != _TierTwoWeapon
-AND
-GetItemByTemplateInInventory(_OldWeapon, _Vindicator, (ITEM)_VindicatorItem)
-AND
-IsEquipped(_VindicatorItem, 0)
-THEN
-RequestDelete(_VindicatorItem);
-TemplateAddTo(_TierTwoWeapon, _Vindicator, 1, 1);
-
-//Respec deity, have Vindicator's Resplendence equipped, mismatch with what it should be
-IF
-ObjectTimerFinished((CHARACTER)_Vindicator, "JL_FOTV_VindicatorRespecCheck")
-AND
-DB_GLO_FOTV_VindicatorWeapon(_OldWeapon)
-AND
-TemplateIsInInventory(_OldWeapon, _Vindicator, _Count)
-AND
-_Count > 0
-AND
-QRY_FOTV_VindicatorIsTierTwo()
-AND
-DB_GLO_FOTV_GodWeaponPairT2(_DeityTag, _TierTwoWeapon)
-AND
-IsTagged(_Vindicator, _DeityTag, 1)
-AND
-_OldWeapon != _TierTwoWeapon
-AND
-GetItemByTemplateInInventory(_OldWeapon, _Vindicator, (ITEM)_VindicatorItem)
-AND
-IsEquipped(_VindicatorItem, 1)
-AND
-GetOwner(_VindicatorItem, _Wielder)
-AND
-_Wielder == _Vindicator
-THEN
-DB_FOTV_VindicatorToBeEquipped(_TierTwoWeapon);
-RequestDelete(_VindicatorItem);
-TemplateAddTo(_TierTwoWeapon, _Vindicator, 1, 1);
-
-//If only one of the global flags has been set for the weapon tier upgrade, it's tier 2 --> return the correct tier 2 weapon
-QRY
-QRY_FOTV_VindicatorIsTierTwo()
-AND
-GetFlag(JL_FOTV_TestFlag_a05a5465-2ae9-4bd2-911c-77adba312d5d, NULL_00000000-0000-0000-0000-000000000000, 1)
-AND
-GetFlag(JL_FOTV_TestFlag2_24233b9b-9bf5-43ce-9099-ee3fb572b09a, NULL_00000000-0000-0000-0000-000000000000, 0)
-THEN
-DB_NOOP(1);
-//END_REGION
-
-//REGION Weapon swapping T3
-//whenever i think to myself "i hate scripting"
-//what if you replace scripting with women?
-//not so funny now, is it?
-IF
-TemplateAddedTo((ITEMROOT)_VindicatorWeapon, (ITEM)_VindicatorItem, (CHARACTER)_Vindicator, _)
-AND
-DB_GLO_FOTV_VindicatorWeapon(_VindicatorWeapon)
-AND
-QRY_FOTV_VindicatorIsTierThree()
-AND
-DB_GLO_FOTV_GodWeaponPairT3(_DeityTag, _TierThreeWeapon)
-AND
-IsTagged(_Vindicator, _DeityTag, 1)
-AND
-_VindicatorWeapon != _TierThreeWeapon
-THEN
-RequestDelete(_VindicatorItem);
-TemplateAddTo(_TierThreeWeapon, (CHARACTER)_Vindicator, 1, 1);
-
-//Respeccing deity stuff
-IF
-TagSet((CHARACTER)_Vindicator, (TAG)_DeityTag)
-AND
-DB_GLO_FOTV_GodWeaponPair(_DeityTag, _)
-THEN
-RealtimeObjectTimerCancel(_Vindicator, "JL_FOTV_VindicatorRespecCheck");
-RealtimeObjectTimerLaunch(_Vindicator, "JL_FOTV_VindicatorRespecCheck", 500);
-
-//Respec deity, have Vindicator's Resplendence in inventory, mismatch with what it should be
-IF
-ObjectTimerFinished((CHARACTER)_Vindicator, "JL_FOTV_VindicatorRespecCheck")
-AND
-DB_GLO_FOTV_VindicatorWeapon(_OldWeapon)
-AND
-TemplateIsInInventory(_OldWeapon, _Vindicator, _Count)
-AND
-_Count > 0
-AND
-QRY_FOTV_VindicatorIsTierThree()
-AND
-DB_GLO_FOTV_GodWeaponPairT3(_DeityTag, _TierThreeWeapon)
-AND
-IsTagged(_Vindicator, _DeityTag, 1)
-AND
-_OldWeapon != _TierThreeWeapon
-AND
-GetItemByTemplateInInventory(_OldWeapon, _Vindicator, (ITEM)_VindicatorItem)
-AND
-IsEquipped(_VindicatorItem, 0)
-THEN
-RequestDelete(_VindicatorItem);
-TemplateAddTo(_TierThreeWeapon, _Vindicator, 1, 1);
-
-//Respec deity, have Vindicator's Resplendence equipped, mismatch with what it should be
-IF
-ObjectTimerFinished((CHARACTER)_Vindicator, "JL_FOTV_VindicatorRespecCheck")
-AND
-DB_GLO_FOTV_VindicatorWeapon(_OldWeapon)
-AND
-TemplateIsInInventory(_OldWeapon, _Vindicator, _Count)
-AND
-_Count > 0
-AND
-QRY_FOTV_VindicatorIsTierThree()
-AND
-DB_GLO_FOTV_GodWeaponPairT3(_DeityTag, _TierThreeWeapon)
-AND
-IsTagged(_Vindicator, _DeityTag, 1)
-AND
-_OldWeapon != _TierThreeWeapon
-AND
-GetItemByTemplateInInventory(_OldWeapon, _Vindicator, (ITEM)_VindicatorItem)
-AND
-IsEquipped(_VindicatorItem, 1)
-AND
-GetOwner(_VindicatorItem, _Wielder)
-AND
-_Wielder == _Vindicator
-THEN
-DB_FOTV_VindicatorToBeEquipped(_TierThreeWeapon);
-RequestDelete(_VindicatorItem);
-TemplateAddTo(_TierThreeWeapon, _Vindicator, 1, 1);
-
-//If both global flags have been set for the weapon tier upgrade, it's tier 3 --> return the correct tier 3 weapon
-QRY
-QRY_FOTV_VindicatorIsTierThree()
-AND
-GetFlag(JL_FOTV_TestFlag_a05a5465-2ae9-4bd2-911c-77adba312d5d, NULL_00000000-0000-0000-0000-000000000000, 1)
-AND
-GetFlag(JL_FOTV_TestFlag2_24233b9b-9bf5-43ce-9099-ee3fb572b09a, NULL_00000000-0000-0000-0000-000000000000, 1)
-THEN
-DB_NOOP(1);
-//END_REGION
-
-//Setting DAT for unarmed weapon animations
-IF
-StartedPreviewingSpell(_Caster, _Spell, _, _)
-AND
-DB_GLO_FOTV_MonkDATSpells(_Spell)
-THEN
-ApplyStatus(_Caster, "JL_FOTV_SUPERNALSTRIKE_UNARMED_DAT", -1.0);
-
-//Unsetting DAT
-IF
-StartedPreviewingSpell(_Caster, _Spell, _, _)
-AND
-DB_GLO_FOTV_MonkDATSpells(_DATSpell)
-AND
-_Spell != _DATSpell
-AND
-HasActiveStatus(_Caster, "JL_FOTV_SUPERNALSTRIKE_UNARMED_DAT", 1)
-THEN
-RemoveStatus(_Caster, "JL_FOTV_SUPERNALSTRIKE_UNARMED_DAT");
 
 EXITSECTION
 

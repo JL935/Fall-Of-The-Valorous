@@ -889,6 +889,60 @@ Ext.Events.BeforeDealDamage:Subscribe(function (e)
         end
     end
 end)
+----------------------------------------------------------------------------------------------------
+----------------------------------------CONSOLE COMMANDS--------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------------credits: me---------------------------------------------
+----------------------------------------------------------------------------------------------------
+Ext.RegisterConsoleCommand("JLFOTV_LearnAllHolyWords", function(_) --learn all holy words (also summons inquisiboss)
+    Osi.SetFlag("a80348bb-7402-4460-a725-1d0bf923c153") --Lulix
+    Osi.SetFlag("414c42de-2602-4703-b89d-fa32c1aa0fbd") --Arzimyr
+    Osi.SetFlag("5b18c4c1-8839-4593-8457-f5ddf38544bb") --Xulvorith
+    Osi.PROC_FOTV_UpdateHolyWords() --Vaelythra + Container + Toggle Passive
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_AllRavenerLore", function(_) --set flags for all ravener lore
+    Osi.SetFlag("e6594196-80b1-427f-9bbe-9738530c1d7a") --soul ward
+    Osi.SetFlag("1c1928f0-b078-48ae-8562-d305d7573c66") --frightful presence
+    Osi.SetFlag("c58bd837-af7b-42e0-8f45-ac3826a4afe1") --malevolence
+    Osi.SetFlag("97109720-da6a-4d93-9148-a00e2b44d4ba") --undeath
+    Osi.SetFlag("6f5b0194-55b7-4d53-bdba-485b9067ab8b") --forebear
+    Osi.SetFlag("10a4efdc-5863-44f0-93a9-3d11fa1d84d3") --qynoth
+    Osi.SetFlag("db155e2f-ce1f-4d6c-a100-244bd5367959") --knows all A1 lore
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_UnlockValor", function(_) --unlock valor subclass
+    Osi.SetFlag("30d714d5-35e8-458c-9a74-31dc9ccc512e")
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_AllGear", function(_) --add all gear
+    Osi.TemplateAddTo("e530a44a-67c8-4906-bfbb-2809103082f5", Osi.GetHostCharacter(), 1, 1) --Oathkeeper's Periapt
+    Osi.TemplateAddTo("f2dbca2a-d55f-4a53-a604-c57e3b07bb5a", Osi.GetHostCharacter(), 1, 1) --Empyreal Scion's Mantle
+    Osi.TemplateAddTo("adc31816-0459-4809-847d-3574dd80b437", Osi.GetHostCharacter(), 1, 1) --Vindicator's Resplendence (Longsword)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPCrypt", function(_) --teleport to crypt
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), -309, 17.5, -263)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_SpawnVeiz", function(_) --summon veizoadeoth and teleport nearby
+    Osi.SetFlag("4d6a8c37-4851-4e6a-b84b-e0f1211c5105")
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), 95, 35, 575)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPPeriapt", function(_) --set periapt on stage and teleport close
+    Osi.SetFlag("0f5c11bc-ea59-43ba-b343-0ed21dd7ae64")
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), -405, 0, 247)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPMantle", function(_) -- teleport close to chestpiece
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), 307, 4, -174)
+end)
+
+
+
+
+
 
 
 

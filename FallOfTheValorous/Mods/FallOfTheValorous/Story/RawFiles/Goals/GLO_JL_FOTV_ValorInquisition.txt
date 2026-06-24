@@ -7,14 +7,47 @@ PROC_DeclareCounter("JL_FOTV_FoR_TotalCompletions");
 PROC_DeclareCounter("JL_FOTV_FoR_DtD");
 PROC_DeclareCounter("JL_FOTV_FoR_SoS");
 PROC_DeclareCounter("JL_FOTV_FoR_HyH");
-
 PROC_DeclareCounter("JL_FOTV_FoR_Act1_Valor");
 PROC_DeclareCounter("JL_FOTV_FoR_Act1_Honor");
 PROC_DeclareCounter("JL_FOTV_FoR_Act1_Compassion");
 PROC_DeclareCounter("JL_FOTV_FoR_Act1_Generosity");
 PROC_DeclareCounter("JL_FOTV_FoR_Act1_Wisdom");
 
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_4");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_5");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_6");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_7");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_8");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Shout_LitanyOfDuskAndDawn_9");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_5");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_6");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_7");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_8");
+DB_GLO_FOTV_MonkDATSpells("JL_FOTV_Teleportation_LitanyOfBalance_9");
+
 KBSECTION
+//Setting DAT for unarmed animations
+IF
+StartedPreviewingSpell(_Caster, _Spell, _, _)
+AND
+DB_GLO_FOTV_MonkDATSpells(_Spell)
+THEN
+ApplyStatus(_Caster, "JL_FOTV_SUPERNALSTRIKE_UNARMED_DAT", -1.0);
+
+//Unsetting DAT
+IF
+StartedPreviewingSpell(_Caster, _Spell, _, _)
+AND
+DB_GLO_FOTV_MonkDATSpells(_DATSpell)
+AND
+_Spell != _DATSpell
+AND
+HasActiveStatus(_Caster, "JL_FOTV_SUPERNALSTRIKE_UNARMED_DAT", 1)
+THEN
+RemoveStatus(_Caster, "JL_FOTV_SUPERNALSTRIKE_UNARMED_DAT");
+
 //For NPC inquisitor stuff
 QRY
 QRY_FirstInquisitionOrNPC((GUIDSTRING)_Inquisitor)

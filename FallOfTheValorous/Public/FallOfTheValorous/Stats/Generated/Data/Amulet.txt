@@ -304,23 +304,6 @@ data "Boosts" "Resistance(Thunder,Resistant)"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////CURSE///////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//new entry "JL_FOTV_PERIAPT_CURSE_TECHNICAL"
-//type "StatusData"
-//data "StatusType" "BOOST"
-//data "StackId" "JL_FOTV_PERIAPT_CURSE_TECHNICAL"
-//data "StackType" "Ignore"
-//data "AuraRadius" "4"
-//data "AuraStatuses" "TARGET:IF(Character()):ApplyStatus(JL_FOTV_PERIAPT_CURSE_ARCANA_TRIGGER)"
-//data "StatusPropertyFlags" "IgnoreResting;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-//smoke and mirrors all the way down
-//new entry "JL_FOTV_PERIAPT_CURSE_ARCANA_TRIGGER"
-//type "StatusData"
-//data "StatusType" "BOOST"
-//data "StackId" "JL_FOTV_PERIAPT_CURSE_ARCANA_TRIGGER"
-//data "StackType" "Ignore"
-//data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
 new entry "JL_FOTV_PERIAPT_CURSE_TOOLTIP"
 type "StatusData"
 data "StatusType" "BOOST"

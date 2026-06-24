@@ -1527,22 +1527,6 @@ data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndi
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////RONROS///////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-new entry "JL_FOTV_RONROS_AURA_TECH"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_RONROS_AURA_TECH"
-data "StackType" "Ignore"
-data "AuraRadius" "3"
-data "AuraStatuses" "IF(Character() and Player()):ApplyStatus(JL_FOTV_RONROS_UNLOCKSPELL)"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
-
-new entry "JL_FOTV_RONROS_UNLOCKSPELL"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_RONROS_UNLOCKSPELL"
-data "StackType" "Ignore"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
 new entry "JL_FOTV_Target_SanctifyRonros"
 type "SpellData"
 data "SpellType" "Target"
