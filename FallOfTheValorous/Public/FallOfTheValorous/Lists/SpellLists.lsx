@@ -44,11 +44,6 @@
           <attribute id="Spells" type="LSString" value="JL_FOTV_NPC_Target_MonsterLore" />
           <attribute id="UUID" type="guid" value="98d7f068-f4eb-4e97-8497-735faddc16c6" />
         </node>
-        <node id="SpellList">
-          <attribute id="Comment" type="LSString" value="for testing" />
-          <attribute id="Spells" type="LSString" value="givsubclasspls" />
-          <attribute id="UUID" type="guid" value="e6991aba-10a6-49da-9887-4ca803268615" />
-        </node>
       </children>
     </node>
   </region>

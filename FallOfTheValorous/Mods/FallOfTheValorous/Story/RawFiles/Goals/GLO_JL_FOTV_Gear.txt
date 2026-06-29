@@ -21,19 +21,6 @@ DB_GLO_FOTV_ItemUpgradeFlagSetPair((FLAG)JL_FOTV_TestFlag_a05a5465-2ae9-4bd2-911
 //DB_GLO_FOTV_ItemUpgradeFlagSetPair((FLAG)JL_FOTV_TestFlag2_24233b9b-9bf5-43ce-9099-ee3fb572b09a, (ITEMROOT)GEAR_JL_FOTV_EmpyrealMantle_T2_c93c70aa-5e80-4399-b5e4-2dec32ff5efc, (ITEMROOT)GEAR_JL_FOTV_EmpyrealMantle_T3_b8b815d3-ddb6-4b28-a6c9-236cba2c04e0);
 //DB_GLO_FOTV_ItemUpgradeFlagSetPair((FLAG)JL_FOTV_TestFlag2_24233b9b-9bf5-43ce-9099-ee3fb572b09a, (ITEMROOT)GEAR_JL_FOTV_OathkeeperPeriapt_T2_e969f150-061e-49f2-9bb7-e6b9d1c6ef6c, (ITEMROOT)GEAR_JL_FOTV_OathkeeperPeriapt_T3_b1fe9683-4c13-4d96-bf75-20e2e803b3f8);
 
-
-DB_GLO_FOTV_VindicatorDamageUpgrades("JL_FOTV_VINDICATION_D4", "JL_FOTV_VINDICATION_D6");
-DB_GLO_FOTV_VindicatorDamageUpgrades("JL_FOTV_VINDICATION_D6", "JL_FOTV_VINDICATION_D8");
-DB_GLO_FOTV_VindicatorDamageUpgrades("JL_FOTV_VINDICATION_D8", "JL_FOTV_VINDICATION_D10");
-DB_GLO_FOTV_VindicatorDamageUpgrades("JL_FOTV_VINDICATION_D10", "JL_FOTV_VINDICATION_D12");
-DB_GLO_FOTV_VindicatorDamageUpgrades("JL_FOTV_VINDICATION_D12", "JL_FOTV_VINDICATION_D12");
-
-DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d4");
-DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d6");
-DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d8");
-DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d10");
-DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d12");
-
 //my modder license should be revoked for how shit ass this code was before i reworked it
 DB_GLO_FOTV_GodWeaponPair((TAG)BAHAMUT_fdccfc34-47e9-45ff-8755-511f91cb0e97, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_3d383cbc-9ae3-4812-9fa3-07425626edfd, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T2_d75a3002-567f-4a56-bf3b-8574a6f86d21, (ITEMROOT)JL_FOTV_WPN_Vindicator_WarPick_T3_dc02a423-bdff-4e9e-87d4-3cb086eb343e);
 DB_GLO_FOTV_GodWeaponPair((TAG)BANE_494bddcf-9325-4883-a937-817fbdf11161, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_908bb5a6-473e-4d9f-b782-c5613ef1803a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T2_be2e13d7-e586-4df1-9119-fee17e4cb198, (ITEMROOT)JL_FOTV_WPN_Vindicator_Quarterstaff_T3_d96151f5-578c-4d58-8c7c-653a5c4df4e0);
@@ -63,6 +50,44 @@ DB_GLO_FOTV_GodWeaponPair((TAG)TYMORA_c0b03fe2-6495-4340-a0c8-ed6ccf206bcc, (ITE
 DB_GLO_FOTV_GodWeaponPair((TAG)TYR_aa9a53ed-afad-4a6d-824c-ff0125986eb7, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
 DB_GLO_FOTV_GodWeaponPair((TAG)VLAAKITH_d84b4081-6800-45f9-b03f-16dba592c75d, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_adc31816-0459-4809-847d-3574dd80b437, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T2_d7c9b9e4-624b-4e90-ad76-a38f025f05d8, (ITEMROOT)JL_FOTV_WPN_Vindicator_Longsword_T3_708e0345-50f2-470e-b67c-e4c0e30a7693);
 DB_GLO_FOTV_GodWeaponPair((TAG)YONDALLA_4335093d-2fa7-4775-a4cc-bc17b5d16e5a, (ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_b69712cc-4875-424b-b3bf-849afb4c4451, (ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_T2_c1eb5398-542c-47d0-8f56-62ef035cb481, (ITEMROOT)JL_FOTV_WPN_Vindicator_Shortsword_T3_69aa5b72-970f-446b-83ff-2ab21ab9ab63);
+
+DB_GLO_FOTV_VindicatorDamageUpgrades("JL_FOTV_VINDICATION_D4", "JL_FOTV_VINDICATION_D6");
+DB_GLO_FOTV_VindicatorDamageUpgrades("JL_FOTV_VINDICATION_D6", "JL_FOTV_VINDICATION_D8");
+DB_GLO_FOTV_VindicatorDamageUpgrades("JL_FOTV_VINDICATION_D8", "JL_FOTV_VINDICATION_D10");
+DB_GLO_FOTV_VindicatorDamageUpgrades("JL_FOTV_VINDICATION_D10", "JL_FOTV_VINDICATION_D12");
+DB_GLO_FOTV_VindicatorDamageUpgrades("JL_FOTV_VINDICATION_D12", "JL_FOTV_VINDICATION_D12");
+
+DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d4");
+DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d6");
+DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d8");
+DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d10");
+DB_GLO_FOTV_BurstOfRadianceSpell("JL_FOTV_Shout_BurstOfRadiance_d12");
+
+//Hallowed ground spells that give bonuses against certain enemy types
+DB_GLO_FOTV_HallowedGroundSpell("JL_FOTV_Target_HallowedGround_T2");
+DB_GLO_FOTV_HallowedGroundSpell("JL_FOTV_Target_HallowedGround_T3");
+
+//enemy types that are affected by T2 and T3 hallowed ground
+DB_GLO_FOTV_HallowedGroundEnemyTag((TAG)ABERRATION_f6fd70e6-73d3-4a12-a77e-f24f30b3b424);
+DB_GLO_FOTV_HallowedGroundEnemyTag((TAG)FIEND_44be2f5b-f27e-4665-86f1-49c5bfac54ab);
+DB_GLO_FOTV_HallowedGroundEnemyTag((TAG)MONSTROSITY_081a2ef4-dc1b-4d5b-bae3-8db81bef1d06);
+DB_GLO_FOTV_HallowedGroundEnemyTag((TAG)UNDEAD_33c625aa-6982-4c27-904f-e47029a9b140);
+DB_GLO_FOTV_HallowedGroundEnemyTag((TAG)UNDEAD_BEAST_1d156657-b014-48fa-b34c-327763480627);
+
+//pair damage types to the status granted by T3 hallowed ground
+DB_GLO_FOTV_DamageTypeResistancePair("Bludgeoning", "JL_FOTV_HALLOWEDGROUND_T3BLUDGEONING");
+DB_GLO_FOTV_DamageTypeResistancePair("Piercing", "JL_FOTV_HALLOWEDGROUND_T3PIERCING");
+DB_GLO_FOTV_DamageTypeResistancePair("Slashing", "JL_FOTV_HALLOWEDGROUND_T3SLASHING");
+DB_GLO_FOTV_DamageTypeResistancePair("Acid", "JL_FOTV_HALLOWEDGROUND_T3ACID");
+DB_GLO_FOTV_DamageTypeResistancePair("Cold", "JL_FOTV_HALLOWEDGROUND_T3COLD");
+DB_GLO_FOTV_DamageTypeResistancePair("Fire", "JL_FOTV_HALLOWEDGROUND_T3FIRE");
+DB_GLO_FOTV_DamageTypeResistancePair("Force", "JL_FOTV_HALLOWEDGROUND_T3FORCE");
+DB_GLO_FOTV_DamageTypeResistancePair("Lightning", "JL_FOTV_HALLOWEDGROUND_T3LIGHTNING");
+DB_GLO_FOTV_DamageTypeResistancePair("Necrotic", "JL_FOTV_HALLOWEDGROUND_T3NECROTIC");
+DB_GLO_FOTV_DamageTypeResistancePair("Poison", "JL_FOTV_HALLOWEDGROUND_T3POISON");
+DB_GLO_FOTV_DamageTypeResistancePair("Psychic", "JL_FOTV_HALLOWEDGROUND_T3PSYCHIC");
+DB_GLO_FOTV_DamageTypeResistancePair("Radiant", "JL_FOTV_HALLOWEDGROUND_T3RADIANT");
+DB_GLO_FOTV_DamageTypeResistancePair("Thunder", "JL_FOTV_HALLOWEDGROUND_T3THUNDER");
 
 KBSECTION
 //REGION Upgrading
@@ -339,17 +364,6 @@ THEN
 DB_FOTV_QRYRTN_TieredWeaponIs(_TierThreeWeapon); //return the tier 3 weapon of that deity
 //END_REGION
 
-
-
-
-
-
-
-
-
-
-
-
 //REGION Weapon
 //Mark enemies that attack allies of the wielder of Vindicator's Resplendence
 IF
@@ -419,6 +433,102 @@ IsAlly((CHARACTER)_Player, (CHARACTER)_Vindicator, 1)
 THEN
 ApplyStatus(_Player, "JL_FOTV_VINDICATOR_DICTUM_DAMAGE", 18.0, 0, _Vindicator);
 ApplyStatus(_Vindicator, "JL_FOTV_VINDICATOR_DICTUM_DAMAGE", 18.0, 0, _Vindicator);
+//END_REGION
+
+//REGION Amulet
+//When you cast Hallowed Ground, all applicable enemies get a status that reduces their attacks against you while in the aura
+IF
+CastSpell(_Player, _HallowedGroundSpell, _, _, _)
+AND
+DB_GLO_FOTV_HallowedGroundSpell(_HallowedGroundSpell)
+AND
+DB_GLO_FOTV_HallowedGroundEnemyTag(_EnemyTag)
+AND
+DB_Is_InCombat(_Enemy, _)
+AND
+IsTagged(_Enemy, _EnemyTag, 1)
+THEN
+ApplyStatus(_Enemy, "JL_FOTV_HALLOWEDGROUND_MONSTROUS_PENALTIES", -1.0);
+DB_GLO_FOTV_HallowedGroundCast(_Player);
+
+//If an applicable enemy joins combat while the Hallowed Ground already exists, give them the penalty status
+IF
+EnteredCombat(_Enemy, _)
+AND
+DB_GLO_FOTV_HallowedGroundCast(_Player)
+AND
+DB_GLO_FOTV_HallowedGroundEnemyTag(_EnemyTag)
+AND
+IsTagged(_Enemy, _EnemyTag, 1)
+THEN
+ApplyStatus(_Enemy, "JL_FOTV_HALLOWEDGROUND_MONSTROUS_PENALTIES", -1.0);
+
+//When someone in the Hallowed Ground takes damage of a certain type, add it to a DB then run a PROC to give resistance against it
+IF
+AttackedBy(_Defender, _, _, _DamageType, _DamageAmount, _, _)
+AND
+HasActiveStatus(_Defender, "JL_FOTV_HALLOWEDGROUND_BONUSES_TIER3", 1)
+AND
+_DamageAmount > 0
+AND
+DB_GLO_FOTV_DamageTypeResistancePair(_DamageType, _)
+THEN
+DB_GLO_FOTV_HallowedResistance(_DamageType);
+PROC_FOTV_HallowedResistance();
+
+//Run the resistance applier PROC when someone enters the Hallowed Ground
+IF
+StatusApplied(_Player, "JL_FOTV_HALLOWEDGROUND_BONUSES_TIER3", _, _)
+THEN
+DB_FOTV_IsInTierThreeHallow(_Player);
+PROC_FOTV_HallowedResistance();
+
+//if u leave T3 hallowed ground, get removed from the DB that says ur currently in it (why did i do this as a DB)
+IF
+StatusRemoved(_Player, "JL_FOTV_HALLOWEDGROUND_BONUSES_TIER3", _, _)
+AND
+DB_FOTV_IsInTierThreeHallow(_Player)
+THEN
+RealtimeObjectTimerLaunch(_Player, "JL_FOTV_HallowedGroundDespawn", 500);
+
+//i don't remember why it needed to be a timer do i trust past me who didn't comment about it
+IF
+ObjectTimerFinished((CHARACTER)_Player, "JL_FOTV_HallowedGroundDespawn")
+THEN
+NOT DB_FOTV_IsInTierThreeHallow(_Player);
+
+//Clear the DBs for tracking stuff when the Hallowed Ground exists (the status is on the hallowed ground itself)
+IF
+StatusRemoved(_, "JL_FOTV_HALLOWEDGROUND_MONSTROUS_BUFFS_TIMER", _, _)
+AND
+DB_GLO_FOTV_HallowedGroundCast(_Player)
+AND
+DB_GLO_FOTV_HallowedResistance(_DamageType)
+THEN
+NOT DB_GLO_FOTV_HallowedGroundCast(_Player);
+NOT DB_GLO_FOTV_HallowedResistance(_DamageType);
+
+//what
+IF
+StatusRemoved(_, "JL_FOTV_HALLOWEDGROUND_MONSTROUS_BUFFS_TIMER", _, _)
+AND
+DB_FOTV_IsInTierThreeHallow(_Player)
+THEN
+ApplyStatus(_Player, "JL_FOTV_HALLOWEDGROUND_CLEANSE", 6.0);
+
+//Give resistance to everyone in Tier 3 Hallowed Ground to all damage types in the DB
+PROC
+PROC_FOTV_HallowedResistance()
+AND
+DB_Players(_Player)
+AND
+DB_GLO_FOTV_HallowedResistance(_DamageType)
+AND
+DB_GLO_FOTV_DamageTypeResistancePair(_DamageType, _ResistanceStatus)
+AND
+HasActiveStatus(_Player, "JL_FOTV_HALLOWEDGROUND_BONUSES_TIER3", 1)
+THEN
+ApplyStatus(_Player, _ResistanceStatus, -1.0);
 //END_REGION
 
 EXITSECTION

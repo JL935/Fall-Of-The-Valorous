@@ -1547,25 +1547,9 @@ data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExte
 data "PrepareEffect" "e1b1e12d-18d4-472c-942b-956459eae7e4"
 data "CastEffect" "e337c385-2f32-423c-a5d1-255039b105d6"
 data "PositionEffect" "07d2e7ea-6fb7-4c78-b838-5dd7421b7e03"
-
-
-
-
-new entry "givsubclasspls"
-type "SpellData"
-data "SpellType" "Shout"
-data "Icon" "Icon_JL_FOTV_Target_LitanyOfPrecision"
-data "DisplayName" "hfe28dec9gb8e9g46a6g9c5eg7f664ed71c16;1"
-data "SpellAnimation" "83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;2da41f71-3471-4ac8-a268-63983acbe88c,,;70c2d89d-98bd-4462-82e2-8e30e9c727be,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;,,;,,"
-
-new entry "hidesubclasspls"
-type "SpellData"
-data "SpellType" "Target"
-data "TargetConditions" "Character() and CatMyrkulShit(context.Target,context.Source)"
-data "Icon" "Icon_JL_FOTV_Target_LitanyOfWeakness"
-data "DisplayName" "hd4fb60aag7558g41a5gbfdbg4e3ecd6b6524;1"
-data "SpellAnimation" "83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;2da41f71-3471-4ac8-a268-63983acbe88c,,;70c2d89d-98bd-4462-82e2-8e30e9c727be,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;,,;,,"
-
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////FEATS OF RENOWN///////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 new entry "JL_FOTV_FOR_DTD"
 type "StatusData"
 data "StatusType" "BOOST"

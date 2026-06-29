@@ -125,6 +125,28 @@
                             <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
                             <attribute id="UnlockDisable" type="int32" value="0"/>
                         </node>
+                        <node id="QuestStep">
+                            <attribute id="Achievement" type="FixedString" value=""/>
+                            <attribute id="Description" type="TranslatedString" handle="h9c0438a4ga884g4302g8074gb5a4d0602a32" version="1"/> 
+                            <attribute id="DevComment" type="FixedString" value="the step that points you vaguely toward act 2"/> 
+                            <attribute id="DialogFlagGUID" type="guid" value="18c7814a-f978-416f-9d68-57742626dbd7"/>
+                            <attribute id="ExperienceReward" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="ID" type="FixedString" value="STEP_JL_FOTV_AnsweredTheCall"/>
+                            <attribute id="LevelOverride" type="int32" value="0"/>
+                            <attribute id="Objective" type="FixedString" value="OBJ_JL_FOTV_AnsweredTheCall"/>
+                            <attribute id="QuestRewardCount" type="int32" value="0"/>
+                            <attribute id="QuestRewardLevel" type="int32" value="0"/>
+                            <attribute id="QuestStepGuid" type="guid" value="dae873a8-98dd-467c-9eee-9495575dd8af"/>
+                            <attribute id="QuestTitleOverride" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0"/>
+                            <attribute id="ReputationGain" type="int32" value="0"/>
+                            <attribute id="RewardAdditionalGold " type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="RewardAdditionalOwnerLevelName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalOwnerName" type="LSString" value=""/>
+                            <attribute id="RewardAdditionalTreasureTable" type="FixedString" value=""/>
+                            <attribute id="StatTriggerGUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                            <attribute id="UnlockDisable" type="int32" value="0"/>
+                        </node>
                         <node id="SubQuests">
                             <attribute id="SubQuests" type="FixedString" value="SUBQST_JL_FOTV_HolyWords" />
                         </node>

@@ -36,7 +36,6 @@ type "Object"
 using "SCROLL_JL_FOTV_UncommonAct1"
 data "Rarity" "Common"
 data "ValueScale" "1"
-data "Vitality" "1"
 
 new entry "LORE_JL_FOTV_CommonAct1_Book"
 type "Object"

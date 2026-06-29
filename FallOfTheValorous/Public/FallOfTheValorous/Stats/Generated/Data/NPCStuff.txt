@@ -28,6 +28,7 @@ data "SpellProperties" "GROUND:DealDamage(MainRangedWeapon,MainRangedWeaponDamag
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////NPC SPELLS/////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+//surely there's a better way to do this i hate NPCs bruh
 new entry "JL_FOTV_SAELETHIL_SPELLS"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -111,8 +112,6 @@ data "Passives" "JL_FOTV_Ravener_DegeneratingStrikes_Hidden;JL_FOTV_Ravener_Dege
 data "OnApplyFunctors" "ApplyStatus(JL_FOTV_RAVENER_FRIGHTFULPRESENCE,100,-1)"
 data "RemoveEvents" "OnStatusRemoved"
 data "RemoveConditions" "not HasStatus('JL_FOTV_TAAROGUS_MINDCONTROL_1')"
-//data "ApplyEffect" "7810bdec-df72-448c-bbbe-6be8cbe5b6e3"
-//data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
 
 new entry "JL_FOTV_Ravener_DegeneratingStrikes_Taarogus"
 type "PassiveData"

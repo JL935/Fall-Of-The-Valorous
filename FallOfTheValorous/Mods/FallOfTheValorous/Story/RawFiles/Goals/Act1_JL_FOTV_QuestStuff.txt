@@ -1,6 +1,11 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
+//////////  STUFF THAT COULD BREAK QUESTS I THINK   //////////
+//prevent Saelethil from getting despawned, so if u leave and come back later for the holy word then their body is still there
+DB_CorpseCleanup_Ignore(S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1);
+DB_DoNotRemoveKnockedOutCharacterOnLongRest(S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1);
+
 //////////  FLAGS   //////////
 /////   BOOK FLAGS  /////
 ///Fearless and Forgotten
@@ -106,6 +111,10 @@ DB_QuestDef_ChainedState_ConditionalFlag("NLQST_JL_FOTV_NonlinearityDSU", "STEP_
 DB_QuestDef_State((FLAG)JL_FOTV_StartedCallToValor_d4816ba1-6fe3-47db-ac5f-010cd290d31f, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_CleanseJournal");
 DB_QuestDef_State((FLAG)JL_FOTV_CleansedJournal_b5962d11-a556-4d06-80bf-885d0bfe0480, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_ReadJournal");
 DB_QuestDef_State((FLAG)JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction");
+//if you finished SoLL and AotHW was already completed, chain to the end of CtV in act 1
+DB_QuestDef_ConditionalState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SeekerCompleted", "STEP_JL_FOTV_AnsweredTheCall", "STEP_JL_FOTV_ApostleCompleted", 1);
+//if you finished AotHW and SoLL was already completed, chain to the end of CtV in act 1
+DB_QuestDef_ConditionalState("QST_JL_FOTV_Act1", "STEP_JL_FOTV_ApostleCompleted", "STEP_JL_FOTV_AnsweredTheCall", "STEP_JL_FOTV_SeekerCompleted", 1);
 ///Apostle of the Holy Word
 //update the quest steps when you see the important valorquisitors only if you've read FotV
 DB_QuestDef_State_ConditionalFlag((FLAG)JL_FOTV_SawKhionzu_61e2ef35-3f53-42d2-b214-e00925198d64, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_FoundKhionzu", 1, (FLAG)JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562);
@@ -604,6 +613,14 @@ AND
 DB_QuestIsOpened("NLQST_JL_FOTV_NonlinearityDSU")
 THEN
 QuestClose("NLQST_JL_FOTV_NonlinearityDSU");
+
+//once saelethil is cured of ravener consumption, let the game handle corpse cleanup as normal
+IF
+FlagSet(JL_FOTV_RisenRoadFreed_414c42de-2602-4703-b89d-fa32c1aa0fbd, _, _)
+THEN
+NOT DB_CorpseCleanup_Ignore(S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1);
+NOT DB_DoNotRemoveKnockedOutCharacterOnLongRest(S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1);
+
 //END_REGION
 
 //REGION Taarogus

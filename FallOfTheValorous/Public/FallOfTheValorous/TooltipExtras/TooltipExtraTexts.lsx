@@ -17,10 +17,6 @@
                     <attribute id="UUID" type="guid" value="8e37ae1f-f3d5-432f-a8d3-222ba42a3b8d"/>
                 </node>
                 <node id="TooltipExtraTexts">
-                    <attribute id="Text" type="TranslatedString" handle="h1fa58a51g0092g418agb13fg4eb7ba010b4e" version="1"/>
-                    <attribute id="UUID" type="guid" value="31054efb-4d09-40c1-bb73-3be55d8ea002"/>
-                </node>
-                <node id="TooltipExtraTexts">
                     <attribute id="Text" type="TranslatedString" handle="hcb94e1b1g1ac2g4e84g8b2cgb680e95a7db0" version="1"/>
                     <attribute id="UUID" type="guid" value="5236a459-8a9a-4703-9c01-a43e7142db2d"/>
                 </node>

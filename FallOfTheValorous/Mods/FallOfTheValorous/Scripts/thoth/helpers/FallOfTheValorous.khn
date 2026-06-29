@@ -1,16 +1,3 @@
-function TargetSpellDC(fallbackDC, entity, ability)
-    local entity = entity or context.Target
-	local spellDC = fallbackDC or 10 -- Global default so that we don't return 0
-    local ability = ability or context.PreferredCastingAbility
-	if entity.IsValid then
-        try
-		    spellDC = CalculateSpellDC(ability, entity)
-        catch e then
-        end
-	end
-	return spellDC
-end
-
 function NegativeLevelDeathCheck(entity)
     local entity = entity or context.Target
     local charlevel = entity.Level
@@ -79,17 +66,9 @@ function HasDemoralizingPresenceStatus(entity)
     return HasAnyStatus({'JUDGMENT_CONVICTION','JUDGMENT_CONVICTION_2','JUDGMENT_CONVICTION_3','JUDGMENT_DESTRUCTION','JUDGMENT_DESTRUCTION_2','JUDGMENT_DESTRUCTION_3','JUDGMENT_JUSTICE','JUDGMENT_JUSTICE_2','JUDGMENT_JUSTICE_3'},{},{},entity)
 end
 
-function IsDemoralizingPresenceStatus()
-    return StatusId('JUDGMENT_CONVICTION') | StatusId('JUDGMENT_CONVICTION_2') | StatusId('JUDGMENT_CONVICTION_3') | StatusId('JUDGMENT_DESTRUCTION') | StatusId('JUDGMENT_DESTRUCTION_2') | StatusId('JUDGMENT_DESTRUCTION_3') | StatusId('JUDGMENT_JUSTICE') | StatusId('JUDGMENT_JUSTICE_2') | StatusId('JUDGMENT_JUSTICE_3')
-end
-
 function HasInspiringPresenceStatus(entity)
     local entity = entity or context.Source
     return HasAnyStatus({'JUDGMENT_PROTECTION','JUDGMENT_PROTECTION_2','JUDGMENT_PROTECTION_3','JUDGMENT_PURITY','JUDGMENT_PURITY_2','JUDGMENT_PURITY_3','JUDGMENT_RESILIENCY','JUDGMENT_RESILIENCY_2','JUDGMENT_RESILIENCY_3'},{},{},entity)
-end
-
-function IsInspiringPresenceStatus()
-    return StatusId('JUDGMENT_PROTECTION') | StatusId('JUDGMENT_PROTECTION_2') | StatusId('JUDGMENT_PROTECTION_3') | StatusId('JUDGMENT_PURITY') | StatusId('JUDGMENT_PURITY_2') | StatusId('JUDGMENT_PURITY_3') | StatusId('JUDGMENT_RESILIENCY') | StatusId('JUDGMENT_RESILIENCY_2') | StatusId('JUDGMENT_RESILIENCY_3')
 end
 
 function LitanyOfWeaknessRequirementCondition()

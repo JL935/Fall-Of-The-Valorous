@@ -26,6 +26,13 @@
                     <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_Act1"/> 
                     <attribute id="QuestObjectiveGuid" type="guid" value="26a6dd3f-1e31-4c81-a1a5-4c6e8990b88b"/>
                 </node>
+                <node id="Objective">
+                    <attribute id="Description" type="TranslatedString" handle="h31ffe03eg5c53g40b7ga87eg23dc5097d7cd" version="1"/> 
+                    <attribute id="ObjectiveID" type="FixedString" value="OBJ_JL_FOTV_AnsweredTheCall"/> 
+                    <attribute id="Priority" type="int32" value="1300"/>
+                    <attribute id="QuestID" type="FixedString" value="QST_JL_FOTV_Act1"/> 
+                    <attribute id="QuestObjectiveGuid" type="guid" value="96ed02df-f9dc-4ff5-808b-1e2887298020"/>
+                </node>
 
             <!-- Apostle of the Holy Word -->
                 <node id="Objective">

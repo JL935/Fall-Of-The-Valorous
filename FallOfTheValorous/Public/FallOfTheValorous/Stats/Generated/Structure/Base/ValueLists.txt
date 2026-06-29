@@ -1,2 +1,0 @@
-valuelist "SpellSchool"
-value "HolyWord" : 9
