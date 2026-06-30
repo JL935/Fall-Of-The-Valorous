@@ -571,11 +571,6 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(target, status
     end
 end)
 
---Ext.RegisterConsoleCommand("FCTEST_litany", function()
-    --local char = Osi.GetHostCharacter()
-    --Osi.AddBoosts(char, [[UnlockSpell(JL_FOTV_Teleportation_LitanyOfBalance, AddChildren,, Charisma)]], "", char)
---end)
-
 --litany listener
 --litaner, perhaps
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(object, status, causee, _)
@@ -606,8 +601,6 @@ end)
 ----------------------------------------------------------------------------------------------------
 -------credits: Sinbad and nzx for the spell list compiler, nzx for basically everything else ------
 ----------------------------------------------------------------------------------------------------
---Ext.Events.SessionLoaded:Subscribe(GetSpellsByHolyClasses)
---Ext.Events.ResetCompleted:Subscribe(GetSpellsByHolyClasses)
 local SR_PASSIVE   = "JL_FOTV_Ravener_DivineDefiance_Hidden"
 local SRActive = {}
 local SRPending = nil
@@ -937,20 +930,4 @@ end)
 
 Ext.RegisterConsoleCommand("JLFOTV_TPMantle", function(_) -- teleport close to chestpiece
     Osi.TeleportToPosition(Osi.GetHostCharacter(), 307, 4, -174)
-end)
-
-
-
-
-
-
-
-
---lonely listener that doesnt fit anywhere else for now
-Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(object, status, causee, _)
-    if status == "RESURRECTING" and (Osi.GetStatusTurns(object, "JL_FOTV_NEGATIVELEVEL") >= Osi.GetLevel(object)) then
-        local nlta = Osi.GetLevel(object) - 1
-        Osi.RemoveStatus(object, "JL_FOTV_NEGATIVELEVEL")
-        Osi.ApplyStatus(object, "JL_FOTV_NEGATIVELEVEL", nlta*6, 0)
-    end
 end)

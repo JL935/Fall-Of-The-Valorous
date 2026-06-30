@@ -457,35 +457,35 @@
                     <attribute id="V2" type="float" value="0.3515625"/> Bottom			
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/> 7
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_StrengthDecay"/> 7
                     <attribute id="U1" type="float" value="0.421875"/> Left
                     <attribute id="U2" type="float" value="0.4921875"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top
                     <attribute id="V2" type="float" value="0.3515625"/> Bottom			
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/> 8
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_DexterityDecay"/> 8
                     <attribute id="U1" type="float" value="0.4921875"/> Left
                     <attribute id="U2" type="float" value="0.5625"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top
                     <attribute id="V2" type="float" value="0.3515625"/> Bottom			
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/> 9
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_IntelligenceDecay"/> 9
                     <attribute id="U1" type="float" value="0.5625"/> Left
                     <attribute id="U2" type="float" value="0.6328125"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top
                     <attribute id="V2" type="float" value="0.3515625"/> Bottom			
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/> 10
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_WisdomDecay"/> 10
                     <attribute id="U1" type="float" value="0.6328125"/> Left
                     <attribute id="U2" type="float" value="0.703125"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top
                     <attribute id="V2" type="float" value="0.3515625"/> Bottom			
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/> 11
+                    <attribute id="MapKey" type="FixedString" value="Icon_JL_FOTV_CharismaDecay"/> 11
                     <attribute id="U1" type="float" value="0.703125"/> Left
                     <attribute id="U2" type="float" value="0.7734375"/> Right
                     <attribute id="V1" type="float" value="0.28125"/> Top

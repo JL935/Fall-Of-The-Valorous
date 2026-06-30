@@ -1,10 +1,3 @@
-function NegativeLevelDeathCheck(entity)
-    local entity = entity or context.Target
-    local charlevel = entity.Level
-    local neglevel = GetStatusDuration('JL_FOTV_NEGATIVELEVEL', entity)
-    return ConditionResult(neglevel >= charlevel)
-end
-
 function FrightfulPresenceImmuneCheck()
     local notscared = IsImmuneToStatus('SG_Frightened',context.Target)
     local despairaura = HasPassive('JL_FOTV_Ravener_AuraOfDespair',context.Source)
@@ -109,21 +102,8 @@ function IsInspiringPresenceSpell()
     return SpellId('Target_JudgmentProtection') | SpellId('Target_JudgmentPurity') | SpellId('Target_JudgmentResiliency') | SpellId('Shout_JudgmentProtection') | SpellId('Shout_JudgmentPurity') | SpellId('Shout_JudgmentResiliency') | SpellId('Shout_JudgmentProtection_Recast') | SpellId('Shout_JudgmentPurity_Recast') | SpellId('Shout_JudgmentResiliency_Recast') | SpellId('Shout_JudgmentProtection_Recast_2') | SpellId('Shout_JudgmentPurity_Recast_2') | SpellId('Shout_JudgmentResiliency_Recast_2') | SpellId('Shout_JudgmentProtection_Recast_3') | SpellId('Shout_JudgmentPurity_Recast_3') | SpellId('Shout_JudgmentResiliency_Recast_3')
 end
 
-function MalignantBleedCLC()
-    local ability = context.PreferredCastingAbility
-    local dc = 0
-
-    if HasStatus('JL_FOTV_RAVENER_BITEBLEED_YOUNGDC',context.Target) then
-        dc = 15
-    end
-    if HasStatus('JL_FOTV_RAVENER_BITEBLEED_ADULTDC',context.Target) then
-        dc = 18
-    end
-    if HasStatus('JL_FOTV_RAVENER_BITEBLEED_ANCIENTDC',context.Target) then
-        dc = 21
-    end
-
-    st = SavingThrow(ability,dc,false,false,context.Source)
+function RavenerClawBleedCLC()
+    st = SavingThrow(context.PreferredCastingAbility,20,false,false,context.Source)
     return ConditionResult(st.Result,{},{},st.Chance)
 end
 

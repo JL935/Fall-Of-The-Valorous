@@ -9,10 +9,6 @@
                     <attribute id="UUID" type="guid" value="8ac073ca-a34f-433d-a6f9-6af67f5778cb"/>
                 </node>
                 <node id="TooltipExtraTexts">
-                    <attribute id="Text" type="TranslatedString" handle="h3e993a50g43e3g4daagb092g7cb9c380a66c" version="1"/>
-                    <attribute id="UUID" type="guid" value="6a1e751b-3688-411f-98c5-7da98c7f67f6"/>
-                </node>
-                <node id="TooltipExtraTexts">
                     <attribute id="Text" type="TranslatedString" handle="hdd44fe73g0b3bg4a5agb055g9379114fbd0c" version="1"/>
                     <attribute id="UUID" type="guid" value="8e37ae1f-f3d5-432f-a8d3-222ba42a3b8d"/>
                 </node>

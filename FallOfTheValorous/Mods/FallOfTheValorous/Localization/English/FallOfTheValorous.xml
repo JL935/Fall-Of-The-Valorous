@@ -58,16 +58,6 @@
     <content contentuid="h9c705227ge6a5g4918g92e6gbea4e705f090" version="1">Not All Tears Are An Evil</content>
     <content contentuid="hff513661g5ab4g4b8dg8790gdbd10d47c9c8" version="1">Guide Nina to acceptance.</content>
 
-    <content contentuid="h475288afg8c92g4f74g8f7dg7ff1dfa87055" version="1">Ravener's Desecration</content>
-    <content contentuid="hefd81087g444dg4e05g9530g44203d12053c" version="1">Cursed by the vile energies of a ravener, this blighted aura harms all who dare get close.&lt;br&gt;&lt;br&gt;Can be cleansed with &lt;LSTag Type="Spell" Tooltip="Target_Consecrate"&gt;Consecrate&lt;/LSTag&gt; or sufficient[1].</content>
-    <content contentuid="hd6706b3bg6a63g4bf9g96e4g81a89a0486b9" version="1">Ravener's Rot</content>
-    <content contentuid="h7c7ef19fg67beg4d58gaaf3g13d7dc5ebfb4" version="1">Your vitality is being drained by the malevolent energies of a ravener.</content>
-    
-    <content contentuid="h5422492dg24c1g4d49g97d4gb19a74c89f50" version="1">Ravener's Consumption</content>
-    <content contentuid="ha50841a5g8801g44a9gb84dg5fd2c8f13f50" version="1">Entity's soul is consumed by a ravener.&lt;br&gt;&lt;br&gt;Can be cleansed with &lt;LSTag Type="Spell" Tooltip="JL_FOTV_Vaelythra"&gt;Vaelythra&lt;/LSTag&gt;, but not while the ravener that consumed the entity's soul yet lives.</content>
-    
-    <content contentuid="ha7b64dddga15fg4bb5g8cbfgfdd04dc8bfae" version="1">Ignores Resistance and Immunity</content>
-
     <content contentuid="h0c28f7b5g5cebg4f30gb34dg9a42f3cc0cbb" version="1">An Introduction To Wordcasting</content>
     <content contentuid="h3e01b821ga107g4815g89fcgc769dc0456cd" version="1">This work has notes in nearly every margin, penned in several languages, clearly having exchanged hands several times over the decades.</content>
     <content contentuid="ha85fed41ga4fcg4c4fgbbbagcb63dd3f5a1f" version="1">Most spellcasters spend their entire careers learning and mastering the spells that make up their calling, but there is another way. Some turn their backs on the rote memorization and formulae that traditional spellcasters use to create magic, and instead unlock the power behind the spells themselves, the fundamental building blocks of magic. Such a spellcaster learns the words of power, and through them, learns to control the very forces underlying magic, shaping and wielding them like no other.&lt;br&gt;&lt;br&gt;Words of power represent a primal form of magic used in ages past. As such, use of the words of power system is rare these days, and its practitioners tend to be masters of esoteric lore. Words of power constitute a root system, from which all modern magic descends. Although powerful, this system is more primitive in some ways than modern magic. Flexible, but lacking the refinement of modern spells, this system allows spellcasters to shape magic in ways they never could before, while simultaneously preventing them from producing the same sort of incredibly specific effects that ordinary spellcasters master.&lt;br&gt;&lt;br&gt;It is not surprising that most magical institutions and centers for learning treat words of power as an archaic art, to be studied along with other historical matters, but not actually practiced. Those who delve into the lore of words of power often find themselves lost in an ancient art that they alone might now know. There is power there, but each wordcaster must find it alone.</content>
@@ -199,22 +189,33 @@
 
     <content contentuid="he7e9e7a9g3f41g4fafgbfa5g5874c6917ea4" version="1">Degenerating Strikes</content>
     <content contentuid="hba18442bg4c04g4b44g83dcgc594d51a27dd" version="1">Raveners score a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; when rolling an 18 or higher. On a Critical Hit, targets must pass a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be afflicted by a &lt;LSTag Type="Status" Tooltip="JL_FOTV_NEGATIVELEVEL"&gt;Negative Level&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Raveners add 5 points to their Soul Ward when afflicting a creature with a Negative Level from their melee attacks.&lt;br&gt;&lt;br&gt;Raveners add 1 point to their Soul Ward per Negative Level inflicted by their &lt;LSTag Type="Spell" Tooltip="JL_FOTV_Zone_BreathOfMalevolence_Fire"&gt;Breath of Malevolence&lt;/LSTag&gt;.</content>
-    <content contentuid="h183aca4cg17acg45ecg864dg410495924b74" version="1">Negative Level</content>
-    <content contentuid="hc8ff5754ge445g4298g9ee1g4a89a4a70e88" version="1">Your maximum &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; are reduced by 5, and you suffer a -1 to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; per negative level accrued. If you accrue negative levels equal to your character level, you die.&lt;br&gt;&lt;br&gt;Can be removed by &lt;LSTag Type="Spell" Tooltip="Target_GreaterRestoration"&gt;Greater Restoration&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_Heal"&gt;Heal&lt;/LSTag&gt; or by long resting.</content>
 
-    <content contentuid="ha671f569g3a51g42a5g8a65gfd8585092204" version="1">The jaws that bite.</content>
-    <content contentuid="hbe2893afg6387g4c52gade1g796187da5285" version="1">The claws that catch.</content>
-    <content contentuid="hd4ee7986g94eeg4bdeg8c08g7b96b8e02222" version="1">The jaws that bite, the claws that catch.</content>
+    <content contentuid="h475288afg8c92g4f74g8f7dg7ff1dfa87055" version="1">Ravener's Desecration</content>
+    <content contentuid="hefd81087g444dg4e05g9530g44203d12053c" version="1">Cursed by the vile energies of a ravener, this blighted aura harms all who dare get close.&lt;br&gt;&lt;br&gt;Can be cleansed with &lt;LSTag Type="Spell" Tooltip="Target_Consecrate"&gt;Consecrate&lt;/LSTag&gt; or sufficient[1].</content>
+    <content contentuid="hd6706b3bg6a63g4bf9g96e4g81a89a0486b9" version="1">Ravener's Rot</content>
+    <content contentuid="h7c7ef19fg67beg4d58gaaf3g13d7dc5ebfb4" version="1">Your vitality is being drained by the malevolent energies of a ravener.</content>
+    <content contentuid="h5422492dg24c1g4d49g97d4gb19a74c89f50" version="1">Ravener's Consumption</content>
+    <content contentuid="ha50841a5g8801g44a9gb84dg5fd2c8f13f50" version="1">Entity's soul is consumed by a ravener.&lt;br&gt;&lt;br&gt;Can be cleansed with &lt;LSTag Type="Spell" Tooltip="JL_FOTV_Vaelythra"&gt;Vaelythra&lt;/LSTag&gt;, but not while the ravener that consumed the entity's soul yet lives.</content>
+    <content contentuid="ha7b64dddga15fg4bb5g8cbfgfdd04dc8bfae" version="1">Ignores Resistance and Immunity</content>
+    <content contentuid="hbe2893afg6387g4c52gade1g796187da5285" version="1">Lash out with deadly claws, potentially causing your target to &lt;LSTag Type="Status" Tooltip="JL_FOTV_RAVENER_CLAWBLEED"&gt;Hemorrhage&lt;/LSTag&gt;.</content>
     <content contentuid="h86ca2ca9gda14g4533g9dfcg15f406ad4044" version="1">Ravenous Hemorrhage</content>
-    <content contentuid="h37d7a35cg9833g4065g920egf476edf3cf3e" version="1">Takes damage at the start of each turn and has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Can be removed by healing, but the healer must pass a Saving Throw using their &lt;LSTag Tooltip="SpellcastingAbility"&gt;Spellcasting Ability&lt;/LSTag&gt; or fail to stop the bleeding.</content>
-
+    <content contentuid="h37d7a35cg9833g4065g920egf476edf3cf3e" version="1">Takes damage at the start of each turn and has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Can be removed by healing, but the healer must pass a DC 20 Saving Throw using their &lt;LSTag Tooltip="SpellcastingAbility"&gt;Spellcasting Ability&lt;/LSTag&gt; or fail to stop the bleeding.</content>
+    <content contentuid="ha671f569g3a51g42a5g8a65gfd8585092204" version="1">Bite a target, potentially draining their &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; by 1.</content>
+    <content contentuid="h183aca4cg17acg45ecg864dg410495924b74" version="1">Ravenous Decay: Constitution</content>
+    <content contentuid="hc8ff5754ge445g4298g9ee1g4a89a4a70e88" version="1">Your &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; is reduced by 1 at the end of each of your turns.</content>
+    <content contentuid="hd4ee7986g94eeg4bdeg8c08g7b96b8e02222" version="1">The jaws that bite, the claws that catch.</content>
     <content contentuid="h0a2347c2gb493g4691gb19cg9abbfc205fb5" version="1">Breath of Malevolence</content>
-    <content contentuid="h56d0cc67gd7e4g4e79ga56dgce82ed752acb" version="1">Spew forth a cone of necrosis and hellfire.</content>
-    <content contentuid="h5da9682bgb08cg43d5g98c9gd51ee312ab8b" version="1">Spew forth a cone of necrosis and vitriol.</content>
-    <content contentuid="h83d7d829g915eg4df3g90b7g3489e02ae693" version="1">Spew forth a cone of necrosis and gelidity.</content>
-    <content contentuid="h369f47a1ga038g45a3ga583ge0a6e920c8f1" version="1">Spew forth a cone of necrosis and galvanism.</content>
-    <content contentuid="h012b1f56g5986g46fbga715g995b3f9087f5" version="1">Spew forth a cone of necrosis and venom.</content>
-    <content contentuid="h3e993a50g43e3g4daagb092g7cb9c380a66c" version="1">Target still takes half damage and one &lt;LSTag Type="Status" Tooltip="JL_FOTV_NEGATIVELEVEL"&gt;Negative Level&lt;/LSTag&gt;.</content>
+    <content contentuid="h56d0cc67gd7e4g4e79ga56dgce82ed752acb" version="1">Spew forth a cone of necrosis and hellfire, potentially draining the target's &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; by [1].</content>
+    <content contentuid="h5da9682bgb08cg43d5g98c9gd51ee312ab8b" version="1">Spew forth a cone of necrosis and vitriol, potentially draining the target's &lt;LSTag Tooltip="Charisma"&gt;Charisma&lt;/LSTag&gt; by [1].</content>
+    <content contentuid="h83d7d829g915eg4df3g90b7g3489e02ae693" version="1">Spew forth a cone of necrosis and gelidity, potentially draining the target's &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; by [1].</content>
+    <content contentuid="h369f47a1ga038g45a3ga583ge0a6e920c8f1" version="1">Spew forth a cone of necrosis and galvanism, potentially draining the target's &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt; by [1].</content>
+    <content contentuid="h012b1f56g5986g46fbga715g995b3f9087f5" version="1">Spew forth a cone of necrosis and venom, potentially draining the target's &lt;LSTag Tooltip="Wisdom"&gt;Wisdom&lt;/LSTag&gt; by [1].</content>
+    <content contentuid="hce364bd1g7784g4856g9db6g91c40d585067" version="1">Ravenous Decay: Strength</content>
+    <content contentuid="h3d5bfd2cg583cg4f44gb766g47ce529df146" version="1">Ravenous Decay: Dexterity</content>
+    <content contentuid="ha80be5cfg3c48g4a50g9f72gf1c995c03ef7" version="1">Ravenous Decay: Intelligence</content>
+    <content contentuid="he7adae9dg234eg41deg80b9gdb5f0c7d5907" version="1">Ravenous Decay: Wisdom</content>
+    <content contentuid="h4d8126a6g7ba9g4761g9f0agede38bace3a1" version="1">Ravenous Decay: Charisma</content>
+    <content contentuid="hd8a301e9g0498g4ab6gb00ag7ef975049cae" version="1">Your [1] is reduced by 1 per stack of this status.</content>
 
     <content contentuid="h54625d60ge8a3g452cg8b7dg6c564113be4a" version="1">Frightful Presence</content>
     <content contentuid="h178ba978g8b54g48a8g84f0gb7f16f1be1e7" version="1">A ravener emanates an aura of fear. The first time you enter a ravener's Frightful Presence, you must pass a Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be afflicted by &lt;LSTag Type="Status" Tooltip="JL_FOTV_RAVENER_FRIGHTFULPRESENCE_PENALTIES"&gt;Ravener's Dread&lt;/LSTag&gt; for as long as you are within [1] of the ravener.</content>

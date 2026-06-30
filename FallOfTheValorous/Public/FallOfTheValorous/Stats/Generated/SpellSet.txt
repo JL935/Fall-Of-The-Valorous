@@ -1,4 +1,3 @@
 new spellset "JL_FOTV_RavenerCommonActions"
-add spell "Target_Fly_Dragon_Skeletal"
 add spell "Shout_Disengage_Drake"
 add spell "Shout_Hide_Drake"

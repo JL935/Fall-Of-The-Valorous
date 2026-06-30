@@ -53,7 +53,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -77,10 +77,10 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="ScoreModifier" type="float" value="1" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -107,7 +107,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Fire" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="10" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -129,6 +129,26 @@
 											</children>
 										</node>
 									</children>
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="b169a4a0-4867-4e90-a0f8-5e2b8bade0b8" />
 								</node>
 							</children>
 						</node>
@@ -175,7 +195,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -199,10 +219,10 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="ScoreModifier" type="float" value="1" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -229,7 +249,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Fire" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="10" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -256,7 +276,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_ScorchingRay" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="4" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -283,7 +303,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_Fireball" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="5" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -305,6 +325,19 @@
 											</children>
 										</node>
 									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
 								</node>
 							</children>
 						</node>
@@ -352,7 +385,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -376,10 +409,10 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="ScoreModifier" type="float" value="1" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -406,7 +439,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Acid" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.5" />
+									<attribute id="ScoreModifier" type="float" value="10" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -474,7 +507,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -498,7 +531,7 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
 									<attribute id="ScoreModifier" type="float" value="1" />
@@ -555,7 +588,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_AcidArrow" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="4" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -582,7 +615,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Target_HungerOfHadar" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="3" />
+									<attribute id="ScoreModifier" type="float" value="5" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -604,13 +637,6 @@
 											</children>
 										</node>
 									</children>
-								</node>
-							</children>
-						</node>
-						<node id="StatusList">
-							<children>
-								<node id="Status">
-									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_UNDERDARKVFX" />
 								</node>
 							</children>
 						</node>
@@ -671,7 +697,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -695,7 +721,7 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
 									<attribute id="ScoreModifier" type="float" value="1" />
@@ -725,7 +751,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Cold" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.5" />
+									<attribute id="ScoreModifier" type="float" value="10" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -793,7 +819,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -817,10 +843,10 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="ScoreModifier" type="float" value="1" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -847,7 +873,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Cold" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.5" />
+									<attribute id="ScoreModifier" type="float" value="10" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -874,7 +900,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_IceKnife" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="4" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -901,7 +927,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Target_SleetStorm" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="5" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -923,6 +949,19 @@
 											</children>
 										</node>
 									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
 								</node>
 							</children>
 						</node>
@@ -969,7 +1008,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -993,10 +1032,37 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerMultiattack" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="ScoreModifier" type="float" value="5" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1023,7 +1089,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Cold" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.5" />
+									<attribute id="ScoreModifier" type="float" value="10" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1050,7 +1116,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_IceKnife" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="4" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1077,7 +1143,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Target_SleetStorm" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="5" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1104,7 +1170,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Target_IceStorm" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="6" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1126,6 +1192,19 @@
 											</children>
 										</node>
 									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="45f0b59c-d732-410e-a4e9-8a3912adcc24" />
 								</node>
 							</children>
 						</node>
@@ -1173,7 +1252,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1197,10 +1276,10 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="ScoreModifier" type="float" value="1" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1227,7 +1306,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Lightning" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="10" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1295,7 +1374,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1319,7 +1398,7 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
 									<attribute id="ScoreModifier" type="float" value="1" />
@@ -1376,7 +1455,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Target_Shatter" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="4" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1403,7 +1482,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Zone_LightningBolt" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="3" />
+									<attribute id="ScoreModifier" type="float" value="5" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1425,6 +1504,19 @@
 											</children>
 										</node>
 									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
 								</node>
 							</children>
 						</node>
@@ -1472,7 +1564,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1496,10 +1588,10 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1.1" />
+									<attribute id="ScoreModifier" type="float" value="1" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1526,7 +1618,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Zone_BreathOfMalevolence_Poison" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="10" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1594,7 +1686,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_RavenerBite" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="2" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1618,7 +1710,7 @@
 									</children>
 								</node>
 								<node id="Skill">
-									<attribute id="Skill" type="FixedString" value="Projectile_Fly" />
+									<attribute id="Skill" type="FixedString" value="JL_FOTV_Target_Fly_Ravener" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
 									<attribute id="ScoreModifier" type="float" value="1" />
@@ -1675,7 +1767,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Projectile_RayOfSickness" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="ScoreModifier" type="float" value="4" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1702,7 +1794,7 @@
 									<attribute id="Skill" type="FixedString" value="JL_FOTV_Ravener_Shout_SpiritGuardians_Necrotic" />
 									<attribute id="SpellCastingAbility" type="uint8" value="0" />
 									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="ScoreModifier" type="float" value="3" />
+									<attribute id="ScoreModifier" type="float" value="5" />
 									<attribute id="StartRound" type="int32" value="0" />
 									<attribute id="FallbackStartRound" type="int32" value="-1" />
 									<attribute id="MinimumImpact" type="int32" value="0" />
@@ -1724,6 +1816,19 @@
 											</children>
 										</node>
 									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
 								</node>
 							</children>
 						</node>

@@ -2,8 +2,11 @@ Version 1
 SubGoalCombiner SGC_AND
 //fuckign parent target edges
 INITSECTION
-// register custom triggers
+//register custom triggers
 PROC_TriggerRegisterForPlayers((TRIGGER)S_JL_FOTV_VlaakithHolySite_f2d64c42-2edc-443c-a527-c55f72044a12);
+
+//Setting ravener health for the lore reasons
+PROC_SetHitpointsPercentage_BlockSelfHealing(S_CHARACTER_JL_FOTV_MountainPass_AdultRavener_f1b3519f-abae-4962-bdfa-6955ec267b2b, 39.8);
 
 KBSECTION
 

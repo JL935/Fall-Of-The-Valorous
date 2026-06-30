@@ -5,18 +5,26 @@
         <node id="root">
             <children>
                 <node id="LevelMapSeries">
-                    <attribute id="Level1" type="LSString" value="1d8"/>
-                    <attribute id="Level11" type="LSString" value="2d8"/>
-                    <attribute id="Level16" type="LSString" value="4d6"/>
-                    <attribute id="Level6" type="LSString" value="2d6"/>
+                    <attribute id="Level1" type="LSString" value="1d4"/>
+                    <attribute id="Level11" type="LSString" value="1d8"/>
+                    <attribute id="Level16" type="LSString" value="2d6"/>
+                    <attribute id="Level6" type="LSString" value="1d6"/>
                     <attribute id="Name" type="FixedString" value="JL_FOTV_RavenerClawsDamage"/>
                     <attribute id="UUID" type="guid" value="0dac7876-421f-4ca1-b0fc-820a1911b07d"/>
                 </node>
                 <node id="LevelMapSeries">
-                    <attribute id="Level1" type="LSString" value="2d6"/>
-                    <attribute id="Level11" type="LSString" value="4d6"/>
-                    <attribute id="Level16" type="LSString" value="4d8"/>
-                    <attribute id="Level6" type="LSString" value="2d8"/>
+                    <attribute id="Level1" type="LSString" value="2"/>
+                    <attribute id="Level11" type="LSString" value="6"/>
+                    <attribute id="Level16" type="LSString" value="8"/>
+                    <attribute id="Level6" type="LSString" value="4"/>
+                    <attribute id="Name" type="FixedString" value="JL_FOTV_RavenerClawBleed"/>
+                    <attribute id="UUID" type="guid" value="e97c0400-64a1-48e2-916f-10e81b04b9c5"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1d6"/>
+                    <attribute id="Level11" type="LSString" value="2d6"/>
+                    <attribute id="Level16" type="LSString" value="2d8"/>
+                    <attribute id="Level6" type="LSString" value="1d8"/>
                     <attribute id="Name" type="FixedString" value="JL_FOTV_RavenerBiteDamage"/>
                     <attribute id="UUID" type="guid" value="5932f30b-f6cc-4384-9d6d-198b7045867d"/>
                 </node>
@@ -27,6 +35,14 @@
                     <attribute id="Level6" type="LSString" value="2d10"/>
                     <attribute id="Name" type="FixedString" value="JL_FOTV_RavenerBreathAttack"/>
                     <attribute id="UUID" type="guid" value="fbc62a8f-e7b5-414e-b56d-b86f05b39d5b"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level11" type="LSString" value="2d4"/>
+                    <attribute id="Level16" type="LSString" value="3d4"/>
+                    <attribute id="Level6" type="LSString" value="1d4"/>
+                    <attribute id="Name" type="FixedString" value="JL_FOTV_RavenerBreathAbilityDrain"/>
+                    <attribute id="UUID" type="guid" value="71d93eaa-c5fa-454d-ab95-8157f4d4d2c3"/>
                 </node>
                 <node id="LevelMapSeries">
                     <attribute id="Level1" type="LSString" value="2d4"/>

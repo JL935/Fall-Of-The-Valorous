@@ -6,6 +6,9 @@ INITSECTION
 //DB_GLO_FOTV_RavenerTags((TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24);
 //DB_GLO_FOTV_RavenerTags((TAG)JL_FOTV_GREATWYRM_RAVENER_e5c0f3ba-c42f-44e8-aa0a-704d1ddc1537);
 
+//so people die if their ability scores get to 0 (larian why u do this to me ;-;)
+DB_Combat_NegativeAbilityScoreStatus("JL_FOTV_RAVENER_CONDRAIN");
+
 //DB of statuses that should force turn-based when you enter their aura
 DB_RavenerDesecrationDamageStatus("JL_FOTV_RAVENER_DESECRATION_DAMAGE");
 DB_RavenerDesecrationDamageStatus("JL_FOTV_RAVENER_DESECRATION_DAMAGE_2");
@@ -27,9 +30,9 @@ DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8
 DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_Ravener_FrightfulPresence_Adult");
 DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_Ravener_FrightfulPresence_Ancient");
 
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_UndeadCharismaBuffs");
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_UndeadCharismaBuffs");
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_UndeadCharismaBuffs");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_UndeadCharismaBuffs");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_UndeadCharismaBuffs");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_UndeadCharismaBuffs");
 
 DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_Ravener_SoulWardPassive");
 DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_Ravener_SoulWardPassive_Adult");

@@ -110,26 +110,6 @@
 							<attribute id="RotationQuat" type="fvec4" value="0 0.3826834 0 0.9238795" />
 							<attribute id="Scale" type="float" value="0.25" />
 						</node>
-						<node id="Treasures">
-							<children>
-								<node id="TreasureItem">
-									<attribute id="Object" type="FixedString" value="" />
-								</node>
-							</children>
-						</node>
-						<node id="Tags">
-							<children>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="b169a4a0-4867-4e90-a0f8-5e2b8bade0b8" />
-								</node>
-							</children>
-						</node>
 						<node id="StatusList">
 							<children>
 								<node id="Status">
@@ -176,26 +156,6 @@
 							<attribute id="Position" type="fvec3" value="-36.648 25.402 -273.967" />
 							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
 							<attribute id="Scale" type="float" value="0.25" />
-						</node>
-						<node id="Treasures">
-							<children>
-								<node id="TreasureItem">
-									<attribute id="Object" type="FixedString" value="" />
-								</node>
-							</children>
-						</node>
-						<node id="Tags">
-							<children>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="b169a4a0-4867-4e90-a0f8-5e2b8bade0b8" />
-								</node>
-							</children>
 						</node>
 						<node id="StatusList">
 							<children>
@@ -281,19 +241,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Tags">
-							<children>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
-								</node>
-							</children>
-						</node>
 						<node id="StatusList">
 							<children>
 								<node id="Status">
@@ -335,26 +282,6 @@
 							<attribute id="Position" type="fvec3" value="89.551 0.611 279.681" />
 							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
 							<attribute id="Scale" type="float" value="0.35" />
-						</node>
-						<node id="Treasures">
-							<children>
-								<node id="TreasureItem">
-									<attribute id="Object" type="FixedString" value="" />
-								</node>
-							</children>
-						</node>
-						<node id="Tags">
-							<children>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
-								</node>
-							</children>
 						</node>
 						<node id="StatusList">
 							<children>
@@ -403,26 +330,6 @@
 							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
 							<attribute id="Scale" type="float" value="0.5" />
 						</node>
-						<node id="Treasures">
-							<children>
-								<node id="TreasureItem">
-									<attribute id="Object" type="FixedString" value="" />
-								</node>
-							</children>
-						</node>
-						<node id="Tags">
-							<children>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="45f0b59c-d732-410e-a4e9-8a3912adcc24" />
-								</node>
-							</children>
-						</node>
 						<node id="StatusList">
 							<children>
 								<node id="Status">
@@ -467,26 +374,6 @@
 							<attribute id="Position" type="fvec3" value="91.76 32.816 597.794" />
 							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
 							<attribute id="Scale" type="float" value="0.35" />
-						</node>
-						<node id="Treasures">
-							<children>
-								<node id="TreasureItem">
-									<attribute id="Object" type="FixedString" value="" />
-								</node>
-							</children>
-						</node>
-						<node id="Tags">
-							<children>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="bec81b6c-02f0-44df-ab09-48121ad7e572" />
-								</node>
-							</children>
 						</node>
 						<node id="StatusList">
 							<children>
