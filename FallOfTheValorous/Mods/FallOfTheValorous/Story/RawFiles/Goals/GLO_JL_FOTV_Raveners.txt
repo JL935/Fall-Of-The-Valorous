@@ -13,6 +13,12 @@ DB_Combat_NegativeAbilityScoreStatus("JL_FOTV_RAVENER_CONDRAIN");
 DB_RavenerDesecrationDamageStatus("JL_FOTV_RAVENER_DESECRATION_DAMAGE");
 DB_RavenerDesecrationDamageStatus("JL_FOTV_RAVENER_DESECRATION_DAMAGE_2");
 
+//DB for soul ward statuses
+DB_FOTV_SoulWardStatus("JL_FOTV_RAVENER_YOUNG_SOULWARD");
+DB_FOTV_SoulWardStatus("JL_FOTV_RAVENER_ADULT_SOULWARD");
+DB_FOTV_SoulWardStatus("JL_FOTV_RAVENER_ANCIENT_SOULWARD");
+DB_FOTV_SoulWardStatus("JL_FOTV_RAVENER_GREATWYRM_SOULWARD");
+
 //Removing Ravener's Desecration with radiant damage
 DB_FOTV_DealRadiantToDispel(S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, 10, "JL_FOTV_RAVENER_DESECRATION");
 DB_FOTV_DealRadiantToDispel(S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, 20, "JL_FOTV_RAVENER_DESECRATION_2");
@@ -69,6 +75,26 @@ AND
 _DamageAmount >= _RequiredAmount
 THEN
 RemoveStatus(_Desecrated, _EvilStatus);
+
+//Disabling soul ward
+IF
+StatusApplied((GUIDSTRING)_Object, "JL_FOTV_RAVENER_SOULWARD_DISABLED", _, _)
+AND
+DB_FOTV_SoulWardStatus(_SoulWardStatus)
+AND
+HasActiveStatus(_Object, _SoulWardStatus, 1)
+THEN
+DB_FOTV_RavenerWardReturn(_Object, _SoulWardStatus);
+RemoveStatus((GUIDSTRING)_Object, (STRING)_SoulWardStatus);
+
+//Enabling soul ward
+IF
+StatusRemoved((GUIDSTRING)_Object, "JL_FOTV_RAVENER_SOULWARD_DISABLED", _, _)
+AND
+DB_FOTV_RavenerWardReturn(_Object, _SoulWardStatus)
+THEN
+ApplyStatus((GUIDSTRING)_Object, _SoulWardStatus, -1.0);
+NOT DB_FOTV_RavenerWardReturn(_Object, _SoulWardStatus);
 
 //Reveal the relevant passive on all raveners when you read the appropriate lore document
 IF

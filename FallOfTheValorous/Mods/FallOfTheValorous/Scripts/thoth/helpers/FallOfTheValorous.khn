@@ -1,10 +1,11 @@
-function FrightfulPresenceImmuneCheck()
-    local notscared = IsImmuneToStatus('SG_Frightened',context.Target)
-    local despairaura = HasPassive('JL_FOTV_Ravener_AuraOfDespair',context.Source)
-    if (not notscared.Result) or (notscared.Result and despairaura.Result) then
-        st = SavingThrow(Ability.Wisdom,SourceSpellDC(),AdvantageOnFrightened(),DisadvantageOnFrightened())
-        return ConditionResult(st.Result,{},{},st.Chance)
-    elseif (notscared.Result) and (not despairaura.Result) then
+function JLFOTVRHPPBW(lower, upper)
+    return ConditionResult(context.Target.HPPercentageWithoutTemporaryHP > lower and context.Target.HPPercentageWithoutTemporaryHP <= upper)
+end
+
+function JLFOTVCBSW(entity)
+    local entity = entity or context.Source
+    local canbypass = HasStatus('JL_FOTV_SOULWARD_CANBYPASS',entity)
+    if (canbypass.Result) then
         return ConditionResult(true)
     end
     return ConditionResult(false)

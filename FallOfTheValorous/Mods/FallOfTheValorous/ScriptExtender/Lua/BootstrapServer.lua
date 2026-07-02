@@ -9,6 +9,7 @@ Ext.Vars.RegisterModVariable(ModuleUUID, "Xulvorith", {Server = true, Client = t
 ----------------------------------------------------------------------------------------------------
 ---------------credits: idk tbh i think i frankensteined this shit by myself for once---------------
 ----------------------------------------------------------------------------------------------------
+--[[
 --Define statuses that change the value of the Soul Ward and by how much
 local soulpointstatuses = {
     JL_FOTV_DS_SOULPOINTS = 5,
@@ -106,6 +107,37 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(object, status
         Osi.RemoveStatus(object, "JL_FOTV_RAVENER_SOULWARD_BLOCK")
     end
 end)
+]]
+--apply a status at the beginning of combat to any applicable character who can bypass the soul ward (ClassIds table from Shared)
+Ext.Osiris.RegisterListener("CombatStarted", 1, "after", function(_)
+    local incombat = Osi.DB_Is_InCombat:Get(nil,nil)
+    for i = #incombat, 1, -1 do
+        local isholy = incombat[i][1]
+        local holyentity = Ext.Entity.Get(isholy)
+        local classes = holyentity.Classes.Classes
+        for _, classEntry in pairs(classes) do
+            if ClassIds[classEntry.ClassUUID] then
+                Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
+            elseif ClassIds[classEntry.SubClassUUID] then
+                Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
+            end
+        end
+    end
+end)
+
+--this is for if u join combat later
+--why did i use the CombatStarted listener when this seems like it would work better
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(object, _)
+    local holyentity = Ext.Entity.Get(object)
+    local classes = holyentity.Classes.Classes
+    for _, classEntry in pairs(classes) do
+        if ClassIds[classEntry.ClassUUID] then
+            Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
+        elseif ClassIds[classEntry.SubClassUUID] then
+            Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
+        end
+    end
+end)
 ----------------------------------------------------------------------------------------------------
 ---------------------------------------------XULVORITH----------------------------------------------
 ----------------------------------------------------------------------------------------------------
@@ -122,13 +154,13 @@ function TrackXulvorith(source, amount)
     if XulvorithTracker[source] == nil then
 		XulvorithTracker[source] = {}
 	end
-    _P("initialized table")
+    --_P("initialized table")
 
     --Calculate the total damage tracked on the entity
     for _,i in pairs(XulvorithTracker[source]) do
         totalxulvorith = totalxulvorith + i.Amount
     end
-    _P("total damage tracked before this function = " ..totalxulvorith)
+    --_P("total damage tracked before this function = " ..totalxulvorith)
 
     --Add the new damage amount to the table of tracked values
     if sourceentity.BoostsContainer ~= nil then
@@ -137,8 +169,8 @@ function TrackXulvorith(source, amount)
         })
         totalxulvorith = totalxulvorith + amount
     end
-    _D(XulvorithTracker)
-    _P("new total after tracking is " ..totalxulvorith)
+    --_D(XulvorithTracker)
+    --_P("new total after tracking is " ..totalxulvorith)
 
     vars.Xulvorith = XulvorithTracker
 end
@@ -154,7 +186,7 @@ function XulvorithDamage(object, status, causee)
     for _,i in pairs(XulvorithTracker[guid]) do
         totalxulvorith = totalxulvorith + i.Amount
     end
-    _P("total damage to be dealt = " ..totalxulvorith)
+    --_P("total damage to be dealt = " ..totalxulvorith)
 
     --Deal full damage or halved damage based on the outcome of the entity's saving throw
     if status == "JL_FOTV_XULVORITH_FAIL" then
@@ -197,14 +229,10 @@ end
 ---@param e EsvLuaBeforeDealDamageEvent
 Ext.Events.BeforeDealDamage:Subscribe(function (e)
     local hit = e.Hit
-    --[[if e.Hit.StatusId ~= "BURNING_LAVA" then
-        _D(e)
-    end]]
     if GetTotalDamage(hit) > 0 then
         local sourceGuid = hit.Inflicter ~= nil and hit.Inflicter.Uuid.EntityUuid or "NULL_00000000-0000-0000-0000-000000000000"
         if Osi.HasActiveStatus(sourceGuid, "JL_FOTV_XULVORITH") == 1 then
             for _,dlist in pairs(hit.DamageList) do
-                --_P("hewwo")
                 TrackXulvorith(sourceGuid, dlist.Amount)
             end
         end

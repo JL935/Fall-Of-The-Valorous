@@ -120,26 +120,26 @@ function ExtractSpellsFromPassive(passive_data)
 end
 
 ClassIds = {
-   "114e7aee-d1d4-4371-8d90-8a2080592faf", -- Cleric
-   "b927a22a-d64b-48d6-bc7c-38c5f7f6a061", --- Death Domain
-   "ebe18794-b5e1-41c4-befa-4b9d6922b0ec", --- Knowledge Domain
-   "4b5da2f5-b999-4623-8bff-a63df5560fb3", --- Life Domain
-   "c54d7591-b305-4f22-b2a7-1bf5c4a3470a", --- Light Domain
-   "6dec76d0-df22-411c-8a78-3d6fb843ae50", --- Nature Domain
-   "89bacf1b-8f15-4972-ada7-bf59c7c78441", --- Tempest Domain
-   "f013d01b-3310-43f7-81bf-a51130442b5e", --- Trickery Domain
-   "b9ccf90e-b35b-4b73-b896-8ed2d32ae8c6", --- War Domain
-   "ff4d9497-023c-434a-bd14-82fc367e991c", -- Paladin
-   "1c761ad0-6f5f-409e-ac1d-ddf6f85c1fc4", --- Oath of Devotion
-   "b36d247e-d39f-4ae9-9476-3ec315c55789", --- Oath of the Ancients
-   "eaad98ec-026b-429e-aa24-8274dfd1ecb7", --- Oath of the Crown
-   "3cc3d397-c47d-4966-87ae-88827f73f645", --- Oath of Vengeance
-   "6fb3831e-45d8-4b30-9714-6fe73988921b", --- Oathbreaker
-   "96cff02d-92a3-4083-9fc4-16703ca5dc8d", -- Inquisitor
-   "4dc44aca-29ec-4fe5-8d34-bc58c8d7c269", --- Tactics Inquisition
-   "040e41b0-e197-4856-a7c3-f7093ae85f0b", --- Valor Inquisition
-   "81e4c08b-ce20-4c3f-bad4-959966432f1c", --- Vengeance Inquisition
-   "e115216d-f6f8-4034-bca5-e06cd1e95dfe", --- Zeal Inquisition
+   ["114e7aee-d1d4-4371-8d90-8a2080592faf"] = true, -- Cleric
+   ["b927a22a-d64b-48d6-bc7c-38c5f7f6a061"] = true, --- Death Domain
+   ["ebe18794-b5e1-41c4-befa-4b9d6922b0ec"] = true, --- Knowledge Domain
+   ["4b5da2f5-b999-4623-8bff-a63df5560fb3"] = true, --- Life Domain
+   ["c54d7591-b305-4f22-b2a7-1bf5c4a3470a"] = true, --- Light Domain
+   ["6dec76d0-df22-411c-8a78-3d6fb843ae50"] = true, --- Nature Domain
+   ["89bacf1b-8f15-4972-ada7-bf59c7c78441"] = true, --- Tempest Domain
+   ["f013d01b-3310-43f7-81bf-a51130442b5e"] = true, --- Trickery Domain
+   ["b9ccf90e-b35b-4b73-b896-8ed2d32ae8c6"] = true, --- War Domain
+   ["ff4d9497-023c-434a-bd14-82fc367e991c"] = true, -- Paladin
+   ["1c761ad0-6f5f-409e-ac1d-ddf6f85c1fc4"] = true, --- Oath of Devotion
+   ["b36d247e-d39f-4ae9-9476-3ec315c55789"] = true, --- Oath of the Ancients
+   ["eaad98ec-026b-429e-aa24-8274dfd1ecb7"] = true, --- Oath of the Crown
+   ["3cc3d397-c47d-4966-87ae-88827f73f645"] = true, --- Oath of Vengeance
+   ["6fb3831e-45d8-4b30-9714-6fe73988921b"] = true, --- Oathbreaker
+   ["96cff02d-92a3-4083-9fc4-16703ca5dc8d"] = true, -- Inquisitor
+   ["4dc44aca-29ec-4fe5-8d34-bc58c8d7c269"] = true, --- Tactics Inquisition
+   ["040e41b0-e197-4856-a7c3-f7093ae85f0b"] = true, --- Valor Inquisition
+   ["81e4c08b-ce20-4c3f-bad4-959966432f1c"] = true, --- Vengeance Inquisition
+   ["e115216d-f6f8-4034-bca5-e06cd1e95dfe"] = true, --- Zeal Inquisition
 }
 
 ValidSpells = {}
