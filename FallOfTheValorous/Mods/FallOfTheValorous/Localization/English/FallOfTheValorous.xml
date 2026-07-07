@@ -12,15 +12,14 @@
     <content contentuid="hdd9c5475g2a62g4a5fg884cg78c0fe451283" version="1">Cast the Darkness From Your Heart</content>
     <content contentuid="he76914d7g355cg40a2g83cfg219c1a3e8dbe" version="1">Humble Beginnings</content>
     <content contentuid="he1aeb001gbb24g454fg9ab9gedfa7ad87ac1" version="1">Above All Shadows Rides the Sun</content>
-    <content contentuid="h22e47467ge3d8g47ddga4a2g066d4519ad00" version="1">Scourge of Yeenoghu</content>
     <content contentuid="h8c023414g2b7bg4174g970ag37b2bea9ecab" version="1">A Knight of Renown</content>
     <content contentuid="h52e5f0f9g290bg4c0bg9a8agc4d4c2bcaaba" version="1">Alive, Gloriously Alive, Today</content>
-    <content contentuid="hd79ab8ddgc81ag4ba5gbe89gf917730a696c" version="1">Stay Thy Hand</content>
+    <content contentuid="hd79ab8ddgc81ag4ba5gbe89gf917730a696c" version="1">Peacekeeper</content>
     <content contentuid="hfbc8133eg355fg46c1gbb4dg4f791dde13c0" version="1">The Fire Inside Me</content>
     <content contentuid="h5fdabec2g27b0g4401ga02cgb17e3d2cd286" version="1">Room For One More</content>
     <content contentuid="h2c8f64c7ge8aeg4240g9927g4ff573ca2e6a" version="1">No Rest for the Weary</content>
     <content contentuid="ha5778f30g98a4g46bfg9f5dgb4e003571721" version="1">Freedom's Call</content>
-    <content contentuid="hf21a81e0g0682g419cga6b4gf7910a074bec" version="1">Unseen Shackles Unbound</content>
+    <content contentuid="hf21a81e0g0682g419cga6b4gf7910a074bec" version="1">Memento Vivere</content>
     <content contentuid="hfeb1e2c3gfa25g4f4dg8691g3f586948cf8e" version="1">By Fire Be Purged</content>
 
     <content contentuid="hd1140639gdbf6g4b62g92a3g0924ed5b50bb" version="1">And In the Darkness Bind Them</content>
@@ -47,7 +46,6 @@
     <content contentuid="h122d77dagd1bag4576g86f9geb358a07b549" version="1">Don't You Dare Go Hollow</content>
     <content contentuid="h6c5555cdg8bc3g4ab8g911dgaa6667d36c86" version="1">Lesser, Greater, Middling</content>
     <content contentuid="hbb08d204g305bg43b7gb4bbg07ec25ac8b69" version="1">Aurë Entuluva</content>
-    <content contentuid="h252105ffg8572g4114g80a9g1590e8bd9d3b" version="1">Kindred Spirits</content>
     <content contentuid="hd577d75ag10d7g40d7g99eag7835ac13e5f2" version="1">Let Them Linger</content>
     <content contentuid="h4f63c001g7af3g4054ga40cg42d6c15940b7" version="1">Resurgam</content>
     <content contentuid="hf530aa64g8c18g4cd2g8132gac8bce0fb886" version="1">Destined Death</content>
@@ -150,7 +148,7 @@
     <content contentuid="h5f283537gaee1g4a75g8d75g43a53aa55dd4" version="1">This letter, bearing the insignia of the Valor Inquisition, is neatly folded and addressed directly to you.</content>
     <content contentuid="hc6a0fbddg60ccg4166ga27bg0b8c01391e3f" version="1">Whether this letter reaches you by my hand or by my corpse, I thank you for freeing me from the chains of servitude. My dearest companions, however, were not so fortunate as to have escaped the clutches of the Ravener King. I fear that my insurgent actions against the Ravener King sparked his ire, which he exacted upon my allies. Prithee, find my faithful compatriots:&lt;br&gt;&lt;br&gt;Naldrase Elsidyi, the Archon of Justice&lt;br&gt;Zinia Kalyphise, the Harbinger of Harmony&lt;br&gt;Xandril Felgorn, the Bulwark of the Righteous&lt;br&gt;&lt;br&gt;And free them from the clutches of evil.&lt;br&gt;&lt;br&gt;Should I yet live, I will begin the hunt as well. In life or death, I hope our paths may cross once more.&lt;br&gt;&lt;br&gt;Yours faithfully,&lt;br&gt;Taarogus Dantill</content>
 
-    <content contentuid="h7fb0c7aeg0d66g484ega4f6gc6340b0c3844" version="1">Word of Power</content>
+    <content contentuid="h7fb0c7aeg0d66g484ega4f6gc6340b0c3844" version="1">Words of Power</content>
     <content contentuid="h6df6a500g9838g4007gbe21g15049fff2307" version="1">Holy Words</content>
     <content contentuid="hbe5dfc2cgf6c6g4e59g9e6eg55256d2f73e6" version="1">Speak into existence the divine language that you have acquired on your journey.</content>
     
@@ -185,7 +183,6 @@
     <content contentuid="h87309293gbce3g43dbg8495gb2e1fd4a042c" version="1">Must take a Long Rest.</content>
 
     <content contentuid="h8dbf0ff8g03bcg4673gb886gb94396b3f8c7" version="1">Undead Dragon Traits</content>
-    <content contentuid="h002221e4g14b8g4817ga3f2g3c0f93ec2ee7" version="1">As both an undead and a dragon, a ravener exhibits the following traits: &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleeding&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blindness&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="CharmedGroup"&gt;Charm&lt;/LSTag&gt;, Disease, &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Fear&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysis&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poison&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="SLEEPING"&gt;Sleep&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunn&lt;/LSTag&gt;, and nonlethal damage, as well as &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on saving throws against being &lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turned&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Raveners calculate their &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; and Constitution-based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; using Charisma, and add half of their Charisma &lt;LSTag Tooltip="AbilityModifier"&gt;Modifier&lt;/LSTag&gt; as a bonus to their AC.&lt;br&gt;&lt;br&gt;Raveners have Blindsight and can see through magical darkness and fog.</content>
 
     <content contentuid="he7e9e7a9g3f41g4fafgbfa5g5874c6917ea4" version="1">Degenerating Strikes</content>
     <content contentuid="hba18442bg4c04g4b44g83dcgc594d51a27dd" version="1">Raveners score a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; when rolling an 18 or higher. On a Critical Hit, targets must pass a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be afflicted by a &lt;LSTag Type="Status" Tooltip="JL_FOTV_NEGATIVELEVEL"&gt;Negative Level&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Raveners add 5 points to their Soul Ward when afflicting a creature with a Negative Level from their melee attacks.&lt;br&gt;&lt;br&gt;Raveners add 1 point to their Soul Ward per Negative Level inflicted by their &lt;LSTag Type="Spell" Tooltip="JL_FOTV_Zone_BreathOfMalevolence_Fire"&gt;Breath of Malevolence&lt;/LSTag&gt;.</content>
@@ -305,7 +302,7 @@
     <content contentuid="hd36276d7g84aeg4bc8ga741g023a8b99a379" version="1">Solar's Implacability</content>
     <content contentuid="hb6e83b98gc676g411dga5f1g7624aab3e421" version="1">Damage dealt to you by the last enemy you damaged is reduced by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
     <content contentuid="h77c98645gc427g4e16ga797g165177fd03b2" version="1">Damage dealt to you by the last enemy you damaged is reduced by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;When an enemy hits you, your AC is increased by 1 against them. This effect stacks until the enemy misses you due to the additional AC, after which it resets.</content>
-    <content contentuid="hc53d3f9fg7473g408fga400gac085039475f" version="1">(do something) to upgrade this item.</content>
+    <content contentuid="hc53d3f9fg7473g408fga400gac085039475f" version="1">Become imbued with the blood of the righteous to upgrade this item.</content>
     <content contentuid="h4dadb61egfc17g4638gba74gbe9a479396c3" version="1">(do something) to upgrade this item.</content>
 
     <content contentuid="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1">Vindicator's Resplendence</content>
@@ -336,7 +333,7 @@
     <content contentuid="hdd44fe73g0b3bg4a5agb055g9379114fbd0c" version="1">&lt;LSTag Type="Passive" Tooltip="JL_FOTV_FlankingTooltip"&gt;Flanking&lt;/LSTag&gt;</content>
 
     <content contentuid="hd8800abcgfbc8g423bga2dbg36417d4cc19b" version="1">Valor Inquisition</content>
-    <content contentuid="h16b33589g83f0g42abg95abgb8d2a17683d4" version="1">It takes courage to confront the enemies of your faith. There is no monster too menacing nor duty too daunting for you, who stands tall in battle and commands the respect of the gods.</content>
+    <content contentuid="h16b33589g83f0g42abg95abgb8d2a17683d4" version="1">It takes courage to confront the enemies of your faith. There is no monster too menacing nor duty too daunting for you, who stands tall in battle and commands the respect of the gods.&lt;br&gt;&lt;br&gt;You will be forcibly respecced out of this subclass until completion of the quest 'No Monster Too Menacing, No Duty Too Daunting.'</content>
 
     <content contentuid="hc569be9cg96ddg472fgb04cg649b7b17b5f4" version="1">Valorous Tenacity</content>
     <content contentuid="h7b4eaa4bgbb1eg474fgb530gf76f65511f5d" version="1">You are &lt;LSTag Tooltip="Immune"&gt;Immune&lt;/LSTag&gt; to &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt; and have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against &lt;LSTag Tooltip="CharmedGroup"&gt;Charm&lt;/LSTag&gt; effects.</content>

@@ -4,7 +4,7 @@ using "_Book"
 data "Rarity" "Rare"
 data "ValueScale" "4"
 data "ValueUUID" "124a46ba-3465-4a69-8b82-108d643c1e09"
-data "Vitality" "100"
+data "Vitality" "200"
 data "Weight" "0.5"
 
 new entry "MAP_JL_FOTV_RareAct1"

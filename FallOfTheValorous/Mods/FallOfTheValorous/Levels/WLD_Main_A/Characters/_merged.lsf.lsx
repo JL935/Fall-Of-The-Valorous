@@ -636,9 +636,6 @@
 								<node id="Status">
 									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_CONSUMPTION_BLOCK_VAELYTHRA" />
 								</node>
-								<node id="Status">
-									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_DESECRATION_2" />
-								</node>
 							</children>
 						</node>
 					</children>

@@ -2,7 +2,11 @@
 JLFOTV = JLFOTV or {}
 
 JLFOTV.SubclassFlagSet = Ext.Net.CreateChannel(ModuleUUID, "JLFOTV_SubclassFlagSet")
-
+----------------------------------------------------------------------------------------------------
+------------------------------------------FEATS OF RENOWN-------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------credits: Focus for the BackgroundManager <3 ----------------------------
+----------------------------------------------------------------------------------------------------
 BackgroundManager = {
     Net = Ext.Net.CreateChannel(ModuleUUID, "UpdateBG"),
 }
@@ -64,13 +68,6 @@ function BackgroundManager:CleanBackgroundFromUI(character, background)
         end
     end
 end
-
-
-
-
-
-
-
 ----------------------------------------------------------------------------------------------------
 -----------------------------------------DIVINE DEFIANCE--------------------------------------------
 ----------------------------------------------------------------------------------------------------
@@ -145,7 +142,7 @@ ClassIds = {
 ValidSpells = {}
 
 function GetSpellsByHolyClasses()
-   for _, uuid in ipairs(ClassIds) do
+   for uuid in pairs(ClassIds) do
       local spell_lists = {}
       local passives = {}
 
@@ -224,10 +221,7 @@ function IsDivineCaster(spell, caster)
     local classes = Ext.Entity.Get(caster).Classes.Classes
     for _, id in ipairs(ValidSpells[spell]) do
         for _, classEntry in pairs(classes) do
-            if classEntry.ClassUUID == id then
-                return true
-            -- i actually wrote these next 2 lines myself are you proud of me
-            elseif classEntry.SubClassUUID == id then
+            if classEntry.ClassUUID == id or classEntry.SubClassUUID == id then
                 return true
             end
         end

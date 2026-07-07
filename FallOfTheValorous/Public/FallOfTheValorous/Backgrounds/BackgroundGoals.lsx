@@ -66,14 +66,14 @@
                     <attribute id="Title" type="TranslatedString" handle="he76914d7g355cg40a2g83cfg219c1a3e8dbe" version="1"/>
                     <attribute id="UUID" type="guid" value="9227d77a-dfc1-4d33-beb8-6f75adbacd9a"/>
                 </node>
-            <!-- Scourge of Yeenoghu (Cursebreaker) -->
+            <!-- Cursebreaker -->
                 <node id="BackgroundGoal">
                     <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
                     <attribute id="Description" type="TranslatedString" handle="h5ed29c42g6510g4fc8ga717g1592f5da304f" version="1"/>
                     <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
                     <attribute id="InspirationPoints" type="uint32" value="1"/>
                     <attribute id="RewardLevel" type="uint32" value="4"/>
-                    <attribute id="Title" type="TranslatedString" handle="h22e47467ge3d8g47ddga4a2g066d4519ad00" version="1"/>
+                    <attribute id="Title" type="TranslatedString" handle="hbbaad8d5g0cefg45dcg9796ga86f5e679ece" version="1"/>
                     <attribute id="UUID" type="guid" value="5b283065-3256-4f6c-a698-5795c4f5008c"/>
                 </node>
             <!-- A Knight of Renown (Entitled) -->
@@ -96,7 +96,7 @@
                     <attribute id="Title" type="TranslatedString" handle="h52e5f0f9g290bg4c0bg9a8agc4d4c2bcaaba" version="1"/>
                     <attribute id="UUID" type="guid" value="108d0d44-bb88-46fa-b82a-0e0f01de6ea0"/>
                 </node>
-            <!-- Stay Thy Hand (Not On My Watch) -->
+            <!-- Peacekeeper (Not On My Watch) -->
                 <node id="BackgroundGoal">
                     <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
                     <attribute id="Description" type="TranslatedString" handle="habb02ccdgf3d9g4b9bg9af7g4197d386be46" version="1"/>
@@ -146,7 +146,7 @@
                     <attribute id="Title" type="TranslatedString" handle="ha5778f30g98a4g46bfg9f5dgb4e003571721" version="1"/>
                     <attribute id="UUID" type="guid" value="80a91066-1e46-4d3f-aed4-c5e952f5eb24"/>
                 </node>
-            <!-- Unseen Shackles Unbound (Unmasking The Truth) -->
+            <!-- Memento Vivere (Unmasking The Truth) -->
                 <node id="BackgroundGoal">
                     <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
                     <attribute id="Description" type="TranslatedString" handle="h89e520ecg58eag4feeg87f2g90476b7ffb15" version="3"/>
@@ -398,14 +398,14 @@
                     <attribute id="Title" type="TranslatedString" handle="hbb08d204g305bg43b7gb4bbg07ec25ac8b69" version="1"/>
                     <attribute id="UUID" type="guid" value="41619f53-da35-4604-b212-a42bf223f4d7"/>
                 </node>
-            <!-- Kindred Spirits (Knowledge Of The Heart) -->
+            <!-- Knowledge Of The Heart -->
                 <node id="BackgroundGoal">
                     <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
                     <attribute id="Description" type="TranslatedString" handle="h4a43f927g63cdg4783g9194g6344fb379b9f" version="3"/>
                     <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
                     <attribute id="InspirationPoints" type="uint32" value="1"/>
                     <attribute id="RewardLevel" type="uint32" value="9"/>
-                    <attribute id="Title" type="TranslatedString" handle="h252105ffg8572g4114g80a9g1590e8bd9d3b" version="1"/>
+                    <attribute id="Title" type="TranslatedString" handle="h54e51855g0dfcg457dg8667gb99a8a506e54" version="1"/>
                     <attribute id="UUID" type="guid" value="6f472133-001a-4038-bce7-d2de09b74932"/>
                 </node>
             <!-- Let Them Linger (Needs Of The Many) -->

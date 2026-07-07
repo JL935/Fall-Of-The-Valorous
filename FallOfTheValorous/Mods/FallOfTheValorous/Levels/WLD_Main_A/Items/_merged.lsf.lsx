@@ -257,9 +257,16 @@
 							</children>
 						</node>
 						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="32.033 7.635 -215.274" />
+							<attribute id="Position" type="fvec3" value="35.31066 7.486123 -216.1081" />
 							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
 							<attribute id="Scale" type="float" value="1" />
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="JL_FOTV_RAVENER_DESECRATION_2" />
+								</node>
+							</children>
 						</node>
 					</children>
 				</node>

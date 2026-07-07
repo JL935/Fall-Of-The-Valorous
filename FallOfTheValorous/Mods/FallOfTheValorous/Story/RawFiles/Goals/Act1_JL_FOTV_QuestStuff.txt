@@ -260,6 +260,7 @@ DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_CursedJournal", "STEP_JL_FOTV_
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Lulix", "STEP_JL_FOTV_CallToAction");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Arzimyr", "STEP_JL_FOTV_CallToAction");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_Xulvorith", "STEP_JL_FOTV_CallToAction");
+DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_MustBeDone", "STEP_JL_FOTV_CallToAction");
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_EvilTaarogus", "STEP_JL_FOTV_ReturnToTheHolyLand");
 ///Seeker of Lost Lore
 DB_FOTV_AddMarkerAfterStepStarted("MARKER_JL_FOTV_ThayanOutpostResearch", "STEP_JL_FOTV_CallToAction");
@@ -297,6 +298,7 @@ DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_CursedJournal", "STEP_JL_FO
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Lulix", "STEP_JL_FOTV_SavedKhionzu");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Arzimyr", "STEP_JL_FOTV_SavedSaelethil");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_Xulvorith", "STEP_JL_FOTV_SavedAdrasteia");
+DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_MustBeDone", "STEP_JL_FOTV_SavedAdrasteia");
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_EvilTaarogus", "STEP_JL_FOTV_ApostleCompleted");
 //Seeker of Lost Lore
 DB_FOTV_RemoveMarkerAfterStepStarted("MARKER_JL_FOTV_ThayanOutpostResearch", "STEP_JL_FOTV_LearnedSoulWard");

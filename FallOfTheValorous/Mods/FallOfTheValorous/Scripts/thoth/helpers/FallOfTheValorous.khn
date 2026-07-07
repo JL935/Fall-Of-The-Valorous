@@ -45,11 +45,6 @@ function HasXulvorithCooldown()
     return ConditionResult(xulvorithcooldown.Result, {}, {ConditionError("HolyWordLRCooldown")})
 end
 
-function IsHolyClass(entity)
-    local entity = entity or context.Target
-    return Tagged('PALADIN', entity) | Tagged('CLERIC', entity) | Tagged('INQUISITOR', entity)
-end
-
 function SoulConsumedDivineInterventionCheck()
     local result = HasStatus('JL_FOTV_RAVENER_SOULDEVOURED',context.Target)
     return ConditionResult(result.Result,{},{ConditionError("RequiresDivineIntervention")})

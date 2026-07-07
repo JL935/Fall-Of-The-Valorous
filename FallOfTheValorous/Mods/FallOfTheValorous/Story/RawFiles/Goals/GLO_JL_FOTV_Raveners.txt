@@ -1,13 +1,13 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-//DB_GLO_FOTV_RavenerTags((TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8);
-//DB_GLO_FOTV_RavenerTags((TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572);
-//DB_GLO_FOTV_RavenerTags((TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24);
-//DB_GLO_FOTV_RavenerTags((TAG)JL_FOTV_GREATWYRM_RAVENER_e5c0f3ba-c42f-44e8-aa0a-704d1ddc1537);
-
 //so people die if their ability scores get to 0 (larian why u do this to me ;-;)
 DB_Combat_NegativeAbilityScoreStatus("JL_FOTV_RAVENER_CONDRAIN");
+DB_Combat_NegativeAbilityScoreStatus("JL_FOTV_RAVENER_STRDRAIN");
+DB_Combat_NegativeAbilityScoreStatus("JL_FOTV_RAVENER_DEXDRAIN");
+DB_Combat_NegativeAbilityScoreStatus("JL_FOTV_RAVENER_INTDRAIN");
+DB_Combat_NegativeAbilityScoreStatus("JL_FOTV_RAVENER_WISDRAIN");
+DB_Combat_NegativeAbilityScoreStatus("JL_FOTV_RAVENER_CHADRAIN");
 
 //DB of statuses that should force turn-based when you enter their aura
 DB_RavenerDesecrationDamageStatus("JL_FOTV_RAVENER_DESECRATION_DAMAGE");
@@ -21,31 +21,31 @@ DB_FOTV_SoulWardStatus("JL_FOTV_RAVENER_GREATWYRM_SOULWARD");
 
 //Removing Ravener's Desecration with radiant damage
 DB_FOTV_DealRadiantToDispel(S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, 10, "JL_FOTV_RAVENER_DESECRATION");
-DB_FOTV_DealRadiantToDispel(S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, 20, "JL_FOTV_RAVENER_DESECRATION_2");
+DB_FOTV_DealRadiantToDispel(S_LORE_JL_FOTV_WhatMustBeDone_2f243df4-4140-4f38-9aa7-a591ddbeb2ff, 20, "JL_FOTV_RAVENER_DESECRATION_2");
 
 //DB to tie together raveners with dead inquisitors - ravener must be defeated before inquisitor can be targeted by Vaelythra holy word
 DB_FOTV_SoulConsumers((GUIDSTRING)S_CHARACTER_JL_FOTV_Apothecary_YoungRavener_6e0bfd73-330a-4d7d-b6e7-fd7dba65b0a4, (GUIDSTRING)S_JL_FOTV_ApothecaryInquisitor_Dead_b730b18d-fb32-4436-a073-86a10c934f92);
 DB_FOTV_SoulConsumers((GUIDSTRING)S_CHARACTER_JL_FOTV_Underdark_AdultRavener_296f4f1a-a8e9-48fb-bdc0-e9c5c997e809, (GUIDSTRING)S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882);
 
 //DB to tie together global flags with the passives they reveal on raveners
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af7b-42e0-8f45-ac3826a4afe1, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_Ravener_DegeneratingStrikes");
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af7b-42e0-8f45-ac3826a4afe1, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_Ravener_DegeneratingStrikes");
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af7b-42e0-8f45-ac3826a4afe1, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_Ravener_DegeneratingStrikes");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af7b-42e0-8f45-ac3826a4afe1, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_Ravener_DegeneratingStrikes");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af7b-42e0-8f45-ac3826a4afe1, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_Ravener_DegeneratingStrikes");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_MalevolenceStudyRead_c58bd837-af7b-42e0-8f45-ac3826a4afe1, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_Ravener_DegeneratingStrikes");
 
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_Ravener_FrightfulPresence");
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_Ravener_FrightfulPresence_Adult");
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_Ravener_FrightfulPresence_Ancient");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_Ravener_FrightfulPresence");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_Ravener_FrightfulPresence_Adult");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_FrightfulPresenceRead_1c1928f0-b078-48ae-8562-d305d7573c66, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_Ravener_FrightfulPresence_Ancient");
 
 //DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_UndeadCharismaBuffs");
 //DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_UndeadCharismaBuffs");
 //DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_UnholyCommunionRead_97109720-da6a-4d93-9148-a00e2b44d4ba, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_UndeadCharismaBuffs");
 
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_Ravener_SoulWardPassive");
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_Ravener_SoulWardPassive_Adult");
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_Ravener_SoulWardPassive_Ancient");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, (TAG)JL_FOTV_YOUNG_RAVENER_b169a4a0-4867-4e90-a0f8-5e2b8bade0b8, "JL_FOTV_Ravener_SoulWardPassive");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_Ravener_SoulWardPassive_Adult");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulWardRead_e6594196-80b1-427f-9bbe-9738530c1d7a, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_Ravener_SoulWardPassive_Ancient");
 
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulConsumptionRead_acd764a2-d55d-4e0c-9d04-fbdf9a7a6ffa, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_Ravener_SoulConsumption_Adult");
-DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulConsumptionRead_acd764a2-d55d-4e0c-9d04-fbdf9a7a6ffa, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_Ravener_SoulConsumption_Ancient");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulConsumptionRead_acd764a2-d55d-4e0c-9d04-fbdf9a7a6ffa, (TAG)JL_FOTV_ADULT_RAVENER_bec81b6c-02f0-44df-ab09-48121ad7e572, "JL_FOTV_Ravener_SoulConsumption_Adult");
+//DB_RavenerKnowledgeFlag((FLAG)JL_FOTV_SoulConsumptionRead_acd764a2-d55d-4e0c-9d04-fbdf9a7a6ffa, (TAG)JL_FOTV_ANCIENT_RAVENER_45f0b59c-d732-410e-a4e9-8a3912adcc24, "JL_FOTV_Ravener_SoulConsumption_Ancient");
 
 //DB of every ravener
 DB_FOTV_Ravener((GUIDSTRING)S_CHARACTER_JL_FOTV_Apothecary_YoungRavener_6e0bfd73-330a-4d7d-b6e7-fd7dba65b0a4);
@@ -96,17 +96,18 @@ THEN
 ApplyStatus((GUIDSTRING)_Object, _SoulWardStatus, -1.0);
 NOT DB_FOTV_RavenerWardReturn(_Object, _SoulWardStatus);
 
+//i'll come back to this some day ;-;
 //Reveal the relevant passive on all raveners when you read the appropriate lore document
-IF
-FlagSet(_RavenerKnowledgeFlag, _, _)
-AND
-DB_RavenerKnowledgeFlag(_RavenerKnowledgeFlag, _AgeTag, _KnowledgePassive)
-AND
-DB_FOTV_Ravener(_Ravener)
-AND
-IsTagged(_Ravener, _AgeTag, 1)
-THEN
-AddPassive(_Ravener, _KnowledgePassive);
+//IF
+//FlagSet(_RavenerKnowledgeFlag, _, _)
+//AND
+//DB_RavenerKnowledgeFlag(_RavenerKnowledgeFlag, _AgeTag, _KnowledgePassive)
+//AND
+//DB_FOTV_Ravener(_Ravener)
+//AND
+//IsTagged(_Ravener, _AgeTag, 1)
+//THEN
+//AddPassive(_Ravener, _KnowledgePassive);
 
 //Clear the block on dead inquisitors when their ravener is dead
 IF

@@ -2,118 +2,36 @@
 
 Ext.Require("Shared.lua")
 
-Ext.Vars.RegisterModVariable(ModuleUUID, "SoulWard", {Server = true, Client = true})
 Ext.Vars.RegisterModVariable(ModuleUUID, "Xulvorith", {Server = true, Client = true})
 ----------------------------------------------------------------------------------------------------
 ---------------------------------------------SOUL WARD----------------------------------------------
 ----------------------------------------------------------------------------------------------------
----------------credits: idk tbh i think i frankensteined this shit by myself for once---------------
+--------------------------------------credits: just me i think--------------------------------------
 ----------------------------------------------------------------------------------------------------
---[[
---Define statuses that change the value of the Soul Ward and by how much
-local soulpointstatuses = {
-    JL_FOTV_DS_SOULPOINTS = 5,
-    JL_FOTV_BOM_F_SOULPOINTS = 2,
-    JL_FOTV_BOM_S_SOULPOINTS = 1,
-    JL_FOTV_RAVENER_YOUNGSTARTINGWARD = 5,
-    JL_FOTV_RAVENER_ADULTSTARTINGWARD = 10,
-    JL_FOTV_RAVENER_ANCIENTSTARTINGWARD = 15,
-    JL_FOTV_ARZIMYR_REDUCEWARD = -1,
-    JL_FOTV_XULVORITH_REDUCEWARD = -5
-}
-
---Define statuses that are used specifically to reduce the value of the Soul Ward
-local soulwardreducers = {
-    JL_FOTV_ARZIMYR_REDUCEWARD = true,
-    JL_FOTV_XULVORITH_REDUCEWARD = true
-}
-
---Function that tracks the points in the Soul Ward
-function SoulWardCalculation(object, status)
-	local vars = Ext.Vars.GetModVariables(ModuleUUID)
-	local soulward = vars.SoulWard or {}
-    local soulwardpool = 0
-    local objectentity = Ext.Entity.Get(object)
-    local soulpointvalue = soulpointstatuses[status] or Osi.GetStatusTurns(object, "JL_FOTV_RAVENER_SOULCONSUMED")
-    local soulwardmax = 0
-
-    _P("point value of status is " ..soulpointvalue)
-
-    --Set the maximum capacity of the Soul Ward based on the age category of the ravener
-    if Osi.IsTagged(object, "e5c0f3ba-c42f-44e8-aa0a-704d1ddc1537") == 1 then
-        soulwardmax = 40
-    elseif Osi.IsTagged(object, "45f0b59c-d732-410e-a4e9-8a3912adcc24") == 1 then
-        soulwardmax = 30
-    elseif Osi.IsTagged(object, "bec81b6c-02f0-44df-ab09-48121ad7e572") == 1 then
-        soulwardmax = 20
-    elseif Osi.IsTagged(object, "b169a4a0-4867-4e90-a0f8-5e2b8bade0b8") == 1 then
-        soulwardmax = 10
-    end
-
-    --Initialize the Soul Ward on the ravener
-	if soulward[object] == nil then
-		soulward[object] = {}
-	end
-
-    --Calculate the points in the Soul Ward prior to adding the value of the incoming status
-    for _,i in pairs(soulward[object]) do
-        soulwardpool = soulwardpool + i.Amount
-    end
-    _P("pool amount before function runs is " ..soulwardpool)
-
-    --Logic for what should happen based on the new total of the Soul Ward vs the maximum capacity
-    if objectentity.BoostsContainer ~= nil then
-        if soulwardpool + soulpointvalue < 0 then
-            soulwardpool = 0
-        elseif soulwardpool + soulpointvalue < soulwardmax then
-            table.insert(soulward[object], {
-		        Amount = soulpointvalue,
-            })
-            soulwardpool = soulwardpool + soulpointvalue
-        elseif soulwardpool + soulpointvalue >= soulwardmax then
-            Osi.ApplyStatus(object, "JL_FOTV_RAVENER_SOULWARD_BLOCK", -1, 0, object)
-            table.insert(soulward[object], {
-		        Amount = soulwardmax-soulwardpool,
-            })
-            soulwardpool = soulwardmax
-        end
-    end
-
-    local soulstatuslevel = math.floor(soulwardpool/5)
-    _P("pool amount after function is " ..soulwardpool)
-    _P("soul status level is " ..soulstatuslevel)
-
-    --Apply stacks of the Soul Ward status based on how many points are in the Soul Ward
-    if soulstatuslevel ~= 0 then
-        Osi.RemoveStatus(object, "JL_FOTV_RAVENER_SOULWARD_DR", object)
-        Osi.ApplyStatus(object, "JL_FOTV_RAVENER_SOULWARD_DR", soulstatuslevel*6, 0, object)
-    elseif soulwardpool < 5 then
-        Osi.RemoveStatus(object, "JL_FOTV_RAVENER_SOULWARD_DR", object)
-    end
-
-    Osi.RemoveStatus(object, "JL_FOTV_RAVENER_SOULCONSUMED", object)
-
-	vars.SoulWard = soulward
-end
-
---soul ward listeners
-Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(object, status, _, _)
-    if Osi.HasActiveStatus(object, "JL_FOTV_RAVENER_SOULWARD_BLOCK") == 0 then
-        if soulpointstatuses[status] or status == "JL_FOTV_RAVENER_SOULCONSUMED" then
-            SoulWardCalculation(object, status)
-        end
-    end
-    if soulwardreducers[status] and Osi.HasActiveStatus(object, "JL_FOTV_RAVENER_SOULWARD_BLOCK") == 1 then
-        Osi.RemoveStatus(object, "JL_FOTV_RAVENER_SOULWARD_BLOCK")
-    end
-end)
-]]
 --apply a status at the beginning of combat to any applicable character who can bypass the soul ward (ClassIds table from Shared)
 Ext.Osiris.RegisterListener("CombatStarted", 1, "after", function(_)
     local incombat = Osi.DB_Is_InCombat:Get(nil,nil)
     for i = #incombat, 1, -1 do
         local isholy = incombat[i][1]
         local holyentity = Ext.Entity.Get(isholy)
+        if holyentity.Classes ~= nil then
+            local classes = holyentity.Classes.Classes
+            for _, classEntry in pairs(classes) do
+                if ClassIds[classEntry.ClassUUID] then
+                    Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
+                elseif ClassIds[classEntry.SubClassUUID] then
+                    Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
+                end
+            end
+        end
+    end
+end)
+
+--this is for if u join combat later
+--why did i use the CombatStarted listener when this seems like it would work better
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(object, _)
+    local holyentity = Ext.Entity.Get(object)
+    if holyentity.Classes ~= nil then
         local classes = holyentity.Classes.Classes
         for _, classEntry in pairs(classes) do
             if ClassIds[classEntry.ClassUUID] then
@@ -124,17 +42,109 @@ Ext.Osiris.RegisterListener("CombatStarted", 1, "after", function(_)
         end
     end
 end)
+----------------------------------------------------------------------------------------------------
+--------------------------------------------HOLY WORDS----------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------credits: just me i think--------------------------------------
+----------------------------------------------------------------------------------------------------
+local holywordflags = {
+    ["JL_FOTV_ApothecaryInquisitorFreed_a80348bb-7402-4460-a725-1d0bf923c153"] = true, --Lulix
+    ["JL_FOTV_RisenRoadFreed_414c42de-2602-4703-b89d-fa32c1aa0fbd"] = true, --Arzimyr
+    ["JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562"] = true, --Vaelythra + Container
+    ["JL_FOTV_UnderdarkInquisitorFreed_5b18c4c1-8839-4593-8457-f5ddf38544bb"] = true, --Xulvorith
+}
 
---this is for if u join combat later
---why did i use the CombatStarted listener when this seems like it would work better
-Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(object, _)
-    local holyentity = Ext.Entity.Get(object)
-    local classes = holyentity.Classes.Classes
-    for _, classEntry in pairs(classes) do
-        if ClassIds[classEntry.ClassUUID] then
-            Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
-        elseif ClassIds[classEntry.SubClassUUID] then
-            Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
+--the function that handles adding holy words
+function JL_FOTV_UpdateHolyWords(object)
+    Osi.AddSpell(object, "JL_FOTV_DivineOrationContainer", 0, 1)
+    Osi.AddPassive(object, "JL_FOTV_HolyWord_Toggler")
+    local knownwords = Osi.DB_GLO_FOTV_KnownHolyWords:Get(nil) --collecting known words in Osi cuz of legacy laziness
+    --_D(knownwords)
+    for i = #knownwords, 1, -1 do
+        local holyword = knownwords[i][1]
+        Osi.AddSpell(object, holyword, 0, 1)
+    end
+end
+
+function JL_FOTV_RemoveHolyWords(object)
+    if Osi.HasSpell(object, "JL_FOTV_DivineOrationContainer") == 1 then
+        Osi.RemoveSpell(object, "JL_FOTV_DivineOrationContainer", 1)
+    end
+    if Osi.HasPassive(object, "JL_FOTV_HolyWord_Toggler") == 1 then
+        Osi.RemovePassive(object, "JL_FOTV_HolyWord_Toggler")
+    end
+    local knownwords = Osi.DB_GLO_FOTV_KnownHolyWords:Get(nil) --collecting known words in Osi cuz of legacy laziness
+    --_D(knownwords)
+    for i =#knownwords, 1, -1 do
+        local holyword = knownwords[i][1]
+        if Osi.HasSpell(object, holyword) == 1 then
+            Osi.RemoveSpell(object, holyword, 1)
+        end
+    end
+end
+
+--when a player respecs, see if they respecced into a divine class that can learn holy words
+--start with a timer cuz i forgor ?
+Ext.Osiris.RegisterListener("RespecCompleted", 1, "after", function(character)
+    Osi.RealtimeObjectTimerCancel(character, "JL_FOTV_CheckDivineClass")
+    Osi.RealtimeObjectTimerLaunch(character, "JL_FOTV_CheckDivineClass", 500)
+end)
+
+--check class when timer is up
+Ext.Osiris.RegisterListener("ObjectTimerFinished", 2, "after", function(object, timer)
+    --also checking if you finished the quest step that you should know about holy words
+    if timer == "JL_FOTV_CheckDivineClass" and Osi.GetFlag("af8044f6-6647-4a74-8e5a-f0c5e7c7b562", "NULL_00000000-0000-0000-0000-000000000000") == 1 then
+        local holyentity = Ext.Entity.Get(object)
+        local classes = holyentity.Classes.Classes
+        for _, classEntry in pairs(classes) do
+            if ClassIds[classEntry.ClassUUID] or ClassIds[classEntry.SubClassUUID] then
+                JL_FOTV_UpdateHolyWords(object)
+            elseif not ClassIds[classEntry.ClassUUID] or not ClassIds[classEntry.SubClassUUID] then
+                JL_FOTV_RemoveHolyWords(object)
+            end
+        end
+    end
+end)
+
+--divine classed character joined party
+Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(character)
+    --are you at the step where u can even learn holy words
+    if Osi.GetFlag("af8044f6-6647-4a74-8e5a-f0c5e7c7b562", "NULL_00000000-0000-0000-0000-000000000000") == 1 then
+        local holyentity = Ext.Entity.Get(character)
+        local classes = holyentity.Classes.Classes
+        for _, classEntry in pairs(classes) do
+            --are you a holy class - if yes, add holy words
+            if ClassIds[classEntry.ClassUUID] or ClassIds[classEntry.SubClassUUID] then
+                JL_FOTV_UpdateHolyWords(character)
+            end
+        end
+    end
+end)
+
+--divine classed character left party
+Ext.Osiris.RegisterListener("CharacterLeftParty", 1, "after", function(character)
+    JL_FOTV_RemoveHolyWords(character)
+end)
+
+--flag set that corresponds to learning a holy word
+Ext.Osiris.RegisterListener("FlagSet", 3, "after", function(flag, _, _)
+    if holywordflags[flag] then
+        local avatars = Osi.DB_Avatars:Get(nil)
+        for i = #avatars, 1, -1 do
+            local avatar = avatars[i][1]
+            JL_FOTV_UpdateHolyWords(avatar)
+        end
+        local players = Osi.DB_Players:Get(nil)
+        for j =#players, 1, -1 do
+            local player = players[j][1]
+            local playerentity = Ext.Entity.Get(player)
+            local classes = playerentity.Classes.Classes
+            for _, classEntry in pairs(classes) do
+                if ClassIds[classEntry.ClassUUID] or ClassIds[classEntry.SubClassUUID] then
+--_P("entity is holy get worded")
+                    JL_FOTV_UpdateHolyWords(player)
+                end
+            end
         end
     end
 end)
@@ -673,6 +683,8 @@ Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(caster, t
         end
     end
 
+    _P(spell)
+
     if not (ValidSpells[spell] and IsDivineCaster(spell, caster)) then return end
 
     local bossUUID   = target:sub(-36)
@@ -686,6 +698,8 @@ Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(caster, t
             spellcastability = tostring(i.SpellCastingAbility)
         end
     end
+
+    _P(spellcastability)
 
     local dc = SpellDC(Ext.Entity.Get(bossUUID))
         _P(dc)
@@ -905,6 +919,40 @@ Ext.Events.BeforeDealDamage:Subscribe(function (e)
                     end
                     e.Attack.DamageList = {}
                     e.Attack.TotalDamageDone = 0
+                end
+            end
+        end
+    end
+end)
+----------------------------------------------------------------------------------------------------
+----------------------------------------------JANKERY-----------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------------credits: ;-;--------------------------------------------
+----------------------------------------------------------------------------------------------------
+--if not finished quest, force a respec teehee
+Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
+    local holyentity = Ext.Entity.Get(character)
+    local classes = holyentity.Classes.Classes
+    if Osi.GetFlag("30d714d5-35e8-458c-9a74-31dc9ccc512e", "NULL_00000000-0000-0000-0000-000000000000") == 0 then
+        for _, classEntry in pairs(classes) do
+            if classEntry.SubClassUUID == "040e41b0-e197-4856-a7c3-f7093ae85f0b" then
+                Osi.StartRespec(character)
+            end
+        end
+    end
+end)
+
+--if not finished quest, force a respec teehee
+Ext.Entity.OnDestroy("CCLevelUpDefinition", function()
+    local players = Osi.DB_Players:Get(nil)
+    for j =#players, 1, -1 do
+        local player = players[j][1]
+        local holyentity = Ext.Entity.Get(player)
+        local classes = holyentity.Classes.Classes
+        if Osi.GetFlag("30d714d5-35e8-458c-9a74-31dc9ccc512e", "NULL_00000000-0000-0000-0000-000000000000") == 0 then
+            for _, classEntry in pairs(classes) do
+                if classEntry.SubClassUUID == "040e41b0-e197-4856-a7c3-f7093ae85f0b" then
+                    Osi.StartRespec(player)
                 end
             end
         end

@@ -54,6 +54,16 @@ data "OnApplyFunctors" "DealDamage(2d8,Necrotic,Magical,,0,,true,true,false,true
 data "StatusEffect" "1d4b5727-45c1-44a9-81fb-565b73af895d"
 data "StatusEffectOnTurn" "a70f7b2c-1b1d-45db-a787-a2d37b0e451b"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////UNDEAD TRAITS///////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//cuz they have 0 constitution for the lore but then their con saves would be ass
+new entry "JL_FOTV_UndeadCharismaBuffs_Hidden"
+type "PassiveData"
+data "Icon" "Icon_JL_FOTV_UndeadDragonTraits"
+data "DisplayName" "h8dbf0ff8g03bcg4673gb886gb94396b3f8c7;1"
+data "Boosts" "IncreaseMaxHP(max(0,Level*CharismaModifier));RollBonus(SavingThrow,max(0,5+CharismaModifier),Constitution)"
+data "Properties" "IsHidden"
+///////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////RAVENER FLIGHT///////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //these bitches refuse to fly
@@ -392,18 +402,23 @@ data "StatusType" "BOOST"
 data "StackId" "JL_FOTV_SOULWARD_CANBYPASS"
 data "StackType" "Ignore"
 data "RemoveEvents" "OnCombatEnded"
-data "StatusPropertyFlags" "ApplyToDead"
-//;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+data "StatusPropertyFlags" "ApplyToDead;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
 
 new entry "JL_FOTV_RAVENER_SOULWARD_DISABLED"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "JL_FOTV_RAVENER_SOULWARD_DISABLED"
 data "StackType" "Ignore"
-//data "OnApplyFunctors" "RemoveStatus(JL_FOTV_RAVENER_YOUNG_SOULWARD);RemoveStatus(JL_FOTV_RAVENER_ADULT_SOULWARD);RemoveStatus(JL_FOTV_RAVENER_ANCIENT_SOULWARD);RemoveStatus(JL_FOTV_RAVENER_GREATWYRM_SOULWARD)"
-//data "OnRemoveFunctors" "IF(Tagged('JL_FOTV_YOUNG_RAVENER')):ApplyStatus(JL_FOTV_RAVENER_YOUNG_SOULWARD,100,-1);IF(Tagged('JL_FOTV_ADULT_RAVENER')):ApplyStatus(JL_FOTV_RAVENER_ADULT_SOULWARD,100,-1);IF(Tagged('JL_FOTV_ANCIENT_RAVENER')):ApplyStatus(JL_FOTV_RAVENER_ANCIENT_SOULWARD,100,-1);IF(Tagged('JL_FOTV_GREATWYRM_RAVENER')):ApplyStatus(JL_FOTV_RAVENER_GREATWYRM_SOULWARD,100,-1)"
-data "StatusPropertyFlags" "ApplyToDead;TickingWithSource"
-//;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+data "StatusPropertyFlags" "ApplyToDead;TickingWithSource;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+
+new entry "JL_FOTV_HOLYWORD_RAVENERDR"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h6a1d4ed3gd3ffg4cffg9d9cg489f7a6d76bf;1"
+data "StackId" "JL_FOTV_HOLYWORD_RAVENERDR"
+data "StackType" "Ignore"
+data "Boosts" "IF(IsARavener(context.Source)):DamageReduction(All,Flat,3)"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////FRIGHTFUL PRESENCE/////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -456,283 +471,19 @@ data "StatusType" "BOOST"
 using "FRIGHTENED"
 data "Icon" "Icon_JL_FOTV_RavenerDread"
 data "DisplayName" "h213f6338g2740g426fg8150g1e4da7fb3e66;1"
-//data "Description" "h76164edag754eg44e3ga022g6e99009b8c8e;1"
 data "FormatColor" "Warrior"
 data "StackId" "JL_FOTV_RAVENER_FRIGHTFULPRESENCE_PENALTIES"
 data "StackType" "Ignore"
-//data "Boosts" "RollBonus(RawAbility,-2);RollBonus(Attack,-2);RollBonus(SkillCheck,-2);RollBonus(SavingThrow,-2)"
 data "RemoveEvents" ""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-new entry "JL_FOTV_Ravener_SoulConsumption_Hidden"
-type "PassiveData"
-data "Icon" "Icon_JL_FOTV_SoulConsumption"
-data "DisplayName" "hdec40330gf6d9g42b1g8c1fg9e52fac0366d;1"
-data "Description" "hdd273e6bg9c79g437cga110g5a1a9a0ade1c;1"
-data "DescriptionParams" "Distance(9)"
-data "StatsFunctorContext" "OnCombatStarted"
-data "StatsFunctors" "ApplyStatus(JL_FOTV_RAVENER_SOULCONSUMPTION_AURA,100,-1)"
-//data "Boosts" "ReduceCriticalAttackThreshold(20)"
-data "Properties" "IsHidden"
-
-new entry "JL_FOTV_Ravener_SoulConsumption_Adult"
-type "PassiveData"
-data "Icon" "Icon_JL_FOTV_SoulConsumption"
-data "DisplayName" "hdec40330gf6d9g42b1g8c1fg9e52fac0366d;1"
-data "Description" "h09699457gecbdg4efdg9231g034730caeb4d;1"
-data "DescriptionParams" "Distance(9)"
-data "Properties" "Highlighted"
-
-new entry "JL_FOTV_Ravener_SoulConsumption_Ancient"
-type "PassiveData"
-using "JL_FOTV_Ravener_SoulConsumption_Adult"
-data "Description" "hdd273e6bg9c79g437cga110g5a1a9a0ade1c;1"
-
-new entry "JL_FOTV_RAVENER_SOULCONSUMPTION_AURA"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_RAVENER_SOULCONSUMPTION_AURA"
-data "StackType" "Ignore"
-data "AuraRadius" "9"
-data "AuraStatuses" "TARGET:IF(Character() and (not Tagged('UNDEAD') and not Tagged('UNDEAD_BEAST') and not Tagged('CONSTRUCT'))):ApplyStatus(JL_FOTV_RAVENER_SOULCONSUME)"
-data "OnApplyFunctors" "IF(Tagged('JL_FOTV_YOUNG_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_YOUNGSTARTINGWARD,100,0);IF(Tagged('JL_FOTV_ADULT_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_ADULTSTARTINGWARD,100,0);IF(Tagged('JL_FOTV_ANCIENT_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_ANCIENTSTARTINGWARD,100,0)"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_RAVENER_SOULCONSUME"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackType" "Stack"
-data "RemoveEvents" "OnStatusApplied"
-data "RemoveConditions" "StatusId('DYING')"
-data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SWAP,JL_FOTV_RAVENER_SOULCONSUMED,100,Cause.Level);IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('JL_FOTV_ADULT_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_SOULDEVOURED_TECHNICAL,100,0)"
-data "StatusPropertyFlags" "ApplyToDead;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_RAVENER_SOULCONSUMED"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_RAVENER_SOULCONSUMED"
-data "StackType" "Ignore"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_RAVENER_SOULDEVOURED_TECHNICAL"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_RAVENER_SOULDEVOURED_TECHNICAL"
-data "StackType" "Ignore"
-data "DisplayName" "hdec40330gf6d9g42b1g8c1fg9e52fac0366d;1"
-data "Description" "h65c4f5f0g0fadg41deg8765g8ed918d263fe;1"
-data "DescriptionParams" "Distance(9)"
-data "OnApplyRoll" "SoulConsumptionSave()"
-data "OnApplySuccess" "ApplyStatus(JL_FOTV_RAVENER_SOULDEVOURED,100,-1)"
-data "StatusPropertyFlags" "ApplyToDead;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_RAVENER_SOULDEVOURED"
-type "StatusData"
-data "StatusType" "BOOST"
-data "Icon" "Icon_JL_FOTV_SoulConsumption"
-data "DisplayName" "hdec40330gf6d9g42b1g8c1fg9e52fac0366d;1"
-data "Description" "had316622g2ff7g44c0g9a21gd65ed6e767f9;1"
-data "StackId" "JL_FOTV_RAVENER_SOULDEVOURED"
-data "StackType" "Ignore"
-data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
-data "RemoveConditions" "not Dead()"
-data "StatusPropertyFlags" "ApplyToDead;IgnoreResting;DisableCombatlog"
-
-new entry "JL_FOTV_RAVENER_SOULWARD_BLOCK"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_RAVENER_SOULWARD_BLOCK"
-data "StackType" "Ignore"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_RAVENER_YOUNGSTARTINGWARD"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_RAVENER_YOUNGSTARTINGWARD"
-data "StackType" "Ignore"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_RAVENER_ADULTSTARTINGWARD"
-type "StatusData"
-data "StatusType" "BOOST"
-using "JL_FOTV_RAVENER_YOUNGSTARTINGWARD"
-data "StackId" "JL_FOTV_RAVENER_ADULTSTARTINGWARD"
-
-new entry "JL_FOTV_RAVENER_ANCIENTSTARTINGWARD"
-type "StatusData"
-data "StatusType" "BOOST"
-using "JL_FOTV_RAVENER_YOUNGSTARTINGWARD"
-data "StackId" "JL_FOTV_RAVENER_ANCIENTSTARTINGWARD"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////DEGENERATING STRIKES////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-new entry "JL_FOTV_Ravener_DegeneratingStrikes_Hidden"
-type "PassiveData"
-data "Icon" "Icon_JL_FOTV_DegeneratingStrikes"
-data "DisplayName" "he7e9e7a9g3f41g4fafgbfa5g5874c6917ea4;1"
-data "Description" "hba18442bg4c04g4b44g83dcgc594d51a27dd;1"
-data "Boosts" "ReduceCriticalAttackThreshold(2)"
-data "StatsFunctorContext" "OnAttack"
-data "Conditions" "HasDamageEffectFlag(DamageFlags.Critical) and IsAttack() and not (IsCriticalMiss() or IsMiss())"
-data "StatsFunctors" "ApplyStatus(JL_FOTV_NEGATIVELEVEL_DS_TECH,100,0,,,,not SavingThrow(Ability.Constitution,SourceSpellDC()));ApplyStatus(JL_FOTV_NEGATIVELEVEL_DEATHCHECK,100,0)"
-data "Properties" "IsHidden"
-
-new entry "JL_FOTV_Ravener_DegeneratingStrikes"
-type "PassiveData"
-data "Icon" "Icon_JL_FOTV_DegeneratingStrikes"
-data "DisplayName" "he7e9e7a9g3f41g4fafgbfa5g5874c6917ea4;1"
-data "Description" "hba18442bg4c04g4b44g83dcgc594d51a27dd;1"
-data "Properties" "Highlighted"
-
-new entry "JL_FOTV_NEGATIVELEVEL_DS_TECH"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_NEGATIVELEVEL_DS_TECH"
-data "StackType" "Ignore"
-data "OnApplyFunctors" "ApplyStatus(JL_FOTV_NEGATIVELEVEL,100,1);ApplyStatus(SELF,JL_FOTV_DS_SOULPOINTS,100,0)"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_NEGATIVELEVEL_DEATHCHECK"
-type "StatusData"
-data "StatusType" "BOOST"
-data "OnRemoveFunctors" "IF(NegativeLevelDeathCheck()):Kill()"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_DS_SOULPOINTS"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_DS_SOULPOINTS"
-data "StackType" "Ignore"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-///////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////MALEFIC VASSALS//////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-new entry "JL_FOTV_Ravener_MaleficVassals_Hidden"
-type "PassiveData"
-data "StatsFunctorContext" "OnCombatStarted"
-data "StatsFunctors" "ApplyStatus(JL_FOTV_RAVENER_MALEFICVASSALS_AURA,100,-1)"
-data "Properties" "IsHidden"
-
-new entry "JL_FOTV_Ravener_MaleficVassalsPassive"
-type "PassiveData"
-data "Icon" "Icon_JL_FOTV_MaleficVassals"
-data "DisplayName" "h521fb6c2g3d53g4591g88e7g4309a8e02f7f;1"
-data "Description" "he5fb5938g1d02g4e05gb1edg3e137afb99bf;1"
-data "DescriptionParams" "Distance(18);DealDamage(1d8,Necrotic)"
-data "Properties" "Highlighted"
-
-new entry "JL_FOTV_RAVENER_MALEFICVASSALS_AURA"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_RAVENER_MALEFICVASSALS_AURA"
-data "StackType" "Ignore"
-data "AuraRadius" "18"
-data "AuraStatuses" "TARGET:IF((Tagged('UNDEAD') or Tagged('UNDEAD_BEAST')) and not IsARavener()):ApplyStatus(JL_FOTV_RAVENER_MALEFIC_VASSALS)"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_RAVENER_MALEFIC_VASSALS"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_RAVENER_MALEFIC_VASSALS"
-data "StackType" "Ignore"
-data "Icon" "Icon_JL_FOTV_MaleficVassals"
-data "DisplayName" "h3b3aca8dg772bg496bg8634gdbd49d0705d0;1"
-data "Description" "h56da86c6geaf5g43c9g9a55g551f44a1acc9;1"
-data "DescriptionParams" "DealDamage(1d8,Necrotic)"
-data "Boosts" "DamageBonus(1d8,Necrotic,true)"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////DIVINE DEFIANCE//////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 new entry "JL_FOTV_Ravener_DivineDefiance_Hidden"
 type "PassiveData"
-data "Properties" "IsHidden"
-
-new entry "JL_FOTV_Ravener_DivineDefiance_Ancient"
-type "PassiveData"
 data "Icon" "Icon_JL_FOTV_DivineDefiance"
 data "DisplayName" "h94693da9g3b35g463dgadd3g2b634d2b3ec5;1"
 data "Description" "hd56e310fg48f7g4fe6gbb76g33c7cf405cb6;1"
-data "DescriptionParams" "Ancient"
 data "Properties" "Highlighted"
-
-new entry "JL_FOTV_DIVINEDEFIANCE_CASTERSAVE_INT"
-type "StatusData"
-data "StatusType" "BOOST"
-data "StackId" "JL_FOTV_DIVINEDEFIANCE_CASTERSAVE"
-data "DisplayName" "h94693da9g3b35g463dgadd3g2b634d2b3ec5;1"
-data "OnApplyFunctors" "RemoveStatus(JL_FOTV_DIVINEDEFIANCE_LOCATOR)"
-data "OnApplyRoll" "not SavingThrow(Ability.Intelligence,CalculateSpellDC(context.PreferredCastingAbility,context.Source))"
-data "OnApplySuccess" "IF(IsARavener(context.Source)):ApplyStatus(SELF,JL_FOTV_DIVINEDEFIANCE_IMMUNE,100,1);IF(not IsARavener(context.Source)):ApplyStatus(SELF,JL_FOTV_DIVINEDEFIANCE_IMMUNE_SMALLER,100,1)"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-new entry "JL_FOTV_DIVINEDEFIANCE_CASTERSAVE_WIS"
-type "StatusData"
-data "StatusType" "BOOST"
-using "JL_FOTV_DIVINEDEFIANCE_CASTERSAVE_INT"
-data "OnApplyRoll" "not SavingThrow(Ability.Wisdom,CalculateSpellDC(context.PreferredCastingAbility,context.Source))"
-
-new entry "JL_FOTV_DIVINEDEFIANCE_CASTERSAVE_CHA"
-type "StatusData"
-data "StatusType" "BOOST"
-using "JL_FOTV_DIVINEDEFIANCE_CASTERSAVE_INT"
-data "OnApplyRoll" "not SavingThrow(Ability.Charisma,CalculateSpellDC(context.PreferredCastingAbility,context.Source))"
 
 new entry "JL_FOTV_DIVINEDEFIANCE_DISTRIBUTOR"
 type "StatusData"
@@ -950,42 +701,114 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "StatusEffect" "de26d2a6-f81d-41a9-89b0-88df3c916a28"
 data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////UNDEAD TRAITS///////////////////////////////////////////
+////////////////////////////////////////UNUSED FOR NOW ;-;/////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-
-//pathfinder :sadge:
-
-//new entry "JL_FOTV_UndeadCharismaBuffs_Hidden"
+//new entry "JL_FOTV_Ravener_SoulConsumption_Hidden"
 //type "PassiveData"
-//data "Icon" "Icon_JL_FOTV_UndeadDragonTraits"
-//data "DisplayName" "h8dbf0ff8g03bcg4673gb886gb94396b3f8c7;1"
-//data "Description" "h002221e4g14b8g4817ga3f2g3c0f93ec2ee7;1"
-//data "Boosts" "IncreaseMaxHP(max(0,Level*CharismaModifier));RollBonus(SavingThrow,max(0,5+CharismaModifier),Constitution);IF(ConditionResult(context.Source.Charisma >= 14)):AC(1);IF(ConditionResult(context.Source.Charisma >= 18)):AC(1);IF(ConditionResult(context.Source.Charisma >= 22)):AC(1);IF(ConditionResult(context.Source.Charisma >= 26)):AC(1);IF(ConditionResult(context.Source.Charisma >= 30)):AC(1)"
+//data "Icon" "Icon_JL_FOTV_SoulConsumption"
+//data "DisplayName" "hdec40330gf6d9g42b1g8c1fg9e52fac0366d;1"
+//data "Description" "hdd273e6bg9c79g437cga110g5a1a9a0ade1c;1"
+//data "DescriptionParams" "Distance(9)"
+//data "StatsFunctorContext" "OnCombatStarted"
+//data "StatsFunctors" "ApplyStatus(JL_FOTV_RAVENER_SOULCONSUMPTION_AURA,100,-1)"
+//data "Boosts" "ReduceCriticalAttackThreshold(20)"
 //data "Properties" "IsHidden"
 
-//new entry "JL_FOTV_UndeadCharismaBuffs"
+//new entry "JL_FOTV_Ravener_SoulConsumption_Adult"
 //type "PassiveData"
-//data "Icon" "Icon_JL_FOTV_UndeadDragonTraits"
-//data "DisplayName" "h8dbf0ff8g03bcg4673gb886gb94396b3f8c7;1"
-//data "Description" "h002221e4g14b8g4817ga3f2g3c0f93ec2ee7;1"
+//data "Icon" "Icon_JL_FOTV_SoulConsumption"
+//data "DisplayName" "hdec40330gf6d9g42b1g8c1fg9e52fac0366d;1"
+//data "Description" "h09699457gecbdg4efdg9231g034730caeb4d;1"
+//data "DescriptionParams" "Distance(9)"
 //data "Properties" "Highlighted"
+
+//new entry "JL_FOTV_Ravener_SoulConsumption_Ancient"
+//type "PassiveData"
+//using "JL_FOTV_Ravener_SoulConsumption_Adult"
+//data "Description" "hdd273e6bg9c79g437cga110g5a1a9a0ade1c;1"
+
+//new entry "JL_FOTV_RAVENER_SOULCONSUMPTION_AURA"
+//type "StatusData"
+//data "StatusType" "BOOST"
+//data "StackId" "JL_FOTV_RAVENER_SOULCONSUMPTION_AURA"
+//data "StackType" "Ignore"
+//data "AuraRadius" "9"
+//data "AuraStatuses" "TARGET:IF(Character() and (not Tagged('UNDEAD') and not Tagged('UNDEAD_BEAST') and not Tagged('CONSTRUCT'))):ApplyStatus(JL_FOTV_RAVENER_SOULCONSUME)"
+//data "OnApplyFunctors" "IF(Tagged('JL_FOTV_YOUNG_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_YOUNGSTARTINGWARD,100,0);IF(Tagged('JL_FOTV_ADULT_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_ADULTSTARTINGWARD,100,0);IF(Tagged('JL_FOTV_ANCIENT_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_ANCIENTSTARTINGWARD,100,0)"
+//data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+
+//new entry "JL_FOTV_RAVENER_SOULCONSUME"
+//type "StatusData"
+//data "StatusType" "BOOST"
+//data "StackType" "Stack"
+//data "RemoveEvents" "OnStatusApplied"
+//data "RemoveConditions" "StatusId('DYING')"
+//data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SWAP,JL_FOTV_RAVENER_SOULCONSUMED,100,Cause.Level);IF(RemoveCause(StatusRemoveCause.Condition) and not Tagged('JL_FOTV_ADULT_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_SOULDEVOURED_TECHNICAL,100,0)"
+//data "StatusPropertyFlags" "ApplyToDead;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+
+//new entry "JL_FOTV_RAVENER_SOULCONSUMED"
+//type "StatusData"
+//data "StatusType" "BOOST"
+//data "StackId" "JL_FOTV_RAVENER_SOULCONSUMED"
+//data "StackType" "Ignore"
+//data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+
+//new entry "JL_FOTV_RAVENER_SOULDEVOURED_TECHNICAL"
+//type "StatusData"
+//data "StatusType" "BOOST"
+//data "StackId" "JL_FOTV_RAVENER_SOULDEVOURED_TECHNICAL"
+//data "StackType" "Ignore"
+//data "DisplayName" "hdec40330gf6d9g42b1g8c1fg9e52fac0366d;1"
+//data "Description" "h65c4f5f0g0fadg41deg8765g8ed918d263fe;1"
+//data "DescriptionParams" "Distance(9)"
+//data "OnApplyRoll" "SoulConsumptionSave()"
+//data "OnApplySuccess" "ApplyStatus(JL_FOTV_RAVENER_SOULDEVOURED,100,-1)"
+//data "StatusPropertyFlags" "ApplyToDead;DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+
+//new entry "JL_FOTV_RAVENER_SOULDEVOURED"
+//type "StatusData"
+//data "StatusType" "BOOST"
+//data "Icon" "Icon_JL_FOTV_SoulConsumption"
+//data "DisplayName" "hdec40330gf6d9g42b1g8c1fg9e52fac0366d;1"
+//data "Description" "had316622g2ff7g44c0g9a21gd65ed6e767f9;1"
+//data "StackId" "JL_FOTV_RAVENER_SOULDEVOURED"
+//data "StackType" "Ignore"
+//data "RemoveEvents" "OnStatusApplied;OnStatusRemoved"
+//data "RemoveConditions" "not Dead()"
+//data "StatusPropertyFlags" "ApplyToDead;IgnoreResting;DisableCombatlog"
+
+//new entry "JL_FOTV_Ravener_MaleficVassals_Hidden"
+//type "PassiveData"
+//data "StatsFunctorContext" "OnCombatStarted"
+//data "StatsFunctors" "ApplyStatus(JL_FOTV_RAVENER_MALEFICVASSALS_AURA,100,-1)"
+//data "Properties" "IsHidden"
+
+//new entry "JL_FOTV_Ravener_MaleficVassalsPassive"
+//type "PassiveData"
+//data "Icon" "Icon_JL_FOTV_MaleficVassals"
+//data "DisplayName" "h521fb6c2g3d53g4591g88e7g4309a8e02f7f;1"
+//data "Description" "he5fb5938g1d02g4e05gb1edg3e137afb99bf;1"
+//data "DescriptionParams" "Distance(18);DealDamage(1d8,Necrotic)"
+//data "Properties" "Highlighted"
+
+//new entry "JL_FOTV_RAVENER_MALEFICVASSALS_AURA"
+//type "StatusData"
+//data "StatusType" "BOOST"
+//data "StackId" "JL_FOTV_RAVENER_MALEFICVASSALS_AURA"
+//data "StackType" "Ignore"
+//data "AuraRadius" "18"
+//data "AuraStatuses" "TARGET:IF((Tagged('UNDEAD') or Tagged('UNDEAD_BEAST')) and not IsARavener()):ApplyStatus(JL_FOTV_RAVENER_MALEFIC_VASSALS)"
+//data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+
+//new entry "JL_FOTV_RAVENER_MALEFIC_VASSALS"
+//type "StatusData"
+//data "StatusType" "BOOST"
+//data "StackId" "JL_FOTV_RAVENER_MALEFIC_VASSALS"
+//data "StackType" "Ignore"
+//data "Icon" "Icon_JL_FOTV_MaleficVassals"
+//data "DisplayName" "h3b3aca8dg772bg496bg8634gdbd49d0705d0;1"
+//data "Description" "h56da86c6geaf5g43c9g9a55g551f44a1acc9;1"
+//data "DescriptionParams" "DealDamage(1d8,Necrotic)"
+//data "Boosts" "DamageBonus(1d8,Necrotic,true)"
+//data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead"

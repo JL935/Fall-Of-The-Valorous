@@ -688,7 +688,6 @@ data "VocalComponentSound" "Vocal_Component_Counter"
 data "SpellStyleGroup" "Class"
 data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration"
 data "HitAnimationType" "MagicalNonDamage"
-//data "RequirementConditions" "AnyJudgmentActive()"
 data "PrepareEffect" "672ed56a-bf81-43e8-b0e7-a726a2998c34"
 data "CastEffect" "69c2a213-22e5-44a8-9e82-291c7aebecda"
 
