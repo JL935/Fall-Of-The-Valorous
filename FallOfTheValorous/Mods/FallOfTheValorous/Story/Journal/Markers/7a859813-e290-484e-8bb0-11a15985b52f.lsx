@@ -12,7 +12,7 @@
                     <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
                     <attribute id="MarkerTargetObjectType" type="FixedString" value="Item"/>
                     <attribute id="MarkerTargetObjectUUID" type="FixedString" value="6ba2518a-99fc-4bfd-aa15-5ac548bdc979"/>
-                    <attribute id="Radius" type="int32" value="10"/>
+                    <attribute id="Radius" type="int32" value="0"/>
                 </node>
             </children>
         </node>

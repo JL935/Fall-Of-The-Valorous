@@ -572,6 +572,24 @@ SetFlag(_QuestFlag);
 
 
 //REGION stuff that can't easily be handled with the existing DBs
+//if anyone tries to read the book before removing the curse, disable interaction (shitty fallback)
+IF
+StatusApplied((CHARACTER)_Object, "JL_FOTV_RAVENER_DESECRATION_DAMAGE", _, _)
+AND
+DB_Players(_Object)
+THEN
+SetCanInteract(S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, 0);
+
+//re-enable interaction if no one has the desecration anymore
+IF
+StatusRemoved((CHARACTER)_Object, "JL_FOTV_RAVENER_DESECRATION_DAMAGE", _, _)
+AND
+DB_Players(_Object)
+AND
+HasActiveStatus(_Object, "JL_FOTV_RAVENER_DESECRATION_DAMAGE", 0)
+THEN
+SetCanInteract(S_BOOK_JL_FOTV_FallOfTheValorous_20c85b01-93b1-48ed-8cd4-bab6737f5c29, 1);
+
 //add map to avatar's inventory when you read the journal
 IF
 QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction")

@@ -11,8 +11,8 @@
                     <attribute id="MarkerIcon" type="FixedString" value="QuestMarker"/>
                     <attribute id="MarkerLevel" type="FixedString" value="WLD_Main_A"/>
                     <attribute id="MarkerTargetObjectType" type="FixedString" value="Item"/>
-                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="d28b1bc9-0d77-49da-aa08-d0d243f699f3"/>
-                    <attribute id="Radius" type="int32" value="15"/>
+                    <attribute id="MarkerTargetObjectUUID" type="FixedString" value="36053007-e66d-4d49-910f-81c396e3209c"/>
+                    <attribute id="Radius" type="int32" value="0"/>
                 </node>
             </children>
         </node>

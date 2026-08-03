@@ -10,9 +10,9 @@
     
     <content contentuid="hef7bdad0g54c9g43f6gb7b9g06c85f74187c" version="1">A Light From the Shadows Shall Spring</content>
     <content contentuid="hdd9c5475g2a62g4a5fg884cg78c0fe451283" version="1">Cast the Darkness From Your Heart</content>
-    <content contentuid="he76914d7g355cg40a2g83cfg219c1a3e8dbe" version="1">Humble Beginnings</content>
+    <content contentuid="he76914d7g355cg40a2g83cfg219c1a3e8dbe" version="1">Not To Strike Without Need</content>
     <content contentuid="he1aeb001gbb24g454fg9ab9gedfa7ad87ac1" version="1">Above All Shadows Rides the Sun</content>
-    <content contentuid="h8c023414g2b7bg4174g970ag37b2bea9ecab" version="1">A Knight of Renown</content>
+    <content contentuid="h8c023414g2b7bg4174g970ag37b2bea9ecab" version="1">Knight-Errant</content>
     <content contentuid="h52e5f0f9g290bg4c0bg9a8agc4d4c2bcaaba" version="1">Alive, Gloriously Alive, Today</content>
     <content contentuid="hd79ab8ddgc81ag4ba5gbe89gf917730a696c" version="1">Peacekeeper</content>
     <content contentuid="hfbc8133eg355fg46c1gbb4dg4f791dde13c0" version="1">The Fire Inside Me</content>
@@ -46,7 +46,6 @@
     <content contentuid="h122d77dagd1bag4576g86f9geb358a07b549" version="1">Don't You Dare Go Hollow</content>
     <content contentuid="h6c5555cdg8bc3g4ab8g911dgaa6667d36c86" version="1">Lesser, Greater, Middling</content>
     <content contentuid="hbb08d204g305bg43b7gb4bbg07ec25ac8b69" version="1">Aurë Entuluva</content>
-    <content contentuid="hd577d75ag10d7g40d7g99eag7835ac13e5f2" version="1">Let Them Linger</content>
     <content contentuid="h4f63c001g7af3g4054ga40cg42d6c15940b7" version="1">Resurgam</content>
     <content contentuid="hf530aa64g8c18g4cd2g8132gac8bce0fb886" version="1">Destined Death</content>
     <content contentuid="h2d3d6f14g3b8fg4882g9225g48f36f99af21" version="1">Cast Off Thy Shackles</content>
@@ -220,10 +219,10 @@
 
     <content contentuid="hb814860bg5e78g48aega8abgb2f6832497b4" version="1">Soul Ward</content>
     <content contentuid="hb7956f2egf92dg4c2bg989ag68b17b8dc7c1" version="1">A ravener has a Soul Ward - an intangible field of siphoned soul energy protects it from destruction. The Soul Ward grants damage reduction according to the ravener's age and current &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; percentage.&lt;br&gt;&lt;br&gt;Characters with levels in a divine class or subclass ignore half of this damage reduction. &lt;LSTag Type="Spell" Tooltip="JL_FOTV_DivineOrationContainer"&gt;Holy Words&lt;/LSTag&gt; negate this damage reduction for 1d4 rounds.</content>
-    <content contentuid="h544e048cgd9a0g46d6gad14g3254b00f124b" version="1">A young ravener takes reduced damage from all sources based on its current &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; percentage&lt;br&gt;&lt;br&gt;0-50%: 1 DR&lt;br&gt;51-100%: 2 DR</content>
-    <content contentuid="hfa1a4957g1acbg4d2bg86dcg4d3fd08719f5" version="1">An adult ravener takes reduced damage from all sources based on its current &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; percentage&lt;br&gt;&lt;br&gt;0-25%: 1 DR&lt;br&gt;26-50%: 2 DR&lt;br&gt;51-75%: 3 DR&lt;br&gt;76-100%: 4 DR</content>
-    <content contentuid="he416875cg8e9fg4769ga37cgc86365ccf339" version="1">An ancient ravener takes reduced damage from all sources based on its current &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; percentage&lt;br&gt;&lt;br&gt;0-17%: 1 DR&lt;br&gt;18-33%: 2 DR&lt;br&gt;34-50%: 3 DR&lt;br&gt;51-67%: 4 DR&lt;br&gt;68-83%: 5 DR&lt;br&gt;84-100%: 6 DR</content>
-    <content contentuid="h199e5e5fg83d4g4ad3gb50bge83452feae79" version="1">A great wyrm ravener takes reduced damage from all sources based on its current &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; percentage&lt;br&gt;&lt;br&gt;0-13%: 1 DR&lt;br&gt;14-25%: 2 DR&lt;br&gt;26-38%: 3 DR&lt;br&gt;39-50%: 4 DR&lt;br&gt;51-63%: 5 DR&lt;br&gt;64-75%: 6 DR&lt;br&gt;76-88%: 7 DR&lt;br&gt;89-100%: 8 DR</content>
+    <content contentuid="h544e048cgd9a0g46d6gad14g3254b00f124b" version="1">A young ravener takes reduced damage from all sources based on its current &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; percentage:&lt;br&gt;&lt;br&gt;0-50%: 1 DR&lt;br&gt;51-100%: 2 DR</content>
+    <content contentuid="hfa1a4957g1acbg4d2bg86dcg4d3fd08719f5" version="1">An adult ravener takes reduced damage from all sources based on its current &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; percentage:&lt;br&gt;&lt;br&gt;0-25%: 1 DR&lt;br&gt;26-50%: 2 DR&lt;br&gt;51-75%: 3 DR&lt;br&gt;76-100%: 4 DR</content>
+    <content contentuid="he416875cg8e9fg4769ga37cgc86365ccf339" version="1">An ancient ravener takes reduced damage from all sources based on its current &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; percentage:&lt;br&gt;&lt;br&gt;0-17%: 1 DR&lt;br&gt;18-33%: 2 DR&lt;br&gt;34-50%: 3 DR&lt;br&gt;51-67%: 4 DR&lt;br&gt;68-83%: 5 DR&lt;br&gt;84-100%: 6 DR</content>
+    <content contentuid="h199e5e5fg83d4g4ad3gb50bge83452feae79" version="1">A great wyrm ravener takes reduced damage from all sources based on its current &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; percentage:&lt;br&gt;&lt;br&gt;0-13%: 1 DR&lt;br&gt;14-25%: 2 DR&lt;br&gt;26-38%: 3 DR&lt;br&gt;39-50%: 4 DR&lt;br&gt;51-63%: 5 DR&lt;br&gt;64-75%: 6 DR&lt;br&gt;76-88%: 7 DR&lt;br&gt;89-100%: 8 DR</content>
 
     <content contentuid="h54625d60ge8a3g452cg8b7dg6c564113be4a" version="1">Frightful Presence</content>
     <content contentuid="h178ba978g8b54g48a8g84f0gb7f16f1be1e7" version="1">A ravener emanates an aura of fear. The first time you enter a ravener's Frightful Presence, you must pass a Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be afflicted by &lt;LSTag Type="Status" Tooltip="JL_FOTV_RAVENER_FRIGHTFULPRESENCE_PENALTIES"&gt;Ravener's Dread&lt;/LSTag&gt; for as long as you are within [1] of the ravener.</content>
@@ -242,7 +241,7 @@
     <content contentuid="h56da86c6geaf5g43c9g9a55g551f44a1acc9" version="1">Entity deals an additional [1] due to a nearby ravener.</content>
 
     <content contentuid="h94693da9g3b35g463dgadd3g2b634d2b3ec5" version="1">Divine Defiance</content>
-    <content contentuid="hd56e310fg48f7g4fe6gbb76g33c7cf405cb6" version="1">[1] raveners are resilient to magic from divine sources. You must pass a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; with your &lt;LSTag Tooltip="SpellcastingAbility"&gt;Spellcasting Ability&lt;/LSTag&gt; or fail to affect the ravener targeted or AoE divine magic.</content>
+    <content contentuid="hd56e310fg48f7g4fe6gbb76g33c7cf405cb6" version="1">Ancient raveners are resistant to magic from divine sources. You must pass a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; with your &lt;LSTag Tooltip="SpellcastingAbility"&gt;Spellcasting Ability&lt;/LSTag&gt; or fail to affect the ravener with targeted or AoE divine magic.</content>
 
     <content contentuid="hc8f19290g9901g4c09ga16ega3cf378c5a47" version="1">Ravener Appendages</content>
     <content contentuid="hec429557ga5d8g482eg8ebegeddf61ffb0cf" version="1">This collection of bones shivers with insidious anticipation at its inevitable recorporation. </content>
@@ -306,7 +305,7 @@
     <content contentuid="h4dadb61egfc17g4638gba74gbe9a479396c3" version="1">(do something) to upgrade this item.</content>
 
     <content contentuid="h57a98759ge61cg4aa2ga9a7g7fea0342dfc3" version="1">Vindicator's Resplendence</content>
-    <content contentuid="habe04ae8gd54bg4121gb4cdgca932c102179" version="1">Once possessed by the azata Chadali, dedicated to ending the depredations of kytons, this potent magic weapon now holds a portion of her essence. The blade is etched with a prayer in her name to redeem the repentant and consume the unremorseful.</content>
+    <content contentuid="habe04ae8gd54bg4121gb4cdgca932c102179" version="1">Once possessed by a powerful azata dedicated to ending the depredations of kytons, this potent magic weapon now holds a portion of her essence. The blade is etched with a prayer in her name to redeem the repentant and consume the unremorseful.</content>
     <content contentuid="h2e89491eg2490g4e52g9c9bg768ae98fd8b4" version="1">Faith Hunter</content>
     <content contentuid="h37166d13g61dbg4aeeg9592g5581d1d99969" version="1">This weapon always takes the form of the favored weapon of your deity.</content>
     <content contentuid="h3231ce1fg9309g4b6dg9b74g174116ba81a6" version="1">Sacred Huntsmaster</content>
@@ -558,7 +557,7 @@
     <content contentuid="h233d405eg423dg43cegb013g25fd67a0bdfa" version="1">Ravener King's Command</content>
     <content contentuid="h83930807g19f7g4a8fg9f24gcab582768fc1" version="1">The Ravener King will not lose his favorite minion so easily. Taarogus receives the benefits of &lt;LSTag Type="Passive" Tooltip="JL_FOTV_Ravener_DegeneratingStrikes_Taarogus"&gt;Degenerating Strikes&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="JL_FOTV_Ravener_FrightfulPresence_Taarogus"&gt;Frightful Presence&lt;/LSTag&gt;, and &lt;LSTag Type="Passive" Tooltip="JL_FOTV_Ravener_DivineDefiance_Taarogus"&gt;Divine Defiance&lt;/LSTag&gt;.</content>
     <content contentuid="h272d012cgffb5g4646g80b4g4520bf1fd7f7" version="1">Those under the Ravener King's Command score a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; when rolling an 18 or higher. On a Critical Hit, targets must pass a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be afflicted by a &lt;LSTag Type="Status" Tooltip="JL_FOTV_NEGATIVELEVEL"&gt;Negative Level&lt;/LSTag&gt;.</content>
-    <content contentuid="h3d07ce4eg6ad6g4417gae0dg7e70e66119c5" version="1">Those under the Ravener King's Command emanate an aura of fear. The first time you enter this entity's Frightful Presence, you must pass a Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be afflicted by &lt;LSTag Type="Status" Tooltip="JL_FOTV_RAVENER_FRIGHTFULPRESENCE_PENALTIES"&gt;Ravener's Dread&lt;/LSTag&gt; for as long as you are within [1] of the entity.&lt;br&gt;&lt;br&gt;This entity deals an additional [2] to enemies that they have afflicted with their dreadful presence.</content>
+    <content contentuid="h3d07ce4eg6ad6g4417gae0dg7e70e66119c5" version="1">Those under the Ravener King's Command emanate an aura of fear. The first time you enter this entity's Frightful Presence, you must pass a Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be afflicted by &lt;LSTag Type="Status" Tooltip="JL_FOTV_RAVENER_FRIGHTFULPRESENCE_PENALTIES"&gt;Ravener's Dread&lt;/LSTag&gt; for as long as you are within [1] of the entity.</content>
     <content contentuid="h2751d176g7a1fg409agb22dg15522604a26f" version="1">Those under the Ravener King's Command are resilient to magic from divine sources. You must pass a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; with your &lt;LSTag Tooltip="SpellcastingAbility"&gt;Spellcasting Ability&lt;/LSTag&gt; or fail to affect this entity with your divine magic.</content>
 
     <content contentuid="haa2457f8geaf2g4778ga0d2gb9137307e926" version="1">Feat of Renown: Wilderness Warden</content>

@@ -246,15 +246,6 @@
                 <Setter TargetName="txt" Property="Visibility" Value="Collapsed"/>
             </DataTrigger>
 
-            <!--<MultiDataTrigger>
-                <MultiDataTrigger.Conditions>
-                    <Condition Binding="{Binding IconName}" Value="Icon_JL_FOTV_DivineOrationContainer"/>
-                </MultiDataTrigger.Conditions>
-                <MultiDataTrigger.Setters>
-                    <Setter Property="Text" TargetName="txt" Value="{Binding Source='h7fb0c7aeg0d66g484ega4f6gc6340b0c3844',Converter={StaticResource TranslatedStringConverter}}" />
-                </MultiDataTrigger.Setters>
-            </MultiDataTrigger>-->
-
             <MultiDataTrigger>
                 <MultiDataTrigger.Conditions>
                     <Condition Binding="{Binding IconName}" Value="Icon_JL_FOTV_Lulix"/>

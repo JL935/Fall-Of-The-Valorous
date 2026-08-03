@@ -193,17 +193,17 @@ data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndi
 new entry "JL_FOTV_ARZIMYR_COOLDOWN"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator;ApplyToDead"
 
 new entry "JL_FOTV_VAELYTHRA_COOLDOWN"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator;ApplyToDead"
 
 new entry "JL_FOTV_XULVORITH_COOLDOWN"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator;ApplyToDead"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////ENABLER//////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////

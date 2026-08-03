@@ -137,6 +137,26 @@ ClassIds = {
    ["040e41b0-e197-4856-a7c3-f7093ae85f0b"] = true, --- Valor Inquisition
    ["81e4c08b-ce20-4c3f-bad4-959966432f1c"] = true, --- Vengeance Inquisition
    ["e115216d-f6f8-4034-bca5-e06cd1e95dfe"] = true, --- Zeal Inquisition
+   ["7b9992cd-1fca-471d-bb34-a55a707acee5"] = true, -- Blackguard (xarara)
+   ["06b7f7cd-8888-424d-a81d-b82fd7a9b13d"] = true, --- Shadoweaver Blackguard (xarara)
+   ["9efc2aa6-8e79-43f1-a02f-b03f6bd20913"] = true, --- Blood Knight Blackguard (xarara)
+   ["d98a466a-e801-42cd-b7bc-5f09895dc100"] = true, -- Sword Dancer of Eilistraee (zx10rx)
+   ["f38bab5c-927c-4800-ad0e-a12794372858"] = true, --- Sword Dancer (zx10rx)
+   ["228bfc22-789a-453e-86ea-62e7af5baf91"] = true, --- Darksong Knight (zx10rx)
+   ["3d8f37da-6612-4078-b9e6-5bea5821a9b8"] = true, --- Silver Bladedancer (zx10rx)
+   ["1acb74df-8c0e-4e0d-9af8-90f3456cff85"] = true, ---- Divine Soul Sorcerer (IncogneatoBurrito)
+   ["9224b4be-5bad-4e99-83c1-0b87f5ee26c5"] = true, ---- Divine Soul Sorcerer (xarara)
+   ["faa44aaa-d250-4efe-b270-fa6f24e3cccb"] = true, ---- College of Cantors Bard (Lumaterian)
+   ["cfa23c67-2bf3-49ff-a72c-6345843483d1"] = true, ---- Favored Soul Sorcerer (Lumaterian)
+   ["0452af7e-7faf-46d5-a60c-46e4b37cc604"] = true, ---- Hierophant Wizard (Lumaterian)
+   ["b9cee698-cc8c-400f-b6b5-e8da339816b2"] = true, ---- Justicar Rogue (Lumaterian)
+   ["bdeff5b4-a2fd-4c44-b6e4-f75801a066a3"] = true, ---- The Celestial Warlock (Lumaterian)
+   ["29823366-652f-485d-8dfd-b24bf1ad571d"] = true, ---- The Undying Light Warlock (Lumaterian)
+   ["35b6fd53-6d7a-4226-a518-f409501aafb9"] = true, ---- Crusader Fighter (TheWailingBard)
+   ["34cdb230-ced4-470d-a257-34964b8dbe0d"] = true, ---- Divine Hand Rogue (TheWailingBard)
+   ["a96273c5-7c78-41c5-b8ac-8a431ff34ae2"] = true, ---- Way of Transcendence Monk (TheWailingBard)
+   ["da6716ef-9962-421e-a562-6437275813a4"] = true, ---- Celestial Warlock (chizfreak)
+   ["ce3323fd-ddf6-4f73-8367-ff0704f72e30"] = true, ---- Virtuous Paragon (CatDude55)
 }
 
 ValidSpells = {}

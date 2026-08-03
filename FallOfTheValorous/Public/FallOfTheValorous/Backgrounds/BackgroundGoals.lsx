@@ -408,14 +408,14 @@
                     <attribute id="Title" type="TranslatedString" handle="h54e51855g0dfcg457dg8667gb99a8a506e54" version="1"/>
                     <attribute id="UUID" type="guid" value="6f472133-001a-4038-bce7-d2de09b74932"/>
                 </node>
-            <!-- Let Them Linger (Needs Of The Many) -->
+            <!-- Needs Of The Many -->
                 <node id="BackgroundGoal">
                     <attribute id="BackgroundUUID" type="guid" value="6a5f8086-9440-429a-b8e3-0158828f821c"/>
                     <attribute id="Description" type="TranslatedString" handle="h843d2f98gb1cdg48e5ga1d1gd44c22ea2eb7" version="2"/>
                     <attribute id="ExperienceReward" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
                     <attribute id="InspirationPoints" type="uint32" value="1"/>
                     <attribute id="RewardLevel" type="uint32" value="9"/>
-                    <attribute id="Title" type="TranslatedString" handle="hd577d75ag10d7g40d7g99eag7835ac13e5f2" version="1"/>
+                    <attribute id="Title" type="TranslatedString" handle="h9b1e053fg4b23g4932gaf2egb5f68eacc74e" version="1"/>
                     <attribute id="UUID" type="guid" value="2633b380-5262-4d80-ae2f-a259c2b1ebea"/>
                 </node>
             <!-- Resurgam (Never To Be Chained Again) -->

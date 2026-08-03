@@ -194,16 +194,12 @@ data "Vitality" "78"
 
 
 
-
-
-
-
 new entry "JL_FOTV_DummySummon"
 type "SpellData"
 data "SpellType" "Target"
-data "SpellProperties" "Ground:Summon(ed616d9f-0640-4b3a-aba1-a9d478bfc0eb,-1,,,,)"
+data "SpellProperties" "Ground:Summon(49cb4cda-ec8c-47d2-bb51-fef980da6a70,10,,,,JL_FOTV_TESTVFX);GROUND:CreateSurface(6,10,WaterFrozen)"
 data "TargetRadius" "18"
-data "TargetConditions" "CanStand('ed616d9f-0640-4b3a-aba1-a9d478bfc0eb')"
+//data "TargetConditions" "CanStand('ed616d9f-0640-4b3a-aba1-a9d478bfc0eb')"
 data "Icon" "Spell_Conjuration_PlanarAlly"
 data "DisplayName" "h4a2a3d6cg78f2g4c53ga648gf77975428fee;2"
 data "Description" "hfe28dec9gb8e9g46a6g9c5eg7f664ed71c16;3"
@@ -229,3 +225,21 @@ new entry "SUCKATARCANA"
 type "StatusData"
 data "StatusType" "BOOST"
 data "Boosts" "Skill(Arcana, -10)"
+
+new entry "FUCKRAVENERS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "AuraRadius" "18"
+data "AuraStatuses" "TARGET:IF(IsARavener()):ApplyStatus(JL_GETFUCKED)"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+
+new entry "JL_GETFUCKED"
+type "StatusData"
+data "StatusType" "BOOST"
+data "OnApplyFunctors" "Kill()"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+
+new entry "JL_FOTV_TESTVFX"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusEffect" "4972e856-f35e-4e86-98e2-688bb570b56c"

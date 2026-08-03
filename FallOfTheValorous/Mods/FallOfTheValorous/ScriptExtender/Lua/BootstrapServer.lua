@@ -17,9 +17,7 @@ Ext.Osiris.RegisterListener("CombatStarted", 1, "after", function(_)
         if holyentity.Classes ~= nil then
             local classes = holyentity.Classes.Classes
             for _, classEntry in pairs(classes) do
-                if ClassIds[classEntry.ClassUUID] then
-                    Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
-                elseif ClassIds[classEntry.SubClassUUID] then
+                if ClassIds[classEntry.ClassUUID] or ClassIds[classEntry.SubClassUUID] then
                     Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
                 end
             end
@@ -34,9 +32,7 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(object, _)
     if holyentity.Classes ~= nil then
         local classes = holyentity.Classes.Classes
         for _, classEntry in pairs(classes) do
-            if ClassIds[classEntry.ClassUUID] then
-                Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
-            elseif ClassIds[classEntry.SubClassUUID] then
+            if ClassIds[classEntry.ClassUUID] or ClassIds[classEntry.SubClassUUID] then
                 Osi.ApplyStatus(holyentity.Uuid.EntityUuid, "JL_FOTV_SOULWARD_CANBYPASS", -1)
             end
         end
@@ -98,8 +94,10 @@ Ext.Osiris.RegisterListener("ObjectTimerFinished", 2, "after", function(object, 
         local classes = holyentity.Classes.Classes
         for _, classEntry in pairs(classes) do
             if ClassIds[classEntry.ClassUUID] or ClassIds[classEntry.SubClassUUID] then
+                _P("respecced into divine class, granting holy words")
                 JL_FOTV_UpdateHolyWords(object)
             elseif not ClassIds[classEntry.ClassUUID] or not ClassIds[classEntry.SubClassUUID] then
+                _P("respecced out of a divine class, removing holy words")
                 JL_FOTV_RemoveHolyWords(object)
             end
         end
@@ -108,12 +106,10 @@ end)
 
 --divine classed character joined party
 Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(character)
-    --are you at the step where u can even learn holy words
     if Osi.GetFlag("af8044f6-6647-4a74-8e5a-f0c5e7c7b562", "NULL_00000000-0000-0000-0000-000000000000") == 1 then
         local holyentity = Ext.Entity.Get(character)
         local classes = holyentity.Classes.Classes
         for _, classEntry in pairs(classes) do
-            --are you a holy class - if yes, add holy words
             if ClassIds[classEntry.ClassUUID] or ClassIds[classEntry.SubClassUUID] then
                 JL_FOTV_UpdateHolyWords(character)
             end
@@ -126,9 +122,41 @@ Ext.Osiris.RegisterListener("CharacterLeftParty", 1, "after", function(character
     JL_FOTV_RemoveHolyWords(character)
 end)
 
+--just finished leveling up and could've leveled into a divine subclass or multiclassed or something
+Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
+    if Osi.GetFlag("af8044f6-6647-4a74-8e5a-f0c5e7c7b562", "NULL_00000000-0000-0000-0000-000000000000") == 1 then
+        local holyentity = Ext.Entity.Get(character)
+        local classes = holyentity.Classes.Classes
+        for _, classEntry in pairs(classes) do
+            if ClassIds[classEntry.ClassUUID] or ClassIds[classEntry.SubClassUUID] then
+                JL_FOTV_UpdateHolyWords(character)
+            end
+        end
+    end
+end)
+
+--i think this makes it more robust or something
+--if u leave the level up menu without finishing the level up idk
+Ext.Entity.OnDestroy("CCLevelUpDefinition", function()
+    local players = Osi.DB_Players:Get(nil)
+    for j =#players, 1, -1 do
+        local player = players[j][1]
+        local holyentity = Ext.Entity.Get(player)
+        local classes = holyentity.Classes.Classes
+        if Osi.GetFlag("af8044f6-6647-4a74-8e5a-f0c5e7c7b562", "NULL_00000000-0000-0000-0000-000000000000") == 1 then
+            for _, classEntry in pairs(classes) do
+                if ClassIds[classEntry.ClassUUID] or ClassIds[classEntry.SubClassUUID] then
+                    JL_FOTV_UpdateHolyWords(player)
+                end
+            end
+        end
+    end
+end)
+
 --flag set that corresponds to learning a holy word
 Ext.Osiris.RegisterListener("FlagSet", 3, "after", function(flag, _, _)
     if holywordflags[flag] then
+--_P("holy flag set")
         local avatars = Osi.DB_Avatars:Get(nil)
         for i = #avatars, 1, -1 do
             local avatar = avatars[i][1]
@@ -639,7 +667,7 @@ end)
 ----------------------------------------------------------------------------------------------------
 -------credits: Sinbad and nzx for the spell list compiler, nzx for basically everything else ------
 ----------------------------------------------------------------------------------------------------
-local SR_PASSIVE   = "JL_FOTV_Ravener_DivineDefiance_Hidden"
+local SR_PASSIVE = "JL_FOTV_Ravener_DivineDefiance_Hidden"
 local SRActive = {}
 local SRPending = nil
 
@@ -683,7 +711,7 @@ Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(caster, t
         end
     end
 
-    _P(spell)
+    --_P(spell)
 
     if not (ValidSpells[spell] and IsDivineCaster(spell, caster)) then return end
 
@@ -699,14 +727,12 @@ Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function(caster, t
         end
     end
 
-    _P(spellcastability)
-
     local dc = SpellDC(Ext.Entity.Get(bossUUID))
-        _P(dc)
+        --_P(dc)
     local natural = math.random(1, 20)
-        _P(natural)
+        --_P(natural)
     local total = natural + SaveMod(casterEntity, spellcastability)
-        _P(total)
+        --_P(total)
 
     if Osi.HasPassive(bossUUID, SR_PASSIVE) ~= 1 then return end
 
@@ -753,11 +779,11 @@ Ext.Osiris.RegisterListener("UsingSpellAtPosition", 8, "after", function(caster,
     end
 
     local dc = SpellDC(Ext.Entity.Get(bossUUID))
-        _P(dc)
+        --_P(dc)
     local natural = math.random(1, 20)
-        _P(natural)
+        --_P(natural)
     local total = natural + SaveMod(casterEntity, spellcastability)
-        _P(total)
+        --_P(total)
 
     SRPending = { natural = natural, total = total }
 
@@ -966,8 +992,8 @@ end)
 Ext.RegisterConsoleCommand("JLFOTV_LearnAllHolyWords", function(_) --learn all holy words (also summons inquisiboss)
     Osi.SetFlag("a80348bb-7402-4460-a725-1d0bf923c153") --Lulix
     Osi.SetFlag("414c42de-2602-4703-b89d-fa32c1aa0fbd") --Arzimyr
+    Osi.SetFlag("af8044f6-6647-4a74-8e5a-f0c5e7c7b562") --Vaelythra
     Osi.SetFlag("5b18c4c1-8839-4593-8457-f5ddf38544bb") --Xulvorith
-    Osi.PROC_FOTV_UpdateHolyWords() --Vaelythra + Container + Toggle Passive
 end)
 
 Ext.RegisterConsoleCommand("JLFOTV_AllRavenerLore", function(_) --set flags for all ravener lore
@@ -1006,4 +1032,8 @@ end)
 
 Ext.RegisterConsoleCommand("JLFOTV_TPMantle", function(_) -- teleport close to chestpiece
     Osi.TeleportToPosition(Osi.GetHostCharacter(), 307, 4, -174)
+end)
+
+Ext.RegisterConsoleCommand("ravenerbgone", function(_) -- kill all raveners in 18m
+    Osi.ApplyStatus(Osi.GetHostCharacter(), "FUCKRAVENERS", 0)
 end)

@@ -361,7 +361,7 @@ data "Icon" "Icon_JL_FOTV_SoulWard"
 data "DisplayName" "hb814860bg5e78g48aega8abgb2f6832497b4;1"
 data "Description" "hb7956f2egf92dg4c2bg989ag68b17b8dc7c1;1"
 data "StatsFunctorContext" "OnCreate"
-data "StatsFunctors" "IF(Tagged('JL_FOTV_YOUNG_RAVENER')):ApplyStatus(JL_FOTV_RAVENER_YOUNG_SOULWARD,100,-1);IF(Tagged('JL_FOTV_ADULT_RAVENER')):ApplyStatus(JL_FOTV_RAVENER_ADULT_SOULWARD,100,-1);IF(Tagged('JL_FOTV_ANCIENT_RAVENER')):ApplyStatus(JL_FOTV_RAVENER_ANCIENT_SOULWARD,100,-1);IF(Tagged('JL_FOTV_GREATWYRM_RAVENER')):ApplyStatus(JL_FOTV_RAVENER_GREATWYRM_SOULWARD,100,-1)"
+data "StatsFunctors" "IF(Tagged('JL_FOTV_YOUNG_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_YOUNG_SOULWARD,100,-1);IF(Tagged('JL_FOTV_ADULT_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_ADULT_SOULWARD,100,-1);IF(Tagged('JL_FOTV_ANCIENT_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_ANCIENT_SOULWARD,100,-1);IF(Tagged('JL_FOTV_GREATWYRM_RAVENER',context.Source)):ApplyStatus(JL_FOTV_RAVENER_GREATWYRM_SOULWARD,100,-1)"
 data "Properties" "Highlighted"
 
 new entry "JL_FOTV_RAVENER_YOUNG_SOULWARD"
