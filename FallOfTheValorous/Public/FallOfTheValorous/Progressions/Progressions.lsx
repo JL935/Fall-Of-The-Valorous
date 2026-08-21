@@ -4,6 +4,36 @@
     <region id="Progressions">
         <node id="root">
             <children>
+                <node id="Progression"> Inquisitor 3
+                    <attribute id="AllowImprovement" type="bool" value="false" />
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);ActionResource(HitDiceD8,1,0)" />
+                    <attribute id="Level" type="uint8" value="3" />
+                    <attribute id="Name" type="LSString" value="Inquisitor" />
+                    <attribute id="PassivesAdded" type="LSString" value="InterrogativeMind" /> 
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="0" /> 
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(2b04958e-64c2-4e79-9ec4-632097bc4205,1,1)" />
+			        <attribute id="TableUUID" type="guid" value="96c25829-8c4d-4a6d-81f7-e8f91cab58ef" />
+                    <attribute id="UUID" type="guid" value="80838a0c-b27c-4765-acb3-fda1af64c3f6" />
+                    <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="4dc44aca-29ec-4fe5-8d34-bc58c8d7c269" />
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="040e41b0-e197-4856-a7c3-f7093ae85f0b" />
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="81e4c08b-ce20-4c3f-bad4-959966432f1c" />
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="e115216d-f6f8-4034-bca5-e06cd1e95dfe" />
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
                 <node id="Progression"> Valor 3
                     <attribute id="Boosts" type="LSString" value="" />
                     <attribute id="Level" type="uint8" value="3" />

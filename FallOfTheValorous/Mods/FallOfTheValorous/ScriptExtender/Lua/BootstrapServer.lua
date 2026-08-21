@@ -44,20 +44,22 @@ end)
 --------------------------------------credits: just me i think--------------------------------------
 ----------------------------------------------------------------------------------------------------
 local holywordflags = {
-    ["JL_FOTV_ApothecaryInquisitorFreed_a80348bb-7402-4460-a725-1d0bf923c153"] = true, --Lulix
-    ["JL_FOTV_RisenRoadFreed_414c42de-2602-4703-b89d-fa32c1aa0fbd"] = true, --Arzimyr
-    ["JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562"] = true, --Vaelythra + Container
-    ["JL_FOTV_UnderdarkInquisitorFreed_5b18c4c1-8839-4593-8457-f5ddf38544bb"] = true, --Xulvorith
+    ["JL_FOTV_ApothecaryInquisitorFreed_a80348bb-7402-4460-a725-1d0bf923c153"] = "JL_FOTV_Lulix",
+    ["JL_FOTV_RisenRoadFreed_414c42de-2602-4703-b89d-fa32c1aa0fbd"] = "JL_FOTV_Arzimyr",
+    ["JL_FOTV_TaarogusJournalRead_af8044f6-6647-4a74-8e5a-f0c5e7c7b562"] = "JL_FOTV_Vaelythra",
+    ["JL_FOTV_UnderdarkInquisitorFreed_5b18c4c1-8839-4593-8457-f5ddf38544bb"] = "JL_FOTV_Xulvorith",
+
 }
+
+local knownholywords = {}
 
 --the function that handles adding holy words
 function JL_FOTV_UpdateHolyWords(object)
     Osi.AddSpell(object, "JL_FOTV_DivineOrationContainer", 0, 1)
     Osi.AddPassive(object, "JL_FOTV_HolyWord_Toggler")
-    local knownwords = Osi.DB_GLO_FOTV_KnownHolyWords:Get(nil) --collecting known words in Osi cuz of legacy laziness
-    --_D(knownwords)
-    for i = #knownwords, 1, -1 do
-        local holyword = knownwords[i][1]
+    --_D(knownholywords)
+    for i = #knownholywords, 1, -1 do
+        local holyword = knownholywords[i]
         Osi.AddSpell(object, holyword, 0, 1)
     end
 end
@@ -69,10 +71,8 @@ function JL_FOTV_RemoveHolyWords(object)
     if Osi.HasPassive(object, "JL_FOTV_HolyWord_Toggler") == 1 then
         Osi.RemovePassive(object, "JL_FOTV_HolyWord_Toggler")
     end
-    local knownwords = Osi.DB_GLO_FOTV_KnownHolyWords:Get(nil) --collecting known words in Osi cuz of legacy laziness
-    --_D(knownwords)
-    for i =#knownwords, 1, -1 do
-        local holyword = knownwords[i][1]
+    for i =#knownholywords, 1, -1 do
+        local holyword = knownholywords[i][1]
         if Osi.HasSpell(object, holyword) == 1 then
             Osi.RemoveSpell(object, holyword, 1)
         end
@@ -155,8 +155,10 @@ end)
 
 --flag set that corresponds to learning a holy word
 Ext.Osiris.RegisterListener("FlagSet", 3, "after", function(flag, _, _)
-    if holywordflags[flag] then
+    local spell = holywordflags[flag]
+    if spell then
 --_P("holy flag set")
+        knownholywords[#knownholywords + 1] = spell
         local avatars = Osi.DB_Avatars:Get(nil)
         for i = #avatars, 1, -1 do
             local avatar = avatars[i][1]
@@ -989,14 +991,57 @@ end)
 ----------------------------------------------------------------------------------------------------
 --------------------------------------------credits: me---------------------------------------------
 ----------------------------------------------------------------------------------------------------
-Ext.RegisterConsoleCommand("JLFOTV_LearnAllHolyWords", function(_) --learn all holy words (also summons inquisiboss)
+
+--Teleporting Commands
+Ext.RegisterConsoleCommand("JLFOTV_TPCrypt", function(_) --Dank Crypt
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), -309, 17.5, -263)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPCellarOutpost", function(_) --Apothecary Cellar Inquisitor Outpost
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), -662, -1.5, -356)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPGroveOutpost", function(_) --Emerald Grove Inquisitor Outpost
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), 145, 27.9, 506)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPRisenOutpost", function(_) --Risen Road Inquisitor Outpost
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), -128, 32.9, 490)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPDecrepitOutpost", function(_) --Decrepit Village Inquisitor Outpost
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), 28, 8.1, -212)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPTowerOutpost", function(_) --Arcane Tower Inquisitor Outpost
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), -31, 42.3, -286)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPCrecheOutpost", function(_) --Creche Y'llek Inquisitor Outpost
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), 1289, -2.3, -809)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPPeriapt", function(_) --Near Oathkeeper's Periapt
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), -405, 0, 247)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPVeiz", function(_) --Near Veizoadeoth
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), 95, 35, 575)
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_TPMantle", function(_) -- Near Empyreal Scion's Mantle
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), 307, 4, -174)
+end)
+
+--Basic stuff with flags
+Ext.RegisterConsoleCommand("JLFOTV_LearnAllHolyWords", function(_) --learn all holy words
     Osi.SetFlag("a80348bb-7402-4460-a725-1d0bf923c153") --Lulix
     Osi.SetFlag("414c42de-2602-4703-b89d-fa32c1aa0fbd") --Arzimyr
     Osi.SetFlag("af8044f6-6647-4a74-8e5a-f0c5e7c7b562") --Vaelythra
     Osi.SetFlag("5b18c4c1-8839-4593-8457-f5ddf38544bb") --Xulvorith
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_AllRavenerLore", function(_) --set flags for all ravener lore
+Ext.RegisterConsoleCommand("JLFOTV_AllRavenerLore", function(_) --learn all ravener lore
     Osi.SetFlag("e6594196-80b1-427f-9bbe-9738530c1d7a") --soul ward
     Osi.SetFlag("1c1928f0-b078-48ae-8562-d305d7573c66") --frightful presence
     Osi.SetFlag("c58bd837-af7b-42e0-8f45-ac3826a4afe1") --malevolence
@@ -1006,34 +1051,25 @@ Ext.RegisterConsoleCommand("JLFOTV_AllRavenerLore", function(_) --set flags for 
     Osi.SetFlag("db155e2f-ce1f-4d6c-a100-244bd5367959") --knows all A1 lore
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_UnlockValor", function(_) --unlock valor subclass
+Ext.RegisterConsoleCommand("JLFOTV_UnlockValor", function(_) --unlock Valor Inquisition
     Osi.SetFlag("30d714d5-35e8-458c-9a74-31dc9ccc512e")
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_AllGear", function(_) --add all gear
+Ext.RegisterConsoleCommand("JLFOTV_SpawnVeiz", function(_) --Summon Veizoadeoth
+    Osi.SetFlag("4d6a8c37-4851-4e6a-b84b-e0f1211c5105")
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_SpawnPeriapt", function(_) --Spawn Oathkeeper's Periapt
+    Osi.SetFlag("0f5c11bc-ea59-43ba-b343-0ed21dd7ae64")
+end)
+
+--Other
+Ext.RegisterConsoleCommand("JLFOTV_AllGear", function(_) --Add all gear
     Osi.TemplateAddTo("e530a44a-67c8-4906-bfbb-2809103082f5", Osi.GetHostCharacter(), 1, 1) --Oathkeeper's Periapt
     Osi.TemplateAddTo("f2dbca2a-d55f-4a53-a604-c57e3b07bb5a", Osi.GetHostCharacter(), 1, 1) --Empyreal Scion's Mantle
     Osi.TemplateAddTo("adc31816-0459-4809-847d-3574dd80b437", Osi.GetHostCharacter(), 1, 1) --Vindicator's Resplendence (Longsword)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPCrypt", function(_) --teleport to crypt
-    Osi.TeleportToPosition(Osi.GetHostCharacter(), -309, 17.5, -263)
-end)
-
-Ext.RegisterConsoleCommand("JLFOTV_SpawnVeiz", function(_) --summon veizoadeoth and teleport nearby
-    Osi.SetFlag("4d6a8c37-4851-4e6a-b84b-e0f1211c5105")
-    Osi.TeleportToPosition(Osi.GetHostCharacter(), 95, 35, 575)
-end)
-
-Ext.RegisterConsoleCommand("JLFOTV_TPPeriapt", function(_) --set periapt on stage and teleport close
-    Osi.SetFlag("0f5c11bc-ea59-43ba-b343-0ed21dd7ae64")
-    Osi.TeleportToPosition(Osi.GetHostCharacter(), -405, 0, 247)
-end)
-
-Ext.RegisterConsoleCommand("JLFOTV_TPMantle", function(_) -- teleport close to chestpiece
-    Osi.TeleportToPosition(Osi.GetHostCharacter(), 307, 4, -174)
-end)
-
-Ext.RegisterConsoleCommand("ravenerbgone", function(_) -- kill all raveners in 18m
+Ext.RegisterConsoleCommand("JLFOTV_KillRaveners", function(_) -- kill all raveners in 18m
     Osi.ApplyStatus(Osi.GetHostCharacter(), "FUCKRAVENERS", 0)
 end)

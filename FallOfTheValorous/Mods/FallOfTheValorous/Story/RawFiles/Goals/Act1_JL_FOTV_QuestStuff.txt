@@ -595,6 +595,8 @@ IF
 QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction")
 AND
 DB_Avatars(_Valorous)
+AND
+QRY_OnlyOnce("FOTV_Valor_ObtainedMap")
 THEN
 TemplateAddTo(MAP_JL_FOTV_A1_ValorOutposts_e4e2d676-ad1b-45a6-9581-9ed20d45cc4d, _Valorous, 1, 1);
 
@@ -651,6 +653,11 @@ AND
 DB_GlobalFlag((FLAG)JL_FOTV_RisenRoadFreed_414c42de-2602-4703-b89d-fa32c1aa0fbd)
 AND
 DB_GlobalFlag((FLAG)JL_FOTV_UnderdarkInquisitorFreed_5b18c4c1-8839-4593-8457-f5ddf38544bb)
+THEN
+TimerLaunch("JL_FOTV_WaitToSetTaarogusSpawn", 2000);
+
+IF
+TimerFinished("JL_FOTV_WaitToSetTaarogusSpawn")
 THEN
 SetFlag(JL_FOTV_TaarogusArrives_23dbb84d-217f-4261-a259-dfcb37bd603e);
 
@@ -712,6 +719,21 @@ SetFlag(JL_FOTV_KnowsAllRavenerLoreA1_db155e2f-ce1f-4d6c-a100-244bd5367959);
 IF
 QuestUpdateUnlocked(_, "QST_JL_FOTV_Act1", "STEP_JL_FOTV_ConfrontSentinel")
 THEN
+TimerLaunch("JL_FOTV_WaitToSetVeizoSpawn", 2000);
+
+IF
+TimerFinished("JL_FOTV_WaitToSetVeizoSpawn")
+THEN
+SetFlag(JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
+
+IF
+LevelLoaded("WLD_Main_A")
+AND
+GetFlag(JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105, NULL_00000000-0000-0000-0000-000000000000, 1)
+AND
+IsOnStage(S_CHARACTER_JL_FOTV_Veizoadeoth_2f2ab132-d7bb-48a7-956c-aac0654e3b4c, 0)
+THEN
+ClearFlag(JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
 SetFlag(JL_FOTV_VeizoadeothArrives_4d6a8c37-4851-4e6a-b84b-e0f1211c5105);
 //END_REGION
 
