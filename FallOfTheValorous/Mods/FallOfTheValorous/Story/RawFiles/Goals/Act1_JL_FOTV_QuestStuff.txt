@@ -377,6 +377,11 @@ DB_FOTV_CanInteractAfterFlagSet((ITEM)S_LORE_JL_FOTV_ZhentNote_e90048c0-7734-4ab
 DB_FOTV_CanInteractAfterFlagSet((ITEM)S_JL_FOTV_CahootShrine_66395e14-9a44-4360-88fe-6efe5f75e7f8, (FLAG)JL_FOTV_ReadZhentNote_46c02478-9e43-459f-a269-20c9e3d18b09);
 DB_FOTV_CanInteractAfterFlagSet((ITEM)S_GEAR_JL_FOTV_EmpyrealMantle_f269dc0a-183b-4454-b9bc-22dc8370d7f7, (FLAG)JL_FOTV_DestroyedSacrosanctAegis_0d42a3b6-4889-480e-bede-cf641ff629a1);
 
+
+///ADDED IN V1.1.0
+DB_QuestDef_NewChainedState_ConditionalFlag("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_FindRuination", 1, (FLAG)JL_FOTV_RuinationRead_4d512cc3-60f8-4b78-92d7-d6bd71d577a3, "QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SlaySpider");
+DB_QuestDef_NewChainedState_ConditionalFlag("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SlaySpider", 1, (FLAG)FOR_Bottomless_SpiderQueen_State_PermaDefeated_b749271f-fbee-43ec-bbc7-b1199d0f794a, "QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SanctifyValor");
+
 KBSECTION
 //REGION the important stuff
 //When the prereqs are met, set the proper enemies on stage
@@ -934,6 +939,19 @@ TemplateUseFinished(_, (ITEMROOT)LORE_JL_FOTV_VeiledInDeathShroud_87b58c94-a9fb-
 THEN
 SetFlag(JL_FOTV_KnowsDiImmortalis_c26eca14-c44e-4755-a67e-1a0115bb8d72);
 //END_REGION
+
+
+//ADDED IN V1.1.0
+IF
+SavegameLoaded()
+AND
+DB_FOTV_SetOnStageLater(_ShouldBeOffStage, _SoSFlag)
+AND
+GetFlag(_SoSFlag, NULL_00000000-0000-0000-0000-000000000000, 0)
+AND
+IsOnStage(_ShouldBeOffStage, 1)
+THEN
+SetOnStage(_ShouldBeOffStage, 0);
 
 EXITSECTION
 

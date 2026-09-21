@@ -157,6 +157,7 @@ ClassIds = {
    ["a96273c5-7c78-41c5-b8ac-8a431ff34ae2"] = true, ---- Way of Transcendence Monk (TheWailingBard)
    ["da6716ef-9962-421e-a562-6437275813a4"] = true, ---- Celestial Warlock (chizfreak)
    ["ce3323fd-ddf6-4f73-8367-ff0704f72e30"] = true, ---- Virtuous Paragon (CatDude55)
+   ["744442e7-fceb-4189-bed2-39ac7afa36df"] = true, ---- Celestial Warlock (Edhelsereg)
 }
 
 ValidSpells = {}

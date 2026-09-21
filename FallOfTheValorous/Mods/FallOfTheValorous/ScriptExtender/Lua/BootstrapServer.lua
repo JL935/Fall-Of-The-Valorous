@@ -1033,6 +1033,22 @@ Ext.RegisterConsoleCommand("JLFOTV_TPMantle", function(_) -- Near Empyreal Scion
     Osi.TeleportToPosition(Osi.GetHostCharacter(), 307, 4, -174)
 end)
 
+--Quest completions
+Ext.RegisterConsoleCommand("JLFOTV_UnlockValorSanctifyStep", function(_) -- Sanctify Ronros step
+    Osi.QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_FindPreservation")
+    Osi.QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SanctifyValor")
+end)
+
+--Other troubleshooting
+Ext.RegisterConsoleCommand("JLFOTV_AddSanctifySpell", function(_) -- Add Sanctify spell
+    Osi.AddSpell(Osi.GetHostCharacter(), "JL_FOTV_Target_SanctifyRonros");
+end)
+
+Ext.RegisterConsoleCommand("JLFOTV_RemoveSanctifySpell", function(_) -- Remove Sanctify spell
+    Osi.RemoveSpell(Osi.GetHostCharacter(), "JL_FOTV_Target_SanctifyRonros");
+end)
+
+
 --Basic stuff with flags
 Ext.RegisterConsoleCommand("JLFOTV_LearnAllHolyWords", function(_) --learn all holy words
     Osi.SetFlag("a80348bb-7402-4460-a725-1d0bf923c153") --Lulix
