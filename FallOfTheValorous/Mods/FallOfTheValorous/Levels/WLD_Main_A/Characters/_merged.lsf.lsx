@@ -8,6 +8,7 @@
 			<!-- Apothecary Young Ravener -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h4a2a3d6cg78f2g4c53ga648gf77975428fee" version="1" />
+					<!--<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />-->
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="6e0bfd73-330a-4d7d-b6e7-fd7dba65b0a4" />
@@ -75,6 +76,7 @@
 			<!-- Underdark Young Ravener 1-->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h4a2a3d6cg78f2g4c53ga648gf77975428fee" version="1" />
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="39d670bc-01e7-4863-b124-3b2f43d8f1be" />
@@ -122,6 +124,7 @@
 			<!-- Underdark Young Ravener 2-->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h4a2a3d6cg78f2g4c53ga648gf77975428fee" version="1" />
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="000940ec-dff0-41f2-8de8-6907ace2cda7" />
@@ -169,6 +172,7 @@
 			<!-- Underdark Adult Ravener -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h0a0f9eb2g0793g4650g896cg4ea298be9df8" version="1" />
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="296f4f1a-a8e9-48fb-bdc0-e9c5c997e809" />
@@ -254,6 +258,7 @@
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="2ceaef76-dcd0-4f53-af0c-a8d2b25944d3" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h0a0f9eb2g0793g4650g896cg4ea298be9df8" version="1" />
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="b2242e11-7388-45a5-8b6c-92476cd6c427" />
@@ -279,8 +284,9 @@
 							</children>
 						</node>
 						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="89.551 0.611 279.681" />
-							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<!--<attribute id="Position" type="fvec3" value="89.551 0.611 279.681" />-->
+							<attribute id="Position" type="fvec3" value="0.007 0.650 215.178" />
+							<attribute id="RotationQuat" type="fvec4" value="0 1 0 0" />
 							<attribute id="Scale" type="float" value="0.35" />
 						</node>
 						<node id="StatusList">
@@ -296,6 +302,7 @@
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="37d09e1d-d3ae-453f-a8ce-1984efe561ee" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h0a85bba6gef6dg4afcga125g0bd856bd2497" version="1" />
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="IsBoss" type="bool" value="True" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
@@ -343,6 +350,7 @@
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="37d09e1d-d3ae-453f-a8ce-1984efe561ee" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h0a0f9eb2g0793g4650g896cg4ea298be9df8" version="1" />
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="54532d4a-9ea2-4381-b122-c7324bbf34c5" />
@@ -644,6 +652,7 @@
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="2ceaef76-dcd0-4f53-af0c-a8d2b25944d3" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h4e0a5d97g5f84g41cbg9b2dg3594fdb0618d" version="1" />
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="a2c07f6d-9d08-4874-969d-9c2b202e5733" />
 					<attribute id="Name" type="LSString" value="S_JL_FOTV_SunlitWetlands_Valorous_Human_Melee" />
@@ -668,8 +677,9 @@
 							</children>
 						</node>
 						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="86.186 1.102 277.092" />
-							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
+							<!--<attribute id="Position" type="fvec3" value="86.186 1.102 277.092" />-->
+							<attribute id="Position" type="fvec3" value="6.582 1.090 217.140" />
+							<attribute id="RotationQuat" type="fvec4" value="0 1 0 0" />
 							<attribute id="Scale" type="float" value="1" />
 						</node>
 						<node id="Treasures">
@@ -685,6 +695,7 @@
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h7f721343g6de1g432dg82fdg0361f131adb2" version="1" />
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="f9c25b00-4ae7-4681-b783-3a72ba413211" />
 					<attribute id="Name" type="LSString" value="S_JL_FOTV_TaarogusDantill" />
@@ -758,7 +769,8 @@
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
 					<attribute id="DisplayName" type="TranslatedString" handle="he7a70df4g3521g4f7ag8a1ega6a52ab70665" version="1" />
-					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<!--<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />-->
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="1053a85c-93b0-401d-a7a6-1e40979bc48e" />
 					<attribute id="Name" type="LSString" value="S_JL_FOTV_DankCrypt_Valorous_Githyanki" />
@@ -802,7 +814,7 @@
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="37d09e1d-d3ae-453f-a8ce-1984efe561ee" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h0cb51625gea43g4ac5g9cadg18aa992da5f3" version="1" />
-					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="019a9841-994f-410b-9b2e-a25e7c174c54" />
 					<attribute id="Name" type="LSString" value="S_JL_FOTV_RisenRoad_Tactics_HalfOrc" />
@@ -887,7 +899,8 @@
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="395ff5f7-6b90-49d9-b717-6fb68c6344f7" />
 					<attribute id="DisplayName" type="TranslatedString" handle="he95e7a86g72aeg41c3g9168g8c6ed952834f" version="3" />
-					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<!--<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />-->
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="c343f083-1fd4-4c3e-b0c0-61ab77b66b21" />
 					<attribute id="Name" type="LSString" value="S_JL_FOTV_RisenRoad_DeathShepherd" />
@@ -930,7 +943,8 @@
 			<!-- Dank Crypt Mummy -->
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
-					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<!--<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />-->
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="18457071-fd04-4efc-85a9-2e0aa335eaa4" />
 					<attribute id="Name" type="LSString" value="S_JL_FOTV_DankCrypt_Mummy" />
@@ -980,7 +994,8 @@
 			<!-- Dank Crypt Ghast -->
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
-					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<!--<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />-->
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="46577897-db51-4171-b069-3862d2fadd68" />
 					<attribute id="Name" type="LSString" value="S_JL_FOTV_DankCrypt_Ghast" />
@@ -1030,7 +1045,8 @@
 			<!-- Dank Crypt Wraith -->
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
-					<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />
+					<!--<attribute id="Faction" type="guid" value="60749034-59cb-4551-b5ea-07d1edd617a9" />-->
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="ad6ec7f0-9ef4-4511-b817-e1e7db511068" />
 					<attribute id="Name" type="LSString" value="S_JL_FOTV_DankCrypt_Wraith" />

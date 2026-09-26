@@ -117,6 +117,18 @@ DB_FOTV_SoulConsumers(_Ravener, _Inquisitor)
 THEN
 RemoveStatus(_Inquisitor, "JL_FOTV_RAVENER_CONSUMPTION_BLOCK_VAELYTHRA");
 
+///ADDED IN V1.2.0
+//Set ravener faction hostile to every other faction when they enter combat
+IF
+EnteredCombat((GUIDSTRING)_Object, _)
+AND
+GetFaction((GUIDSTRING)_Object, (FACTION)_Faction)
+AND
+_Faction != JL_FOTV_RavenerFaction_03f96214-6447-457d-9477-21094549025e
+THEN
+PROC_SetRelationMutual((FACTION)JL_FOTV_RavenerFaction_03f96214-6447-457d-9477-21094549025e,(FACTION)_Faction, 0);
+
+
 EXITSECTION
 
 ENDEXITSECTION

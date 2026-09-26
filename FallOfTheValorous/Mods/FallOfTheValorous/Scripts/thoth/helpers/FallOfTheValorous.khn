@@ -82,7 +82,8 @@ end
 
 function IsARavener(entity)
     local entity = entity or context.Target
-    return Tagged('JL_FOTV_YOUNG_RAVENER',entity) | Tagged('JL_FOTV_ADULT_RAVENER',entity) | Tagged('JL_FOTV_ANCIENT_RAVENER',entity) | Tagged('JL_FOTV_GREATWYRM_RAVENER',entity)
+    local isravener = Tagged('JL_FOTV_YOUNG_RAVENER',entity) | Tagged('JL_FOTV_ADULT_RAVENER',entity) | Tagged('JL_FOTV_ANCIENT_RAVENER',entity) | Tagged('JL_FOTV_GREATWYRM_RAVENER',entity)
+    return ConditionResult(isravener.Result, {}, {ConditionError("TargetCannotBeRavener")})
 end
 
 function IsHolyWordApostle(entity)
@@ -225,4 +226,8 @@ end
 
 function VisitedEnoughHolySites(entity)
     return ConditionResult((GetStatusDuration('JL_FOTV_HOLYSITES_TRACKER', context.Source) >= 5), {ConditionError("MustVisitMoreHolySites")})
+end
+
+function DeathShepherdSpellsRavenerBlock()
+    return SpellId('Target_RiseUndead_DeathShepherd') | SpellId('Target_RiseUndead_DeathShepherd_Hardcore') | SpellId('Target_SHA_Necromancer_RiseUndead')
 end

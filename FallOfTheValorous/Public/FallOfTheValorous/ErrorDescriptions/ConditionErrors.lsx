@@ -58,6 +58,12 @@
                     <attribute id="Identifier" type="FixedString" value="MustVisitMoreHolySites"/>
                     <attribute id="UUID" type="guid" value="3b97baba-237b-48ec-abb1-2ea19268919d"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h24351948g5864g4cc4gb849g911bafc832b4" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="TargetCannotBeRavener"/>
+                    <attribute id="UUID" type="guid" value="c7e722aa-7338-4a88-9a66-f63dc3d3bc91"/>
+                </node>
             </children>
         </node>
     </region>

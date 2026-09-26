@@ -28,6 +28,14 @@
                     <attribute id="OverrideOriginalCondition" type="bool" value="false"/>
                     <attribute id="UUID" type="guid" value="a9a77221-7a58-4930-b006-7edf7fd08655"/>
                 </node>
+                <node id="MetaCondition">
+                    <attribute id="AdditionalConditions" type="LSString" value="not IsARavener()"/>
+                    <attribute id="ConditionType" type="FixedString" value="Target"/>
+                    <attribute id="Filter" type="LSString" value="DeathShepherdSpellsRavenerBlock()"/>
+                    <attribute id="Name" type="LSString" value="DeathShepherdRavenerBlock"/>
+                    <attribute id="OverrideOriginalCondition" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="8b3ea22a-b956-4011-ac51-53435c0e62ce"/>
+                </node>
             </children>
         </node>
     </region>

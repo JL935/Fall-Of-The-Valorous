@@ -997,6 +997,10 @@ Ext.RegisterConsoleCommand("JLFOTV_TPCrypt", function(_) --Dank Crypt
     Osi.TeleportToPosition(Osi.GetHostCharacter(), -309, 17.5, -263)
 end)
 
+Ext.RegisterConsoleCommand("JLFOTV_TPSwamp", function(_) --Putrid Bog/Garrin
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), 20, 0, 230)
+end)
+
 Ext.RegisterConsoleCommand("JLFOTV_TPCellarOutpost", function(_) --Apothecary Cellar Inquisitor Outpost
     Osi.TeleportToPosition(Osi.GetHostCharacter(), -662, -1.5, -356)
 end)
