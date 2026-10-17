@@ -1,0 +1,209 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+///SETTING FLAGS
+//Seeing someone
+IF
+Saw(_, _SeenCharacter, _)
+AND
+DB_FOTV_SawCharacter(_SeenCharacter, _SeenFlag)
+THEN
+SetFlag(_SeenFlag);
+
+//Player gaining a status
+IF
+StatusApplied((CHARACTER)_Player, _Status, _, _)
+AND
+DB_Players(_Player)
+AND
+DB_FOTV_ImportantStatusGained(_Status, _Flag)
+THEN
+SetFlag(_Flag);
+
+//Removing a status from something
+IF
+StatusRemoved(_Object, _Status, _, _)
+AND
+DB_FOTV_ImportantStatusRemoved(_Object, _Status, _Flag)
+THEN
+SetFlag(_Flag);
+
+//Player entering a trigger
+IF
+EnteredTrigger((CHARACTER)_Player, _Trigger)
+AND
+DB_Players(_Player)
+AND
+DB_FOTV_QuestTriggerFlag(_Trigger, _Flag)
+THEN
+SetFlag(_Flag);
+
+//Casting a quest spell
+IF
+CastSpell(_, _QuestSpell, _, _, _)
+AND
+DB_FOTV_CastQuestSpell(_QuestSpell, _QuestFlag)
+THEN
+SetFlag(_QuestFlag);
+
+
+///FLAG IS SET
+//Setting corresponding object on stage
+IF
+FlagSet(_SetOnStageFlag, _, _)
+AND
+DB_FOTV_SetOnStageLater(_SetOnStageObject, _SetOnStageFlag)
+THEN
+SetOnStage(_SetOnStageObject, 1);
+
+//Enabling interaction
+IF
+FlagSet(_Flag, NULL_00000000-0000-0000-0000-000000000000, _)
+AND
+DB_FOTV_CanInteractAfterFlagSet(_Item, _Flag)
+THEN
+SetCanInteract(_Item, 1);
+
+
+///QUEST MARKERS
+//Show marker once a quest step is reached
+IF
+QuestUpdateUnlocked(_, _, _QuestStep)
+AND
+DB_FOTV_AddMarkerAfterStepStarted(_QuestMarker, _QuestStep)
+THEN
+PROC_UnlockPartyMarker(_QuestMarker);
+
+//Hide marker once a quest step is reached
+IF
+QuestUpdateUnlocked(_, _, _QuestStep)
+AND
+DB_FOTV_RemoveMarkerAfterStepStarted(_QuestMarker, _QuestStep)
+THEN
+PROC_HidePartyMarker(_QuestMarker);
+
+
+///QUEST JOURNAL
+//Conditionally update a quest when a global flag is set, based on a specific quest step being unlocked
+IF
+FlagSet(_Flag, NULL_00000000-0000-0000-0000-000000000000, _)
+AND
+DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)_Flag,(STRING)_Quest,(STRING)_Entry,(INTEGER)_QuestState,(STRING)_ConditionalQuest,(STRING)_ConditionalUpdate)
+AND
+QuestUpdateIsUnlocked((CHARACTER)NULL_00000000-0000-0000-0000-000000000000, _ConditionalQuest, _ConditionalUpdate, _QuestState)
+AND
+DB_Players(_Player)
+THEN
+PROC_QuestDef_QuestUpdate(_Player, _Quest, _Entry);
+
+//Conditionally chain a quest step within the same quest based on the state of a global flag
+IF
+QuestUpdateUnlocked(_, _Quest, _Step)
+AND
+DB_QuestDef_ChainedState_ConditionalFlag((STRING)_Quest, (STRING)_Step, (INTEGER)_FlagState, (FLAG)_ConditionalFlag, (STRING)_NewStep)
+AND
+GetFlag(_ConditionalFlag, NULL_00000000-0000-0000-0000-000000000000, _FlagState)
+AND
+DB_Players(_Character)
+THEN
+PROC_QuestDef_QuestUpdate(_Character, _Quest, _NewStep);
+
+//Conditionally chain a quest step in a new quest based on the state of a global flag
+IF
+QuestUpdateUnlocked(_, _Quest, _Step)
+AND
+DB_QuestDef_NewChainedState_ConditionalFlag((STRING)_Quest, (STRING)_Step, (INTEGER)_FlagState, (FLAG)_ConditionalFlag, (STRING)_NewQuest, (STRING)_NewStep)
+AND
+GetFlag(_ConditionalFlag, NULL_00000000-0000-0000-0000-000000000000, _FlagState)
+AND
+DB_Players(_Character)
+THEN
+PROC_QuestDef_QuestUpdate(_Character, _NewQuest, _NewStep);
+
+
+///TRIGGERS
+//If you enter a trigger with the proper quest step unlocked, gain a spell
+IF
+EnteredTrigger((CHARACTER)_Character, (TRIGGER)_Trigger)
+AND
+DB_Players(_Character)
+AND
+DB_FOTV_TriggerGrantsSpell(_Trigger, _Quest, _QuestStep, _QuestSpell)
+AND
+QuestUpdateIsUnlocked(_Character, _Quest, _QuestStep, 1)
+THEN
+AddSpell(_Character, _QuestSpell);
+
+//When you cast a quest spell granted by a trigger --> set a flag, unregister the trigger
+IF
+CastSpell(_, (STRING)_QuestSpell, _, _, _)
+AND
+DB_FOTV_TriggerSpellSetsFlag(_QuestSpell, _QuestFlag)
+AND
+DB_FOTV_TriggerGrantsSpell(_QuestTrigger, _, _, _QuestSpell)
+THEN
+SetFlag(_QuestFlag);
+PROC_TriggerUnregisterForPlayers(_QuestTrigger);
+
+//When you leave a trigger that gives you a quest spell, lose the spell
+IF
+LeftTrigger((CHARACTER)_Character, (TRIGGER)_Trigger)
+AND
+DB_Players(_Character)
+AND
+DB_FOTV_TriggerGrantsSpell(_Trigger, _, _, _QuestSpell)
+AND
+HasSpell(_Character, _QuestSpell, 1)
+THEN
+RemoveSpell(_Character, _QuestSpell);
+
+
+///ITEMS
+//When you pick up a quest item, get a corresponding spell if you're on the right quest step
+IF
+TemplateAddedTo((ITEMROOT)_QuestTemplate, _, (CHARACTER)_Character, _)
+AND
+DB_Players(_Character)
+AND
+DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _Quest, _QuestStep)
+AND
+QuestUpdateIsUnlocked(_Character, _Quest, _QuestStep, 1)
+THEN
+AddSpell(_Character, _QuestSpell);
+
+//If the item was already in ur inventory, get spell when quest updates
+IF
+QuestUpdateUnlocked((CHARACTER)_Character, _Quest, _QuestStep)
+AND
+DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _Quest, _QuestStep)
+AND
+TemplateIsInUserInventory(_QuestTemplate, _Character, _Count, 0)
+AND
+_Count >= 1
+THEN
+AddSpell(_Character, _QuestSpell);
+
+//When you don't have the item in your inventory, lose quest spell
+IF
+TemplateRemovedFrom((ITEMROOT)_QuestTemplate, _, (CHARACTER)_Character)
+AND
+DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _, _)
+AND
+HasSpell(_Character, _QuestSpell, 1)
+THEN
+RemoveSpell(_Character, _QuestSpell);
+
+//When you cast a quest spell granetd by an item, lose it
+IF
+CastSpell((CHARACTER)_Caster, _QuestSpell, _, _, _)
+AND
+DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _Quest, _QuestStep)
+THEN
+RemoveSpell(_Caster, _QuestSpell);
+NOT DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _Quest, _QuestStep);
+
+EXITSECTION
+
+ENDEXITSECTION

@@ -66,7 +66,7 @@ end
 
 function JL_FOTV_IsFlanked(entity)
     local entity = entity or context.Target
-    local result = HasStatus('FLANKING_FRAMEWORK_MAIN_STATUS_200002',entity) | HasStatus('JL_FOTV_LITANY_DUSKDAWN_ENEMY',entity)
+    local result = HasStatus('FLANKING_FRAMEWORK_MAIN_STATUS_200002',entity) | HasStatus('JL_FOTV_LITANY_DUSKDAWN_ENEMY',entity) | HasStatus('CHIZ_FLANKED',entity)
     return ConditionResult(result.Result)
 end
 

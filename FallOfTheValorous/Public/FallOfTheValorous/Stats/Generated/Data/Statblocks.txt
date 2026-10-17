@@ -239,6 +239,12 @@ data "StatusType" "BOOST"
 data "OnApplyFunctors" "Kill()"
 data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
 
+new entry "JL_GODSTATS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "Boosts" "AbilityOverrideMinimum(Strength,30);AbilityOverrideMinimum(Dexterity,30);AbilityOverrideMinimum(Constitution,30);AbilityOverrideMinimum(Intelligence,30);AbilityOverrideMinimum(Wisdom,30);AbilityOverrideMinimum(Charisma,30);ActionResource(ActionPoint,3,0);ActionResource(BonusActionPoint,3,0);TemporaryHP(500)"
+data "Passives" "ExtraAttack_2"
+
 //new entry "JL_FOTV_TESTVFX"
 //type "StatusData"
 //data "StatusType" "BOOST"

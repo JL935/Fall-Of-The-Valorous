@@ -449,7 +449,7 @@ data "DisplayName" "h54625d60ge8a3g452cg8b7dg6c564113be4a;1"
 data "StackId" "JL_FOTV_RAVENER_FRIGHTFULPRESENCE"
 data "StackType" "Ignore"
 data "AuraRadius" "9"
-data "AuraStatuses" "TARGET:IF(Character() and Enemy() and not (Tagged('UNDEAD') or Tagged('UNDEAD_BEAST')) and not (HasStatus('JL_FOTV_RAVENER_FRIGHTFULPRESENCE_FAILED',context.Target,context.Source) or HasStatus('JL_FOTV_RAVENER_FRIGHTFULPRESENCE_SAVED',context.Target,context.Source))):ApplyStatus(JL_FOTV_RAVENER_FRIGHTFULPRESENCE_TECHNICAL);TARGET:IF(HasStatus('JL_FOTV_RAVENER_FRIGHTFULPRESENCE_FAILED',context.Target,context.Source)):ApplyStatus(JL_FOTV_RAVENER_FRIGHTFULPRESENCE_PENALTIES)"
+data "AuraStatuses" "TARGET:IF(Character() and not (Ally() and (Tagged('UNDEAD') or Tagged('UNDEAD_BEAST'))) and not IsImmuneToStatus('SG_Frightened') and not (HasStatus('JL_FOTV_RAVENER_FRIGHTFULPRESENCE_FAILED',context.Target,context.Source) or HasStatus('JL_FOTV_RAVENER_FRIGHTFULPRESENCE_SAVED',context.Target,context.Source))):ApplyStatus(JL_FOTV_RAVENER_FRIGHTFULPRESENCE_TECHNICAL);TARGET:IF(HasStatus('JL_FOTV_RAVENER_FRIGHTFULPRESENCE_FAILED',context.Target,context.Source)):ApplyStatus(JL_FOTV_RAVENER_FRIGHTFULPRESENCE_PENALTIES)"
 data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
 
 new entry "JL_FOTV_RAVENER_FRIGHTFULPRESENCE_TECHNICAL"
@@ -458,7 +458,7 @@ data "StatusType" "BOOST"
 data "DisplayName" "h54625d60ge8a3g452cg8b7dg6c564113be4a;1"
 data "OnApplyRoll" "SavingThrow(Ability.Wisdom,SourceSpellDC(),AdvantageOnFrightened(),DisadvantageOnFrightened())"
 data "OnApplySuccess" "ApplyStatus(JL_FOTV_RAVENER_FRIGHTFULPRESENCE_SAVED,100,-1)"
-data "OnApplyFail" "ApplyStatus(JL_FOTV_RAVENER_FRIGHTFULPRESENCE_FAILED,100,-1)"
+data "OnApplyFail" "ApplyStatus(JL_FOTV_RAVENER_FRIGHTFULPRESENCE_FAILED,100,1)"
 data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
 
 new entry "JL_FOTV_RAVENER_FRIGHTFULPRESENCE_SAVED"
@@ -485,6 +485,7 @@ data "FormatColor" "Warrior"
 data "StackId" "JL_FOTV_RAVENER_FRIGHTFULPRESENCE_PENALTIES"
 data "StackType" "Ignore"
 data "RemoveEvents" ""
+data "StatusPropertyFlags" "InitiateCombat;OverheadOnTurn;TickingWithSource;DisableCombatlog"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////DIVINE DEFIANCE//////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////

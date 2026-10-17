@@ -53,9 +53,9 @@ DB_FOTV_QuestTriggerFlag((TRIGGER)S_JL_FOTV_SharranHolySite_4ea3163e-2379-4ee7-8
 
 /////   SAW FLAGS   /////
 ///Apostle of the Holy Word
-DB_FOTV_SawValorInquisitor((CHARACTER)S_JL_FOTV_ApothecaryInquisitor_Dead_b730b18d-fb32-4436-a073-86a10c934f92, (FLAG)JL_FOTV_SawKhionzu_61e2ef35-3f53-42d2-b214-e00925198d64);
-DB_FOTV_SawValorInquisitor((CHARACTER)S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1, (FLAG)JL_FOTV_SawSaelethil_94851472-0e91-4081-b869-2e1f3f9df375);
-DB_FOTV_SawValorInquisitor((CHARACTER)S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, (FLAG)JL_FOTV_SawAdrasteia_b93bb4b1-f688-498b-a584-cd5044cc4a3e);
+DB_FOTV_SawCharacter((CHARACTER)S_JL_FOTV_ApothecaryInquisitor_Dead_b730b18d-fb32-4436-a073-86a10c934f92, (FLAG)JL_FOTV_SawKhionzu_61e2ef35-3f53-42d2-b214-e00925198d64);
+DB_FOTV_SawCharacter((CHARACTER)S_JL_FOTV_RisenRoad_Valorous_Elf_Melee_452f2783-7ac4-421c-a83d-9484f9e6dbe1, (FLAG)JL_FOTV_SawSaelethil_94851472-0e91-4081-b869-2e1f3f9df375);
+DB_FOTV_SawCharacter((CHARACTER)S_JL_FOTV_UnderdarkInquisitor_Dead_fb59427e-b9a0-4112-8dcc-dad1b581c882, (FLAG)JL_FOTV_SawAdrasteia_b93bb4b1-f688-498b-a584-cd5044cc4a3e);
 
 /////   REMOVING STATUSES   /////
 ///A Call To Valor
@@ -383,199 +383,6 @@ DB_QuestDef_NewChainedState_ConditionalFlag("QST_JL_FOTV_UnlockValor", "STEP_JL_
 DB_QuestDef_NewChainedState_ConditionalFlag("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SlaySpider", 1, (FLAG)FOR_Bottomless_SpiderQueen_State_PermaDefeated_b749271f-fbee-43ec-bbc7-b1199d0f794a, "QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SanctifyValor");
 
 KBSECTION
-//REGION the important stuff
-//When the prereqs are met, set the proper enemies on stage
-IF
-FlagSet(_SoSFlag, _, _)
-AND
-DB_FOTV_SetOnStageLater(_SoSThing, _SoSFlag)
-THEN
-SetOnStage(_SoSThing, 1);
-
-//Set flag for seeing someone
-IF
-Saw(_, _Flagquisitor, _)
-AND
-DB_FOTV_SawValorInquisitor(_Flagquisitor, _SeenFlag)
-THEN
-SetFlag(_SeenFlag);
-
-//Set flag for removing a status
-IF
-StatusRemoved(_QuestObject, _QuestStatus, _, _)
-AND
-DB_FOTV_ImportantStatusRemoved(_QuestObject, _QuestStatus, _QuestFlag)
-THEN
-SetFlag(_QuestFlag);
-
-//Set flag for gaining a status
-IF
-StatusApplied((CHARACTER)_Player, _QuestStatus, _, _)
-AND
-DB_Players(_Player)
-AND
-DB_FOTV_ImportantStatusGained(_QuestStatus, _QuestFlag)
-THEN
-SetFlag(_QuestFlag);
-
-//Set a flag when entering a trigger
-IF
-EnteredTrigger((CHARACTER)_Player, _QuestTrigger)
-AND
-DB_Players(_Player)
-AND
-DB_FOTV_QuestTriggerFlag(_QuestTrigger, _QuestFlag)
-THEN
-SetFlag(_QuestFlag);
-
-//Enable interaction when a flag is set
-IF
-FlagSet(_QuestFlag, NULL_00000000-0000-0000-0000-000000000000, _)
-AND
-DB_FOTV_CanInteractAfterFlagSet(_QuestItem, _QuestFlag)
-THEN
-SetCanInteract(_QuestItem, 1);
-
-//Show quest markers
-IF
-QuestUpdateUnlocked(_, _, _QuestStep)
-AND
-DB_FOTV_AddMarkerAfterStepStarted(_QuestMarker, _QuestStep)
-THEN
-PROC_UnlockPartyMarker(_QuestMarker);
-
-//Hide quest markers
-IF
-QuestUpdateUnlocked(_, _, _QuestStep)
-AND
-DB_FOTV_RemoveMarkerAfterStepStarted(_QuestMarker, _QuestStep)
-THEN
-PROC_HidePartyMarker(_QuestMarker);
-
-//conditionally update a quest when a global flag is set based on a specific quest step being unlocked
-IF
-FlagSet(_Flag, NULL_00000000-0000-0000-0000-000000000000, _)
-AND
-DB_QuestDef_State_FlagSet_ConditionalQuest((FLAG)_Flag,(STRING)_Quest,(STRING)_Entry,(INTEGER)_QuestState,(STRING)_ConditionalQuest,(STRING)_ConditionalUpdate)
-AND
-QuestUpdateIsUnlocked((CHARACTER)NULL_00000000-0000-0000-0000-000000000000, _ConditionalQuest, _ConditionalUpdate, _QuestState)
-AND
-DB_Players(_Player)
-THEN
-PROC_QuestDef_QuestUpdate(_Player, _Quest, _Entry);
-
-//conditionally chain a quest step within the same quest based on the state of a global flag
-IF
-QuestUpdateUnlocked(_, _Quest, _Step)
-AND
-DB_QuestDef_ChainedState_ConditionalFlag((STRING)_Quest, (STRING)_Step, (INTEGER)_FlagState, (FLAG)_ConditionalFlag, (STRING)_NewStep)
-AND
-GetFlag(_ConditionalFlag, NULL_00000000-0000-0000-0000-000000000000, _FlagState)
-AND
-DB_Players(_Character)
-THEN
-PROC_QuestDef_QuestUpdate(_Character, _Quest, _NewStep);
-
-//conditionally chain a quest step in a new quest based on the state of a global flag
-IF
-QuestUpdateUnlocked(_, _Quest, _Step)
-AND
-DB_QuestDef_NewChainedState_ConditionalFlag((STRING)_Quest, (STRING)_Step, (INTEGER)_FlagState, (FLAG)_ConditionalFlag, (STRING)_NewQuest, (STRING)_NewStep)
-AND
-GetFlag(_ConditionalFlag, NULL_00000000-0000-0000-0000-000000000000, _FlagState)
-AND
-DB_Players(_Character)
-THEN
-PROC_QuestDef_QuestUpdate(_Character, _NewQuest, _NewStep);
-
-//if you enter a trigger with the proper quest step unlocked, gain a spell
-IF
-EnteredTrigger((CHARACTER)_Character, (TRIGGER)_Trigger)
-AND
-DB_Players(_Character)
-AND
-DB_FOTV_TriggerGrantsSpell(_Trigger, _Quest, _QuestStep, _QuestSpell)
-AND
-QuestUpdateIsUnlocked(_Character, _Quest, _QuestStep, 1)
-THEN
-AddSpell(_Character, _QuestSpell);
-
-//when you cast a quest spell granted by a trigger --> set a flag, unregister the trigger
-IF
-CastSpell(_, (STRING)_QuestSpell, _, _, _)
-AND
-DB_FOTV_TriggerSpellSetsFlag(_QuestSpell, _QuestFlag)
-AND
-DB_FOTV_TriggerGrantsSpell(_QuestTrigger, _, _, _QuestSpell)
-THEN
-SetFlag(_QuestFlag);
-PROC_TriggerUnregisterForPlayers(_QuestTrigger);
-
-//when you leave a trigger that gives you a quest spell, lose the spell
-IF
-LeftTrigger((CHARACTER)_Character, (TRIGGER)_Trigger)
-AND
-DB_Players(_Character)
-AND
-DB_FOTV_TriggerGrantsSpell(_Trigger, _, _, _QuestSpell)
-AND
-HasSpell(_Character, _QuestSpell, 1)
-THEN
-RemoveSpell(_Character, _QuestSpell);
-
-//when you pick up a quest item, get the corresponding spell if you're on the right quest step
-IF
-TemplateAddedTo((ITEMROOT)_QuestTemplate, _, (CHARACTER)_Character, _)
-AND
-DB_Players(_Character)
-AND
-DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _Quest, _QuestStep)
-AND
-QuestUpdateIsUnlocked(_Character, _Quest, _QuestStep, 1)
-THEN
-AddSpell(_Character, _QuestSpell);
-
-//if the item was already in ur inventory, get spell when quest updates
-IF
-QuestUpdateUnlocked((CHARACTER)_Character, _Quest, _QuestStep)
-AND
-DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _Quest, _QuestStep)
-AND
-TemplateIsInUserInventory(_QuestTemplate, _Character, _Count, 0)
-AND
-_Count >= 1
-THEN
-AddSpell(_Character, _QuestSpell);
-
-//when you don't have the item in your inventory, lose quest spell
-IF
-TemplateRemovedFrom((ITEMROOT)_QuestTemplate, _, (CHARACTER)_Character)
-AND
-DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _, _)
-AND
-HasSpell(_Character, _QuestSpell, 1)
-THEN
-RemoveSpell(_Character, _QuestSpell);
-
-//when you cast a quest spell, lose it (single use plastics)
-IF
-CastSpell((CHARACTER)_Caster, _QuestSpell, _, _, _)
-AND
-DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _Quest, _QuestStep)
-THEN
-RemoveSpell(_Caster, _QuestSpell);
-NOT DB_FOTV_ItemGrantsSpell(_QuestTemplate, _QuestSpell, _Quest, _QuestStep);
-
-//when you cast a quest spell, set a flag
-IF
-CastSpell(_, _QuestSpell, _, _, _)
-AND
-DB_FOTV_CastQuestSpell(_QuestSpell, _QuestFlag)
-THEN
-SetFlag(_QuestFlag);
-//END_REGION
-
-
 //REGION stuff that can't easily be handled with the existing DBs
 //if anyone tries to read the book before removing the curse, disable interaction (shitty fallback)
 IF
@@ -661,6 +468,7 @@ DB_GlobalFlag((FLAG)JL_FOTV_UnderdarkInquisitorFreed_5b18c4c1-8839-4593-8457-f5d
 THEN
 TimerLaunch("JL_FOTV_WaitToSetTaarogusSpawn", 2000);
 
+//timer is necessary since setting 1 flag based on a different flag being set has timing issues for some reason
 IF
 TimerFinished("JL_FOTV_WaitToSetTaarogusSpawn")
 THEN

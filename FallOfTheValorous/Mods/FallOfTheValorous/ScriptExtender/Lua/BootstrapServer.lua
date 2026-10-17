@@ -993,75 +993,381 @@ end)
 ----------------------------------------------------------------------------------------------------
 
 --Teleporting Commands
-Ext.RegisterConsoleCommand("JLFOTV_TPCrypt", function(_) --Dank Crypt
+Ext.RegisterConsoleCommand("jlfotv_tpcrypt", function(_)
+    local atlasdesc = "Teleports the player + party to the FOTV-relevant part of the Dank Crypt"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), -309, 17.5, -263)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPSwamp", function(_) --Putrid Bog/Garrin
+Ext.RegisterConsoleCommand("jlfotv_tpswamp", function(_)
+    local atlasdesc = "Teleports the player + party near the FOTV swamp encounter"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), 20, 0, 230)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPCellarOutpost", function(_) --Apothecary Cellar Inquisitor Outpost
+Ext.RegisterConsoleCommand("jlfotv_tpcellar", function(_)
+    local atlasdesc = "Teleports the player + party to the valor inquisition outpost in the Apothecary's Cellar"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), -662, -1.5, -356)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPGroveOutpost", function(_) --Emerald Grove Inquisitor Outpost
+Ext.RegisterConsoleCommand("jlfotv_tpgrove", function(_)
+    local atlasdesc = "Teleports the player + party to the valor inquisition outpost in the Emerald Grove"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), 145, 27.9, 506)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPRisenOutpost", function(_) --Risen Road Inquisitor Outpost
+Ext.RegisterConsoleCommand("jlfotv_tprisen", function(_)
+    local atlasdesc = "Teleports the player + party to the valor inquisition outpost on the Risen Road"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), -128, 32.9, 490)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPDecrepitOutpost", function(_) --Decrepit Village Inquisitor Outpost
+Ext.RegisterConsoleCommand("jlfotv_tpdecrepit", function(_)
+    local atlasdesc = "Teleports the player + party to the valor inquisition outpost in the Decrepit Village"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), 28, 8.1, -212)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPTowerOutpost", function(_) --Arcane Tower Inquisitor Outpost
+Ext.RegisterConsoleCommand("jlfotv_tptower", function(_)
+    local atlasdesc = "Teleports the player + party to the valor inquisition outpost in the Arcane Tower"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), -31, 42.3, -286)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPCrecheOutpost", function(_) --Creche Y'llek Inquisitor Outpost
+Ext.RegisterConsoleCommand("jlfotv_tpcreche", function(_)
+    local atlasdesc = "Teleports the player + party to the valor inquisition outpost in Creche Y'llek"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), 1289, -2.3, -809)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPPeriapt", function(_) --Near Oathkeeper's Periapt
+Ext.RegisterConsoleCommand("jlfotv_tpperiapt", function(_)
+    local atlasdesc = "Teleports the player + party near where the Oathkeeper's Periapt spawns"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), -405, 0, 247)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPVeiz", function(_) --Near Veizoadeoth
+Ext.RegisterConsoleCommand("jlfotv_tpveiz", function(_)
+    local atlasdesc = "Teleports the player + party near where Veizoadeoth spawns"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), 95, 35, 575)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_TPMantle", function(_) -- Near Empyreal Scion's Mantle
+Ext.RegisterConsoleCommand("jlfotv_tpmantle", function(_)
+    local atlasdesc = "Teleports the player + party near the Empyreal Scion's Mantle"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), 307, 4, -174)
 end)
 
+
 --Quest completions
-Ext.RegisterConsoleCommand("JLFOTV_UnlockValorSanctifyStep", function(_) -- Sanctify Ronros step
+--A Call to Valor
+Ext.RegisterConsoleCommand("jlfotv_ctvstep1", function(_)
+    local atlasdesc = "Begin the quest 'A Call To Valor'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CleanseJournal")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ctvstep2", function(_)
+    local atlasdesc = "Progress the quest 'A Call To Valor' to the step 'Read The Fall Of The Valorous'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_ReadJournal")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ctvstep3", function(_)
+    local atlasdesc = "Progress the quest 'A Call To Valor' to the step 'Follow Taarogus' leads'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_CallToAction")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ctvstep4_ahw", function(_)
+    local atlasdesc = "Progress the quest 'A Call To Valor' with the subgoal related to completing the side quest 'Apostle of the Holy Word'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_ApostleCompleted")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ctvstep4_sll", function(_)
+    local atlasdesc = "Progress the quest 'A Call To Valor' with the subgoal related to completing the side quest 'Seeker of Lost Lore'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SeekerCompleted")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ctvstep5", function(_)
+    local atlasdesc = "Progress the quest 'A Call To Valor' to the step 'Carry on the fight against the Ravener King'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_AnsweredTheCall")
+end)
+
+--Apostle of the Holy Word
+Ext.RegisterConsoleCommand("jlfotv_ahwstep1", function(_)
+    local atlasdesc = "Begin the subquest 'Apostle of the Holy Word'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedVaelythra")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ahwstep2_fk", function(_)
+    local atlasdesc = "Progress the subquest 'Apostle of the Holy Word' with the subgoal related to locating Khionzu"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_FoundKhionzu")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ahwstep2_sk", function(_)
+    local atlasdesc = "Progress the subquest 'Apostle of the Holy Word' with the subgoal related to obtaining Khionzu's holy word"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SavedKhionzu")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ahwstep2_fs", function(_)
+    local atlasdesc = "Progress the subquest 'Apostle of the Holy Word' with the subgoal related to locating Saelethil"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_FoundSaelethil")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ahwstep2_ss", function(_)
+    local atlasdesc = "Progress the subquest 'Apostle of the Holy Word' with the subgoal related to obtaining Saelethil's holy word"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SavedSaelethil")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ahwstep2_fa", function(_)
+    local atlasdesc = "Progress the subquest 'Apostle of the Holy Word' with the subgoal related to locating Adrasteia"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_FoundAdrasteia")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ahwstep2_sa", function(_)
+    local atlasdesc = "Progress the subquest 'Apostle of the Holy Word' with the subgoal related to obtaining Adrasteia's holy word"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SavedAdrasteia")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ahwstep3", function(_)
+    local atlasdesc = "Progress the subquest 'Apostle of the Holy Word' to the step 'Return to the Dank Crypt'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_ReturnToTheHolyLand")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ahwstep4_save", function(_)
+    local atlasdesc = "Progress the subquest 'Apostle of the Holy Word' to the step 'See Taarogus' mission to the end' treating Taarogus as saved"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusFreed")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ahwstep4_spare", function(_)
+    local atlasdesc = "Progress the subquest 'Apostle of the Holy Word' to the step 'See Taarogus' mission to the end' treating Taarogus as spared"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusSpared")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ahwstep4_kill", function(_)
+    local atlasdesc = "Progress the subquest 'Apostle of the Holy Word' to the step 'See Taarogus' mission to the end' treating Taarogus as dead"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_TaarogusDead")
+end)
+
+--Seeker of Lost Lore
+Ext.RegisterConsoleCommand("jlfotv_sllstep1", function(_)
+    local atlasdesc = "Begin the subquest 'Seeker of Lost Lore'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_GoFindRavenerLore")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_sllstep2_egcy", function(_)
+    local atlasdesc = "Progress the subquest 'Seeker of Lost Lore' with the subgoal related to learning about the research of the Emerald Grove and Creche Y'llek"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedGroveCrecheResearch")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_sllstep2_at", function(_)
+    local atlasdesc = "Progress the subquest 'Seeker of Lost Lore' with the subgoal related to learning about the research of the Arcane Tower"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedArcaneResearch")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_sllstep2_sw", function(_)
+    local atlasdesc = "Progress the subquest 'Seeker of Lost Lore' with the subgoal related to reading the research of the Soul Ward"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedSoulWard")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_sllstep2_fp", function(_)
+    local atlasdesc = "Progress the subquest 'Seeker of Lost Lore' with the subgoal related to reading the research of the Frightful Presence"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedFrightfulPresence")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_sllstep2_mal", function(_)
+    local atlasdesc = "Progress the subquest 'Seeker of Lost Lore' with the subgoal related to reading the research of the ravener malevolence"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedMalevolence")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_sllstep2_ud", function(_)
+    local atlasdesc = "Progress the subquest 'Seeker of Lost Lore' with the subgoal related to reading the research of the ravener undeath"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedUndeath")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_sllstep2_all", function(_)
+    local atlasdesc = "Progress the subquest 'Seeker of Lost Lore' as though you have read all of the research notes"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_LearnedAllActOne")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_sllstep3", function(_)
+    local atlasdesc = "Progress the subquest 'Seeker of Lost Lore' to the step 'Go to the Risen Road Tollhouse'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_ConfrontSentinel")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_sllstep4", function(_)
+    local atlasdesc = "Progress the subquest 'Seeker of Lost Lore' to the step 'See Taarogus' mission to the end'"
+    Osi.QuestUpdate("QST_JL_FOTV_Act1", "STEP_JL_FOTV_SentinelDead")
+end)
+
+--Echoes of the Righteous
+Ext.RegisterConsoleCommand("jlfotv_etrstep1", function(_)
+    local atlasdesc = "Begin the side quest 'Echoes of the Righteous'"
+    Osi.QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_FoundAmuletNote")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_etrstep2", function(_)
+    local atlasdesc = "Progress the side quest 'Echoes of the Righteous' to the step 'Search for more information about the amulet'"
+    Osi.QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_PickedAmuletNoIDCurse")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_etrstep3", function(_)
+    local atlasdesc = "Progress the side quest 'Echoes of the Righteous' to the step 'Break the curse on the amulet'"
+    Osi.QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_KnowsAmuletCursed")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_etrstep4", function(_)
+    local atlasdesc = "Progress the side quest 'Echoes of the Righteous' to the step 'Continue the search for the Grand Inquisitor'"
+    Osi.QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_AmuletCurseBrokenFindGrandInquisitor")
+end)
+
+--Lifting the Curse
+Ext.RegisterConsoleCommand("jlfotv_ltcstep1", function(_)
+    local atlasdesc = "Begin the subquest 'Lifting the Curse'"
+    Osi.QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerTips")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ltcstep2_good", function(_)
+    local atlasdesc = "Progress the subquest 'Lifting the Curse' with the subgoal related to communing with the Idol of Selûne"
+    Osi.QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCommunionGood")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ltcstep2_neutral", function(_)
+    local atlasdesc = "Progress the subquest 'Lifting the Curse' with the subgoal related to communing with the Idol of Silvanus"
+    Osi.QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCommunionNeutral")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ltcstep2_evil", function(_)
+    local atlasdesc = "Progress the subquest 'Lifting the Curse' with the subgoal related to communing with the Idol of Shar"
+    Osi.QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCommunionEvil")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ltcstep2_ready", function(_)
+    local atlasdesc = "Progress the subquest 'Lifting the Curse' with the subgoal related to having weakened the curse"
+    Osi.QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_IsReadyToBreakCurse")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_ltcstep3", function(_)
+    local atlasdesc = "Progress the subquest 'Lifting the Curse' to the step 'Continue the search for the Grand Inquisitor'"
+    Osi.QuestUpdate("QST_JL_FOTV_Cursebreaker", "STEP_JL_FOTV_CursebreakerCurseLifted")
+end)
+
+--No Monster Too Menacing, No Duty Too Daunting
+Ext.RegisterConsoleCommand("jlfotv_nmmstep1", function(_)
+    local atlasdesc = "Begin the side quest 'No Monster Too Menacing, No Duty Too Daunting'"
     Osi.QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_FindPreservation")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_nmmstep2", function(_)
+    local atlasdesc = "Progress the side quest 'No Monster Too Menacing, No Duty Too Daunting' to the step 'Find Khionzu's associate'"
+    Osi.QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_FindRuination")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_nmmstep3", function(_)
+    local atlasdesc = "Progress the side quest 'No Monster Too Menacing, No Duty Too Daunting' to the step 'Slay the foul creature'"
+    Osi.QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SlaySpider")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_nmmstep4", function(_)
+    local atlasdesc = "Progress the side quest 'No Monster Too Menacing, No Duty Too Daunting' to the step 'Sanctify Ronros'"
     Osi.QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_SanctifyValor")
 end)
 
---Other troubleshooting
-Ext.RegisterConsoleCommand("JLFOTV_AddSanctifySpell", function(_) -- Add Sanctify spell
-    Osi.AddSpell(Osi.GetHostCharacter(), "JL_FOTV_Target_SanctifyRonros");
+Ext.RegisterConsoleCommand("jlfotv_nmmstep5", function(_)
+    local atlasdesc = "Progress the side quest 'No Monster Too Menacing, No Duty Too Daunting' to the step 'Carry on the legacy of the Valorous'"
+    Osi.QuestUpdate("QST_JL_FOTV_UnlockValor", "STEP_JL_FOTV_UnlockedValor")
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_RemoveSanctifySpell", function(_) -- Remove Sanctify spell
-    Osi.RemoveSpell(Osi.GetHostCharacter(), "JL_FOTV_Target_SanctifyRonros");
+--Holy Is As Holy Does
+Ext.RegisterConsoleCommand("jlfotv_hhdstep1", function(_)
+    local atlasdesc = "Begin the side quest 'Holy Is As Holy Does'"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_ReadZhentNote")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_hhdstep2", function(_)
+    local atlasdesc = "Progress the side quest 'Holy Is As Holy Does' to the step 'Become virtuous enough to overcome the Aegis of the Sacrosanct'"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoBecomeVirtuous")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_hhdstep3_for", function(_)
+    local atlasdesc = "Progress the side quest 'Holy Is As Holy Does' with the subgoal related to completing a feat of renown"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_IsRenowned")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_hhdstep3_site", function(_)
+    local atlasdesc = "Progress the side quest 'Holy Is As Holy Does' with the subgoal related to visiting holy sites"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_IsItinerant")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_hhdstep4", function(_)
+    local atlasdesc = "Progress the side quest 'Holy Is As Holy Does' to the step 'Surmount the Aegis of the Sacrosanct'"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_BreakTheAegis")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_hhdstep5", function(_)
+    local atlasdesc = "Progress the side quest 'Holy Is As Holy Does' to the step 'Continue to be holy'"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_BrokeAegis")
+end)
+
+--An Abundance of Vs
+Ext.RegisterConsoleCommand("jlfotv_aavstep1", function(_)
+    local atlasdesc = "Begin the subquest 'An Abundance of Vs'"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_ReadValorousVirtues")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_aavstep2", function(_)
+    local atlasdesc = "Progress the subquest 'An Abundance of Vs' to the step 'Perform a Feat of Renown'"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_GoDoRenownThings")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_aavstep3", function(_)
+    local atlasdesc = "Progress the subquest 'An Abundance of Vs' to the step 'Continue to be virtuous'"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_FinishedRenown")
+end)
+
+--Voyage of the Virtuous
+Ext.RegisterConsoleCommand("jlfotv_vtvstep1", function(_)
+    local atlasdesc = "Begin the subquest 'Voyage of the Virtuous'"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_PilgrimTime")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_vtvstep2", function(_)
+    local atlasdesc = "Progress the subquest 'Voyage of the Virtuous' with the subgoal related to having visited 5 holy sites"
+    Osi.QuestUpdate("QST_JL_FOTV_BecomeHoly", "STEP_JL_FOTV_WhoUpFaringTheyWay")
 end)
 
 
---Basic stuff with flags
-Ext.RegisterConsoleCommand("JLFOTV_LearnAllHolyWords", function(_) --learn all holy words
+
+
+--Debugging and Troubleshooting
+Ext.RegisterConsoleCommand("jlfotv_unlockvalor", function(_)
+    local atlasdesc = "Unlock the Valor Inquisition"
+    Osi.SetFlag("30d714d5-35e8-458c-9a74-31dc9ccc512e")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_addsanctify", function(_)
+    local atlasdesc = "Add the 'Sanctify Ronros' spell to the active character"
+    Osi.AddSpell(Osi.GetHostCharacter(), "JL_FOTV_Target_SanctifyRonros")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_removesanctify", function(_)
+    local atlasdesc = "Remove the 'Sanctify Ronros' spell from the active character"
+    Osi.RemoveSpell(Osi.GetHostCharacter(), "JL_FOTV_Target_SanctifyRonros")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_spawnveiz", function(_)
+    local atlasdesc = "Spawn the Veizoadeoth encounter"
+    Osi.SetFlag("4d6a8c37-4851-4e6a-b84b-e0f1211c5105")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_spawntaarogus", function(_)
+    local atlasdesc = "Spawn the Taarogus encounter"
+    Osi.SetFlag("23dbb84d-217f-4261-a259-dfcb37bd603e")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_spawnperiapt", function(_)
+    local atlasdesc = "Spawn the Oathkeeper's Periapt"
+    Osi.SetFlag("0f5c11bc-ea59-43ba-b343-0ed21dd7ae64")
+end)
+
+Ext.RegisterConsoleCommand("jlfotv_learnwords", function(_)
+    local atlasdesc = "Unlock all holy words"
     Osi.SetFlag("a80348bb-7402-4460-a725-1d0bf923c153") --Lulix
     Osi.SetFlag("414c42de-2602-4703-b89d-fa32c1aa0fbd") --Arzimyr
     Osi.SetFlag("af8044f6-6647-4a74-8e5a-f0c5e7c7b562") --Vaelythra
     Osi.SetFlag("5b18c4c1-8839-4593-8457-f5ddf38544bb") --Xulvorith
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_AllRavenerLore", function(_) --learn all ravener lore
+Ext.RegisterConsoleCommand("jlfotv_learnlore", function(_)
+    local atlasdesc = "Learn all ravener lore"
     Osi.SetFlag("e6594196-80b1-427f-9bbe-9738530c1d7a") --soul ward
     Osi.SetFlag("1c1928f0-b078-48ae-8562-d305d7573c66") --frightful presence
     Osi.SetFlag("c58bd837-af7b-42e0-8f45-ac3826a4afe1") --malevolence
@@ -1071,25 +1377,14 @@ Ext.RegisterConsoleCommand("JLFOTV_AllRavenerLore", function(_) --learn all rave
     Osi.SetFlag("db155e2f-ce1f-4d6c-a100-244bd5367959") --knows all A1 lore
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_UnlockValor", function(_) --unlock Valor Inquisition
-    Osi.SetFlag("30d714d5-35e8-458c-9a74-31dc9ccc512e")
-end)
-
-Ext.RegisterConsoleCommand("JLFOTV_SpawnVeiz", function(_) --Summon Veizoadeoth
-    Osi.SetFlag("4d6a8c37-4851-4e6a-b84b-e0f1211c5105")
-end)
-
-Ext.RegisterConsoleCommand("JLFOTV_SpawnPeriapt", function(_) --Spawn Oathkeeper's Periapt
-    Osi.SetFlag("0f5c11bc-ea59-43ba-b343-0ed21dd7ae64")
-end)
-
---Other
-Ext.RegisterConsoleCommand("JLFOTV_AllGear", function(_) --Add all gear
+Ext.RegisterConsoleCommand("jlfotv_allgear", function(_)
+    local atlasdesc = "Add all gear to the active character"
     Osi.TemplateAddTo("e530a44a-67c8-4906-bfbb-2809103082f5", Osi.GetHostCharacter(), 1, 1) --Oathkeeper's Periapt
     Osi.TemplateAddTo("f2dbca2a-d55f-4a53-a604-c57e3b07bb5a", Osi.GetHostCharacter(), 1, 1) --Empyreal Scion's Mantle
     Osi.TemplateAddTo("adc31816-0459-4809-847d-3574dd80b437", Osi.GetHostCharacter(), 1, 1) --Vindicator's Resplendence (Longsword)
 end)
 
-Ext.RegisterConsoleCommand("JLFOTV_KillRaveners", function(_) -- kill all raveners in 18m
+Ext.RegisterConsoleCommand("jlfotv_killraveners", function(_)
+    local atlasdesc = "Kill all raveners within 18m of the active character"
     Osi.ApplyStatus(Osi.GetHostCharacter(), "FUCKRAVENERS", 0)
 end)
