@@ -1008,6 +1008,11 @@ Ext.RegisterConsoleCommand("jlfotv_tpcellar", function(_)
     Osi.TeleportToPosition(Osi.GetHostCharacter(), -662, -1.5, -356)
 end)
 
+Ext.RegisterConsoleCommand("jlfotv_tpdepths", function(_)
+    local atlasdesc = "Teleports the player + party to Khionzu in the Whispering Depths"
+    Osi.TeleportToPosition(Osi.GetHostCharacter(), -442, 11.8, -350)
+end)
+
 Ext.RegisterConsoleCommand("jlfotv_tpgrove", function(_)
     local atlasdesc = "Teleports the player + party to the valor inquisition outpost in the Emerald Grove"
     Osi.TeleportToPosition(Osi.GetHostCharacter(), 145, 27.9, 506)

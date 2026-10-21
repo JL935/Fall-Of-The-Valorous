@@ -8,7 +8,7 @@
 			<!-- Apothecary Young Ravener -->
 				<node id="GameObjects">
 					<attribute id="DisplayName" type="TranslatedString" handle="h4a2a3d6cg78f2g4c53ga648gf77975428fee" version="1" />
-					<!--<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />-->
+					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
 					<attribute id="Flag" type="int32" value="1" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="6e0bfd73-330a-4d7d-b6e7-fd7dba65b0a4" />
@@ -28,7 +28,10 @@
 													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
 												</node>
 												<node id="Layer">
-													<attribute id="Object" type="guid" value="b5ccefe6-4177-b85e-7e1d-06fab1f765b4" />
+													<attribute id="Object" type="guid" value="ee2e93e4-c274-dfc3-e4e6-5370146163fc" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="6594abcb-a82c-a984-fd4e-e9e2acecf030" />
 												</node>
 											</children>
 										</node>
@@ -37,25 +40,9 @@
 							</children>
 						</node>
 						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="-650.418 2.969 -326.375" />
-							<attribute id="RotationQuat" type="fvec4" value="0 0.5735764 0 0.819152" />
+							<attribute id="Position" type="fvec3" value="-458.3078918457 1.4912109375 -356.21704101562" />
+							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
 							<attribute id="Scale" type="float" value="0.25" />
-						</node>
-						<node id="Tags">
-							<children>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="b169a4a0-4867-4e90-a0f8-5e2b8bade0b8" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="guid" value="05c0f89c-b3d5-4065-8415-d7a55554e586" />
-								</node>
-							</children>
 						</node>
 						<node id="Treasures">
 							<children>
@@ -452,7 +439,10 @@
 													<attribute id="Object" type="guid" value="303db700-f9db-a9ea-293a-3af3066f58b1" />
 												</node>
 												<node id="Layer">
-													<attribute id="Object" type="guid" value="b5ccefe6-4177-b85e-7e1d-06fab1f765b4" />
+													<attribute id="Object" type="guid" value="ee2e93e4-c274-dfc3-e4e6-5370146163fc" />
+												</node>
+												<node id="Layer">
+													<attribute id="Object" type="guid" value="6594abcb-a82c-a984-fd4e-e9e2acecf030" />
 												</node>
 											</children>
 										</node>
@@ -461,7 +451,7 @@
 							</children>
 						</node>
 						<node id="Transform">
-							<attribute id="Position" type="fvec3" value="-678.438 0.156 -370.474" />
+							<attribute id="Position" type="fvec3" value="-441.62954711914 11.8330078125 -350.00802612305" />
 							<attribute id="RotationQuat" type="fvec4" value="0 0 0 1" />
 							<attribute id="Scale" type="float" value="1" />
 						</node>
@@ -695,7 +685,7 @@
 				<node id="GameObjects">
 					<attribute id="CombatGroupID" type="FixedString" value="a10cf80f-c32d-4d90-9375-9999661a91cd" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h7f721343g6de1g432dg82fdg0361f131adb2" version="1" />
-					<attribute id="Faction" type="guid" value="03f96214-6447-457d-9477-21094549025e" />
+					<attribute id="Faction" type="guid" value="a1542c81-6895-929e-4522-10ce218bb360" />
 					<attribute id="LevelName" type="FixedString" value="WLD_Main_A" />
 					<attribute id="MapKey" type="FixedString" value="f9c25b00-4ae7-4681-b783-3a72ba413211" />
 					<attribute id="Name" type="LSString" value="S_JL_FOTV_TaarogusDantill" />
